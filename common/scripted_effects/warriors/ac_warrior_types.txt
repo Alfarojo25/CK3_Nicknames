@@ -1,0 +1,32 @@
+# Advanced Character Nicknames - Warrior Types
+# Total: 16 apodos (7 M, 7 F, 2 N)
+
+ac_warrior_types = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_slayer_f }
+			1 = { give_nickname = nick_the_legionnaire_f }
+			1 = { give_nickname = nick_the_executioner_f }
+			1 = { give_nickname = nick_hist_bulgar_slayer_f }
+			1 = { give_nickname = nick_hist_the_conqueror_f }
+			1 = { give_nickname = nick_hist_the_butcher_f }
+			1 = { give_nickname = nick_hist_the_champion_of_faith_f }
+			1 = { give_nickname = nick_hist_the_warrior_king }
+			1 = { give_nickname = nick_hist_the_soldier_king }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_slayer }
+			1 = { give_nickname = nick_the_legionnaire }
+			1 = { give_nickname = nick_the_executioner }
+			1 = { give_nickname = nick_hist_bulgar_slayer }
+			1 = { give_nickname = nick_hist_the_conqueror }
+			1 = { give_nickname = nick_hist_the_butcher }
+			1 = { give_nickname = nick_hist_the_champion_of_faith }
+			1 = { give_nickname = nick_hist_the_warrior_king }
+			1 = { give_nickname = nick_hist_the_soldier_king }
+		}
+	}
+}

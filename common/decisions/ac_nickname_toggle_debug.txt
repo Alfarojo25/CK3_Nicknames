@@ -1,4 +1,5 @@
-﻿ac_nickname_toggle_debug = {
+ac_nickname_toggle_debug = {
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	desc = ac_nickname_toggle_debug_desc
 	selection_tooltip = ac_nickname_toggle_debug_tooltip
 	is_shown = {
@@ -20,6 +21,7 @@
 			custom_tooltip = ac_nickname_debug_mode_on_tt
 		}
 	}
+	ai_check_interval = 0
 	ai_will_do = {
 		base = 0
 	}

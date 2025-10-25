@@ -1,0 +1,38 @@
+# Advanced Character Nicknames - Weapon Spear
+# Total: 24 apodos (12 M, 12 F, 0 N)
+
+ac_weapon_spear = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_spear_f }
+			1 = { give_nickname = nick_hist_the_lance_f }
+			1 = { give_nickname = nick_hist_the_halberd_f }
+			1 = { give_nickname = nick_hist_the_scale_balance_f }
+			1 = { give_nickname = nick_hist_the_balance_f }
+			1 = { give_nickname = nick_hist_the_lord_of_spears_f }
+			1 = { give_nickname = nick_hist_the_spearhand_f }
+			1 = { give_nickname = nick_hist_the_lancepoint_f }
+			1 = { give_nickname = nick_hist_the_halberdier_f }
+			1 = { give_nickname = nick_hist_the_pikeman_f }
+			1 = { give_nickname = nick_hist_the_sure_spear_f }
+			1 = { give_nickname = nick_hist_the_lance_of_faith_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_spear }
+			1 = { give_nickname = nick_hist_the_lance }
+			1 = { give_nickname = nick_hist_the_halberd }
+			1 = { give_nickname = nick_hist_the_scale_balance }
+			1 = { give_nickname = nick_hist_the_balance }
+			1 = { give_nickname = nick_hist_the_lord_of_spears }
+			1 = { give_nickname = nick_hist_the_spearhand }
+			1 = { give_nickname = nick_hist_the_lancepoint }
+			1 = { give_nickname = nick_hist_the_halberdier }
+			1 = { give_nickname = nick_hist_the_pikeman }
+			1 = { give_nickname = nick_hist_the_sure_spear }
+			1 = { give_nickname = nick_hist_the_lance_of_faith }
+		}
+	}
+}

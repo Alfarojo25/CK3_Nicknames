@@ -1,0 +1,66 @@
+# Advanced Character Nicknames - Size Dwarf
+# Total: 52 apodos (26 M, 26 F, 0 N)
+
+ac_size_dwarf = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_gracious_dwarf_f }
+			1 = { give_nickname = nick_the_pleasant_dwarf_f }
+			1 = { give_nickname = nick_the_short_friend_f }
+			1 = { give_nickname = nick_the_opulent_dwarf_f }
+			1 = { give_nickname = nick_the_affluent_dwarf_f }
+			1 = { give_nickname = nick_the_gold_touched_dwarf_f }
+			1 = { give_nickname = nick_the_little_conqueror_f }
+			1 = { give_nickname = nick_the_vanquisher_dwarf_f }
+			1 = { give_nickname = nick_the_agressive_dwarf_f }
+			1 = { give_nickname = nick_the_sturdy_dwarf_f }
+			1 = { give_nickname = nick_the_iron_dwarf_f }
+			1 = { give_nickname = nick_the_slayer_dwarf_f }
+			1 = { give_nickname = nick_the_sharp_dwarf_f }
+			1 = { give_nickname = nick_the_bright_dwarf_f }
+			1 = { give_nickname = nick_the_keen_dwarf_f }
+			1 = { give_nickname = nick_the_skulking_dwarf_f }
+			1 = { give_nickname = nick_the_spider_dwarf_f }
+			1 = { give_nickname = nick_the_cunning_dwarf_f }
+			1 = { give_nickname = nick_the_imp_f }
+			1 = { give_nickname = nick_the_little_bear_f }
+			1 = { give_nickname = nick_the_puny_f }
+			1 = { give_nickname = nick_hist_the_impaler_f }
+			1 = { give_nickname = nick_hist_the_short_f }
+			1 = { give_nickname = nick_hist_the_simple_f }
+			1 = { give_nickname = nick_hist_the_little_corsican_f }
+			1 = { give_nickname = nick_hist_the_weeping_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_gracious_dwarf }
+			1 = { give_nickname = nick_the_pleasant_dwarf }
+			1 = { give_nickname = nick_the_short_friend }
+			1 = { give_nickname = nick_the_opulent_dwarf }
+			1 = { give_nickname = nick_the_affluent_dwarf }
+			1 = { give_nickname = nick_the_gold_touched_dwarf }
+			1 = { give_nickname = nick_the_little_conqueror }
+			1 = { give_nickname = nick_the_vanquisher_dwarf }
+			1 = { give_nickname = nick_the_agressive_dwarf }
+			1 = { give_nickname = nick_the_sturdy_dwarf }
+			1 = { give_nickname = nick_the_iron_dwarf }
+			1 = { give_nickname = nick_the_slayer_dwarf }
+			1 = { give_nickname = nick_the_sharp_dwarf }
+			1 = { give_nickname = nick_the_bright_dwarf }
+			1 = { give_nickname = nick_the_keen_dwarf }
+			1 = { give_nickname = nick_the_skulking_dwarf }
+			1 = { give_nickname = nick_the_spider_dwarf }
+			1 = { give_nickname = nick_the_cunning_dwarf }
+			1 = { give_nickname = nick_the_imp }
+			1 = { give_nickname = nick_the_little_bear }
+			1 = { give_nickname = nick_the_puny }
+			1 = { give_nickname = nick_hist_the_impaler }
+			1 = { give_nickname = nick_hist_the_short }
+			1 = { give_nickname = nick_hist_the_simple }
+			1 = { give_nickname = nick_hist_the_little_corsican }
+			1 = { give_nickname = nick_hist_the_weeping }
+		}
+	}
+}

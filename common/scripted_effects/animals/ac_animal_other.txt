@@ -1,0 +1,48 @@
+# Advanced Character Nicknames - Animal Other
+# Total: 34 apodos (17 M, 17 F, 0 N)
+
+ac_animal_other = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_boar_f }
+			1 = { give_nickname = nick_hist_the_boar_tusk_f }
+			1 = { give_nickname = nick_hist_the_stag_f }
+			1 = { give_nickname = nick_hist_the_bull_f }
+			1 = { give_nickname = nick_hist_the_fox_f }
+			1 = { give_nickname = nick_hist_the_hound_f }
+			1 = { give_nickname = nick_hist_the_scorpion_f }
+			1 = { give_nickname = nick_hist_the_jackal_f }
+			1 = { give_nickname = nick_hist_the_panther_f }
+			1 = { give_nickname = nick_hist_the_leopard_f }
+			1 = { give_nickname = nick_hist_the_tiger_f }
+			1 = { give_nickname = nick_hist_the_fox_mind_f }
+			1 = { give_nickname = nick_hist_the_bulldog_f }
+			1 = { give_nickname = nick_hist_the_desert_fox_f }
+			1 = { give_nickname = nick_hist_the_boar_standard_f }
+			1 = { give_nickname = nick_hist_the_stag_standard_f }
+			1 = { give_nickname = nick_the_kraken_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_boar }
+			1 = { give_nickname = nick_hist_the_boar_tusk }
+			1 = { give_nickname = nick_hist_the_stag }
+			1 = { give_nickname = nick_hist_the_bull }
+			1 = { give_nickname = nick_hist_the_fox }
+			1 = { give_nickname = nick_hist_the_hound }
+			1 = { give_nickname = nick_hist_the_scorpion }
+			1 = { give_nickname = nick_hist_the_jackal }
+			1 = { give_nickname = nick_hist_the_panther }
+			1 = { give_nickname = nick_hist_the_leopard }
+			1 = { give_nickname = nick_hist_the_tiger }
+			1 = { give_nickname = nick_hist_the_fox_mind }
+			1 = { give_nickname = nick_hist_the_bulldog }
+			1 = { give_nickname = nick_hist_the_desert_fox }
+			1 = { give_nickname = nick_hist_the_boar_standard }
+			1 = { give_nickname = nick_hist_the_stag_standard }
+			1 = { give_nickname = nick_the_kraken }
+		}
+	}
+}

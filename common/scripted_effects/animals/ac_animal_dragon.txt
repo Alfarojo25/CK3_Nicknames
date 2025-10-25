@@ -1,0 +1,26 @@
+# Advanced Character Nicknames - Animal Dragon
+# Total: 12 apodos (6 M, 6 F, 0 N)
+
+ac_animal_dragon = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_dragonheart_f }
+			1 = { give_nickname = nick_hist_the_dragon_f }
+			1 = { give_nickname = nick_hist_the_dragonslayer_f }
+			1 = { give_nickname = nick_hist_the_drake_f }
+			1 = { give_nickname = nick_hist_the_phoenix_f }
+			1 = { give_nickname = nick_hist_the_dragon_standard_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_dragonheart }
+			1 = { give_nickname = nick_hist_the_dragon }
+			1 = { give_nickname = nick_hist_the_dragonslayer }
+			1 = { give_nickname = nick_hist_the_drake }
+			1 = { give_nickname = nick_hist_the_phoenix }
+			1 = { give_nickname = nick_hist_the_dragon_standard }
+		}
+	}
+}

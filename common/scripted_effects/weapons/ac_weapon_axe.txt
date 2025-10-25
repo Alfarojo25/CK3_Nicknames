@@ -1,0 +1,28 @@
+# Advanced Character Nicknames - Weapon Axe
+# Total: 14 apodos (7 M, 7 F, 0 N)
+
+ac_weapon_axe = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_axe_f }
+			1 = { give_nickname = nick_axe_of_justice_f }
+			1 = { give_nickname = nick_axe_of_vengeance_f }
+			1 = { give_nickname = nick_the_cruel_axe_f }
+			1 = { give_nickname = nick_the_humble_axe_f }
+			1 = { give_nickname = nick_the_axe_of_love_f }
+			1 = { give_nickname = nick_the_axe_of_order_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_axe }
+			1 = { give_nickname = nick_axe_of_justice }
+			1 = { give_nickname = nick_axe_of_vengeance }
+			1 = { give_nickname = nick_the_cruel_axe }
+			1 = { give_nickname = nick_the_humble_axe }
+			1 = { give_nickname = nick_the_axe_of_love }
+			1 = { give_nickname = nick_the_axe_of_order }
+		}
+	}
+}

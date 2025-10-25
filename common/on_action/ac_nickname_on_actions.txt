@@ -1,4 +1,4 @@
-﻿#########################################
+#########################################
 # AC Nickname System - On Actions
 # Handles yearly pulse and nickname selection
 #########################################

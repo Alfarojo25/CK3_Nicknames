@@ -1,0 +1,16 @@
+# Advanced Character Nicknames - Faith Buddhism
+# Total: 2 apodos (1 M, 1 F, 0 N)
+
+ac_faith_buddhism = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_brazen_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_brazen }
+		}
+	}
+}

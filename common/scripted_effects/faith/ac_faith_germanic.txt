@@ -1,0 +1,26 @@
+# Advanced Character Nicknames - Faith Germanic
+# Total: 6 apodos (0 M, 0 F, 6 N)
+
+ac_faith_germanic = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_son_of_thor }
+			1 = { give_nickname = nick_son_of_odin }
+			1 = { give_nickname = nick_son_of_balder }
+			1 = { give_nickname = nick_son_of_loki }
+			1 = { give_nickname = nick_daughter_freya }
+			1 = { give_nickname = nick_daughter_frigg }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_son_of_thor }
+			1 = { give_nickname = nick_son_of_odin }
+			1 = { give_nickname = nick_son_of_balder }
+			1 = { give_nickname = nick_son_of_loki }
+			1 = { give_nickname = nick_daughter_freya }
+			1 = { give_nickname = nick_daughter_frigg }
+		}
+	}
+}

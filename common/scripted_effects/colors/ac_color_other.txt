@@ -1,0 +1,94 @@
+# Advanced Character Nicknames - Color Other
+# Total: 80 apodos (40 M, 40 F, 0 N)
+
+ac_color_other = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_ironhair_f }
+			1 = { give_nickname = nick_ironflayer_f }
+			1 = { give_nickname = nick_silversword_f }
+			1 = { give_nickname = nick_the_emerald_knight_f }
+			1 = { give_nickname = nick_the_azure_knight_f }
+			1 = { give_nickname = nick_the_ginger_knight_f }
+			1 = { give_nickname = nick_the_indigo_knight_f }
+			1 = { give_nickname = nick_the_silver_knight_f }
+			1 = { give_nickname = nick_the_lavender_knight_f }
+			1 = { give_nickname = nick_the_amethyst_knight_f }
+			1 = { give_nickname = nick_hist_the_iron_hand_f }
+			1 = { give_nickname = nick_hist_the_iron_fist_f }
+			1 = { give_nickname = nick_hist_the_iron_willed_f }
+			1 = { give_nickname = nick_hist_ironside_f }
+			1 = { give_nickname = nick_hist_the_ironside_f }
+			1 = { give_nickname = nick_hist_the_iron_f }
+			1 = { give_nickname = nick_hist_the_steel_f }
+			1 = { give_nickname = nick_hist_the_silver_f }
+			1 = { give_nickname = nick_hist_the_bronze_f }
+			1 = { give_nickname = nick_hist_the_emerald_f }
+			1 = { give_nickname = nick_hist_the_sapphire_f }
+			1 = { give_nickname = nick_hist_the_iron_grip_f }
+			1 = { give_nickname = nick_hist_the_iron_heart_f }
+			1 = { give_nickname = nick_hist_the_silver_tongue_f }
+			1 = { give_nickname = nick_hist_the_iron_chancellor_f }
+			1 = { give_nickname = nick_hist_the_iron_voice_f }
+			1 = { give_nickname = nick_hist_the_iron_wall_f }
+			1 = { give_nickname = nick_hist_the_iron_oath_f }
+			1 = { give_nickname = nick_hist_the_iron_banner_f }
+			1 = { give_nickname = nick_hist_the_iron_shield_f }
+			1 = { give_nickname = nick_hist_the_iron_storm_f }
+			1 = { give_nickname = nick_hist_the_iron_guard_f }
+			1 = { give_nickname = nick_hist_the_steelclad_f }
+			1 = { give_nickname = nick_hist_the_ironsmith_f }
+			1 = { give_nickname = nick_hist_the_steelsmith_f }
+			1 = { give_nickname = nick_hist_the_silversmith_f }
+			1 = { give_nickname = nick_hist_the_bronzesmith_f }
+			1 = { give_nickname = nick_hist_the_coppersmith_f }
+			1 = { give_nickname = nick_hist_the_iron_mine_f }
+			1 = { give_nickname = nick_hist_the_silver_mine_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_ironhair }
+			1 = { give_nickname = nick_ironflayer }
+			1 = { give_nickname = nick_silversword }
+			1 = { give_nickname = nick_the_emerald_knight }
+			1 = { give_nickname = nick_the_azure_knight }
+			1 = { give_nickname = nick_the_ginger_knight }
+			1 = { give_nickname = nick_the_indigo_knight }
+			1 = { give_nickname = nick_the_silver_knight }
+			1 = { give_nickname = nick_the_lavender_knight }
+			1 = { give_nickname = nick_the_amethyst_knight }
+			1 = { give_nickname = nick_hist_the_iron_hand }
+			1 = { give_nickname = nick_hist_the_iron_fist }
+			1 = { give_nickname = nick_hist_the_iron_willed }
+			1 = { give_nickname = nick_hist_ironside }
+			1 = { give_nickname = nick_hist_the_ironside }
+			1 = { give_nickname = nick_hist_the_iron }
+			1 = { give_nickname = nick_hist_the_steel }
+			1 = { give_nickname = nick_hist_the_silver }
+			1 = { give_nickname = nick_hist_the_bronze }
+			1 = { give_nickname = nick_hist_the_emerald }
+			1 = { give_nickname = nick_hist_the_sapphire }
+			1 = { give_nickname = nick_hist_the_iron_grip }
+			1 = { give_nickname = nick_hist_the_iron_heart }
+			1 = { give_nickname = nick_hist_the_silver_tongue }
+			1 = { give_nickname = nick_hist_the_iron_chancellor }
+			1 = { give_nickname = nick_hist_the_iron_voice }
+			1 = { give_nickname = nick_hist_the_iron_wall }
+			1 = { give_nickname = nick_hist_the_iron_oath }
+			1 = { give_nickname = nick_hist_the_iron_banner }
+			1 = { give_nickname = nick_hist_the_iron_shield }
+			1 = { give_nickname = nick_hist_the_iron_storm }
+			1 = { give_nickname = nick_hist_the_iron_guard }
+			1 = { give_nickname = nick_hist_the_steelclad }
+			1 = { give_nickname = nick_hist_the_ironsmith }
+			1 = { give_nickname = nick_hist_the_steelsmith }
+			1 = { give_nickname = nick_hist_the_silversmith }
+			1 = { give_nickname = nick_hist_the_bronzesmith }
+			1 = { give_nickname = nick_hist_the_coppersmith }
+			1 = { give_nickname = nick_hist_the_iron_mine }
+			1 = { give_nickname = nick_hist_the_silver_mine }
+		}
+	}
+}

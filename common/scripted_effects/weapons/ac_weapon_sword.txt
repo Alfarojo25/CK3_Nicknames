@@ -1,0 +1,44 @@
+# Advanced Character Nicknames - Weapon Sword
+# Total: 30 apodos (15 M, 15 F, 0 N)
+
+ac_weapon_sword = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_night_blade_f }
+			1 = { give_nickname = nick_boneblade_f }
+			1 = { give_nickname = nick_the_knight_of_the_blades_f }
+			1 = { give_nickname = nick_hist_the_sword_f }
+			1 = { give_nickname = nick_hist_the_blade_f }
+			1 = { give_nickname = nick_hist_the_flaming_sword_f }
+			1 = { give_nickname = nick_hist_the_quickblade_f }
+			1 = { give_nickname = nick_hist_the_cautious_blade_f }
+			1 = { give_nickname = nick_hist_the_sure_blade_f }
+			1 = { give_nickname = nick_sword_of_justice_f }
+			1 = { give_nickname = nick_sword_of_vengeance_f }
+			1 = { give_nickname = nick_the_cruel_sword_f }
+			1 = { give_nickname = nick_the_humble_sword_f }
+			1 = { give_nickname = nick_the_sword_of_love_f }
+			1 = { give_nickname = nick_the_sword_of_order_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_night_blade }
+			1 = { give_nickname = nick_boneblade }
+			1 = { give_nickname = nick_the_knight_of_the_blades }
+			1 = { give_nickname = nick_hist_the_sword }
+			1 = { give_nickname = nick_hist_the_blade }
+			1 = { give_nickname = nick_hist_the_flaming_sword }
+			1 = { give_nickname = nick_hist_the_quickblade }
+			1 = { give_nickname = nick_hist_the_cautious_blade }
+			1 = { give_nickname = nick_hist_the_sure_blade }
+			1 = { give_nickname = nick_sword_of_justice }
+			1 = { give_nickname = nick_sword_of_vengeance }
+			1 = { give_nickname = nick_the_cruel_sword }
+			1 = { give_nickname = nick_the_humble_sword }
+			1 = { give_nickname = nick_the_sword_of_love }
+			1 = { give_nickname = nick_the_sword_of_order }
+		}
+	}
+}

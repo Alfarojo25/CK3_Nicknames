@@ -1,0 +1,124 @@
+# Advanced Character Nicknames - Misc Other
+# Total: 110 apodos (55 M, 55 F, 0 N)
+
+ac_misc_other = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_fierce_f }
+			1 = { give_nickname = nick_the_rabid_f }
+			1 = { give_nickname = nick_the_silencer_f }
+			1 = { give_nickname = nick_the_silent_f }
+			1 = { give_nickname = nick_the_guardian_f }
+			1 = { give_nickname = nick_the_phantom_f }
+			1 = { give_nickname = nick_the_beast_f }
+			1 = { give_nickname = nick_the_greatclaw_f }
+			1 = { give_nickname = nick_death_claw_f }
+			1 = { give_nickname = nick_strong_fang_f }
+			1 = { give_nickname = nick_the_gravekeeper_f }
+			1 = { give_nickname = nick_the_invincible_f }
+			1 = { give_nickname = nick_the_tempest_f }
+			1 = { give_nickname = nick_night_hide_f }
+			1 = { give_nickname = nick_nightfury_f }
+			1 = { give_nickname = nick_stormroar_f }
+			1 = { give_nickname = nick_thunder_fury_f }
+			1 = { give_nickname = nick_stonecleaver_f }
+			1 = { give_nickname = nick_true_mane_f }
+			1 = { give_nickname = nick_three_fingers_f }
+			1 = { give_nickname = nick_two_fingers_f }
+			1 = { give_nickname = nick_the_marked_f }
+			1 = { give_nickname = nick_the_stiched_f }
+			1 = { give_nickname = nick_fingerless_f }
+			1 = { give_nickname = nick_the_carved_f }
+			1 = { give_nickname = nick_the_metal_mask_f }
+			1 = { give_nickname = nick_the_masked_one_f }
+			1 = { give_nickname = nick_the_abominable_f }
+			1 = { give_nickname = nick_the_half_man_f }
+			1 = { give_nickname = nick_the_half_woman_f }
+			1 = { give_nickname = nick_the_undead_f }
+			1 = { give_nickname = nick_the_monster_f }
+			1 = { give_nickname = nick_the_armless_f }
+			1 = { give_nickname = nick_one_arm_f }
+			1 = { give_nickname = nick_the_broken_f }
+			1 = { give_nickname = nick_the_mauled_f }
+			1 = { give_nickname = nick_the_weak_f }
+			1 = { give_nickname = nick_the_fragile_f }
+			1 = { give_nickname = nick_the_delicate_f }
+			1 = { give_nickname = nick_the_decrepit_f }
+			1 = { give_nickname = nick_the_widowmaker_f }
+			1 = { give_nickname = nick_the_oathkeeper_f }
+			1 = { give_nickname = nick_custom_nickname_f }
+			1 = { give_nickname = nick_the_ale_lover_f }
+			1 = { give_nickname = nick_foul_fart_f }
+			1 = { give_nickname = nick_witch_breaker_f }
+			1 = { give_nickname = nick_leather_neck_f }
+			1 = { give_nickname = nick_troll_burster_f }
+			1 = { give_nickname = nick_squint_eyed_f }
+			1 = { give_nickname = nick_moss_neck_f }
+			1 = { give_nickname = nick_blue_cheek_f }
+			1 = { give_nickname = nick_fast_sailing_f }
+			1 = { give_nickname = nick_coal_brow_f }
+			1 = { give_nickname = nick_war_tooth_f }
+			1 = { give_nickname = nick_the_shape_shifting_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_fierce }
+			1 = { give_nickname = nick_the_rabid }
+			1 = { give_nickname = nick_the_silencer }
+			1 = { give_nickname = nick_the_silent }
+			1 = { give_nickname = nick_the_guardian }
+			1 = { give_nickname = nick_the_phantom }
+			1 = { give_nickname = nick_the_beast }
+			1 = { give_nickname = nick_the_greatclaw }
+			1 = { give_nickname = nick_death_claw }
+			1 = { give_nickname = nick_strong_fang }
+			1 = { give_nickname = nick_the_gravekeeper }
+			1 = { give_nickname = nick_the_invincible }
+			1 = { give_nickname = nick_the_tempest }
+			1 = { give_nickname = nick_night_hide }
+			1 = { give_nickname = nick_nightfury }
+			1 = { give_nickname = nick_stormroar }
+			1 = { give_nickname = nick_thunder_fury }
+			1 = { give_nickname = nick_stonecleaver }
+			1 = { give_nickname = nick_true_mane }
+			1 = { give_nickname = nick_three_fingers }
+			1 = { give_nickname = nick_two_fingers }
+			1 = { give_nickname = nick_the_marked }
+			1 = { give_nickname = nick_the_stiched }
+			1 = { give_nickname = nick_fingerless }
+			1 = { give_nickname = nick_the_carved }
+			1 = { give_nickname = nick_the_metal_mask }
+			1 = { give_nickname = nick_the_masked_one }
+			1 = { give_nickname = nick_the_abominable }
+			1 = { give_nickname = nick_the_half_man }
+			1 = { give_nickname = nick_the_half_woman }
+			1 = { give_nickname = nick_the_undead }
+			1 = { give_nickname = nick_the_monster }
+			1 = { give_nickname = nick_the_armless }
+			1 = { give_nickname = nick_one_arm }
+			1 = { give_nickname = nick_the_broken }
+			1 = { give_nickname = nick_the_mauled }
+			1 = { give_nickname = nick_the_weak }
+			1 = { give_nickname = nick_the_fragile }
+			1 = { give_nickname = nick_the_delicate }
+			1 = { give_nickname = nick_the_decrepit }
+			1 = { give_nickname = nick_the_widowmaker }
+			1 = { give_nickname = nick_the_oathkeeper }
+			1 = { give_nickname = nick_custom_nickname }
+			1 = { give_nickname = nick_the_ale_lover }
+			1 = { give_nickname = nick_foul_fart }
+			1 = { give_nickname = nick_witch_breaker }
+			1 = { give_nickname = nick_leather_neck }
+			1 = { give_nickname = nick_troll_burster }
+			1 = { give_nickname = nick_squint_eyed }
+			1 = { give_nickname = nick_moss_neck }
+			1 = { give_nickname = nick_blue_cheek }
+			1 = { give_nickname = nick_fast_sailing }
+			1 = { give_nickname = nick_coal_brow }
+			1 = { give_nickname = nick_war_tooth }
+			1 = { give_nickname = nick_the_shape_shifting }
+		}
+	}
+}

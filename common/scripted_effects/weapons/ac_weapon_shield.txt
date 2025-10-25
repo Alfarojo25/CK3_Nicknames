@@ -1,0 +1,36 @@
+# Advanced Character Nicknames - Weapon Shield
+# Total: 22 apodos (11 M, 11 F, 0 N)
+
+ac_weapon_shield = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_shield_f }
+			1 = { give_nickname = nick_hist_the_wall_f }
+			1 = { give_nickname = nick_hist_the_shield_wall_f }
+			1 = { give_nickname = nick_hist_the_shieldclad_f }
+			1 = { give_nickname = nick_hist_the_sure_shield_f }
+			1 = { give_nickname = nick_shield_of_justice_f }
+			1 = { give_nickname = nick_shield_of_vengeance_f }
+			1 = { give_nickname = nick_the_cruel_shield_f }
+			1 = { give_nickname = nick_the_humble_shield_f }
+			1 = { give_nickname = nick_the_indecent_shield_f }
+			1 = { give_nickname = nick_the_shield_of_order_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_shield }
+			1 = { give_nickname = nick_hist_the_wall }
+			1 = { give_nickname = nick_hist_the_shield_wall }
+			1 = { give_nickname = nick_hist_the_shieldclad }
+			1 = { give_nickname = nick_hist_the_sure_shield }
+			1 = { give_nickname = nick_shield_of_justice }
+			1 = { give_nickname = nick_shield_of_vengeance }
+			1 = { give_nickname = nick_the_cruel_shield }
+			1 = { give_nickname = nick_the_humble_shield }
+			1 = { give_nickname = nick_the_indecent_shield }
+			1 = { give_nickname = nick_the_shield_of_order }
+		}
+	}
+}

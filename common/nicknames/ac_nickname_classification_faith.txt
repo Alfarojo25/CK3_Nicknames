@@ -1,4 +1,4 @@
-﻿#############################################
+#############################################
 # NICKNAMES Faith-based only (definitions)
 # (EN) This file defines religion-bound or explicitly religious nicknames.
 # (ES) Este archivo define apodos ligados a una fe o explicitamente religiosos.

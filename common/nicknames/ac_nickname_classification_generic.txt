@@ -1,4 +1,4 @@
-﻿#############################################
+#############################################
 # NICKNAMES” Generic / Faith-agnostic (definitions)
 # (EN) This file defines generic nicknames not tied to a specific faith.
 # (ES) Este archivo define apodos genericos no ligados a una fe especifica.

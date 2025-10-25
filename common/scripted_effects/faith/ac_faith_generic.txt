@@ -1,0 +1,40 @@
+# Advanced Character Nicknames - Faith Generic
+# Total: 25 apodos (12 M, 12 F, 1 N)
+
+ac_faith_generic = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_holy_sword_f }
+			1 = { give_nickname = nick_the_holy_axe_f }
+			1 = { give_nickname = nick_the_holy_shield_f }
+			1 = { give_nickname = nick_the_heathen_sword_f }
+			1 = { give_nickname = nick_the_heathen_axe_f }
+			1 = { give_nickname = nick_the_heathen_shield_f }
+			1 = { give_nickname = nick_hist_the_pious_f }
+			1 = { give_nickname = nick_hist_the_prophet_f }
+			1 = { give_nickname = nick_hist_the_oracle_f }
+			1 = { give_nickname = nick_hist_the_seer_f }
+			1 = { give_nickname = nick_hist_the_zealot_f }
+			1 = { give_nickname = nick_hist_the_orthodox_f }
+			1 = { give_nickname = nick_hist_the_prophetess }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_holy_sword }
+			1 = { give_nickname = nick_the_holy_axe }
+			1 = { give_nickname = nick_the_holy_shield }
+			1 = { give_nickname = nick_the_heathen_sword }
+			1 = { give_nickname = nick_the_heathen_axe }
+			1 = { give_nickname = nick_the_heathen_shield }
+			1 = { give_nickname = nick_hist_the_pious }
+			1 = { give_nickname = nick_hist_the_prophet }
+			1 = { give_nickname = nick_hist_the_oracle }
+			1 = { give_nickname = nick_hist_the_seer }
+			1 = { give_nickname = nick_hist_the_zealot }
+			1 = { give_nickname = nick_hist_the_orthodox }
+			1 = { give_nickname = nick_hist_the_prophetess }
+		}
+	}
+}

@@ -1,0 +1,46 @@
+# Advanced Character Nicknames - Animal Bird
+# Total: 32 apodos (16 M, 16 F, 0 N)
+
+ac_animal_bird = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_falcon_f }
+			1 = { give_nickname = nick_hist_the_hawk_f }
+			1 = { give_nickname = nick_hist_the_eagle_f }
+			1 = { give_nickname = nick_hist_the_raven_f }
+			1 = { give_nickname = nick_hist_the_crow_f }
+			1 = { give_nickname = nick_hist_the_owl_f }
+			1 = { give_nickname = nick_hist_the_swan_f }
+			1 = { give_nickname = nick_hist_the_heron_f }
+			1 = { give_nickname = nick_hist_the_crane_f }
+			1 = { give_nickname = nick_hist_the_peacock_f }
+			1 = { give_nickname = nick_hist_the_ibis_f }
+			1 = { give_nickname = nick_hist_the_falconer_f }
+			1 = { give_nickname = nick_hist_the_lowland_f }
+			1 = { give_nickname = nick_hist_the_cowl_f }
+			1 = { give_nickname = nick_hist_the_eagle_standard_f }
+			1 = { give_nickname = nick_hist_the_raven_standard_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_falcon }
+			1 = { give_nickname = nick_hist_the_hawk }
+			1 = { give_nickname = nick_hist_the_eagle }
+			1 = { give_nickname = nick_hist_the_raven }
+			1 = { give_nickname = nick_hist_the_crow }
+			1 = { give_nickname = nick_hist_the_owl }
+			1 = { give_nickname = nick_hist_the_swan }
+			1 = { give_nickname = nick_hist_the_heron }
+			1 = { give_nickname = nick_hist_the_crane }
+			1 = { give_nickname = nick_hist_the_peacock }
+			1 = { give_nickname = nick_hist_the_ibis }
+			1 = { give_nickname = nick_hist_the_falconer }
+			1 = { give_nickname = nick_hist_the_lowland }
+			1 = { give_nickname = nick_hist_the_cowl }
+			1 = { give_nickname = nick_hist_the_eagle_standard }
+			1 = { give_nickname = nick_hist_the_raven_standard }
+		}
+	}
+}

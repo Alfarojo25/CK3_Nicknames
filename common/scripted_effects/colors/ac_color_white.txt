@@ -1,0 +1,44 @@
+# Advanced Character Nicknames - Color White
+# Total: 30 apodos (15 M, 15 F, 0 N)
+
+ac_color_white = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_white_conqueror_f }
+			1 = { give_nickname = nick_the_white_shadow_f }
+			1 = { give_nickname = nick_the_white_spider_f }
+			1 = { give_nickname = nick_the_white_dagger_f }
+			1 = { give_nickname = nick_the_white_death_f }
+			1 = { give_nickname = nick_the_white_sword_f }
+			1 = { give_nickname = nick_the_white_slayer_f }
+			1 = { give_nickname = nick_the_white_rose_f }
+			1 = { give_nickname = nick_the_white_beauty_f }
+			1 = { give_nickname = nick_the_snow_touched_f }
+			1 = { give_nickname = nick_hist_the_white_f }
+			1 = { give_nickname = nick_hist_the_ivory_f }
+			1 = { give_nickname = nick_hist_the_pale_f }
+			1 = { give_nickname = nick_hist_the_snowborn_f }
+			1 = { give_nickname = nick_hist_the_snowcloak_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_white_conqueror }
+			1 = { give_nickname = nick_the_white_shadow }
+			1 = { give_nickname = nick_the_white_spider }
+			1 = { give_nickname = nick_the_white_dagger }
+			1 = { give_nickname = nick_the_white_death }
+			1 = { give_nickname = nick_the_white_sword }
+			1 = { give_nickname = nick_the_white_slayer }
+			1 = { give_nickname = nick_the_white_rose }
+			1 = { give_nickname = nick_the_white_beauty }
+			1 = { give_nickname = nick_the_snow_touched }
+			1 = { give_nickname = nick_hist_the_white }
+			1 = { give_nickname = nick_hist_the_ivory }
+			1 = { give_nickname = nick_hist_the_pale }
+			1 = { give_nickname = nick_hist_the_snowborn }
+			1 = { give_nickname = nick_hist_the_snowcloak }
+		}
+	}
+}

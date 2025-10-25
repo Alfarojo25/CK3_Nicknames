@@ -1,0 +1,24 @@
+# Advanced Character Nicknames - Color Golden
+# Total: 10 apodos (5 M, 5 F, 0 N)
+
+ac_color_golden = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_golden_knight_f }
+			1 = { give_nickname = nick_hist_the_golden_f }
+			1 = { give_nickname = nick_hist_the_gold_tongue_f }
+			1 = { give_nickname = nick_hist_the_goldsmith_f }
+			1 = { give_nickname = nick_hist_the_gold_mine_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_golden_knight }
+			1 = { give_nickname = nick_hist_the_golden }
+			1 = { give_nickname = nick_hist_the_gold_tongue }
+			1 = { give_nickname = nick_hist_the_goldsmith }
+			1 = { give_nickname = nick_hist_the_gold_mine }
+		}
+	}
+}

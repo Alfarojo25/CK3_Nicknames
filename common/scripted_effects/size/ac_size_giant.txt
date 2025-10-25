@@ -1,0 +1,60 @@
+# Advanced Character Nicknames - Size Giant
+# Total: 46 apodos (23 M, 23 F, 0 N)
+
+ac_size_giant = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_gentle_giant_f }
+			1 = { give_nickname = nick_the_holy_giant_f }
+			1 = { give_nickname = nick_the_sacred_mountain_f }
+			1 = { give_nickname = nick_the_golden_giant_f }
+			1 = { give_nickname = nick_the_silver_giant_f }
+			1 = { give_nickname = nick_the_affluent_mountain_f }
+			1 = { give_nickname = nick_the_warmongering_giant_f }
+			1 = { give_nickname = nick_the_mountain_that_strikes_f }
+			1 = { give_nickname = nick_the_war_giant_f }
+			1 = { give_nickname = nick_the_cyclops_f }
+			1 = { give_nickname = nick_the_warrior_giant_f }
+			1 = { give_nickname = nick_the_giant_soldier_f }
+			1 = { give_nickname = nick_the_mountain_that_rides_f }
+			1 = { give_nickname = nick_the_cordial_giant_f }
+			1 = { give_nickname = nick_the_pleasant_giant_f }
+			1 = { give_nickname = nick_the_warm_mountain_f }
+			1 = { give_nickname = nick_the_shadow_giant_f }
+			1 = { give_nickname = nick_the_giant_spider_f }
+			1 = { give_nickname = nick_the_hidden_mountain_f }
+			1 = { give_nickname = nick_the_behemoth_f }
+			1 = { give_nickname = nick_the_knight_of_the_mountains_f }
+			1 = { give_nickname = nick_hist_the_giantsbane_f }
+			1 = { give_nickname = nick_hist_the_mountain_walker_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_gentle_giant }
+			1 = { give_nickname = nick_the_holy_giant }
+			1 = { give_nickname = nick_the_sacred_mountain }
+			1 = { give_nickname = nick_the_golden_giant }
+			1 = { give_nickname = nick_the_silver_giant }
+			1 = { give_nickname = nick_the_affluent_mountain }
+			1 = { give_nickname = nick_the_warmongering_giant }
+			1 = { give_nickname = nick_the_mountain_that_strikes }
+			1 = { give_nickname = nick_the_war_giant }
+			1 = { give_nickname = nick_the_cyclops }
+			1 = { give_nickname = nick_the_warrior_giant }
+			1 = { give_nickname = nick_the_giant_soldier }
+			1 = { give_nickname = nick_the_mountain_that_rides }
+			1 = { give_nickname = nick_the_cordial_giant }
+			1 = { give_nickname = nick_the_pleasant_giant }
+			1 = { give_nickname = nick_the_warm_mountain }
+			1 = { give_nickname = nick_the_shadow_giant }
+			1 = { give_nickname = nick_the_giant_spider }
+			1 = { give_nickname = nick_the_hidden_mountain }
+			1 = { give_nickname = nick_the_behemoth }
+			1 = { give_nickname = nick_the_knight_of_the_mountains }
+			1 = { give_nickname = nick_hist_the_giantsbane }
+			1 = { give_nickname = nick_hist_the_mountain_walker }
+		}
+	}
+}

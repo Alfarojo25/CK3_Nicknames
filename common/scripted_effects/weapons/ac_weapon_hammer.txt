@@ -1,0 +1,42 @@
+# Advanced Character Nicknames - Weapon Hammer
+# Total: 28 apodos (14 M, 14 F, 0 N)
+
+ac_weapon_hammer = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_gorehammer_f }
+			1 = { give_nickname = nick_hist_the_hammer_f }
+			1 = { give_nickname = nick_hist_the_mace_f }
+			1 = { give_nickname = nick_hist_the_cudgel_f }
+			1 = { give_nickname = nick_hist_the_macehand_f }
+			1 = { give_nickname = nick_hist_the_hammerhand_f }
+			1 = { give_nickname = nick_hist_the_hammerlord_f }
+			1 = { give_nickname = nick_the_hammer_of_justice_f }
+			1 = { give_nickname = nick_the_hammer_of_vengeance_f }
+			1 = { give_nickname = nick_the_cruel_hammer_f }
+			1 = { give_nickname = nick_the_humble_hammer_f }
+			1 = { give_nickname = nick_the_hammer_of_lust_f }
+			1 = { give_nickname = nick_the_hammer_of_order_f }
+			1 = { give_nickname = nick_the_hammer_of_wrath_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_gorehammer }
+			1 = { give_nickname = nick_hist_the_hammer }
+			1 = { give_nickname = nick_hist_the_mace }
+			1 = { give_nickname = nick_hist_the_cudgel }
+			1 = { give_nickname = nick_hist_the_macehand }
+			1 = { give_nickname = nick_hist_the_hammerhand }
+			1 = { give_nickname = nick_hist_the_hammerlord }
+			1 = { give_nickname = nick_the_hammer_of_justice }
+			1 = { give_nickname = nick_the_hammer_of_vengeance }
+			1 = { give_nickname = nick_the_cruel_hammer }
+			1 = { give_nickname = nick_the_humble_hammer }
+			1 = { give_nickname = nick_the_hammer_of_lust }
+			1 = { give_nickname = nick_the_hammer_of_order }
+			1 = { give_nickname = nick_the_hammer_of_wrath }
+		}
+	}
+}

@@ -1,0 +1,38 @@
+# Advanced Character Nicknames - Animal Lion
+# Total: 24 apodos (12 M, 12 F, 0 N)
+
+ac_animal_lion = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_white_lion_f }
+			1 = { give_nickname = nick_the_noble_lion_f }
+			1 = { give_nickname = nick_the_gilded_lion_f }
+			1 = { give_nickname = nick_the_lion_heart_f }
+			1 = { give_nickname = nick_the_mauler_lion_f }
+			1 = { give_nickname = nick_the_lion_the_shadows_f }
+			1 = { give_nickname = nick_the_gentle_lion_f }
+			1 = { give_nickname = nick_hist_the_lionsbane_f }
+			1 = { give_nickname = nick_hist_the_lion_f }
+			1 = { give_nickname = nick_hist_the_lionheart_f }
+			1 = { give_nickname = nick_hist_the_lion_of_the_north_f }
+			1 = { give_nickname = nick_hist_the_lion_standard_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_white_lion }
+			1 = { give_nickname = nick_the_noble_lion }
+			1 = { give_nickname = nick_the_gilded_lion }
+			1 = { give_nickname = nick_the_lion_heart }
+			1 = { give_nickname = nick_the_mauler_lion }
+			1 = { give_nickname = nick_the_lion_the_shadows }
+			1 = { give_nickname = nick_the_gentle_lion }
+			1 = { give_nickname = nick_hist_the_lionsbane }
+			1 = { give_nickname = nick_hist_the_lion }
+			1 = { give_nickname = nick_hist_the_lionheart }
+			1 = { give_nickname = nick_hist_the_lion_of_the_north }
+			1 = { give_nickname = nick_hist_the_lion_standard }
+		}
+	}
+}

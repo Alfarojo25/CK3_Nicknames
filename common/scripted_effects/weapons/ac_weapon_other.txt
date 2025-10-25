@@ -1,0 +1,24 @@
+# Advanced Character Nicknames - Weapon Other
+# Total: 10 apodos (5 M, 5 F, 0 N)
+
+ac_weapon_other = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_dagger_f }
+			1 = { give_nickname = nick_hist_the_knife_f }
+			1 = { give_nickname = nick_hist_the_cutlass_f }
+			1 = { give_nickname = nick_hist_the_dirk_f }
+			1 = { give_nickname = nick_hist_the_scythe_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_dagger }
+			1 = { give_nickname = nick_hist_the_knife }
+			1 = { give_nickname = nick_hist_the_cutlass }
+			1 = { give_nickname = nick_hist_the_dirk }
+			1 = { give_nickname = nick_hist_the_scythe }
+		}
+	}
+}

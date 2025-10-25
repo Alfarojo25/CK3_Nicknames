@@ -1,4 +1,5 @@
-﻿ac_nickname_manual_block = {
+ac_nickname_manual_block = {
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	desc = ac_nickname_manual_block_desc
 	selection_tooltip = ac_nickname_manual_block_tooltip
 	is_shown = {
@@ -21,6 +22,8 @@
 		prestige = 0
 		piety = 0
 	}
+	ai_check_interval = 0
+	
 	ai_will_do = {
 		base = 0
 	}

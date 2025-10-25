@@ -1,0 +1,58 @@
+# Advanced Character Nicknames - Knight Types
+# Total: 44 apodos (22 M, 22 F, 0 N)
+
+ac_knight_types = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_broken_knight_f }
+			1 = { give_nickname = nick_the_beggar_knight_f }
+			1 = { give_nickname = nick_knight_of_the_roses_f }
+			1 = { give_nickname = nick_knight_of_the_swamp_f }
+			1 = { give_nickname = nick_the_jewelled_knight_f }
+			1 = { give_nickname = nick_the_desert_knight_f }
+			1 = { give_nickname = nick_the_onix_knight_f }
+			1 = { give_nickname = nick_the_knight_of_the_lakes_f }
+			1 = { give_nickname = nick_the_knight_of_the_forests_f }
+			1 = { give_nickname = nick_the_knight_of_the_north_f }
+			1 = { give_nickname = nick_the_knight_of_the_south_f }
+			1 = { give_nickname = nick_the_knight_of_the_west_f }
+			1 = { give_nickname = nick_the_knight_of_the_east_f }
+			1 = { give_nickname = nick_the_knight_of_the_dawn_f }
+			1 = { give_nickname = nick_the_hollow_knight_f }
+			1 = { give_nickname = nick_the_moon_knight_f }
+			1 = { give_nickname = nick_the_sun_knight_f }
+			1 = { give_nickname = nick_the_winter_knight_f }
+			1 = { give_nickname = nick_the_summer_knight_f }
+			1 = { give_nickname = nick_the_autumn_knight_f }
+			1 = { give_nickname = nick_the_spring_knight_f }
+			1 = { give_nickname = nick_hist_the_paladin_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_broken_knight }
+			1 = { give_nickname = nick_the_beggar_knight }
+			1 = { give_nickname = nick_knight_of_the_roses }
+			1 = { give_nickname = nick_knight_of_the_swamp }
+			1 = { give_nickname = nick_the_jewelled_knight }
+			1 = { give_nickname = nick_the_desert_knight }
+			1 = { give_nickname = nick_the_onix_knight }
+			1 = { give_nickname = nick_the_knight_of_the_lakes }
+			1 = { give_nickname = nick_the_knight_of_the_forests }
+			1 = { give_nickname = nick_the_knight_of_the_north }
+			1 = { give_nickname = nick_the_knight_of_the_south }
+			1 = { give_nickname = nick_the_knight_of_the_west }
+			1 = { give_nickname = nick_the_knight_of_the_east }
+			1 = { give_nickname = nick_the_knight_of_the_dawn }
+			1 = { give_nickname = nick_the_hollow_knight }
+			1 = { give_nickname = nick_the_moon_knight }
+			1 = { give_nickname = nick_the_sun_knight }
+			1 = { give_nickname = nick_the_winter_knight }
+			1 = { give_nickname = nick_the_summer_knight }
+			1 = { give_nickname = nick_the_autumn_knight }
+			1 = { give_nickname = nick_the_spring_knight }
+			1 = { give_nickname = nick_hist_the_paladin }
+		}
+	}
+}

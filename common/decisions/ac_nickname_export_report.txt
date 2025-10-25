@@ -1,4 +1,5 @@
-﻿ac_nickname_export_report = {
+ac_nickname_export_report = {
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	desc = ac_nickname_export_report_desc
 	selection_tooltip = ac_nickname_export_report_tooltip
 	is_shown = {
@@ -17,6 +18,8 @@
 		prestige = 0
 		piety = 0
 	}
+	ai_check_interval = 0
+	
 	ai_will_do = {
 		base = 0
 	}

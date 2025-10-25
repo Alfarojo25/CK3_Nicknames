@@ -1,0 +1,38 @@
+# Advanced Character Nicknames - Weapon Bow
+# Total: 24 apodos (12 M, 12 F, 0 N)
+
+ac_weapon_bow = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_hist_the_archer_f }
+			1 = { give_nickname = nick_hist_the_bow_f }
+			1 = { give_nickname = nick_hist_the_arrow_f }
+			1 = { give_nickname = nick_hist_the_fletcher_f }
+			1 = { give_nickname = nick_hist_the_harrow_f }
+			1 = { give_nickname = nick_hist_the_fletcher_craft_f }
+			1 = { give_nickname = nick_hist_the_bowmaster_f }
+			1 = { give_nickname = nick_hist_the_longbow_f }
+			1 = { give_nickname = nick_hist_the_marcher_f }
+			1 = { give_nickname = nick_hist_the_marcher_lord_f }
+			1 = { give_nickname = nick_hist_the_bowyer_f }
+			1 = { give_nickname = nick_hist_the_fletcher_master_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_hist_the_archer }
+			1 = { give_nickname = nick_hist_the_bow }
+			1 = { give_nickname = nick_hist_the_arrow }
+			1 = { give_nickname = nick_hist_the_fletcher }
+			1 = { give_nickname = nick_hist_the_harrow }
+			1 = { give_nickname = nick_hist_the_fletcher_craft }
+			1 = { give_nickname = nick_hist_the_bowmaster }
+			1 = { give_nickname = nick_hist_the_longbow }
+			1 = { give_nickname = nick_hist_the_marcher }
+			1 = { give_nickname = nick_hist_the_marcher_lord }
+			1 = { give_nickname = nick_hist_the_bowyer }
+			1 = { give_nickname = nick_hist_the_fletcher_master }
+		}
+	}
+}

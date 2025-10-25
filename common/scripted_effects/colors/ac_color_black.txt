@@ -1,0 +1,28 @@
+# Advanced Character Nicknames - Color Black
+# Total: 14 apodos (7 M, 7 F, 0 N)
+
+ac_color_black = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_dark_knight_f }
+			1 = { give_nickname = nick_the_ebony_knight_f }
+			1 = { give_nickname = nick_hist_the_black_prince_f }
+			1 = { give_nickname = nick_hist_the_black_f }
+			1 = { give_nickname = nick_hist_the_onyx_f }
+			1 = { give_nickname = nick_hist_the_obsidian_f }
+			1 = { give_nickname = nick_hist_the_dark_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_dark_knight }
+			1 = { give_nickname = nick_the_ebony_knight }
+			1 = { give_nickname = nick_hist_the_black_prince }
+			1 = { give_nickname = nick_hist_the_black }
+			1 = { give_nickname = nick_hist_the_onyx }
+			1 = { give_nickname = nick_hist_the_obsidian }
+			1 = { give_nickname = nick_hist_the_dark }
+		}
+	}
+}

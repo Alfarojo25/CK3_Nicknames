@@ -1,0 +1,44 @@
+# Advanced Character Nicknames - Animal Bear
+# Total: 30 apodos (15 M, 15 F, 0 N)
+
+ac_animal_bear = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_the_white_bear_f }
+			1 = { give_nickname = nick_the_red_bear_f }
+			1 = { give_nickname = nick_the_black_bear_f }
+			1 = { give_nickname = nick_the_broken_bear_f }
+			1 = { give_nickname = nick_the_wicked_bear_f }
+			1 = { give_nickname = nick_the_crazy_bear_f }
+			1 = { give_nickname = nick_the_she_bear_f }
+			1 = { give_nickname = nick_hist_redbeard_f }
+			1 = { give_nickname = nick_hist_the_standard_bearer_f }
+			1 = { give_nickname = nick_hist_the_bear_f }
+			1 = { give_nickname = nick_hist_the_bearded_f }
+			1 = { give_nickname = nick_hist_the_cupbearer_f }
+			1 = { give_nickname = nick_hist_the_swordbearer_f }
+			1 = { give_nickname = nick_hist_the_axebearer_f }
+			1 = { give_nickname = nick_hist_the_ringbearer_f }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_the_white_bear }
+			1 = { give_nickname = nick_the_red_bear }
+			1 = { give_nickname = nick_the_black_bear }
+			1 = { give_nickname = nick_the_broken_bear }
+			1 = { give_nickname = nick_the_wicked_bear }
+			1 = { give_nickname = nick_the_crazy_bear }
+			1 = { give_nickname = nick_the_she_bear }
+			1 = { give_nickname = nick_hist_redbeard }
+			1 = { give_nickname = nick_hist_the_standard_bearer }
+			1 = { give_nickname = nick_hist_the_bear }
+			1 = { give_nickname = nick_hist_the_bearded }
+			1 = { give_nickname = nick_hist_the_cupbearer }
+			1 = { give_nickname = nick_hist_the_swordbearer }
+			1 = { give_nickname = nick_hist_the_axebearer }
+			1 = { give_nickname = nick_hist_the_ringbearer }
+		}
+	}
+}

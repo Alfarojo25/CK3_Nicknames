@@ -1,4 +1,4 @@
-﻿#########################################
+#########################################
 # AC Nickname System - Scripted Triggers
 # Base triggers for nickname assignment
 #########################################

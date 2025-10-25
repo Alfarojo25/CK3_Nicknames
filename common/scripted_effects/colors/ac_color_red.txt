@@ -1,0 +1,62 @@
+# Advanced Character Nicknames - Color Red
+# Total: 47 apodos (23 M, 23 F, 1 N)
+
+ac_color_red = {
+	if = {
+		limit = { is_female = yes }
+		random_list = {
+			1 = { give_nickname = nick_bloodfury_f }
+			1 = { give_nickname = nick_the_scarred_f }
+			1 = { give_nickname = nick_the_bloodied_f }
+			1 = { give_nickname = nick_marred_f }
+			1 = { give_nickname = nick_the_injured_f }
+			1 = { give_nickname = nick_the_crimson_knight_f }
+			1 = { give_nickname = nick_hist_bloodaxe_f }
+			1 = { give_nickname = nick_hist_the_red_f }
+			1 = { give_nickname = nick_hist_the_desired_f }
+			1 = { give_nickname = nick_hist_the_crimson_f }
+			1 = { give_nickname = nick_hist_the_ruby_f }
+			1 = { give_nickname = nick_hist_the_ink_fingered_f }
+			1 = { give_nickname = nick_hist_the_redeemed_f }
+			1 = { give_nickname = nick_hist_the_fostered_f }
+			1 = { give_nickname = nick_hist_the_bloodletter_f }
+			1 = { give_nickname = nick_hist_the_blooded_f }
+			1 = { give_nickname = nick_hist_the_blooded_blade_f }
+			1 = { give_nickname = nick_hist_the_blooded_hand_f }
+			1 = { give_nickname = nick_hist_the_bannered_f }
+			1 = { give_nickname = nick_hist_the_wintered_f }
+			1 = { give_nickname = nick_hist_the_spurred_f }
+			1 = { give_nickname = nick_hist_the_cloistered_f }
+			1 = { give_nickname = nick_hist_the_tonsured_f }
+			1 = { give_nickname = nick_hist_the_scarred_king }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { give_nickname = nick_bloodfury }
+			1 = { give_nickname = nick_the_scarred }
+			1 = { give_nickname = nick_the_bloodied }
+			1 = { give_nickname = nick_marred }
+			1 = { give_nickname = nick_the_injured }
+			1 = { give_nickname = nick_the_crimson_knight }
+			1 = { give_nickname = nick_hist_bloodaxe }
+			1 = { give_nickname = nick_hist_the_red }
+			1 = { give_nickname = nick_hist_the_desired }
+			1 = { give_nickname = nick_hist_the_crimson }
+			1 = { give_nickname = nick_hist_the_ruby }
+			1 = { give_nickname = nick_hist_the_ink_fingered }
+			1 = { give_nickname = nick_hist_the_redeemed }
+			1 = { give_nickname = nick_hist_the_fostered }
+			1 = { give_nickname = nick_hist_the_bloodletter }
+			1 = { give_nickname = nick_hist_the_blooded }
+			1 = { give_nickname = nick_hist_the_blooded_blade }
+			1 = { give_nickname = nick_hist_the_blooded_hand }
+			1 = { give_nickname = nick_hist_the_bannered }
+			1 = { give_nickname = nick_hist_the_wintered }
+			1 = { give_nickname = nick_hist_the_spurred }
+			1 = { give_nickname = nick_hist_the_cloistered }
+			1 = { give_nickname = nick_hist_the_tonsured }
+			1 = { give_nickname = nick_hist_the_scarred_king }
+		}
+	}
+}
