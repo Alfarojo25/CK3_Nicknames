@@ -55,6 +55,7 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 - **CK3-Tiger:** 0 errors, 2140 warnings (solo localizaciones faltantes)
 
 **Uso del Export:**
+
 1. Activar debug mode
 2. Usar "Export Nickname Report"
 3. Ir a `Documents/Paradox Interactive/Crusader Kings III/logs/`
@@ -101,6 +102,7 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 - **AI:** AI no puede usar decisiones de debug (ai_will_do = 0)
 
 **Uso en juego:**
+
 1. Cargar partida
 2. Abrir menú Decisiones
 3. Usar "Toggle Nickname Debug Mode"

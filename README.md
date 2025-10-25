@@ -70,14 +70,14 @@ _Coming soon_
 
 ### Available Tools
 
-| Decision | Description |
-|----------|-------------|
-| **Toggle Debug Mode** | Enable/disable debug tools |
-| **Clear Nickname** | Remove your current nickname to test others |
-| **Manual Block** | Prevent yourself from receiving nicknames |
-| **Manual Unblock** | Re-enable nickname assignment |
-| **Give Nicknames to All** | ⚡ Trigger nickname assignment for ALL eligible characters (16+) |
-| **Clear All Nicknames** | ⚠️ Remove ALL nicknames from all living characters |
+| Decision                   | Description                                                      |
+| -------------------------- | ---------------------------------------------------------------- |
+| **Toggle Debug Mode**      | Enable/disable debug tools                                       |
+| **Clear Nickname**         | Remove your current nickname to test others                      |
+| **Manual Block**           | Prevent yourself from receiving nicknames                        |
+| **Manual Unblock**         | Re-enable nickname assignment                                    |
+| **Give Nicknames to All**  | ⚡ Trigger nickname assignment for ALL eligible characters (16+) |
+| **Clear All Nicknames**    | ⚠️ Remove ALL nicknames from all living characters               |
 | **Export Nickname Report** | 📊 Generate detailed TXT report of all characters with nicknames |
 
 ### Export Report Format
@@ -96,6 +96,7 @@ Character ID | Name | Title | Nickname
 ### Debug Mode Features
 
 -✅ **No cost**: All debug decisions are free
+
 - ✅ **Instant effect**: Changes apply immediately
 - ✅ **Safe testing**: Easily test different nickname scenarios
 - ✅ **Player-only**: AI cannot access debug tools
