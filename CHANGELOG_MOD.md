@@ -88,15 +88,245 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
-## [Pendiente] - Git Repository Setup
+## [2025-10-25] - Git Repository Setup - 15:30
 
-### To Do
+### Completed
 
-- [ ] `git init` en directorio del mod
-- [ ] `git remote add origin https://github.com/Alfarojo25/CK3_Nicknames.git`
-- [ ] Primer commit: "Initial structure + existing nicknames"
-- [ ] `git push -u origin master`
+- ✅ `git init` en directorio del mod
+- ✅ `git remote add origin https://github.com/Alfarojo25/CK3_Nicknames.git`
+- ✅ Primer commit (ffc5722): "PHASE 1: Initial structure" - 11 archivos, 4372 líneas
+- ✅ `git push -u origin main`
+- ✅ Segundo commit (e63f479): "Add README.md and LICENSE" - 2 archivos, 203 líneas
 
 ---
 
-_Última actualización: 25 de octubre de 2025 - 14:00_
+## [2025-10-25] - CK3-Tiger Validation Results - 16:00
+
+### Validation Executed
+
+- **Tool:** CK3-Tiger v1.13.0
+- **Game Version:** CK3 v1.17.1 (Tiger made for 1.17.0 - minor version mismatch, probablemente OK)
+- **Results:** 117 errors, 25 warnings
+
+### Errors by Category
+
+#### 1. Missing Events (6 errors)
+
+- ac_nickname.2101 (Bloodaxe)
+- ac_nickname.2102 (The Terrible)
+- ac_nickname.2103 (Scourge of God)
+- ac_nickname.3101 (The Great)
+- ac_nickname.3102 (The Magnificent)
+- ac_nickname.3103 (The Lawgiver)
+
+#### 2. Invalid Comparison Syntax (48 errors)
+
+- `value >= X` y `value <= X` NO son válidos en triggers
+- **Afecta:** Todos los skill range triggers (ac_skill_is_bad, ac_skill_is_medium)
+- **Solución:** Usar check_range_bounds en lugar de comparaciones
+
+#### 3. Invalid Trait Names (55 errors)
+
+- ❌ `beautiful`, `comely`, `ugly`, `hideous` → ✅ `beauty_good_3`, `beauty_good_1`, `beauty_bad_1`, `beauty_bad_3`
+- ❌ `genius`, `intelligent`, `slow`, `stupid` → ✅ `intellect_good_3`, `intellect_good_1`, `intellect_bad_1`, `intellect_bad_3`
+- ❌ `one_handed` → ✅ `one_legged` (verificar si existe one_handed)
+- ❌ `pox_scarred` → Verificar nombre correcto
+- ❌ `blinded` → Verificar nombre correcto
+- ❌ `mangled` → Verificar nombre correcto
+- ❌ `frail` → Verificar nombre correcto
+- ❌ `lifestyle_scholar` → Verificar nombre correcto
+- ✅ Correctos confirmados: `giant`, `dwarf`, `albino`, `scaly`, `spindly`, `bleeder`, `wheezing`, `lisping`, `stuttering`, `one_eyed`, `one_legged`, `fecund`, `infertile`
+
+#### 4. Invalid Religion Names (8 errors)
+
+- ❌ `religion_christianity_church` → ✅ `christianity_religion`
+- ❌ `religion_islam` → ✅ `islam_religion`
+- ❌ `religion_judaism` → ✅ `judaism_religion`
+- ❌ `religion_hinduism` → ✅ `hinduism_religion`
+- ❌ `religion_buddhism` → ✅ `buddhism_religion`
+- ❌ `religion_jainism` → ✅ `jainism_religion`
+- ❌ Formato pagan incorrecto → Verificar nombres correctos
+
+#### 5. Invalid Faith Names (2 errors)
+
+- ❌ `faith:sunni` → ✅ `faith:ashari` o `faith:maturidi` o `faith:mutazila`
+- ❌ `faith:shiite` → ✅ `faith:ismaili` o `faith:zayidi`
+
+#### 6. Unknown Fields (3 errors)
+
+- ❌ `num_of_secrets` → No existe este campo
+- ❌ `num_of_virtues` → No existe este campo
+- **Solución:** Usar contadores alternativos o eliminar condición
+
+### Warnings (25 total)
+
+#### 1. Duplicate Nicknames (4 warnings)
+
+- `nick_hist_the_pilgrim_king` duplicado en líneas 69 y 146
+- `nick_hist_the_reliquary` duplicado en líneas 83 y 152
+- `nick_hist_the_shrine` duplicado en líneas 85 y 155
+- `nick_hist_the_censer` duplicado en líneas 87 y 149
+- **Archivo:** ac_nickname_classification_faith.txt
+- **Solución:** Eliminar duplicados
+
+#### 2. Missing UTF-8 BOM (3 warnings)
+
+- Archivos afectados: ac_nickname_on_actions.txt, ac_nickname_triggers.txt, ac_nickname_events.txt
+- **Solución:** Guardar con UTF-8 BOM encoding
+
+#### 3. Logic Warnings - Value Overwrite (18 warnings)
+
+- Todas las líneas con `value <= X` sobrescriben el valor previo `value >= X`
+- **Causa:** Sintaxis incorrecta de comparación (ver Error #2)
+- **Solución:** Corregir sintaxis de comparación
+
+### Action Items
+
+#### CRITICAL (Bloquean funcionalidad)
+
+1. ✅ Crear descriptor.mod (HECHO)
+2. ⚠️ Corregir sintaxis de comparación en skill ranges (48 errores)
+3. ⚠️ Corregir nombres de traits (55 errores)
+4. ⚠️ Corregir nombres de religiones/faiths (10 errores)
+5. ⚠️ Crear los 6 eventos faltantes
+6. ⚠️ Eliminar o reemplazar campos desconocidos (num_of_secrets, num_of_virtues)
+
+#### IMPORTANT (Mejoran calidad)
+
+7. ⚠️ Eliminar nicknames duplicados en ac_nickname_classification_faith.txt
+8. ⚠️ Guardar archivos con UTF-8 BOM encoding
+
+#### Target: 0 errors, 0 warnings
+
+---
+
+## [2025-10-25] - CK3-Tiger Validation COMPLETADO - 17:30
+
+### Fixed - ALL VALIDATION ERRORS RESOLVED ✅
+
+**Resultado Final:** 0 errors, 1 warning (encoding false positive)  
+**Mejora:** De 117 errors iniciales a 0 errors
+
+#### Correcciones Implementadas:
+
+1. **Sintaxis de Skill Comparisons** (48 errores corregidos)
+
+   - Eliminado: `diplomacy = { value >= 9; value <= 11 }`
+   - Implementado: `diplomacy >= 9; diplomacy <= 11` (comparación directa)
+   - Aplicado a: todos los skill triggers (bad, medium, glorious)
+
+2. **Nombres de Traits** (55 errores corregidos)
+
+   - `beautiful/comely/ugly/hideous` → `beauty_good_3/beauty_good_1/beauty_bad_1/beauty_bad_3`
+   - `genius/intelligent/slow/stupid` → `intellect_good_3/intellect_good_1/intellect_bad_1/intellect_bad_3`
+   - `blinded` → `blind`
+   - `pox_scarred` → `great_pox`
+   - `lifestyle_scholar` → `scholar`
+   - Eliminados (no existen): `one_handed`, `frail`, `mangled`
+
+3. **Nombres de Religiones y Faiths** (12 errores corregidos)
+
+   - Agregado prefijo `religion:` a todas las religiones
+   - `religion_christianity_church` → `religion:christianity_religion`
+   - `religion_islam` → `religion:islam_religion`
+   - `faith:sunni` → `faith:ashari` (+ maturidi/mutazila)
+   - `faith:shiite` → `faith:ismaili` (+ zayidi)
+   - Eliminadas religiones inexistentes: `bori_religion`, `orisha_religion`, `roog_religion`, `yazidism_religion`
+
+4. **Campos Desconocidos** (3 errores corregidos)
+
+   - `num_of_secrets >= 3` → `has_trait = schemer`
+   - `num_of_virtues >= 3` → traits individuales (`humble`, `temperate`, `compassionate`)
+   - `any_war = { count >= 3 }` → eliminado (campo no existe)
+   - `num_won_wars >= 10` → eliminado (campo no existe)
+   - `has_trait = charitable` → `has_trait = compassionate`
+   - `has_trait = famous` → `has_trait = lifestyle_blademaster`
+
+5. **Eventos Faltantes** (6 errores corregidos)
+
+   - Creado `ac_nickname.2101` - Bloodaxe (Martial + Brave + Berserker)
+   - Creado `ac_nickname.2102` - The Terrible (Martial + Dread 80+)
+   - Creado `ac_nickname.2103` - Scourge of God (Martial + Dread 60+)
+   - Creado `ac_nickname.3101` - The Great (Multi-skill + Prestige 4+)
+   - Creado `ac_nickname.3102` - The Magnificent (Diplomacy + Prestige 3+)
+   - Creado `ac_nickname.3103` - The Lawgiver (Diplomacy/Learning + Just)
+
+6. **Nicknames Duplicados** (4 warnings corregidos)
+
+   - Eliminados en `ac_nickname_classification_faith.txt`:
+     - `nick_hist_the_pilgrim_king` (línea 146)
+     - `nick_hist_the_censer` (línea 149)
+     - `nick_hist_the_reliquary` (línea 152)
+     - `nick_hist_the_shrine` (línea 155)
+
+7. **UTF-8 BOM Encoding** (3 warnings - 2 resueltos, 1 false positive)
+   - ✅ `ac_nickname_triggers.txt` - UTF-8 BOM aplicado
+   - ✅ `ac_nickname_on_actions.txt` - UTF-8 BOM aplicado
+   - ✅ `ac_nickname_events.txt` - UTF-8 BOM aplicado (warning es false positive)
+
+### Added
+
+- `descriptor.mod` - Archivo de metadatos necesario para CK3-Tiger y launcher
+
+### Changed
+
+- `common/scripted_triggers/ac_nickname_triggers.txt` - Reescrito completamente con sintaxis corregida
+- `common/on_action/ac_nickname_on_actions.txt` - Recreado con UTF-8 BOM
+- `events/ac_nickname_events.txt` - Múltiples correcciones + 6 eventos nuevos
+- `common/nicknames/ac_nickname_classification_faith.txt` - Duplicados eliminados
+
+### Technical Notes
+
+- **CK3-Tiger Version:** v1.13.0
+- **Game Version:** CK3 v1.17.1 (Tiger built for 1.17.0)
+- **Validation Results:**
+  - Initial: 117 errors, 25 warnings
+  - Final: 0 errors, 1 warning
+  - Warning restante: UTF-8 BOM encoding (false positive - BOM está presente como EF BB BF)
+- **Archivos Backup Creados:**
+
+  - `ac_nickname_triggers.txt.bak`
+  - `ac_nickname_on_actions.txt.bak`
+  - `ac_nickname_events.txt.bak`
+
+- **Lecciones Aprendidas:**
+  - CK3 usa comparaciones directas de skills (`martial >= 17`) no bloques value
+  - Traits usan sistema numérico (`beauty_good_3` no `beautiful`)
+  - Religiones requieren prefijo `religion:` y faiths requieren `faith:`
+  - Muchos campos de CK2 no existen en CK3 (num_of_secrets, num_of_virtues, etc.)
+  - UTF-8 BOM es requerido por CK3 para archivos de scripts
+
+---
+
+## [2025-10-25] - Sistema de Probabilidad Actualizado - 18:00
+
+### Changed
+
+- **Probabilidad aumentada a 20%** (anteriormente 2%)
+  - Sistema directo sin capas de probabilidad
+  - Aplica a TODOS los personajes (IA y jugadores)
+- **Nuevos requisitos para elegibilidad:**
+  - Edad 16+ (sin cambios)
+  - Al menos un skill en rango calificado (9+)
+  - Debe tener al menos un título (landed) o posición en consejo
+- **Trigger ac_nickname_blocked actualizado:**
+  - Eliminado: `is_ai = no` (ahora jugadores también reciben nicknames)
+  - Eliminado: `age < 16` (redundante, ya verificado en on_action)
+  - Mantiene: imprisoned, incapable, manual block flag
+
+### Updated Files
+
+- `README.md` - Actualizada descripción de probabilidad
+- `README.md` - Eliminada línea "Inspired by: Nicknames+ by [Original Author]"
+- `common/on_action/ac_nickname_on_actions.txt` - chance_to_happen = 20, triggers actualizados
+- `common/scripted_triggers/ac_nickname_triggers.txt` - ac_nickname_blocked_trigger simplificado
+
+### Technical Notes
+
+- Probabilidad real ahora: **20% por año** para personajes elegibles
+- Requisitos más estrictos aseguran que solo personajes relevantes reciban nicknames
+- Sistema más balanceado para experiencia del jugador
+
+---
+
+_Última actualización: 25 de octubre de 2025 - 18:00_

@@ -23,13 +23,13 @@ This mod massively expands the nickname system in Crusader Kings III, adding ove
 - Skill-based nicknames (Diplomacy, Martial, Stewardship, Intrigue, Learning)
 - Trait-based nicknames (Physical, Congenital)
 - Faith-based nicknames (unique to each religion)
-- Age-gated: 16+ for physical traits, 20+ for skills and faith
+- Age-gated: 16+ for all nickname types
 
 🎲 **Dynamic & Balanced**
 
-- 2% chance per year for eligible characters
+- 20% chance per year for eligible characters (AI and players)
+- Requires: Age 16+, at least one qualifying skill range, and a title
 - Weight multipliers ensure appropriate distribution
-- No spamming of nicknames
 - Respects character context and history
 
 🌍 **Multi-Language Support** (Planned)
@@ -158,7 +158,6 @@ Contributions are welcome! Please:
 ## 📜 Credits
 
 **Developer**: Alfarojo25  
-**Inspired by**: Nicknames+ by [Original Author]  
 **Special Thanks**:
 
 - CK3-Tiger team for validation tools

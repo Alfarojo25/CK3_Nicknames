@@ -1,4 +1,4 @@
-#########################################
+﻿#########################################
 # AC Nickname System - Scripted Triggers
 # Base triggers for nickname assignment
 #########################################
@@ -32,25 +32,25 @@ ac_skill_too_low_trigger = {
 # 9-11: Bad/Incompetent nicknames
 ac_skill_is_bad_trigger = {
 	OR = {
-		diplomacy = {
-			value >= 9
-			value <= 11
+		AND = {
+			diplomacy >= 9
+			diplomacy <= 11
 		}
-		martial = {
-			value >= 9
-			value <= 11
+		AND = {
+			martial >= 9
+			martial <= 11
 		}
-		stewardship = {
-			value >= 9
-			value <= 11
+		AND = {
+			stewardship >= 9
+			stewardship <= 11
 		}
-		intrigue = {
-			value >= 9
-			value <= 11
+		AND = {
+			intrigue >= 9
+			intrigue <= 11
 		}
-		learning = {
-			value >= 9
-			value <= 11
+		AND = {
+			learning >= 9
+			learning <= 11
 		}
 	}
 }
@@ -58,25 +58,25 @@ ac_skill_is_bad_trigger = {
 # 12-16: Medium/Competent nicknames
 ac_skill_is_medium_trigger = {
 	OR = {
-		diplomacy = {
-			value >= 12
-			value <= 16
+		AND = {
+			diplomacy >= 12
+			diplomacy <= 16
 		}
-		martial = {
-			value >= 12
-			value <= 16
+		AND = {
+			martial >= 12
+			martial <= 16
 		}
-		stewardship = {
-			value >= 12
-			value <= 16
+		AND = {
+			stewardship >= 12
+			stewardship <= 16
 		}
-		intrigue = {
-			value >= 12
-			value <= 16
+		AND = {
+			intrigue >= 12
+			intrigue <= 16
 		}
-		learning = {
-			value >= 12
-			value <= 16
+		AND = {
+			learning >= 12
+			learning <= 16
 		}
 	}
 }
@@ -94,17 +94,13 @@ ac_skill_is_glorious_trigger = {
 
 # Specific skill checks
 ac_diplomacy_bad_trigger = {
-	diplomacy = {
-		value >= 9
-		value <= 11
-	}
+	diplomacy >= 9
+	diplomacy <= 11
 }
 
 ac_diplomacy_medium_trigger = {
-	diplomacy = {
-		value >= 12
-		value <= 16
-	}
+	diplomacy >= 12
+	diplomacy <= 16
 }
 
 ac_diplomacy_glorious_trigger = {
@@ -112,17 +108,13 @@ ac_diplomacy_glorious_trigger = {
 }
 
 ac_martial_bad_trigger = {
-	martial = {
-		value >= 9
-		value <= 11
-	}
+	martial >= 9
+	martial <= 11
 }
 
 ac_martial_medium_trigger = {
-	martial = {
-		value >= 12
-		value <= 16
-	}
+	martial >= 12
+	martial <= 16
 }
 
 ac_martial_glorious_trigger = {
@@ -130,17 +122,13 @@ ac_martial_glorious_trigger = {
 }
 
 ac_stewardship_bad_trigger = {
-	stewardship = {
-		value >= 9
-		value <= 11
-	}
+	stewardship >= 9
+	stewardship <= 11
 }
 
 ac_stewardship_medium_trigger = {
-	stewardship = {
-		value >= 12
-		value <= 16
-	}
+	stewardship >= 12
+	stewardship <= 16
 }
 
 ac_stewardship_glorious_trigger = {
@@ -148,17 +136,13 @@ ac_stewardship_glorious_trigger = {
 }
 
 ac_intrigue_bad_trigger = {
-	intrigue = {
-		value >= 9
-		value <= 11
-	}
+	intrigue >= 9
+	intrigue <= 11
 }
 
 ac_intrigue_medium_trigger = {
-	intrigue = {
-		value >= 12
-		value <= 16
-	}
+	intrigue >= 12
+	intrigue <= 16
 }
 
 ac_intrigue_glorious_trigger = {
@@ -166,17 +150,13 @@ ac_intrigue_glorious_trigger = {
 }
 
 ac_learning_bad_trigger = {
-	learning = {
-		value >= 9
-		value <= 11
-	}
+	learning >= 9
+	learning <= 11
 }
 
 ac_learning_medium_trigger = {
-	learning = {
-		value >= 12
-		value <= 16
-	}
+	learning >= 12
+	learning <= 16
 }
 
 ac_learning_glorious_trigger = {
@@ -188,15 +168,19 @@ ac_learning_glorious_trigger = {
 ac_has_congenital_trait_trigger = {
 	OR = {
 		# Beauty
-		has_trait = beautiful
-		has_trait = comely
-		has_trait = ugly
-		has_trait = hideous
+		has_trait = beauty_good_3
+		has_trait = beauty_good_2
+		has_trait = beauty_good_1
+		has_trait = beauty_bad_1
+		has_trait = beauty_bad_2
+		has_trait = beauty_bad_3
 		# Intelligence
-		has_trait = genius
-		has_trait = intelligent
-		has_trait = slow
-		has_trait = stupid
+		has_trait = intellect_good_3
+		has_trait = intellect_good_2
+		has_trait = intellect_good_1
+		has_trait = intellect_bad_1
+		has_trait = intellect_bad_2
+		has_trait = intellect_bad_3
 		# Strength/Health
 		has_trait = strong
 		has_trait = weak
@@ -219,22 +203,22 @@ ac_has_congenital_trait_trigger = {
 ac_has_physical_trait_trigger = {
 	OR = {
 		# Combat wounds
-		has_trait = wounded
+		has_trait = wounded_1
+		has_trait = wounded_2
+		has_trait = wounded_3
 		has_trait = maimed
 		has_trait = infirm
 		has_trait = incapable
 		# Missing body parts
 		has_trait = one_eyed
-		has_trait = one_handed
 		has_trait = one_legged
 		# Disfigurement
 		has_trait = disfigured
 		has_trait = scarred
-		has_trait = pox_scarred
+		has_trait = great_pox
 		# Disabilities
-		has_trait = blinded
+		has_trait = blind
 		has_trait = eunuch
-		has_trait = mangled
 		has_trait = leper
 	}
 }
@@ -242,10 +226,12 @@ ac_has_physical_trait_trigger = {
 # Beauty traits
 ac_has_beauty_trait_trigger = {
 	OR = {
-		has_trait = beautiful
-		has_trait = comely
-		has_trait = ugly
-		has_trait = hideous
+		has_trait = beauty_good_3
+		has_trait = beauty_good_2
+		has_trait = beauty_good_1
+		has_trait = beauty_bad_1
+		has_trait = beauty_bad_2
+		has_trait = beauty_bad_3
 	}
 }
 
@@ -260,10 +246,12 @@ ac_has_size_trait_trigger = {
 # Intelligence traits
 ac_has_intelligence_trait_trigger = {
 	OR = {
-		has_trait = genius
-		has_trait = intelligent
-		has_trait = slow
-		has_trait = stupid
+		has_trait = intellect_good_3
+		has_trait = intellect_good_2
+		has_trait = intellect_good_1
+		has_trait = intellect_bad_1
+		has_trait = intellect_bad_2
+		has_trait = intellect_bad_3
 	}
 }
 
@@ -272,7 +260,6 @@ ac_has_strength_trait_trigger = {
 	OR = {
 		has_trait = strong
 		has_trait = weak
-		has_trait = frail
 	}
 }
 
@@ -281,12 +268,11 @@ ac_has_disfigurement_trait_trigger = {
 	OR = {
 		has_trait = disfigured
 		has_trait = scarred
-		has_trait = pox_scarred
+		has_trait = great_pox
 		has_trait = maimed
 		has_trait = one_eyed
-		has_trait = one_handed
 		has_trait = one_legged
-		has_trait = blinded
+		has_trait = blind
 		has_trait = eunuch
 	}
 }
@@ -295,52 +281,52 @@ ac_has_disfigurement_trait_trigger = {
 # Abrahamic religions
 ac_is_abrahamic_faith_trigger = {
 	OR = {
-		religion = religion_christianity_church
-		religion = religion_islam
-		religion = religion_judaism
+		religion = religion:christianity_religion
+		religion = religion:islam_religion
+		religion = religion:judaism_religion
 	}
 }
 
 # Eastern religions (Dharmic)
 ac_is_eastern_faith_trigger = {
 	OR = {
-		religion = religion_hinduism
-		religion = religion_buddhism
-		religion = religion_jainism
+		religion = religion:hinduism_religion
+		religion = religion:buddhism_religion
+		religion = religion:jainism_religion
 	}
 }
 
 # Pagan religions
 ac_is_pagan_faith_trigger = {
 	OR = {
-		religion = religion_germanic
-		religion = religion_slavic_pagan
-		religion = religion_baltic_pagan
-		religion = religion_finno_ugric
-		religion = religion_west_african_pagan
-		religion = religion_berber_pagan
-		religion = religion_tengri_pagan
-		religion = religion_bon
-		religion = religion_zunism
-		religion = religion_hellenic_pagan
-		religion = religion_egyptian_pagan
-		religion = religion_canaanite_pagan
+		religion = religion:germanic_religion
+		religion = religion:slavic_religion
+		religion = religion:baltic_religion
+		religion = religion:finno_ugric_religion
+		religion = religion:west_african_religion
+		religion = religion:akom_religion
+		religion = religion:kushitism_religion
+		religion = religion:tengrism_religion
+		religion = religion:bon_religion
+		religion = religion:zunism_religion
+		religion = religion:hellenism_religion
+		religion = religion:basque_religion
+		religion = religion:waaqism_religion
 	}
 }
 
 # Single/unique religions
 ac_is_single_faith_trigger = {
 	OR = {
-		religion = religion_zoroastrianism
-		religion = religion_manichaeism
-		religion = religion_taoism
-		religion = religion_dualism
+		religion = religion:zoroastrianism_religion
+		religion = religion:dualism_religion
+		religion = religion:taoism_religion
 	}
 }
 
 # Specific faith checks
 ac_is_christian_trigger = {
-	religion = religion_christianity_church
+	religion = religion:christianity_religion
 }
 
 ac_is_catholic_trigger = {
@@ -356,27 +342,34 @@ ac_is_norse_pagan_trigger = {
 }
 
 ac_is_muslim_trigger = {
-	religion = religion_islam
+	religion = religion:islam_religion
 }
 
 ac_is_sunni_trigger = {
-	faith = faith:sunni
+	OR = {
+		faith = faith:ashari
+		faith = faith:maturidi
+		faith = faith:mutazila
+	}
 }
 
 ac_is_shiite_trigger = {
-	faith = faith:shiite
+	OR = {
+		faith = faith:ismaili
+		faith = faith:zayidi
+	}
 }
 
 ac_is_hindu_trigger = {
-	religion = religion_hinduism
+	religion = religion:hinduism_religion
 }
 
 ac_is_buddhist_trigger = {
-	religion = religion_buddhism
+	religion = religion:buddhism_religion
 }
 
 ac_is_zoroastrian_trigger = {
-	religion = religion_zoroastrianism
+	religion = religion:zoroastrianism_religion
 }
 
 ### COMBINED CONDITIONS ###
@@ -421,8 +414,6 @@ ac_ready_for_faith_nickname_trigger = {
 # Character should not receive nicknames
 ac_nickname_blocked_trigger = {
 	OR = {
-		is_ai = no		# Player characters excluded (optional)
-		age < 16		# Too young
 		is_imprisoned = yes		# Currently imprisoned
 		is_incapable = yes		# Incapacitated
 		has_character_flag = ac_nickname_blocked		# Manual block

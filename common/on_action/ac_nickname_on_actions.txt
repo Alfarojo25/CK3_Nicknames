@@ -2,6 +2,7 @@
 # AC Nickname System - On Actions
 # Handles yearly pulse and nickname selection
 #########################################
+
 # Hook into yearly pulse for playable characters
 yearly_playable_pulse = {
 	on_actions = {
@@ -14,27 +15,27 @@ ac_nickname_yearly_check = {
 	trigger = {
 		# Must not have nickname already
 		has_any_nickname = no
-		# Must not be blocked
-		ac_nickname_blocked_trigger = no
 		# Must be old enough (16+)
 		ac_age_adult_trigger = yes
-	}
-	random_on_action = {
-		# Base chance: 4% per year
-		chance_to_happen = 4
-		# Modifiers based on game rule (TODO: implement in Phase 4)
-		chance_of_no_event = {
-			value = 50			# Default: 2% actual chance (4% * 50% = 2%)
-			# TODO: Add game rule modifiers
-			# if = {
-			#     limit = { has_game_rule = ac_nickname_frequency_rare }
-			#     value = 75 # 1% chance
-			# }
-			# else_if = {
-			#     limit = { has_game_rule = ac_nickname_frequency_common }
-			#     value = 0  # 4% chance
-			# }
+		# Must have at least one qualifying skill range (9+)
+		OR = {
+			ac_skill_is_bad_trigger = yes
+			ac_skill_is_medium_trigger = yes
+			ac_skill_is_glorious_trigger = yes
 		}
+		# Must have at least one title
+		OR = {
+			is_landed = yes
+			has_council_position = yes
+		}
+	}
+	
+	random_on_action = {
+		# Base chance: 20% per year
+		chance_to_happen = 20
+		
+		# No additional modifiers - flat 20% for all eligible characters
+		
 		# If check passes, proceed to selection
 		100 = ac_nickname_selection_pool
 	}
@@ -54,56 +55,56 @@ ac_nickname_selection_pool = {
 		100 = ac_nickname.1008		# Weak
 		100 = ac_nickname.1009		# Genius
 		100 = ac_nickname.1010		# Stupid
+		
 		# Martial skill-based (17+)
-		100 = ac_nickname.2001		# The Conqueror (martial 17+)
-		100 = ac_nickname.2002		# The Invincible (martial 17+)
-		100 = ac_nickname.2003		# The Warrior (martial 17+)
-		100 = ac_nickname.2004		# The Hammer (martial 17+)
-		100 = ac_nickname.2005		# The Dragon (martial 17+)
-		# Diplomacy skill-based (17+)
-		100 = ac_nickname.3001		# The Wise (diplomacy 17+)
-		100 = ac_nickname.3002		# The Just (diplomacy 17+)
-		100 = ac_nickname.3003		# The Peacemaker (diplomacy 17+)
-		100 = ac_nickname.3004		# The Silver Tongue (diplomacy 17+)
-		# Stewardship skill-based (17+)
-		100 = ac_nickname.4001		# The Builder (stewardship 17+)
-		100 = ac_nickname.4002		# The Merchant (stewardship 17+)
-		100 = ac_nickname.4003		# The Rich (stewardship 17+)
-		# Intrigue skill-based (17+)
-		100 = ac_nickname.5001		# The Shadow (intrigue 17+)
-		100 = ac_nickname.5002		# The Spider (intrigue 17+)
-		100 = ac_nickname.5003		# The Knife (intrigue 17+)
-		# Learning skill-based (17+)
-		100 = ac_nickname.6001		# The Scholar (learning 17+)
-		100 = ac_nickname.6002		# The Wise (learning 17+)
-		100 = ac_nickname.6003		# The Philosopher (learning 17+)
-		# Faith-specific (Abrahamic)
-		100 = ac_nickname.7001		# The Saint (Catholic)
-		100 = ac_nickname.7002		# The Crusader (Christian)
-		100 = ac_nickname.7003		# The Pilgrim (Christian)
-		# Faith-specific (Pagan)
-		100 = ac_nickname.8001		# Son of Thor (Norse)
-		100 = ac_nickname.8002		# Daughter of Freya (Norse)
-		# Faith-specific (Eastern)
-		100 = ac_nickname.9001		# The Enlightened (Buddhist)
-		100 = ac_nickname.9002		# The Ascetic (Hindu/Jain)
-		# Faith-specific (Singles)
-		100 = ac_nickname.10001		# Fire-touched (Zoroastrian)
-	}
-}
-
-# Alternative on_action for mature characters (age 30+)
-# These nicknames require more life experience
-ac_nickname_veteran_selection = {
-	random_events = {
-		# Veteran warrior nicknames
+		100 = ac_nickname.2001		# The Conqueror
+		100 = ac_nickname.2002		# The Invincible
+		100 = ac_nickname.2003		# The Warrior
+		100 = ac_nickname.2004		# The Hammer
+		100 = ac_nickname.2005		# The Dragon
 		100 = ac_nickname.2101		# Bloodaxe
 		100 = ac_nickname.2102		# The Terrible
 		100 = ac_nickname.2103		# Scourge of God
-		# Veteran ruler nicknames
+		
+		# Diplomacy skill-based (17+)
+		100 = ac_nickname.3001		# The Wise
+		100 = ac_nickname.3002		# The Just
+		100 = ac_nickname.3003		# The Peacemaker
+		100 = ac_nickname.3004		# The Silver Tongue
 		100 = ac_nickname.3101		# The Great
 		100 = ac_nickname.3102		# The Magnificent
 		100 = ac_nickname.3103		# The Lawgiver
+		
+		# Stewardship skill-based (17+)
+		100 = ac_nickname.4001		# The Builder
+		100 = ac_nickname.4002		# The Merchant
+		100 = ac_nickname.4003		# The Rich
+		
+		# Intrigue skill-based (17+)
+		100 = ac_nickname.5001		# The Shadow
+		100 = ac_nickname.5002		# The Spider
+		100 = ac_nickname.5003		# The Knife
+		
+		# Learning skill-based (17+)
+		100 = ac_nickname.6001		# The Scholar
+		100 = ac_nickname.6002		# The Wise
+		100 = ac_nickname.6003		# The Philosopher
+		
+		# Faith-specific (Abrahamic)
+		100 = ac_nickname.7001		# The Saint
+		100 = ac_nickname.7002		# The Crusader
+		100 = ac_nickname.7003		# The Pilgrim
+		
+		# Faith-specific (Pagan)
+		100 = ac_nickname.8001		# Son of Thor
+		100 = ac_nickname.8002		# Daughter of Freya
+		
+		# Faith-specific (Eastern)
+		100 = ac_nickname.9001		# The Enlightened
+		100 = ac_nickname.9002		# The Ascetic
+		
+		# Faith-specific (Singles)
+		100 = ac_nickname.10001		# Fire-touched
 	}
 }
 

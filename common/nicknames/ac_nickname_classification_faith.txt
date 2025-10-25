@@ -3,159 +3,407 @@
 # (EN) This file defines religion-bound or explicitly religious nicknames.
 # (ES) Este archivo define apodos ligados a una fe o explicitamente religiosos.
 #############################################
-
 ### Generic religious weapons/titles
-nick_the_holy_sword = {}
-nick_the_holy_sword_f = {}
-nick_the_holy_axe = {}
-nick_the_holy_axe_f = {}
-nick_the_holy_shield = {}
-nick_the_holy_shield_f = {}
-nick_the_heathen_sword = {}
-nick_the_heathen_sword_f = {}
-nick_the_heathen_axe = {}
-nick_the_heathen_axe_f = {}
-nick_the_heathen_shield = {}
-nick_the_heathen_shield_f = {}
+nick_the_holy_sword = {
+}
+
+nick_the_holy_sword_f = {
+}
+
+nick_the_holy_axe = {
+}
+
+nick_the_holy_axe_f = {
+}
+
+nick_the_holy_shield = {
+}
+
+nick_the_holy_shield_f = {
+}
+
+nick_the_heathen_sword = {
+}
+
+nick_the_heathen_sword_f = {
+}
+
+nick_the_heathen_axe = {
+}
+
+nick_the_heathen_axe_f = {
+}
+
+nick_the_heathen_shield = {
+}
+
+nick_the_heathen_shield_f = {
+}
 
 ### Norse mythic lineage (asatru)
-nick_son_of_thor = {}
-nick_son_of_odin = {}
-nick_son_of_balder = {}
-nick_son_of_loki = {}
-nick_son_of_heimdall = {}
-nick_daughter_freya = {}
-nick_daughter_frigg = {}
+nick_son_of_thor = {
+}
+
+nick_son_of_odin = {
+}
+
+nick_son_of_balder = {
+}
+
+nick_son_of_loki = {
+}
+
+nick_son_of_heimdall = {
+}
+
+nick_daughter_freya = {
+}
+
+nick_daughter_frigg = {
+}
 
 ### Knight (religious)
-nick_the_holy_knight = {}
-nick_the_holy_knight_f = {}
+nick_the_holy_knight = {
+}
+
+nick_the_holy_knight_f = {
+}
 
 ### Christian/clerical/crusading themes
-nick_hist_the_saint = {}
-nick_hist_the_saint_f = {}
-nick_hist_the_blessed = {}
-nick_hist_the_blessed_f = {}
-nick_hist_the_pious = {}
-nick_hist_the_pious_f = {}
-nick_hist_the_chaste = {}
-nick_hist_the_chaste_f = {}
-nick_hist_the_confessor = {}
-nick_hist_the_confessor_f = {}
-nick_hist_the_crusader = {}
-nick_hist_the_crusader_f = {}
-nick_hist_the_crusading = {}
-nick_hist_the_crusading_f = {}
-nick_hist_the_templar = {}
-nick_hist_the_templar_f = {}
-nick_hist_the_hospitaller = {}
-nick_hist_the_hospitaller_f = {}
-nick_hist_the_santiago = {}
-nick_hist_the_santiago_f = {}
-nick_hist_the_iconoclast = {}
-nick_hist_the_iconoclast_f = {}
-nick_hist_the_apostle = {}
-nick_hist_the_apostle_f = {}
-nick_hist_the_apostate = {}
-nick_hist_the_apostate_f = {}
-nick_hist_the_convert = {}
-nick_hist_the_convert_f = {}
-nick_hist_the_penitent = {}
-nick_hist_the_penitent_f = {}
-nick_hist_the_monk_king = {}
-nick_hist_the_nun_queen = {}
-nick_hist_the_pilgrim = {}
-nick_hist_the_pilgrim_f = {}
-nick_hist_the_pilgrim_king = {}
-nick_hist_the_martyr_king = {}
-nick_hist_the_preacher = {}
-nick_hist_the_preacher_f = {}
-nick_hist_the_evangelist = {}
-nick_hist_the_evangelist_f = {}
-nick_hist_the_missionary = {}
-nick_hist_the_missionary_f = {}
+nick_hist_the_saint = {
+}
+
+nick_hist_the_saint_f = {
+}
+
+nick_hist_the_blessed = {
+}
+
+nick_hist_the_blessed_f = {
+}
+
+nick_hist_the_pious = {
+}
+
+nick_hist_the_pious_f = {
+}
+
+nick_hist_the_chaste = {
+}
+
+nick_hist_the_chaste_f = {
+}
+
+nick_hist_the_confessor = {
+}
+
+nick_hist_the_confessor_f = {
+}
+
+nick_hist_the_crusader = {
+}
+
+nick_hist_the_crusader_f = {
+}
+
+nick_hist_the_crusading = {
+}
+
+nick_hist_the_crusading_f = {
+}
+
+nick_hist_the_templar = {
+}
+
+nick_hist_the_templar_f = {
+}
+
+nick_hist_the_hospitaller = {
+}
+
+nick_hist_the_hospitaller_f = {
+}
+
+nick_hist_the_santiago = {
+}
+
+nick_hist_the_santiago_f = {
+}
+
+nick_hist_the_iconoclast = {
+}
+
+nick_hist_the_iconoclast_f = {
+}
+
+nick_hist_the_apostle = {
+}
+
+nick_hist_the_apostle_f = {
+}
+
+nick_hist_the_apostate = {
+}
+
+nick_hist_the_apostate_f = {
+}
+
+nick_hist_the_convert = {
+}
+
+nick_hist_the_convert_f = {
+}
+
+nick_hist_the_penitent = {
+}
+
+nick_hist_the_penitent_f = {
+}
+
+nick_hist_the_monk_king = {
+}
+
+nick_hist_the_nun_queen = {
+}
+
+nick_hist_the_pilgrim = {
+}
+
+nick_hist_the_pilgrim_f = {
+}
+
+nick_hist_the_pilgrim_king = {
+}
+
+nick_hist_the_martyr_king = {
+}
+
+nick_hist_the_preacher = {
+}
+
+nick_hist_the_preacher_f = {
+}
+
+nick_hist_the_evangelist = {
+}
+
+nick_hist_the_evangelist_f = {
+}
+
+nick_hist_the_missionary = {
+}
+
+nick_hist_the_missionary_f = {
+}
 
 ### Clerical regalia / items
-nick_hist_the_mitre = {}
-nick_hist_the_mitre_f = {}
-nick_hist_the_crosier = {}
-nick_hist_the_crosier_f = {}
-nick_hist_the_reliquary = {}
-nick_hist_the_reliquary_f = {}
-nick_hist_the_shrine = {}
-nick_hist_the_shrine_f = {}
-nick_hist_the_censer = {}
-nick_hist_the_censer_f = {}
-nick_hist_the_censer_lord = {}
-nick_hist_the_censer_lord_f = {}
-nick_hist_the_ringbearer = {}
-nick_hist_the_ringbearer_f = {}
-nick_hist_the_pilgrim_staff = {}
-nick_hist_the_pilgrim_staff_f = {}
-nick_hist_the_dalmatic = {}
-nick_hist_the_dalmatic_f = {}
-nick_hist_the_tonsured = {}
-nick_hist_the_tonsured_f = {}
+nick_hist_the_mitre = {
+}
+
+nick_hist_the_mitre_f = {
+}
+
+nick_hist_the_crosier = {
+}
+
+nick_hist_the_crosier_f = {
+}
+
+nick_hist_the_reliquary = {
+}
+
+nick_hist_the_reliquary_f = {
+}
+
+nick_hist_the_shrine = {
+}
+
+nick_hist_the_shrine_f = {
+}
+
+nick_hist_the_censer = {
+}
+
+nick_hist_the_censer_f = {
+}
+
+nick_hist_the_censer_lord = {
+}
+
+nick_hist_the_censer_lord_f = {
+}
+
+nick_hist_the_ringbearer = {
+}
+
+nick_hist_the_ringbearer_f = {
+}
+
+nick_hist_the_pilgrim_staff = {
+}
+
+nick_hist_the_pilgrim_staff_f = {
+}
+
+nick_hist_the_dalmatic = {
+}
+
+nick_hist_the_dalmatic_f = {
+}
+
+nick_hist_the_tonsured = {
+}
+
+nick_hist_the_tonsured_f = {
+}
 
 ### Prophets, seers, oracles (multi-faith)
-nick_hist_the_prophet = {}
-nick_hist_the_prophet_f = {}
-nick_hist_the_prophetess = {}
-nick_hist_the_oracle = {}
-nick_hist_the_oracle_f = {}
-nick_hist_the_sybil = {}
-nick_hist_the_sybil_f = {}
-nick_hist_the_seer = {}
-nick_hist_the_seer_f = {}
-nick_hist_the_magus = {}
-nick_hist_the_magus_f = {}
+nick_hist_the_prophet = {
+}
+
+nick_hist_the_prophet_f = {
+}
+
+nick_hist_the_prophetess = {
+}
+
+nick_hist_the_oracle = {
+}
+
+nick_hist_the_oracle_f = {
+}
+
+nick_hist_the_sybil = {
+}
+
+nick_hist_the_sybil_f = {
+}
+
+nick_hist_the_seer = {
+}
+
+nick_hist_the_seer_f = {
+}
+
+nick_hist_the_magus = {
+}
+
+nick_hist_the_magus_f = {
+}
 
 # Religious asceticism and related epithets (audit additions)
-nick_hist_the_anchorite = {}
-nick_hist_the_anchorite_f = {}
-nick_hist_the_ascetic = {}
-nick_hist_the_ascetic_f = {}
-nick_hist_the_catholic = {}
-nick_hist_the_catholic_f = {}
-nick_hist_the_pilgrim_lord = {}
-nick_hist_the_pilgrim_lord_f = {}
-nick_hist_the_diviner = {}
-nick_hist_the_diviner_f = {}
-nick_hist_the_tunic = {}
-nick_hist_the_tunic_f = {}
+nick_hist_the_anchorite = {
+}
+
+nick_hist_the_anchorite_f = {
+}
+
+nick_hist_the_ascetic = {
+}
+
+nick_hist_the_ascetic_f = {
+}
+
+nick_hist_the_catholic = {
+}
+
+nick_hist_the_catholic_f = {
+}
+
+nick_hist_the_pilgrim_lord = {
+}
+
+nick_hist_the_pilgrim_lord_f = {
+}
+
+nick_hist_the_diviner = {
+}
+
+nick_hist_the_diviner_f = {
+}
+
+nick_hist_the_tunic = {
+}
+
+nick_hist_the_tunic_f = {
+}
 
 ### General faith zeal/orthodoxy
-nick_hist_the_zealot = {}
-nick_hist_the_zealot_f = {}
-nick_hist_the_orthodox = {}
-nick_hist_the_orthodox_f = {}
-nick_hist_the_heterodox = {}
-nick_hist_the_heterodox_f = {}
-nick_hist_the_lance_of_faith = {}
-nick_hist_the_lance_of_faith_f = {}
-nick_hist_the_guard_of_faith = {}
-nick_hist_the_guard_of_faith_f = {}
-nick_hist_the_champion_of_faith = {}
-nick_hist_the_champion_of_faith_f = {}
-nick_hist_the_cross_standard = {}
-nick_hist_the_cross_standard_f = {}
-nick_hist_the_zealous = {}
-nick_hist_the_zealous_f = {}
+nick_hist_the_zealot = {
+}
+
+nick_hist_the_zealot_f = {
+}
+
+nick_hist_the_orthodox = {
+}
+
+nick_hist_the_orthodox_f = {
+}
+
+nick_hist_the_heterodox = {
+}
+
+nick_hist_the_heterodox_f = {
+}
+
+nick_hist_the_lance_of_faith = {
+}
+
+nick_hist_the_lance_of_faith_f = {
+}
+
+nick_hist_the_guard_of_faith = {
+}
+
+nick_hist_the_guard_of_faith_f = {
+}
+
+nick_hist_the_champion_of_faith = {
+}
+
+nick_hist_the_champion_of_faith_f = {
+}
+
+nick_hist_the_cross_standard = {
+}
+
+nick_hist_the_cross_standard_f = {
+}
+
+nick_hist_the_zealous = {
+}
+
+nick_hist_the_zealous_f = {
+}
 
 ### Pilgrim/clerical extras
-nick_hist_the_pilgrim_king = {}
-nick_hist_the_drawbridge = {}
-nick_hist_the_drawbridge_f = {}
-nick_hist_the_censer = {}
-nick_hist_the_incense = {}
-nick_hist_the_incense_f = {}
-nick_hist_the_reliquary = {}
-nick_hist_the_altar = {}
-nick_hist_the_altar_f = {}
-nick_hist_the_shrine = {}
-nick_hist_the_chalice = {}
-nick_hist_the_chalice_f = {}
-nick_hist_the_paten = {}
-nick_hist_the_paten_f = {}
+nick_hist_the_drawbridge = {
+}
 
+nick_hist_the_drawbridge_f = {
+}
 
+nick_hist_the_incense = {
+}
+
+nick_hist_the_incense_f = {
+}
+
+nick_hist_the_altar = {
+}
+
+nick_hist_the_altar_f = {
+}
+
+nick_hist_the_chalice = {
+}
+
+nick_hist_the_chalice_f = {
+}
+
+nick_hist_the_paten = {
+}
+
+nick_hist_the_paten_f = {
+}

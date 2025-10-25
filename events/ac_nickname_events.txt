@@ -69,8 +69,9 @@ ac_nickname.1002 = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				has_trait = intelligent
-				has_trait = genius
+				has_trait = intellect_good_1
+				has_trait = intellect_good_2
+				has_trait = intellect_good_3
 			}
 		}
 		# Higher if high intrigue
@@ -189,8 +190,9 @@ ac_nickname.1005 = {
 	trigger = {
 		ac_age_adult_trigger = yes
 		OR = {
-			has_trait = beautiful
-			has_trait = comely
+			has_trait = beauty_good_3
+			has_trait = beauty_good_2
+			has_trait = beauty_good_1
 		}
 	}
 	weight_multiplier = {
@@ -245,8 +247,9 @@ ac_nickname.1006 = {
 	trigger = {
 		ac_age_adult_trigger = yes
 		OR = {
-			has_trait = ugly
-			has_trait = hideous
+			has_trait = beauty_bad_1
+			has_trait = beauty_bad_2
+			has_trait = beauty_bad_3
 		}
 	}
 	weight_multiplier = {
@@ -254,7 +257,7 @@ ac_nickname.1006 = {
 		# Higher if truly hideous
 		modifier = {
 			factor = 2
-			has_trait = hideous
+			has_trait = beauty_bad_3
 		}
 		# Higher if also disfigured
 		modifier = {
@@ -347,8 +350,9 @@ ac_nickname.1009 = {
 	trigger = {
 		ac_age_mature_trigger = yes
 		OR = {
-			has_trait = genius
-			has_trait = intelligent
+			has_trait = intellect_good_3
+			has_trait = intellect_good_2
+			has_trait = intellect_good_1
 		}
 	}
 	weight_multiplier = {
@@ -398,8 +402,9 @@ ac_nickname.1010 = {
 	trigger = {
 		ac_age_mature_trigger = yes
 		OR = {
-			has_trait = stupid
-			has_trait = slow
+			has_trait = intellect_bad_3
+			has_trait = intellect_bad_2
+			has_trait = intellect_bad_1
 		}
 	}
 	weight_multiplier = {
@@ -407,7 +412,7 @@ ac_nickname.1010 = {
 		# Higher if truly stupid
 		modifier = {
 			factor = 2
-			has_trait = stupid
+			has_trait = intellect_bad_3
 		}
 		# Higher if low learning
 		modifier = {
@@ -865,7 +870,7 @@ ac_nickname.5002 = {
 		# Higher if schemer
 		modifier = {
 			factor = 2
-			num_of_secrets >= 3
+			has_trait = schemer
 		}
 	}
 	immediate = {
@@ -924,7 +929,7 @@ ac_nickname.6001 = {
 		# Higher if educated
 		modifier = {
 			factor = 1.5
-			has_trait = lifestyle_scholar
+			has_trait = scholar
 		}
 	}
 	immediate = {
@@ -1017,7 +1022,15 @@ ac_nickname.7001 = {
 		# Higher if virtuous
 		modifier = {
 			factor = 1.5
-			num_of_virtues >= 3
+			has_trait = humble
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = temperate
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = compassionate
 		}
 	}
 	immediate = {
@@ -1116,7 +1129,8 @@ ac_nickname.8002 = {
 		is_female = yes
 		OR = {
 			ac_diplomacy_glorious_trigger = yes
-			has_trait = beautiful
+			has_trait = beauty_good_3
+			has_trait = beauty_good_2
 		}
 	}
 	weight_multiplier = {
@@ -1124,7 +1138,7 @@ ac_nickname.8002 = {
 		# Higher if beautiful
 		modifier = {
 			factor = 2
-			has_trait = beautiful
+			has_trait = beauty_good_3
 		}
 	}
 	immediate = {
@@ -1172,7 +1186,7 @@ ac_nickname.9002 = {
 		ac_age_mature_trigger = yes
 		OR = {
 			ac_is_hindu_trigger = yes
-			religion = religion_jainism
+			religion = religion:jainism_religion
 		}
 		piety_level >= 3
 	}
@@ -1225,6 +1239,228 @@ ac_nickname.10001 = {
 		}
 		else = {
 			give_nickname = nick_hist_the_flaming_f
+		}
+	}
+}
+
+###############################################
+# ADDITIONAL MARTIAL NICKNAMES
+###############################################
+# 2101: Bloodaxe
+ac_nickname.2101 = {
+	hidden = yes
+	trigger = {
+		ac_age_mature_trigger = yes
+		ac_martial_glorious_trigger = yes
+		has_trait = brave
+	}
+	weight_multiplier = {
+		base = 8
+		# Higher if berserker
+		modifier = {
+			factor = 1.5
+			has_trait = berserker
+		}
+		# Higher if high prowess
+		modifier = {
+			factor = 1.3
+			prowess >= 15
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_female = no
+			}
+			give_nickname = nick_hist_bloodaxe
+		}
+		else = {
+			give_nickname = nick_hist_bloodaxe_f
+		}
+	}
+}
+
+# 2102: The Terrible
+ac_nickname.2102 = {
+	hidden = yes
+	trigger = {
+		ac_age_mature_trigger = yes
+		ac_martial_glorious_trigger = yes
+		dread >= 80
+	}
+	weight_multiplier = {
+		base = 10
+		# Higher if very high dread
+		modifier = {
+			factor = 2
+			dread >= 95
+		}
+		# Higher if cruel
+		modifier = {
+			factor = 1.5
+			has_trait = sadistic
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_female = no
+			}
+			give_nickname = nick_hist_the_terrible
+		}
+		else = {
+			give_nickname = nick_hist_the_terrible_f
+		}
+	}
+}
+
+# 2103: Scourge of God
+ac_nickname.2103 = {
+	hidden = yes
+	trigger = {
+		ac_age_veteran_trigger = yes
+		ac_martial_glorious_trigger = yes
+		dread >= 60
+	}
+	weight_multiplier = {
+		base = 12
+		# Higher if high dread
+		modifier = {
+			factor = 1.5
+			dread >= 80
+		}
+		# Higher if pagan
+		modifier = {
+			factor = 1.3
+			ac_is_pagan_faith_trigger = yes
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_female = no
+			}
+			give_nickname = nick_hist_scourge_of_god
+		}
+		else = {
+			give_nickname = nick_hist_scourge_of_god_f
+		}
+	}
+}
+
+###############################################
+# ADDITIONAL DIPLOMACY NICKNAMES
+###############################################
+# 3101: The Great
+ac_nickname.3101 = {
+	hidden = yes
+	trigger = {
+		ac_age_veteran_trigger = yes
+		OR = {
+			ac_diplomacy_glorious_trigger = yes
+			ac_martial_glorious_trigger = yes
+			ac_stewardship_glorious_trigger = yes
+		}
+		prestige_level >= 4
+	}
+	weight_multiplier = {
+		base = 15
+		# Higher if max prestige
+		modifier = {
+			factor = 2
+			prestige_level >= 5
+		}
+		# Higher if emperor
+		modifier = {
+			factor = 1.5
+			highest_held_title_tier = tier_empire
+		}
+		# Higher if renowned
+		modifier = {
+			factor = 1.3
+			has_trait = lifestyle_blademaster
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_female = no
+			}
+			give_nickname = nick_hist_the_great
+		}
+		else = {
+			give_nickname = nick_hist_the_great_f
+		}
+	}
+}
+
+# 3102: The Magnificent
+ac_nickname.3102 = {
+	hidden = yes
+	trigger = {
+		ac_age_mature_trigger = yes
+		ac_diplomacy_glorious_trigger = yes
+		prestige_level >= 3
+	}
+	weight_multiplier = {
+		base = 10
+		# Higher if beautiful
+		modifier = {
+			factor = 1.5
+			has_trait = beauty_good_3
+		}
+		# Higher if gregarious
+		modifier = {
+			factor = 1.3
+			has_trait = gregarious
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_female = no
+			}
+			give_nickname = nick_hist_the_magnificent
+		}
+		else = {
+			give_nickname = nick_hist_the_magnificent_f
+		}
+	}
+}
+
+# 3103: The Lawgiver
+ac_nickname.3103 = {
+	hidden = yes
+	trigger = {
+		ac_age_mature_trigger = yes
+		OR = {
+			ac_diplomacy_glorious_trigger = yes
+			ac_learning_glorious_trigger = yes
+		}
+		has_trait = just
+	}
+	weight_multiplier = {
+		base = 10
+		# Higher if high learning
+		modifier = {
+			factor = 1.5
+			ac_learning_glorious_trigger = yes
+		}
+		# Higher if administrator
+		modifier = {
+			factor = 1.3
+			has_trait = administrator
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_female = no
+			}
+			give_nickname = nick_hist_the_lawgiver
+		}
+		else = {
+			give_nickname = nick_hist_the_lawgiver_f
 		}
 	}
 }
