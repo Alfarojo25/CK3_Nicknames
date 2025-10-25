@@ -1,0 +1,34 @@
+﻿ac_nickname_give_all = {
+	desc = ac_nickname_give_all_desc
+	selection_tooltip = ac_nickname_give_all_tooltip
+	is_shown = {
+		has_character_flag = ac_nickname_debug_mode
+	}
+	is_valid = {
+		is_ruler = yes
+	}
+	effect = {
+		custom_tooltip = ac_nickname_give_all_tt
+		hidden_effect = {
+			every_living_character = {
+				limit = {
+					NOT = {
+						has_nickname = yes
+					}
+					age >= 16
+				}
+				trigger_event = {
+					id = ac_nickname.1001
+					days = 1
+				}
+			}
+		}
+	}
+	cost = {
+		prestige = 0
+		piety = 0
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

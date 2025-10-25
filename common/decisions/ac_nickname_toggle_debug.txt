@@ -1,0 +1,26 @@
+﻿ac_nickname_toggle_debug = {
+	desc = ac_nickname_toggle_debug_desc
+	selection_tooltip = ac_nickname_toggle_debug_tooltip
+	is_shown = {
+		always = yes
+	}
+	is_valid = {
+		is_ruler = yes
+	}
+	effect = {
+		if = {
+			limit = {
+				has_character_flag = ac_nickname_debug_mode
+			}
+			remove_character_flag = ac_nickname_debug_mode
+			custom_tooltip = ac_nickname_debug_mode_off_tt
+		}
+		else = {
+			add_character_flag = ac_nickname_debug_mode
+			custom_tooltip = ac_nickname_debug_mode_on_tt
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

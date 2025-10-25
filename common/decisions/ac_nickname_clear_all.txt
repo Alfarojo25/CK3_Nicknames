@@ -1,0 +1,28 @@
+﻿ac_nickname_clear_all = {
+	desc = ac_nickname_clear_all_desc
+	selection_tooltip = ac_nickname_clear_all_tooltip
+	is_shown = {
+		has_character_flag = ac_nickname_debug_mode
+	}
+	is_valid = {
+		is_ruler = yes
+	}
+	effect = {
+		custom_tooltip = ac_nickname_clear_all_tt
+		hidden_effect = {
+			every_living_character = {
+				limit = {
+					has_nickname = yes
+				}
+				remove_nickname = yes
+			}
+		}
+	}
+	cost = {
+		prestige = 0
+		piety = 0
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

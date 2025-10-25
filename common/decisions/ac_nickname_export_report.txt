@@ -1,0 +1,23 @@
+﻿ac_nickname_export_report = {
+	desc = ac_nickname_export_report_desc
+	selection_tooltip = ac_nickname_export_report_tooltip
+	is_shown = {
+		has_character_flag = ac_nickname_debug_mode
+	}
+	is_valid = {
+		is_ruler = yes
+	}
+	effect = {
+		custom_tooltip = ac_nickname_export_report_tt
+		hidden_effect = {
+			trigger_event = ac_nickname.9999
+		}
+	}
+	cost = {
+		prestige = 0
+		piety = 0
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

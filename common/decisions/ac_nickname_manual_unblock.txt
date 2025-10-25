@@ -1,0 +1,22 @@
+﻿ac_nickname_manual_unblock = {
+	desc = ac_nickname_manual_unblock_desc
+	selection_tooltip = ac_nickname_manual_unblock_tooltip
+	is_shown = {
+		has_character_flag = ac_nickname_debug_mode
+	}
+	is_valid = {
+		is_ruler = yes
+		has_character_flag = ac_nickname_manually_blocked
+	}
+	effect = {
+		remove_character_flag = ac_nickname_manually_blocked
+		custom_tooltip = ac_nickname_manual_unblock_tt
+	}
+	cost = {
+		prestige = 0
+		piety = 0
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

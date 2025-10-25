@@ -1,28 +1,29 @@
-# CK3 Nicknames+
+# Advanced Character Nicknames - Faith Based System
 
-**An expanded nickname system for Crusader Kings III with 2000+ new nicknames**
+**An expanded nickname system for Crusader Kings III with 2059+ faith-based and skill-based nicknames**
 
-[![Version](https://img.shields.io/badge/version-1.0.0--alpha-orange.svg)](https://github.com/Alfarojo25/CK3_Nicknames)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/Alfarojo25/CK3_Nicknames)
 [![CK3 Version](https://img.shields.io/badge/CK3-1.17.1-blue.svg)](https://store.steampowered.com/app/1158310/Crusader_Kings_III/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 📖 Description
 
-This mod massively expands the nickname system in Crusader Kings III, adding over **2000 new nicknames** that characters can earn based on their traits, skills, faith, and life experiences.
+**Advanced Character Nicknames** is a comprehensive overhaul of the nickname system in Crusader Kings III, featuring over **2059 unique nicknames** that characters can earn based on their traits, skills, faith, and achievements. This mod emphasizes faith-based and cultural diversity while maintaining historical authenticity.
 
 ### Features
 
-✨ **2059 Unique Nicknames**
+✨ **2059+ Unique Nicknames**
 
 - 136 faith-specific nicknames (Christian, Muslim, Norse, Hindu, Buddhist, Zoroastrian, etc.)
-- 1923 generic nicknames (warriors, scholars, beauty, disabilities, etc.)
+- 1923 generic nicknames (warriors, scholars, beauty, disabilities, achievements, etc.)
+- Faith-based system that respects religious and cultural context
 
 ⚖️ **Intelligent Assignment System**
 
 - Weight-based probability system for balanced distribution
 - Skill-based nicknames (Diplomacy, Martial, Stewardship, Intrigue, Learning)
-- Trait-based nicknames (Physical, Congenital)
-- Faith-based nicknames (unique to each religion)
+- Trait-based nicknames (Physical, Congenital, Personality)
+- Faith-based nicknames (unique to each religion family)
 - Age-gated: 16+ for all nickname types
 
 🎲 **Dynamic & Balanced**

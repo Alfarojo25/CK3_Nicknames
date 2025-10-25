@@ -1,0 +1,22 @@
+﻿ac_nickname_clear = {
+	desc = ac_nickname_clear_desc
+	selection_tooltip = ac_nickname_clear_tooltip
+	is_shown = {
+		has_character_flag = ac_nickname_debug_mode
+	}
+	is_valid = {
+		is_ruler = yes
+		has_nickname = yes
+	}
+	effect = {
+		custom_tooltip = ac_nickname_clear_tt
+		remove_nickname = yes
+	}
+	cost = {
+		prestige = 0
+		piety = 0
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
