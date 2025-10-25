@@ -1,4 +1,4 @@
-﻿l_english:
+﻿﻿l_english:
  ### DEBUG DECISIONS ###
  ac_nickname_toggle_debug:0 "Toggle Nickname Debug Mode"
  ac_nickname_toggle_debug_desc:0 "Enable or disable debug mode for the nickname system. Debug mode provides testing tools and information."
@@ -21,14 +21,14 @@
  ac_nickname_show_info_desc:0 "Display detailed information about your eligibility for receiving nicknames."
  ac_nickname_show_info_tooltip:0 "Check your nickname eligibility"
  ac_nickname_show_info_tt:0 "Your eligibility information:"
- ac_nickname_age_ok_tt:0 "#EMP AGE:#! ✓ You are 16+ years old"
- ac_nickname_age_too_young_tt:0 "#EMP AGE:#! ✗ You are too young (need 16+)"
- ac_nickname_skill_ok_tt:0 "#EMP SKILLS:#! ✓ You have at least one skill at 9+"
- ac_nickname_skill_too_low_tt:0 "#EMP SKILLS:#! ✗ All your skills are below 9"
- ac_nickname_power_ok_tt:0 "#EMP POWER:#! ✓ You have a title or council position"
- ac_nickname_power_none_tt:0 "#EMP POWER:#! ✗ You need a title or council position"
- ac_nickname_blocked_tt:0 "#EMP STATUS:#! ✗ You are BLOCKED (imprisoned, incapable, or manually blocked)"
- ac_nickname_not_blocked_tt:0 "#EMP STATUS:#! ✓ You are NOT blocked"
+ ac_nickname_age_ok_tt:0 "#EMP AGE:#! [OK] You are 16+ years old"
+ ac_nickname_age_too_young_tt:0 "#EMP AGE:#! [FAIL] You are too young (need 16+)"
+ ac_nickname_skill_ok_tt:0 "#EMP SKILLS:#! [OK] You have at least one skill at 9+"
+ ac_nickname_skill_too_low_tt:0 "#EMP SKILLS:#! [FAIL] All your skills are below 9"
+ ac_nickname_power_ok_tt:0 "#EMP POWER:#! [OK] You have a title or council position"
+ ac_nickname_power_none_tt:0 "#EMP POWER:#! [FAIL] You need a title or council position"
+ ac_nickname_blocked_tt:0 "#EMP STATUS:#! [BLOCKED] You are BLOCKED (imprisoned, incapable, or manually blocked)"
+ ac_nickname_not_blocked_tt:0 "#EMP STATUS:#! [OK] You are NOT blocked"
  
  ac_nickname_manual_block:0 "Manually Block Nicknames"
  ac_nickname_manual_block_desc:0 "Prevent yourself from receiving any nicknames."

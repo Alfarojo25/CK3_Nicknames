@@ -1,0 +1,587 @@
+﻿##########################################
+# AC Nickname System - Scripted Effects
+# Dynamic nickname assignment based on pools
+##########################################
+
+# Master effect: Assign nickname based on character evaluation
+ac_assign_dynamic_nickname_effect = {
+	# Evaluate character and assign appropriate nickname category
+	if = {
+		limit = {
+			# Physical traits have highest priority
+			OR = {
+				has_trait = giant
+				has_trait = dwarf
+				has_trait = beauty_bad_1
+				has_trait = beauty_bad_2
+				has_trait = beauty_bad_3
+				has_trait = beauty_good_1
+				has_trait = beauty_good_2
+				has_trait = beauty_good_3
+				has_trait = strong
+				has_trait = weak
+				has_trait = scarred
+			}
+		}
+		ac_assign_physical_nickname_effect = yes
+	}
+	else_if = {
+		limit = {
+			# Martial-focused characters
+			martial >= learning
+			martial >= diplomacy
+			martial >= stewardship
+			martial >= intrigue
+		}
+		ac_assign_martial_nickname_effect = yes
+	}
+	else_if = {
+		limit = {
+			# Diplomacy-focused characters
+			diplomacy >= learning
+			diplomacy >= martial
+			diplomacy >= stewardship
+			diplomacy >= intrigue
+		}
+		ac_assign_diplomacy_nickname_effect = yes
+	}
+	else_if = {
+		limit = {
+			# Stewardship-focused characters
+			stewardship >= learning
+			stewardship >= martial
+			stewardship >= diplomacy
+			stewardship >= intrigue
+		}
+		ac_assign_stewardship_nickname_effect = yes
+	}
+	else_if = {
+		limit = {
+			# Intrigue-focused characters
+			intrigue >= learning
+			intrigue >= martial
+			intrigue >= diplomacy
+			intrigue >= stewardship
+		}
+		ac_assign_intrigue_nickname_effect = yes
+	}
+	else_if = {
+		limit = {
+			# Learning-focused characters
+			learning >= martial
+			learning >= diplomacy
+			learning >= stewardship
+			learning >= intrigue
+		}
+		ac_assign_learning_nickname_effect = yes
+	}
+	else = {
+		# Fallback: faith-based nickname
+		ac_assign_faith_nickname_effect = yes
+	}
+}
+
+# Physical trait nicknames (uses existing pool)
+ac_assign_physical_nickname_effect = {
+	random_list = {
+		# Giant nicknames
+		10 = {
+			trigger = { has_trait = giant }
+			modifier = {
+				add = 5
+				has_trait = strong
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_gentle_giant
+			}
+			else = {
+				give_nickname = nick_the_gentle_giant_f
+			}
+		}
+		# Dwarf nicknames
+		10 = {
+			trigger = { has_trait = dwarf }
+			modifier = {
+				add = 5
+				intrigue >= 12
+			}
+			random_list = {
+				50 = {
+					if = {
+						limit = { is_female = no }
+						give_nickname = nick_the_gracious_dwarf
+					}
+					else = {
+						give_nickname = nick_the_gracious_dwarf_f
+					}
+				}
+				50 = {
+					if = {
+						limit = { is_female = no }
+						give_nickname = nick_the_little_one
+					}
+					else = {
+						give_nickname = nick_the_little_one_f
+					}
+				}
+			}
+		}
+		# Beauty good nicknames
+		10 = {
+			trigger = {
+				OR = {
+					has_trait = beauty_good_1
+					has_trait = beauty_good_2
+					has_trait = beauty_good_3
+				}
+			}
+			modifier = {
+				add = 5
+				age <= 30
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_handsome
+			}
+			else = {
+				give_nickname = nick_the_fair
+			}
+		}
+		# Beauty bad nicknames
+		10 = {
+			trigger = {
+				OR = {
+					has_trait = beauty_bad_1
+					has_trait = beauty_bad_2
+					has_trait = beauty_bad_3
+				}
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_ugly
+			}
+			else = {
+				give_nickname = nick_the_ugly_f
+			}
+		}
+		# Strong nicknames
+		10 = {
+			trigger = { has_trait = strong }
+			modifier = {
+				add = 5
+				martial >= 14
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_strong
+			}
+			else = {
+				give_nickname = nick_the_strong_f
+			}
+		}
+		# Weak nicknames
+		10 = {
+			trigger = { has_trait = weak }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_weak
+			}
+			else = {
+				give_nickname = nick_the_weak_f
+			}
+		}
+		# Scarred nicknames
+		10 = {
+			trigger = { has_trait = scarred }
+			modifier = {
+				add = 5
+				martial >= 12
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_scarred
+			}
+			else = {
+				give_nickname = nick_the_scarred_f
+			}
+		}
+	}
+}
+
+# Martial skill nicknames
+ac_assign_martial_nickname_effect = {
+	random_list = {
+		# Warrior nicknames (high martial)
+		20 = {
+			trigger = { martial >= 14 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_warrior
+			}
+			else = {
+				give_nickname = nick_the_warrior_f
+			}
+		}
+		# Conqueror nicknames (very high martial + prowess)
+		15 = {
+			trigger = {
+				martial >= 16
+				prowess >= 12
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_conqueror
+			}
+			else = {
+				give_nickname = nick_the_conqueror_f
+			}
+		}
+		# Sword nicknames (high prowess)
+		15 = {
+			trigger = { prowess >= 14 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_sword
+			}
+			else = {
+				give_nickname = nick_the_sword_f
+			}
+		}
+		# Battle-tested (scars + high martial)
+		10 = {
+			trigger = {
+				martial >= 12
+				has_trait = scarred
+			}
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_battle_tested
+			}
+			else = {
+				give_nickname = nick_the_battle_tested_f
+			}
+		}
+		# Fallback generic martial
+		40 = {
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_brave
+			}
+			else = {
+				give_nickname = nick_the_brave_f
+			}
+		}
+	}
+}
+
+# Diplomacy skill nicknames
+ac_assign_diplomacy_nickname_effect = {
+	random_list = {
+		20 = {
+			trigger = { diplomacy >= 14 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_diplomat
+			}
+			else = {
+				give_nickname = nick_the_diplomat_f
+			}
+		}
+		15 = {
+			trigger = { diplomacy >= 16 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_peacemaker
+			}
+			else = {
+				give_nickname = nick_the_peacemaker_f
+			}
+		}
+		15 = {
+			trigger = { has_trait = gregarious }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_gregarious
+			}
+			else = {
+				give_nickname = nick_the_gregarious_f
+			}
+		}
+		50 = {
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_kind
+			}
+			else = {
+				give_nickname = nick_the_kind_f
+			}
+		}
+	}
+}
+
+# Stewardship skill nicknames
+ac_assign_stewardship_nickname_effect = {
+	random_list = {
+		20 = {
+			trigger = { stewardship >= 14 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_administrator
+			}
+			else = {
+				give_nickname = nick_the_administrator_f
+			}
+		}
+		15 = {
+			trigger = { stewardship >= 16 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_builder
+			}
+			else = {
+				give_nickname = nick_the_builder_f
+			}
+		}
+		15 = {
+			trigger = { has_trait = greedy }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_miser
+			}
+			else = {
+				give_nickname = nick_the_miser_f
+			}
+		}
+		50 = {
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_steward
+			}
+			else = {
+				give_nickname = nick_the_steward_f
+			}
+		}
+	}
+}
+
+# Intrigue skill nicknames
+ac_assign_intrigue_nickname_effect = {
+	random_list = {
+		20 = {
+			trigger = { intrigue >= 14 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_schemer
+			}
+			else = {
+				give_nickname = nick_the_schemer_f
+			}
+		}
+		15 = {
+			trigger = { intrigue >= 16 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_spider
+			}
+			else = {
+				give_nickname = nick_the_spider_f
+			}
+		}
+		15 = {
+			trigger = { has_trait = deceitful }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_deceiver
+			}
+			else = {
+				give_nickname = nick_the_deceiver_f
+			}
+		}
+		50 = {
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_cunning
+			}
+			else = {
+				give_nickname = nick_the_cunning_f
+			}
+		}
+	}
+}
+
+# Learning skill nicknames
+ac_assign_learning_nickname_effect = {
+	random_list = {
+		20 = {
+			trigger = { learning >= 14 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_scholar
+			}
+			else = {
+				give_nickname = nick_the_scholar_f
+			}
+		}
+		15 = {
+			trigger = { learning >= 16 }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_wise
+			}
+			else = {
+				give_nickname = nick_the_wise_f
+			}
+		}
+		15 = {
+			trigger = { has_trait = scholar }
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_learned
+			}
+			else = {
+				give_nickname = nick_the_learned_f
+			}
+		}
+		50 = {
+			if = {
+				limit = { is_female = no }
+				give_nickname = nick_the_reader
+			}
+			else = {
+				give_nickname = nick_the_reader_f
+			}
+		}
+	}
+}
+
+# Faith-based nicknames
+ac_assign_faith_nickname_effect = {
+	# Christianity nicknames
+	if = {
+		limit = {
+			faith = { religion_tag = christianity_religion }
+		}
+		random_list = {
+			30 = {
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_pious
+				}
+				else = {
+					give_nickname = nick_the_pious_f
+				}
+			}
+			20 = {
+				trigger = { piety_level >= 3 }
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_holy
+				}
+				else = {
+					give_nickname = nick_the_holy_f
+				}
+			}
+			50 = {
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_faithful
+				}
+				else = {
+					give_nickname = nick_the_faithful_f
+				}
+			}
+		}
+	}
+	# Islam nicknames
+	else_if = {
+		limit = {
+			faith = { religion_tag = islam_religion }
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_faithful
+				}
+				else = {
+					give_nickname = nick_the_faithful_f
+				}
+			}
+			50 = {
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_just
+				}
+				else = {
+					give_nickname = nick_the_just_f
+				}
+			}
+		}
+	}
+	# Norse/Pagan nicknames
+	else_if = {
+		limit = {
+			OR = {
+				faith = { religion_tag = germanic_religion }
+				faith = { religion_tag = norse_religion }
+			}
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_northman
+				}
+				else = {
+					give_nickname = nick_the_northwoman
+				}
+			}
+			50 = {
+				if = {
+					limit = { is_female = no }
+					give_nickname = nick_the_raider
+				}
+				else = {
+					give_nickname = nick_the_raider_f
+				}
+			}
+		}
+	}
+	# Hindu nicknames
+	else_if = {
+		limit = {
+			faith = { religion_tag = hinduism_religion }
+		}
+		if = {
+			limit = { is_female = no }
+			give_nickname = nick_the_dharmic
+		}
+		else = {
+			give_nickname = nick_the_dharmic_f
+		}
+	}
+	# Buddhist nicknames
+	else_if = {
+		limit = {
+			faith = { religion_tag = buddhism_religion }
+		}
+		if = {
+			limit = { is_female = no }
+			give_nickname = nick_the_enlightened
+		}
+		else = {
+			give_nickname = nick_the_enlightened_f
+		}
+	}
+	# Fallback generic
+	else = {
+		if = {
+			limit = { is_female = no }
+			give_nickname = nick_the_ruler
+		}
+		else = {
+			give_nickname = nick_the_ruler_f
+		}
+	}
+}

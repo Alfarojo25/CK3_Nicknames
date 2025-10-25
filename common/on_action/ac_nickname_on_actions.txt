@@ -32,87 +32,14 @@ ac_nickname_yearly_check = {
 		# Base chance: 20% per year
 		chance_to_happen = 20
 		# No additional modifiers - flat 20% for all eligible characters
-		# If check passes, proceed to selection
-		100 = ac_nickname_selection_pool
+		# If check passes, proceed to master nickname assignment
+		100 = ac_nickname_master_assignment
 	}
 }
 
-# Selection pool: randomly choose which nickname category to evaluate
-ac_nickname_selection_pool = {
-	random_events = {
-		# Physical traits (scars, wounds, disabilities)
-		100 = ac_nickname.1001		# Giant
-		100 = ac_nickname.1002		# Dwarf
-		100 = ac_nickname.1003		# One-eyed
-		100 = ac_nickname.1004		# Scarred
-		100 = ac_nickname.1005		# Beautiful
-		100 = ac_nickname.1006		# Ugly
-		100 = ac_nickname.1007		# Strong
-		100 = ac_nickname.1008		# Weak
-		100 = ac_nickname.1009		# Genius
-		100 = ac_nickname.1010		# Stupid
-		# Martial skill-based (17+)
-		100 = ac_nickname.2001		# The Conqueror
-		100 = ac_nickname.2002		# The Invincible
-		100 = ac_nickname.2003		# The Warrior
-		100 = ac_nickname.2004		# The Hammer
-		100 = ac_nickname.2005		# The Dragon
-		100 = ac_nickname.2101		# Bloodaxe
-		100 = ac_nickname.2102		# The Terrible
-		100 = ac_nickname.2103		# Scourge of God
-		# Diplomacy skill-based (17+)
-		100 = ac_nickname.3001		# The Wise
-		100 = ac_nickname.3002		# The Just
-		100 = ac_nickname.3003		# The Peacemaker
-		100 = ac_nickname.3004		# The Silver Tongue
-		100 = ac_nickname.3101		# The Great
-		100 = ac_nickname.3102		# The Magnificent
-		100 = ac_nickname.3103		# The Lawgiver
-		# Stewardship skill-based (17+)
-		100 = ac_nickname.4001		# The Builder
-		100 = ac_nickname.4002		# The Merchant
-		100 = ac_nickname.4003		# The Rich
-		# Intrigue skill-based (17+)
-		100 = ac_nickname.5001		# The Shadow
-		100 = ac_nickname.5002		# The Spider
-		100 = ac_nickname.5003		# The Knife
-		# Learning skill-based (17+)
-		100 = ac_nickname.6001		# The Scholar
-		100 = ac_nickname.6002		# The Wise
-		100 = ac_nickname.6003		# The Philosopher
-		# Faith-specific (Abrahamic)
-		100 = ac_nickname.7001		# The Saint
-		100 = ac_nickname.7002		# The Crusader
-		100 = ac_nickname.7003		# The Pilgrim
-		# Faith-specific (Pagan)
-		100 = ac_nickname.8001		# Son of Thor
-		100 = ac_nickname.8002		# Daughter of Freya
-		# Faith-specific (Eastern)
-		100 = ac_nickname.9001		# The Enlightened
-		100 = ac_nickname.9002		# The Ascetic
-		# Faith-specific (Singles)
-		100 = ac_nickname.10001		# Fire-touched
-	}
-}
-
-# On character becomes adult (16) - first chance for nickname
-on_birth_real_father = {
+# Master assignment: single event that uses dynamic effect system
+ac_nickname_master_assignment = {
 	events = {
-		# Placeholder for future expansion
-	}
-}
-
-# On character comes of age - special check
-on_adulthood = {
-	events = {
-		# Could trigger immediate nickname check for certain traits
-		# ac_nickname.0001 # Special adulthood nickname event
-	}
-}
-
-# On character gets trait - might qualify for new nickname
-on_trait_gained = {
-	events = {
-		# Future: trigger nickname check if gained qualifying trait
+		ac_nickname.1		# Master nickname assignment event
 	}
 }
