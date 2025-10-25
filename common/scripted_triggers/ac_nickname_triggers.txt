@@ -1,0 +1,435 @@
+#########################################
+# AC Nickname System - Scripted Triggers
+# Base triggers for nickname assignment
+#########################################
+### AGE REQUIREMENTS ###
+ac_age_adult_trigger = {
+	age >= 16
+}
+
+ac_age_mature_trigger = {
+	age >= 20
+}
+
+ac_age_veteran_trigger = {
+	age >= 30
+}
+
+### SKILL RANGES ###
+# 0-8: No nickname (too mediocre)
+ac_skill_too_low_trigger = {
+	trigger_if = {
+		limit = {
+			exists = scope:skill_type
+		}
+		scope:skill_type <= 8
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+# 9-11: Bad/Incompetent nicknames
+ac_skill_is_bad_trigger = {
+	OR = {
+		diplomacy = {
+			value >= 9
+			value <= 11
+		}
+		martial = {
+			value >= 9
+			value <= 11
+		}
+		stewardship = {
+			value >= 9
+			value <= 11
+		}
+		intrigue = {
+			value >= 9
+			value <= 11
+		}
+		learning = {
+			value >= 9
+			value <= 11
+		}
+	}
+}
+
+# 12-16: Medium/Competent nicknames
+ac_skill_is_medium_trigger = {
+	OR = {
+		diplomacy = {
+			value >= 12
+			value <= 16
+		}
+		martial = {
+			value >= 12
+			value <= 16
+		}
+		stewardship = {
+			value >= 12
+			value <= 16
+		}
+		intrigue = {
+			value >= 12
+			value <= 16
+		}
+		learning = {
+			value >= 12
+			value <= 16
+		}
+	}
+}
+
+# 17+: Glorious/Legendary nicknames
+ac_skill_is_glorious_trigger = {
+	OR = {
+		diplomacy >= 17
+		martial >= 17
+		stewardship >= 17
+		intrigue >= 17
+		learning >= 17
+	}
+}
+
+# Specific skill checks
+ac_diplomacy_bad_trigger = {
+	diplomacy = {
+		value >= 9
+		value <= 11
+	}
+}
+
+ac_diplomacy_medium_trigger = {
+	diplomacy = {
+		value >= 12
+		value <= 16
+	}
+}
+
+ac_diplomacy_glorious_trigger = {
+	diplomacy >= 17
+}
+
+ac_martial_bad_trigger = {
+	martial = {
+		value >= 9
+		value <= 11
+	}
+}
+
+ac_martial_medium_trigger = {
+	martial = {
+		value >= 12
+		value <= 16
+	}
+}
+
+ac_martial_glorious_trigger = {
+	martial >= 17
+}
+
+ac_stewardship_bad_trigger = {
+	stewardship = {
+		value >= 9
+		value <= 11
+	}
+}
+
+ac_stewardship_medium_trigger = {
+	stewardship = {
+		value >= 12
+		value <= 16
+	}
+}
+
+ac_stewardship_glorious_trigger = {
+	stewardship >= 17
+}
+
+ac_intrigue_bad_trigger = {
+	intrigue = {
+		value >= 9
+		value <= 11
+	}
+}
+
+ac_intrigue_medium_trigger = {
+	intrigue = {
+		value >= 12
+		value <= 16
+	}
+}
+
+ac_intrigue_glorious_trigger = {
+	intrigue >= 17
+}
+
+ac_learning_bad_trigger = {
+	learning = {
+		value >= 9
+		value <= 11
+	}
+}
+
+ac_learning_medium_trigger = {
+	learning = {
+		value >= 12
+		value <= 16
+	}
+}
+
+ac_learning_glorious_trigger = {
+	learning >= 17
+}
+
+### TRAIT CATEGORIES ###
+# Congenital traits (heredable)
+ac_has_congenital_trait_trigger = {
+	OR = {
+		# Beauty
+		has_trait = beautiful
+		has_trait = comely
+		has_trait = ugly
+		has_trait = hideous
+		# Intelligence
+		has_trait = genius
+		has_trait = intelligent
+		has_trait = slow
+		has_trait = stupid
+		# Strength/Health
+		has_trait = strong
+		has_trait = weak
+		has_trait = fecund
+		has_trait = infertile
+		# Size
+		has_trait = giant
+		has_trait = dwarf
+		has_trait = hunchbacked
+		# Other congenital
+		has_trait = albino
+		has_trait = bleeder
+		has_trait = clubfooted
+		has_trait = lisping
+		has_trait = stuttering
+	}
+}
+
+# Physical traits (acquired, not heredable)
+ac_has_physical_trait_trigger = {
+	OR = {
+		# Combat wounds
+		has_trait = wounded
+		has_trait = maimed
+		has_trait = infirm
+		has_trait = incapable
+		# Missing body parts
+		has_trait = one_eyed
+		has_trait = one_handed
+		has_trait = one_legged
+		# Disfigurement
+		has_trait = disfigured
+		has_trait = scarred
+		has_trait = pox_scarred
+		# Disabilities
+		has_trait = blinded
+		has_trait = eunuch
+		has_trait = mangled
+		has_trait = leper
+	}
+}
+
+# Beauty traits
+ac_has_beauty_trait_trigger = {
+	OR = {
+		has_trait = beautiful
+		has_trait = comely
+		has_trait = ugly
+		has_trait = hideous
+	}
+}
+
+# Size traits
+ac_has_size_trait_trigger = {
+	OR = {
+		has_trait = giant
+		has_trait = dwarf
+	}
+}
+
+# Intelligence traits
+ac_has_intelligence_trait_trigger = {
+	OR = {
+		has_trait = genius
+		has_trait = intelligent
+		has_trait = slow
+		has_trait = stupid
+	}
+}
+
+# Strength traits
+ac_has_strength_trait_trigger = {
+	OR = {
+		has_trait = strong
+		has_trait = weak
+		has_trait = frail
+	}
+}
+
+# Disfigurement traits
+ac_has_disfigurement_trait_trigger = {
+	OR = {
+		has_trait = disfigured
+		has_trait = scarred
+		has_trait = pox_scarred
+		has_trait = maimed
+		has_trait = one_eyed
+		has_trait = one_handed
+		has_trait = one_legged
+		has_trait = blinded
+		has_trait = eunuch
+	}
+}
+
+### FAITH FAMILIES ###
+# Abrahamic religions
+ac_is_abrahamic_faith_trigger = {
+	OR = {
+		religion = religion_christianity_church
+		religion = religion_islam
+		religion = religion_judaism
+	}
+}
+
+# Eastern religions (Dharmic)
+ac_is_eastern_faith_trigger = {
+	OR = {
+		religion = religion_hinduism
+		religion = religion_buddhism
+		religion = religion_jainism
+	}
+}
+
+# Pagan religions
+ac_is_pagan_faith_trigger = {
+	OR = {
+		religion = religion_germanic
+		religion = religion_slavic_pagan
+		religion = religion_baltic_pagan
+		religion = religion_finno_ugric
+		religion = religion_west_african_pagan
+		religion = religion_berber_pagan
+		religion = religion_tengri_pagan
+		religion = religion_bon
+		religion = religion_zunism
+		religion = religion_hellenic_pagan
+		religion = religion_egyptian_pagan
+		religion = religion_canaanite_pagan
+	}
+}
+
+# Single/unique religions
+ac_is_single_faith_trigger = {
+	OR = {
+		religion = religion_zoroastrianism
+		religion = religion_manichaeism
+		religion = religion_taoism
+		religion = religion_dualism
+	}
+}
+
+# Specific faith checks
+ac_is_christian_trigger = {
+	religion = religion_christianity_church
+}
+
+ac_is_catholic_trigger = {
+	faith = faith:catholic
+}
+
+ac_is_orthodox_trigger = {
+	faith = faith:orthodox
+}
+
+ac_is_norse_pagan_trigger = {
+	faith = faith:norse_pagan
+}
+
+ac_is_muslim_trigger = {
+	religion = religion_islam
+}
+
+ac_is_sunni_trigger = {
+	faith = faith:sunni
+}
+
+ac_is_shiite_trigger = {
+	faith = faith:shiite
+}
+
+ac_is_hindu_trigger = {
+	religion = religion_hinduism
+}
+
+ac_is_buddhist_trigger = {
+	religion = religion_buddhism
+}
+
+ac_is_zoroastrian_trigger = {
+	religion = religion_zoroastrianism
+}
+
+### COMBINED CONDITIONS ###
+# Ready for physical nickname (age 16+, has trait)
+ac_ready_for_physical_nickname_trigger = {
+	ac_age_adult_trigger = yes
+	ac_has_physical_trait_trigger = yes
+	has_any_nickname = no
+}
+
+# Ready for congenital nickname (age 16+, has trait)
+ac_ready_for_congenital_nickname_trigger = {
+	ac_age_adult_trigger = yes
+	ac_has_congenital_trait_trigger = yes
+	has_any_nickname = no
+}
+
+# Ready for skill nickname (age 20+, skill qualifies)
+ac_ready_for_skill_nickname_trigger = {
+	ac_age_mature_trigger = yes
+	OR = {
+		ac_skill_is_bad_trigger = yes
+		ac_skill_is_medium_trigger = yes
+		ac_skill_is_glorious_trigger = yes
+	}
+	has_any_nickname = no
+}
+
+# Ready for faith nickname (age 20+, correct faith)
+ac_ready_for_faith_nickname_trigger = {
+	ac_age_mature_trigger = yes
+	has_any_nickname = no
+	OR = {
+		ac_is_abrahamic_faith_trigger = yes
+		ac_is_eastern_faith_trigger = yes
+		ac_is_pagan_faith_trigger = yes
+		ac_is_single_faith_trigger = yes
+	}
+}
+
+### EXCLUSIONS ###
+# Character should not receive nicknames
+ac_nickname_blocked_trigger = {
+	OR = {
+		is_ai = no		# Player characters excluded (optional)
+		age < 16		# Too young
+		is_imprisoned = yes		# Currently imprisoned
+		is_incapable = yes		# Incapacitated
+		has_character_flag = ac_nickname_blocked		# Manual block
+	}
+}
+
+# Already has a nickname
+ac_has_nickname_already_trigger = {
+	has_any_nickname = yes
+}

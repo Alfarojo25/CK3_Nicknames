@@ -1,0 +1,43 @@
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+*.old
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# CK3 Tiger cache
+.ck3-tiger-cache/
+tiger-cache/
+
+# Development notes
+notes/
+dev_notes/
+TODO.md
+
+# Python cache (if using scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Git
+.git/
+
+# Logs
+*.log
+logs/
+
+# User-specific mod files
+*.mod.disabled
