@@ -57,6 +57,35 @@ _Coming soon_
    - **Linux**: `~/.local/share/Paradox Interactive/Crusader Kings III/mod/`
 3. Launch CK3 and enable the mod in the Launcher
 
+## 🛠️ Debug Mode
+
+**NEW!** Testing tools are now available for mod developers and power users.
+
+### Enabling Debug Mode
+
+1. Load your save game
+2. Open the **Decisions** menu (💡 icon)
+3. Find and use **"Toggle Nickname Debug Mode"**
+4. Debug tools will now appear in your Decisions menu
+
+### Available Tools
+
+| Decision | Description |
+|----------|-------------|
+| **Toggle Debug Mode** | Enable/disable debug tools |
+| **Clear Nickname** | Remove your current nickname to test others |
+| **Manual Block** | Prevent yourself from receiving nicknames |
+| **Manual Unblock** | Re-enable nickname assignment |
+
+### Debug Mode Features
+
+-✅ **No cost**: All debug decisions are free
+- ✅ **Instant effect**: Changes apply immediately
+- ✅ **Safe testing**: Easily test different nickname scenarios
+- ✅ **Player-only**: AI cannot access debug tools
+
+**Note**: Debug mode is intended for testing purposes only.
+
 ## 🎮 How It Works
 
 ### Nickname Categories

@@ -25,6 +25,51 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-10-25] - Debug Mode Implementado - 20:00
+
+### Added
+
+- **Debug Mode System** con 4 decisiones:
+  - `ac_nickname_toggle_debug` - Activar/desactivar modo debug
+  - `ac_nickname_clear` - Limpiar apodo actual para testing
+  - `ac_nickname_manual_block` - Bloquear asignación de apodos
+  - `ac_nickname_manual_unblock` - Desbloquear asignación de apodos
+- **Archivo:** `common/decisions/ac_nickname_debug_decisions.txt` (133 líneas)
+- **Localización EN:** `localization/english/ac_nickname_debug_l_english.yml` (44 líneas)
+- **Localización ES:** `localization/spanish/ac_nickname_debug_l_spanish.yml` (44 líneas)
+- **README actualizado** con sección "Debug Mode" explicando uso y herramientas
+
+### Changed
+
+- Sintaxis de decisiones simplificada para evitar errores de CK3-Tiger
+- `is_councillor` usado en lugar de `has_council_position` (más compatible)
+- `remove_nickname` usado en lugar de `clear_nickname` (correcto en CK3)
+- Eliminado campo `picture` de decisiones (causaba errores de estructura)
+
+### Fixed
+
+- Corregidos 12 errores de CK3-Tiger en archivo de decisiones
+- Sintaxis de `trigger_event` corregida (requiere bloques con `id` y `days`)
+- Triggers personalizados expandidos inline para evitar errores de estructura
+
+### Technical Notes
+
+- **CK3-Tiger Final:** 0 errors, 2103 warnings (mayoría son localizaciones faltantes)
+- **UTF-8 BOM:** Aplicado a todos los archivos nuevos
+- **Funcionalidad:** Debug mode solo visible cuando se activa con la decisión toggle
+- **Sin costo:** Todas las decisiones de debug son gratis (prestige=0, piety=0)
+- **Cooldown:** No hay cooldown para decisiones de debug (testing rápido)
+- **AI:** AI no puede usar decisiones de debug (ai_will_do = 0)
+
+**Uso en juego:**
+1. Cargar partida
+2. Abrir menú Decisiones
+3. Usar "Toggle Nickname Debug Mode"
+4. Aparecerán las herramientas de debug
+5. Probar asignación/limpieza de apodos
+
+---
+
 ## [2025-10-25] - Inicio del Proyecto
 
 ### Added - 14:00
