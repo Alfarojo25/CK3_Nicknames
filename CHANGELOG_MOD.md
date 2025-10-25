@@ -25,6 +25,47 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-10-25] - Reorganización de Decisiones - 23:50
+
+### Changed
+
+- **Decisiones separadas en archivos individuales:**
+  - `ac_nickname_debug_decisions.txt` (189 líneas) → ELIMINADO
+  - Creados 7 archivos TXT individuales:
+    1. `ac_nickname_toggle_debug.txt` (26 líneas)
+    2. `ac_nickname_clear.txt` (22 líneas)
+    3. `ac_nickname_manual_block.txt` (28 líneas)
+    4. `ac_nickname_manual_unblock.txt` (22 líneas)
+    5. `ac_nickname_give_all.txt` (35 líneas)
+    6. `ac_nickname_clear_all.txt` (28 líneas)
+    7. `ac_nickname_export_report.txt` (26 líneas)
+
+- **Localización mantenida en YML consolidados:**
+  - `localization/english/ac_nickname_debug_l_english.yml` (41 líneas)
+  - `localization/spanish/ac_nickname_debug_l_spanish.yml` (41 líneas)
+
+### Fixed
+
+- **Bug en `ac_nickname_manual_unblock`:**
+  - **Antes:** `remove_character_flag = ac_nickname_manual_unblock_tt` ❌
+  - **Después:** `remove_character_flag = ac_nickname_manually_blocked` ✅
+  - **Causa:** Estaba intentando eliminar la flag del tooltip en vez de la flag de bloqueo
+
+### Added
+
+- UTF-8 BOM aplicado a todos los archivos nuevos (7 TXT + 2 YML)
+- README actualizado con nuevo nombre del mod
+
+### Technical Notes
+
+- **Validación CK3-Tiger:** 0 errores, 2082 warnings (solo localizaciones)
+- **Organización:** Mejor mantenibilidad con archivos separados
+- **Debugging:** Ahora se puede deshabilitar decisiones individuales para testing
+- **Compatibilidad:** Mejor adherencia a mejores prácticas de modding CK3
+- **Commit:** `77599cf` - refactor: Separate debug decisions into individual TXT files
+
+---
+
 ## [2025-10-25] - Debug Cooldowns Eliminados - 21:15
 
 ### Fixed
