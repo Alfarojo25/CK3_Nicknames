@@ -60,49 +60,28 @@ _Coming soon_
 
 ## 🛠️ Debug Mode
 
-**NEW!** Testing tools are now available for mod developers and power users.
+**⚠️ NOTA IMPORTANTE:** Las decisiones de debug están implementadas pero **los eventos asociados aún no funcionan completamente**. Actualmente solo funciona la activación/desactivación del modo debug. Las demás funcionalidades se completarán en futuras actualizaciones.
 
 ### Enabling Debug Mode
 
 1. Load your save game
 2. Open the **Decisions** menu (💡 icon)
 3. Find and use **"Toggle Nickname Debug Mode"**
-4. Debug tools will now appear in your Decisions menu
+4. Debug tools will now appear in your Decisions menu (pero los eventos no están implementados aún)
 
-### Available Tools
+### Available Tools (En Desarrollo)
 
-| Decision                   | Description                                                      |
-| -------------------------- | ---------------------------------------------------------------- |
-| **Toggle Debug Mode**      | Enable/disable debug tools                                       |
-| **Clear Nickname**         | Remove your current nickname to test others                      |
-| **Manual Block**           | Prevent yourself from receiving nicknames                        |
-| **Manual Unblock**         | Re-enable nickname assignment                                    |
-| **Give Nicknames to All**  | ⚡ Trigger nickname assignment for ALL eligible characters (16+) |
-| **Clear All Nicknames**    | ⚠️ Remove ALL nicknames from all living characters               |
-| **Export Nickname Report** | 📊 Generate detailed TXT report of all characters with nicknames |
+| Decision                   | Estado | Description                                                      |
+| -------------------------- | ------ | ---------------------------------------------------------------- |
+| **Toggle Debug Mode**      | ✅     | Enable/disable debug tools                                       |
+| **Clear Nickname**         | 🚧     | Remove your current nickname to test others                      |
+| **Manual Block**           | 🚧     | Prevent yourself from receiving nicknames                        |
+| **Manual Unblock**         | 🚧     | Re-enable nickname assignment                                    |
+| **Give Nicknames to All**  | 🚧     | ⚡ Trigger nickname assignment for ALL eligible characters (16+) |
+| **Clear All Nicknames**    | 🚧     | ⚠️ Remove ALL nicknames from all living characters               |
+| **Export Nickname Report** | 🚧     | 📊 Generate detailed TXT report of all characters with nicknames |
 
-### Export Report Format
-
-The **Export Nickname Report** generates a file in your CK3 logs folder with this information:
-
-```
-Character ID | Name | Title | Nickname
-12345 | King Harold | Kingdom of England | the Conqueror
-67890 | Duke William | Duchy of Normandy | the Bold
-...
-```
-
-**Location**: `Documents/Paradox Interactive/Crusader Kings III/logs/game.log`
-
-### Debug Mode Features
-
--✅ **No cost**: All debug decisions are free
-
-- ✅ **Instant effect**: Changes apply immediately
-- ✅ **Safe testing**: Easily test different nickname scenarios
-- ✅ **Player-only**: AI cannot access debug tools
-
-**Note**: Debug mode is intended for testing purposes only.
+**Note**: Debug mode is intended for testing purposes only and is currently under development.
 
 ## 🎮 How It Works
 
@@ -204,7 +183,11 @@ Contributions are welcome! Please:
 
 ## 📜 Credits
 
-**Developer**: Alfarojo25  
+**Developer**: Alfarojo  
+**GitHub**: https://github.com/Alfarojo25  
+**Steam**: [Alfarojo](https://steamcommunity.com/profiles/76561198085829278/) (ID: 76561198085829278)  
+**Discord**: alfarojo / Latamsquad - IFT (Clan)
+
 **Special Thanks**:
 
 - CK3-Tiger team for validation tools
@@ -217,9 +200,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **GitHub**: https://github.com/Alfarojo25/CK3_Nicknames
+- **GitHub Repository**: https://github.com/Alfarojo25/CK3_Nicknames
+- **Steam Profile**: https://steamcommunity.com/profiles/76561198085829278/
 - **Steam Workshop**: _Coming soon_
-- **Discord**: _Coming soon_
 
 ---
 

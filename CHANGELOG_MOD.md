@@ -1,7 +1,7 @@
-# CHANGELOG - Mod Development Backup
+# CHANGELOG - Mod Development
 
 Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo.  
-**PROPÓSITO:** Backup y trazabilidad antes de modificaciones masivas.
+**PROPÓSITO:** Trazabilidad y documentación de mejoras.
 
 **FORMATO:**
 
@@ -20,8 +20,75 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 ### Technical Notes
 - Notas técnicas importantes
 - Decisiones de diseño
-- Warnings de CK3-Tiger
 ```
+
+---
+
+## [2025-10-25] - Corrección de Traducciones y Limpieza - 18:30
+
+### Fixed
+
+- **Corrección masiva de orden de adjetivos en español (RAE):**
+
+  - ❌ "el Rojo Oso" → ✅ "el Oso Rojo"
+  - ❌ "el Plata Gigante" → ✅ "el Gigante Plateado"
+  - ❌ "el Veneno Serpiente" → ✅ "la Serpiente Venenosa"
+  - ❌ "el Blanco Lobo" → ✅ "el Lobo Blanco"
+  - ❌ "el Verano Caballero" → ✅ "el Caballero de Verano"
+  - ❌ "el Sol Caballero" → ✅ "el Caballero del Sol"
+  - ❌ "el ella Oso" → ✅ "la Osa"
+  - Total: ~100 apodos corregidos (líneas 1938-2060+)
+
+- **Corrección de codificación UTF-8:**
+
+  - Eliminado BOM (Byte Order Mark) de 41 archivos en `common/`
+  - Problema: Python script usaba `utf-8-sig` incorrectamente
+  - Afectados: 7 decisiones, 29 scripted_effects, 2 nicknames, 1 on_actions, 1 triggers, 1 dispatcher
+  - Causa raíz: Script `apply_bom_all.py` agregó BOM donde no debía
+  - Regla CK3: `common/` = UTF-8 sin BOM, `localization/` = UTF-8 con BOM
+
+- **Agregadas claves de localización faltantes:**
+
+  - 7 claves `_confirm` en español (ac_nickname_toggle_debug_confirm, etc.)
+  - 7 claves `_confirm` en inglés (paridad)
+  - Total: 14 nuevas claves de localización
+
+- **Propiedades faltantes en decisiones:**
+  - Agregado `picture = "gfx/interface/illustrations/decisions/decision_misc.dds"` a 7 decisiones
+  - Agregado `ai_check_interval = 0` a 7 decisiones
+  - Solucionó warnings de "texture path empty"
+
+### Changed
+
+- **Sistema modular de apodos reorganizado:**
+  - 29 archivos de scripted_effects categorizados en carpetas:
+    - `animals/` (7 archivos): bear, bird, dragon, lion, other, snake, wolf
+    - `colors/` (5 archivos): black, golden, other, red, white
+    - `weapons/` (7 archivos): axe, bow, hammer, other, shield, spear, sword
+    - `faith/` (4 archivos): buddhism, christianity, generic, germanic
+    - `size/` (2 archivos): dwarf, giant
+    - `knights/` (1 archivo): knight_types
+    - `warriors/` (1 archivo): warrior_types
+    - `historical/` (1 archivo): historical_epithets
+    - `misc/` (1 archivo): misc_other
+
+### Removed
+
+- Archivos temporales de desarrollo:
+  - `create_localization.py`
+  - `translations_complete.json`
+  - `words_unique.txt`
+  - `fix_nickname_order.py`
+
+### Technical Notes
+
+- **Encoding validation**: Todos los archivos verificados con script de detección BOM
+- **Localización mejorada**: Traducciones suenan más naturales en español
+- **Mejor organización**: Sistema modular facilita mantenimiento
+- **CK3 compatible**: Sin errores de parsing después de correcciones
+- **Commits**:
+  - `b916c27` - Fix: Corregir codificación UTF-8 y orden de apodos en español
+  - `e8912a4` - Fix: Corregir orden de adjetivos en apodos compuestos (RAE)
 
 ---
 
