@@ -76,6 +76,22 @@ _Coming soon_
 | **Clear Nickname** | Remove your current nickname to test others |
 | **Manual Block** | Prevent yourself from receiving nicknames |
 | **Manual Unblock** | Re-enable nickname assignment |
+| **Give Nicknames to All** | ⚡ Trigger nickname assignment for ALL eligible characters (16+) |
+| **Clear All Nicknames** | ⚠️ Remove ALL nicknames from all living characters |
+| **Export Nickname Report** | 📊 Generate detailed TXT report of all characters with nicknames |
+
+### Export Report Format
+
+The **Export Nickname Report** generates a file in your CK3 logs folder with this information:
+
+```
+Character ID | Name | Title | Nickname
+12345 | King Harold | Kingdom of England | the Conqueror
+67890 | Duke William | Duchy of Normandy | the Bold
+...
+```
+
+**Location**: `Documents/Paradox Interactive/Crusader Kings III/logs/game.log`
 
 ### Debug Mode Features
 

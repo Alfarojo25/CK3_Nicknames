@@ -40,3 +40,18 @@
  ac_nickname_manual_unblock_desc:0 "Allow yourself to receive nicknames again."
  ac_nickname_manual_unblock_tooltip:0 "Unblock nickname assignment for this character"
  ac_nickname_manual_unblock_tt:0 "You can now receive nicknames again."
+ 
+ ac_nickname_give_all:0 "Give Nicknames to All Characters"
+ ac_nickname_give_all_desc:0 "Trigger nickname assignment for ALL living characters aged 16+ who don't have a nickname. This may take a moment to process."
+ ac_nickname_give_all_tooltip:0 "Give nicknames to all eligible characters"
+ ac_nickname_give_all_tt:0 "All living characters aged 16+ without nicknames will be evaluated for nickname assignment. This process may take a few in-game days."
+ 
+ ac_nickname_clear_all:0 "Clear All Nicknames"
+ ac_nickname_clear_all_desc:0 "Remove nicknames from ALL living characters in the world. Use with caution!"
+ ac_nickname_clear_all_tooltip:0 "Clear all nicknames globally"
+ ac_nickname_clear_all_tt:0 "All nicknames have been removed from all living characters."
+ 
+ ac_nickname_export_report:0 "Export Nickname Report"
+ ac_nickname_export_report_desc:0 "Generate a detailed report of all characters with nicknames and export it to the game logs. The report will be saved in your CK3 logs folder."
+ ac_nickname_export_report_tooltip:0 "Export nickname data to logs"
+ ac_nickname_export_report_tt:0 "Nickname report has been exported to:\n[E]Documents/Paradox Interactive/Crusader Kings III/logs/game.log[!E]\n\nThe report includes:\n• Character ID\n• Character Name\n• Primary Title\n• Assigned Nickname"

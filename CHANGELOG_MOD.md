@@ -25,6 +25,45 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-10-25] - Debug Mode Expandido - 21:00
+
+### Added
+
+- **3 Nuevas Decisiones de Debug Masivas:**
+  - `ac_nickname_give_all` - Dar apodos a TODOS los personajes elegibles (16+)
+  - `ac_nickname_clear_all` - Limpiar TODOS los apodos del mundo
+  - `ac_nickname_export_report` - Exportar reporte TXT con todos los apodos
+- **Evento de Exportación:** `ac_nickname.9999` para generar reportes
+- **Sistema de Logging:** Usa `debug_log` para exportar datos a game.log
+
+### Changed
+
+- Decisiones de debug ahora son 7 (era 4)
+- Localizaciones EN/ES actualizadas con las 3 nuevas decisiones
+- README actualizado con tabla de herramientas y formato de exportación
+
+### Technical Notes
+
+- **Export Format:** `Character ID | Name | Title | Nickname`
+- **Export Location:** `Documents/Paradox Interactive/Crusader Kings III/logs/game.log`
+- **Give All:** Usa `every_living_character` con filtro de edad 16+
+- **Clear All:** Usa `every_living_character` con `remove_nickname`
+- **Cooldowns Agregados:**
+  - Give All: 365 días (1 año)
+  - Clear All: 30 días
+  - Export Report: 30 días
+- **CK3-Tiger:** 0 errors, 2140 warnings (solo localizaciones faltantes)
+
+**Uso del Export:**
+1. Activar debug mode
+2. Usar "Export Nickname Report"
+3. Ir a `Documents/Paradox Interactive/Crusader Kings III/logs/`
+4. Abrir `game.log`
+5. Buscar "===== NICKNAME REPORT ====="
+6. Copiar reporte a archivo TXT separado
+
+---
+
 ## [2025-10-25] - Debug Mode Implementado - 20:00
 
 ### Added

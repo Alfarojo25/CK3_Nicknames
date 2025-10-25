@@ -110,13 +110,132 @@ has_character_flag = ac_nickname_manually_blocked
 }
 
 effect = {
-remove_character_flag = ac_nickname_manually_blocked
+remove_character_flag = ac_nickname_manual_unblock_tt
 custom_tooltip = ac_nickname_manual_unblock_tt
 }
 
 cost = {
 prestige = 0
 piety = 0
+}
+
+ai_will_do = {
+base = 0
+}
+}
+
+ac_nickname_give_all = {
+
+
+desc = ac_nickname_give_all_desc
+selection_tooltip = ac_nickname_give_all_tooltip
+
+is_shown = {
+has_character_flag = ac_nickname_debug_mode
+}
+
+is_valid = {
+is_ruler = yes
+}
+
+effect = {
+custom_tooltip = ac_nickname_give_all_tt
+hidden_effect = {
+every_living_character = {
+limit = {
+NOT = { has_nickname = yes }
+age >= 16
+}
+trigger_event = {
+id = ac_nickname.1001
+days = 1
+}
+}
+}
+}
+
+cost = {
+prestige = 0
+piety = 0
+}
+
+cooldown = {
+days = 365
+}
+
+ai_will_do = {
+base = 0
+}
+}
+
+ac_nickname_clear_all = {
+
+
+desc = ac_nickname_clear_all_desc
+selection_tooltip = ac_nickname_clear_all_tooltip
+
+is_shown = {
+has_character_flag = ac_nickname_debug_mode
+}
+
+is_valid = {
+is_ruler = yes
+}
+
+effect = {
+custom_tooltip = ac_nickname_clear_all_tt
+hidden_effect = {
+every_living_character = {
+limit = {
+has_nickname = yes
+}
+remove_nickname = yes
+}
+}
+}
+
+cost = {
+prestige = 0
+piety = 0
+}
+
+cooldown = {
+days = 30
+}
+
+ai_will_do = {
+base = 0
+}
+}
+
+ac_nickname_export_report = {
+
+
+desc = ac_nickname_export_report_desc
+selection_tooltip = ac_nickname_export_report_tooltip
+
+is_shown = {
+has_character_flag = ac_nickname_debug_mode
+}
+
+is_valid = {
+is_ruler = yes
+}
+
+effect = {
+custom_tooltip = ac_nickname_export_report_tt
+hidden_effect = {
+trigger_event = ac_nickname.9999
+}
+}
+
+cost = {
+prestige = 0
+piety = 0
+}
+
+cooldown = {
+days = 30
 }
 
 ai_will_do = {

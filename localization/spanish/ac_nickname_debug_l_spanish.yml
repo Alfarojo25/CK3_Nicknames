@@ -40,3 +40,18 @@
  ac_nickname_manual_unblock_desc:0 "Permite que vuelvas a recibir apodos."
  ac_nickname_manual_unblock_tooltip:0 "Desbloquear asignación de apodos para este personaje"
  ac_nickname_manual_unblock_tt:0 "Ahora puedes recibir apodos nuevamente."
+ 
+ ac_nickname_give_all:0 "Dar Apodos a Todos los Personajes"
+ ac_nickname_give_all_desc:0 "Activa la asignación de apodos para TODOS los personajes vivos de 16+ años que no tengan apodo. Esto puede tardar un momento en procesarse."
+ ac_nickname_give_all_tooltip:0 "Dar apodos a todos los personajes elegibles"
+ ac_nickname_give_all_tt:0 "Todos los personajes vivos de 16+ años sin apodos serán evaluados para recibir uno. Este proceso puede tomar varios días del juego."
+ 
+ ac_nickname_clear_all:0 "Limpiar Todos los Apodos"
+ ac_nickname_clear_all_desc:0 "Elimina los apodos de TODOS los personajes vivos en el mundo. ¡Usa con precaución!"
+ ac_nickname_clear_all_tooltip:0 "Limpiar todos los apodos globalmente"
+ ac_nickname_clear_all_tt:0 "Todos los apodos han sido eliminados de todos los personajes vivos."
+ 
+ ac_nickname_export_report:0 "Exportar Reporte de Apodos"
+ ac_nickname_export_report_desc:0 "Genera un reporte detallado de todos los personajes con apodos y expórtalo a los logs del juego. El reporte se guardará en tu carpeta de logs de CK3."
+ ac_nickname_export_report_tooltip:0 "Exportar datos de apodos a logs"
+ ac_nickname_export_report_tt:0 "El reporte de apodos ha sido exportado a:\n[E]Documents/Paradox Interactive/Crusader Kings III/logs/game.log[!E]\n\nEl reporte incluye:\n• ID del Personaje\n• Nombre del Personaje\n• Título Principal\n• Apodo Asignado"
