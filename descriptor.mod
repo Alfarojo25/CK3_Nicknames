@@ -4,5 +4,5 @@ tags={
 	"Character Interactions"
 }
 name="Advanced Character Nicknames - Faith Based System"
-supported_version="1.17.*"
+supported_version="1.17.1"
 remote_file_id=""
