@@ -1,0 +1,42 @@
+﻿﻿l_spanish:
+ ### DEBUG DECISIONS ###
+ ac_nickname_toggle_debug:0 "Activar/Desactivar Modo Debug de Apodos"
+ ac_nickname_toggle_debug_desc:0 "Activa o desactiva el modo debug para el sistema de apodos. El modo debug proporciona herramientas de prueba e información."
+ ac_nickname_toggle_debug_tooltip:0 "Alternar modo debug para pruebas de apodos"
+ ac_nickname_debug_mode_on_tt:0 "El modo debug está ahora [E]ACTIVADO[!E]. Ahora puedes acceder a las herramientas de prueba."
+ ac_nickname_debug_mode_off_tt:0 "El modo debug está ahora [E]DESACTIVADO[!E]. Las herramientas de prueba están ocultas."
+ 
+ ac_nickname_force_check:0 "Forzar Verificación de Apodos"
+ ac_nickname_force_check_desc:0 "Activa manualmente todos los eventos de asignación de apodos para probar cuáles calificas para recibir."
+ ac_nickname_force_check_tooltip:0 "Verificar qué apodos puedes recibir"
+ ac_nickname_force_check_tt:0 "Todos los eventos de apodos se activarán en los próximos días. Recibirás un apodo si cumples los requisitos."
+ ac_nickname_already_has_nickname_tt:0 "Ya tienes un apodo. Límpialo primero para probar otros."
+ 
+ ac_nickname_clear:0 "Limpiar Apodo"
+ ac_nickname_clear_desc:0 "Elimina tu apodo actual para probar recibir uno nuevo."
+ ac_nickname_clear_tooltip:0 "Eliminar tu apodo actual"
+ ac_nickname_clear_tt:0 "Tu apodo ha sido eliminado. Ahora puedes recibir uno nuevo."
+ 
+ ac_nickname_show_info:0 "Mostrar Elegibilidad para Apodos"
+ ac_nickname_show_info_desc:0 "Muestra información detallada sobre tu elegibilidad para recibir apodos."
+ ac_nickname_show_info_tooltip:0 "Verificar tu elegibilidad para apodos"
+ ac_nickname_show_info_tt:0 "Tu información de elegibilidad:"
+ ac_nickname_age_ok_tt:0 "[E]EDAD:[!E] ✓ Tienes 16+ años"
+ ac_nickname_age_too_young_tt:0 "[E]EDAD:[!E] ✗ Eres demasiado joven (necesitas 16+)"
+ ac_nickname_skill_ok_tt:0 "[E]HABILIDADES:[!E] ✓ Tienes al menos una habilidad en 9+"
+ ac_nickname_skill_too_low_tt:0 "[E]HABILIDADES:[!E] ✗ Todas tus habilidades están por debajo de 9"
+ ac_nickname_power_ok_tt:0 "[E]PODER:[!E] ✓ Tienes un título o posición en el consejo"
+ ac_nickname_power_none_tt:0 "[E]PODER:[!E] ✗ Necesitas un título o posición en el consejo"
+ ac_nickname_blocked_tt:0 "[E]ESTADO:[!E] ✗ Estás BLOQUEADO (encarcelado, incapacitado, o bloqueado manualmente)"
+ ac_nickname_not_blocked_tt:0 "[E]ESTADO:[!E] ✓ NO estás bloqueado"
+ 
+ ac_nickname_manual_block:0 "Bloquear Apodos Manualmente"
+ ac_nickname_manual_block_desc:0 "Evita que recibas cualquier apodo."
+ ac_nickname_manual_block_tooltip:0 "Bloquear asignación de apodos para este personaje"
+ ac_nickname_manual_block_tt:0 "Ya no recibirás apodos hasta que te desbloquees."
+ ac_nickname_not_already_blocked_tt:0 "Actualmente no estás bloqueado"
+ 
+ ac_nickname_manual_unblock:0 "Desbloquear Apodos Manualmente"
+ ac_nickname_manual_unblock_desc:0 "Permite que vuelvas a recibir apodos."
+ ac_nickname_manual_unblock_tooltip:0 "Desbloquear asignación de apodos para este personaje"
+ ac_nickname_manual_unblock_tt:0 "Ahora puedes recibir apodos nuevamente."

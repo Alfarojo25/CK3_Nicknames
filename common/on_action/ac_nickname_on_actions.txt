@@ -2,7 +2,6 @@
 # AC Nickname System - On Actions
 # Handles yearly pulse and nickname selection
 #########################################
-
 # Hook into yearly pulse for playable characters
 yearly_playable_pulse = {
 	on_actions = {
@@ -26,16 +25,13 @@ ac_nickname_yearly_check = {
 		# Must have at least one title
 		OR = {
 			is_landed = yes
-			has_council_position = yes
+			is_councillor = yes
 		}
 	}
-	
 	random_on_action = {
 		# Base chance: 20% per year
 		chance_to_happen = 20
-		
 		# No additional modifiers - flat 20% for all eligible characters
-		
 		# If check passes, proceed to selection
 		100 = ac_nickname_selection_pool
 	}
@@ -55,7 +51,6 @@ ac_nickname_selection_pool = {
 		100 = ac_nickname.1008		# Weak
 		100 = ac_nickname.1009		# Genius
 		100 = ac_nickname.1010		# Stupid
-		
 		# Martial skill-based (17+)
 		100 = ac_nickname.2001		# The Conqueror
 		100 = ac_nickname.2002		# The Invincible
@@ -65,7 +60,6 @@ ac_nickname_selection_pool = {
 		100 = ac_nickname.2101		# Bloodaxe
 		100 = ac_nickname.2102		# The Terrible
 		100 = ac_nickname.2103		# Scourge of God
-		
 		# Diplomacy skill-based (17+)
 		100 = ac_nickname.3001		# The Wise
 		100 = ac_nickname.3002		# The Just
@@ -74,35 +68,28 @@ ac_nickname_selection_pool = {
 		100 = ac_nickname.3101		# The Great
 		100 = ac_nickname.3102		# The Magnificent
 		100 = ac_nickname.3103		# The Lawgiver
-		
 		# Stewardship skill-based (17+)
 		100 = ac_nickname.4001		# The Builder
 		100 = ac_nickname.4002		# The Merchant
 		100 = ac_nickname.4003		# The Rich
-		
 		# Intrigue skill-based (17+)
 		100 = ac_nickname.5001		# The Shadow
 		100 = ac_nickname.5002		# The Spider
 		100 = ac_nickname.5003		# The Knife
-		
 		# Learning skill-based (17+)
 		100 = ac_nickname.6001		# The Scholar
 		100 = ac_nickname.6002		# The Wise
 		100 = ac_nickname.6003		# The Philosopher
-		
 		# Faith-specific (Abrahamic)
 		100 = ac_nickname.7001		# The Saint
 		100 = ac_nickname.7002		# The Crusader
 		100 = ac_nickname.7003		# The Pilgrim
-		
 		# Faith-specific (Pagan)
 		100 = ac_nickname.8001		# Son of Thor
 		100 = ac_nickname.8002		# Daughter of Freya
-		
 		# Faith-specific (Eastern)
 		100 = ac_nickname.9001		# The Enlightened
 		100 = ac_nickname.9002		# The Ascetic
-		
 		# Faith-specific (Singles)
 		100 = ac_nickname.10001		# Fire-touched
 	}

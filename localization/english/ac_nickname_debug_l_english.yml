@@ -1,0 +1,42 @@
+﻿﻿l_english:
+ ### DEBUG DECISIONS ###
+ ac_nickname_toggle_debug:0 "Toggle Nickname Debug Mode"
+ ac_nickname_toggle_debug_desc:0 "Enable or disable debug mode for the nickname system. Debug mode provides testing tools and information."
+ ac_nickname_toggle_debug_tooltip:0 "Toggle debug mode for nickname testing"
+ ac_nickname_debug_mode_on_tt:0 "Debug mode is now [E]ENABLED[!E]. You can now access testing tools."
+ ac_nickname_debug_mode_off_tt:0 "Debug mode is now [E]DISABLED[!E]. Testing tools are hidden."
+ 
+ ac_nickname_force_check:0 "Force Nickname Check"
+ ac_nickname_force_check_desc:0 "Manually trigger all nickname assignment events to test which nicknames you qualify for."
+ ac_nickname_force_check_tooltip:0 "Check which nicknames you can receive"
+ ac_nickname_force_check_tt:0 "All nickname events will be triggered over the next few days. You will receive a nickname if you meet the requirements."
+ ac_nickname_already_has_nickname_tt:0 "You already have a nickname. Clear it first to test others."
+ 
+ ac_nickname_clear:0 "Clear Nickname"
+ ac_nickname_clear_desc:0 "Remove your current nickname to test receiving a new one."
+ ac_nickname_clear_tooltip:0 "Remove your current nickname"
+ ac_nickname_clear_tt:0 "Your nickname has been cleared. You can now receive a new one."
+ 
+ ac_nickname_show_info:0 "Show Nickname Eligibility"
+ ac_nickname_show_info_desc:0 "Display detailed information about your eligibility for receiving nicknames."
+ ac_nickname_show_info_tooltip:0 "Check your nickname eligibility"
+ ac_nickname_show_info_tt:0 "Your eligibility information:"
+ ac_nickname_age_ok_tt:0 "[E]AGE:[!E] ✓ You are 16+ years old"
+ ac_nickname_age_too_young_tt:0 "[E]AGE:[!E] ✗ You are too young (need 16+)"
+ ac_nickname_skill_ok_tt:0 "[E]SKILLS:[!E] ✓ You have at least one skill at 9+"
+ ac_nickname_skill_too_low_tt:0 "[E]SKILLS:[!E] ✗ All your skills are below 9"
+ ac_nickname_power_ok_tt:0 "[E]POWER:[!E] ✓ You have a title or council position"
+ ac_nickname_power_none_tt:0 "[E]POWER:[!E] ✗ You need a title or council position"
+ ac_nickname_blocked_tt:0 "[E]STATUS:[!E] ✗ You are BLOCKED (imprisoned, incapable, or manually blocked)"
+ ac_nickname_not_blocked_tt:0 "[E]STATUS:[!E] ✓ You are NOT blocked"
+ 
+ ac_nickname_manual_block:0 "Manually Block Nicknames"
+ ac_nickname_manual_block_desc:0 "Prevent yourself from receiving any nicknames."
+ ac_nickname_manual_block_tooltip:0 "Block nickname assignment for this character"
+ ac_nickname_manual_block_tt:0 "You will no longer receive nicknames until you unblock yourself."
+ ac_nickname_not_already_blocked_tt:0 "You are not currently blocked"
+ 
+ ac_nickname_manual_unblock:0 "Manually Unblock Nicknames"
+ ac_nickname_manual_unblock_desc:0 "Allow yourself to receive nicknames again."
+ ac_nickname_manual_unblock_tooltip:0 "Unblock nickname assignment for this character"
+ ac_nickname_manual_unblock_tt:0 "You can now receive nicknames again."
