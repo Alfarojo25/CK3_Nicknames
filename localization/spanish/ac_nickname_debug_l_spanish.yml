@@ -3,8 +3,8 @@
  ac_nickname_toggle_debug:0 "Alternar Modo Debug de Apodos"
  ac_nickname_toggle_debug_desc:0 "Activa o desactiva el modo debug para el sistema de apodos. El modo debug proporciona herramientas de prueba e información."
  ac_nickname_toggle_debug_tooltip:0 "Alternar modo debug para pruebas de apodos"
- ac_nickname_debug_mode_on_tt:0 "El modo debug está ahora [E]ACTIVADO[!E]. Ahora puedes acceder a las herramientas de prueba."
- ac_nickname_debug_mode_off_tt:0 "El modo debug está ahora [E]DESACTIVADO[!E]. Las herramientas de prueba están ocultas."
+ ac_nickname_debug_mode_on_tt:0 "El modo debug está ahora #EMP ACTIVADO#!. Ahora puedes acceder a las herramientas de prueba."
+ ac_nickname_debug_mode_off_tt:0 "El modo debug está ahora #EMP DESACTIVADO#!. Las herramientas de prueba están ocultas."
  
  ac_nickname_clear:0 "Limpiar Apodo"
  ac_nickname_clear_desc:0 "Elimina tu apodo actual para probar recibir uno nuevo."
@@ -35,4 +35,4 @@
  ac_nickname_export_report:0 "Exportar Reporte de Apodos"
  ac_nickname_export_report_desc:0 "Genera un reporte detallado de todos los personajes con apodos y expórtalo a los logs del juego. El reporte se guardará en tu carpeta de logs de CK3."
  ac_nickname_export_report_tooltip:0 "Exportar datos de apodos a los logs"
- ac_nickname_export_report_tt:0 "El reporte de apodos ha sido exportado a:\n[E]Documents/Paradox Interactive/Crusader Kings III/logs/game.log[!E]\n\nEl reporte incluye:\n• ID del Personaje\n• Nombre del Personaje\n• Título Principal\n• Apodo Asignado"
+ ac_nickname_export_report_tt:0 "El reporte de apodos ha sido exportado a:\n#EMP Documents/Paradox Interactive/Crusader Kings III/logs/game.log#!\n\nEl reporte incluye:\n• ID del Personaje\n• Nombre del Personaje\n• Título Principal\n• Apodo Asignado"

@@ -30,6 +30,7 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 ### Changed
 
 - **Decisiones separadas en archivos individuales:**
+
   - `ac_nickname_debug_decisions.txt` (189 líneas) → ELIMINADO
   - Creados 7 archivos TXT individuales:
     1. `ac_nickname_toggle_debug.txt` (26 líneas)
