@@ -25,6 +25,28 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-10-25] - Debug Cooldowns Eliminados - 21:15
+
+### Fixed
+
+- **Cooldowns eliminados de TODAS las decisiones de debug:**
+  - Give All: 365 días → 0 (sin cooldown)
+  - Clear All: 30 días → 0 (sin cooldown)
+  - Export Report: 30 días → 0 (sin cooldown)
+
+### Changed
+
+- Todas las decisiones de debug ahora son repetibles instantáneamente
+- Permite testing rápido sin esperas
+
+### Technical Notes
+
+- **Razón:** Debug mode es para pruebas, debe ser ágil
+- **Impacto:** Testing más eficiente, iteración rápida
+- **Sin cambios:** Toggle, Clear, Block, Unblock nunca tuvieron cooldowns
+
+---
+
 ## [2025-10-25] - Debug Mode Expandido - 21:00
 
 ### Added
