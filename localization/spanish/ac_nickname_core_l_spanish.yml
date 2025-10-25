@@ -1,0 +1,101 @@
+﻿l_spanish:
+ ### APODOS DE RASGOS FÍSICOS ###
+ nick_the_gentle_giant:0 "el Gigante Gentil"
+ nick_the_gentle_giant_f:0 "la Gigante Gentil"
+ nick_the_gracious_dwarf:0 "el Enano Gracioso"
+ nick_the_gracious_dwarf_f:0 "la Enana Graciosa"
+ nick_the_little_one:0 "el Pequeño"
+ nick_the_little_one_f:0 "la Pequeña"
+ nick_the_handsome:0 "el Apuesto"
+ nick_the_fair:0 "la Hermosa"
+ nick_the_ugly:0 "el Feo"
+ nick_the_ugly_f:0 "la Fea"
+ nick_the_strong:0 "el Fuerte"
+ nick_the_strong_f:0 "la Fuerte"
+ nick_the_weak:0 "el Débil"
+ nick_the_weak_f:0 "la Débil"
+ nick_the_scarred:0 "el Cicatrizado"
+ nick_the_scarred_f:0 "la Cicatrizada"
+ 
+ ### APODOS DE HABILIDAD MARCIAL ###
+ nick_the_warrior:0 "el Guerrero"
+ nick_the_warrior_f:0 "la Guerrera"
+ nick_the_conqueror:0 "el Conquistador"
+ nick_the_conqueror_f:0 "la Conquistadora"
+ nick_the_sword:0 "la Espada"
+ nick_the_sword_f:0 "la Espada"
+ nick_the_battle_tested:0 "el Curtido en Batalla"
+ nick_the_battle_tested_f:0 "la Curtida en Batalla"
+ nick_the_brave:0 "el Valiente"
+ nick_the_brave_f:0 "la Valiente"
+ 
+ ### APODOS DE HABILIDAD DIPLOMÁTICA ###
+ nick_the_diplomat:0 "el Diplomático"
+ nick_the_diplomat_f:0 "la Diplomática"
+ nick_the_peacemaker:0 "el Pacificador"
+ nick_the_peacemaker_f:0 "la Pacificadora"
+ nick_the_gregarious:0 "el Gregario"
+ nick_the_gregarious_f:0 "la Gregaria"
+ nick_the_kind:0 "el Bondadoso"
+ nick_the_kind_f:0 "la Bondadosa"
+ 
+ ### APODOS DE HABILIDAD DE ADMINISTRACIÓN ###
+ nick_the_administrator:0 "el Administrador"
+ nick_the_administrator_f:0 "la Administradora"
+ nick_the_builder:0 "el Constructor"
+ nick_the_builder_f:0 "la Constructora"
+ nick_the_miser:0 "el Avaro"
+ nick_the_miser_f:0 "la Avara"
+ nick_the_steward:0 "el Senescal"
+ nick_the_steward_f:0 "la Senescal"
+ 
+ ### APODOS DE HABILIDAD DE INTRIGA ###
+ nick_the_schemer:0 "el Intrigante"
+ nick_the_schemer_f:0 "la Intrigante"
+ nick_the_spider:0 "la Araña"
+ nick_the_spider_f:0 "la Araña"
+ nick_the_deceiver:0 "el Engañador"
+ nick_the_deceiver_f:0 "la Engañadora"
+ nick_the_cunning:0 "el Astuto"
+ nick_the_cunning_f:0 "la Astuta"
+ 
+ ### APODOS DE HABILIDAD DE ERUDICIÓN ###
+ nick_the_scholar:0 "el Erudito"
+ nick_the_scholar_f:0 "la Erudita"
+ nick_the_wise:0 "el Sabio"
+ nick_the_wise_f:0 "la Sabia"
+ nick_the_learned:0 "el Docto"
+ nick_the_learned_f:0 "la Docta"
+ nick_the_reader:0 "el Lector"
+ nick_the_reader_f:0 "la Lectora"
+ 
+ ### APODOS BASADOS EN FE ###
+ # Cristianos
+ nick_the_pious:0 "el Piadoso"
+ nick_the_pious_f:0 "la Piadosa"
+ nick_the_holy:0 "el Santo"
+ nick_the_holy_f:0 "la Santa"
+ nick_the_faithful:0 "el Fiel"
+ nick_the_faithful_f:0 "la Fiel"
+ 
+ # Islámicos
+ nick_the_just:0 "el Justo"
+ nick_the_just_f:0 "la Justa"
+ 
+ # Nórdicos/Paganos
+ nick_the_northman:0 "el Hombre del Norte"
+ nick_the_northwoman:0 "la Mujer del Norte"
+ nick_the_raider:0 "el Saqueador"
+ nick_the_raider_f:0 "la Saqueadora"
+ 
+ # Hindúes
+ nick_the_dharmic:0 "el Dhármico"
+ nick_the_dharmic_f:0 "la Dhármica"
+ 
+ # Budistas
+ nick_the_enlightened:0 "el Iluminado"
+ nick_the_enlightened_f:0 "la Iluminada"
+ 
+ # Genérico
+ nick_the_ruler:0 "el Gobernante"
+ nick_the_ruler_f:0 "la Gobernante"
