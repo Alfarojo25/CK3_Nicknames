@@ -1,66 +1,26 @@
 # Advanced Character Nicknames - Game Rules
 # Allows players to customize nickname assignment frequency
-
 ac_nickname_frequency = {
-	name = "AC_NICKNAME_FREQUENCY"
-	group = "rules_customization"
-	
-	default = {
-		value = medium
+	categories = {
+		rules_customization
 	}
-
-	option = {
-		name = very_rare
-		text = "AC_NICKNAME_FREQUENCY_VERY_RARE"
-		description = "AC_NICKNAME_FREQUENCY_VERY_RARE_DESC"
+	default = medium
+	very_rare = {
 	}
-
-	option = {
-		name = rare
-		text = "AC_NICKNAME_FREQUENCY_RARE"
-		description = "AC_NICKNAME_FREQUENCY_RARE_DESC"
+	rare = {
 	}
-
-	option = {
-		name = medium
-		text = "AC_NICKNAME_FREQUENCY_MEDIUM"
-		description = "AC_NICKNAME_FREQUENCY_MEDIUM_DESC"
+	medium = {
 	}
-
-	option = {
-		name = common
-		text = "AC_NICKNAME_FREQUENCY_COMMON"
-		description = "AC_NICKNAME_FREQUENCY_COMMON_DESC"
+	common = {
 	}
-
-	option = {
-		name = frequent
-		text = "AC_NICKNAME_FREQUENCY_FREQUENT"
-		description = "AC_NICKNAME_FREQUENCY_FREQUENT_DESC"
+	frequent = {
 	}
-
-	option = {
-		name = very_frequent
-		text = "AC_NICKNAME_FREQUENCY_VERY_FREQUENT"
-		description = "AC_NICKNAME_FREQUENCY_VERY_FREQUENT_DESC"
+	very_frequent = {
 	}
-
-	option = {
-		name = high
-		text = "AC_NICKNAME_FREQUENCY_HIGH"
-		description = "AC_NICKNAME_FREQUENCY_HIGH_DESC"
+	high = {
 	}
-
-	option = {
-		name = very_high
-		text = "AC_NICKNAME_FREQUENCY_VERY_HIGH"
-		description = "AC_NICKNAME_FREQUENCY_VERY_HIGH_DESC"
+	very_high = {
 	}
-
-	option = {
-		name = maximum
-		text = "AC_NICKNAME_FREQUENCY_MAXIMUM"
-		description = "AC_NICKNAME_FREQUENCY_MAXIMUM_DESC"
+	maximum = {
 	}
 }
-
