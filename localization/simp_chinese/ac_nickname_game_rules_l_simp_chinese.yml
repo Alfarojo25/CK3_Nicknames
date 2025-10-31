@@ -1,0 +1,30 @@
+﻿l_simp_chinese:
+ ### 游戏规则 ###
+ rule_ac_nickname_frequency:0 "绰号分配频率"
+ 
+ setting_very_rare:0 "非常罕见 (5%)"
+ setting_very_rare_desc:0 "角色每年有 #bold 5%#! 的机会获得绰号。绰号极为罕见。"
+ 
+ setting_rare:0 "罕见 (10%)"
+ setting_rare_desc:0 "角色每年有 #bold 10%#! 的机会获得绰号。绰号罕见。"
+ 
+ setting_medium:0 "中等 (20%)"
+ setting_medium_desc:0 "角色每年有 #bold 20%#! 的机会获得绰号。#EMP 默认设置。#!"
+ 
+ setting_common:0 "常见 (30%)"
+ setting_common_desc:0 "角色每年有 #bold 30%#! 的机会获得绰号。绰号相当常见。"
+ 
+ setting_frequent:0 "频繁 (40%)"
+ setting_frequent_desc:0 "角色每年有 #bold 40%#! 的机会获得绰号。绰号频繁出现。"
+ 
+ setting_very_frequent:0 "非常频繁 (50%)"
+ setting_very_frequent_desc:0 "角色每年有 #bold 50%#! 的机会获得绰号。绰号非常频繁。"
+ 
+ setting_high:0 "高 (60%)"
+ setting_high_desc:0 "角色每年有 #bold 60%#! 的机会获得绰号。大多数符合条件的角色将获得绰号。"
+ 
+ setting_very_high:0 "非常高 (75%)"
+ setting_very_high_desc:0 "角色每年有 #bold 75%#! 的机会获得绰号。几乎所有符合条件的角色都将获得绰号。"
+ 
+ setting_maximum:0 "最大 (100%)"
+ setting_maximum_desc:0 "角色每年有 #bold 100%#! 的机会获得绰号。所有符合条件的角色都保证获得绰号。"

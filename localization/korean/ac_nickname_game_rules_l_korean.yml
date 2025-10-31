@@ -1,0 +1,30 @@
+﻿l_korean:
+ ### 게임 규칙 ###
+ rule_ac_nickname_frequency:0 "별명 부여 빈도"
+ 
+ setting_very_rare:0 "매우 희귀 (5%)"
+ setting_very_rare_desc:0 "캐릭터는 매년 #bold 5%#! 의 확률로 별명을 얻습니다. 별명은 극히 드뭅니다."
+ 
+ setting_rare:0 "희귀 (10%)"
+ setting_rare_desc:0 "캐릭터는 매년 #bold 10%#! 의 확률로 별명을 얻습니다. 별명은 드뭅니다."
+ 
+ setting_medium:0 "보통 (20%)"
+ setting_medium_desc:0 "캐릭터는 매년 #bold 20%#! 의 확률로 별명을 얻습니다. #EMP 기본 설정.#!"
+ 
+ setting_common:0 "일반적 (30%)"
+ setting_common_desc:0 "캐릭터는 매년 #bold 30%#! 의 확률로 별명을 얻습니다. 별명은 비교적 일반적입니다."
+ 
+ setting_frequent:0 "빈번 (40%)"
+ setting_frequent_desc:0 "캐릭터는 매년 #bold 40%#! 의 확률로 별명을 얻습니다. 별명이 자주 나타납니다."
+ 
+ setting_very_frequent:0 "매우 빈번 (50%)"
+ setting_very_frequent_desc:0 "캐릭터는 매년 #bold 50%#! 의 확률로 별명을 얻습니다. 별명이 매우 자주 나타납니다."
+ 
+ setting_high:0 "높음 (60%)"
+ setting_high_desc:0 "캐릭터는 매년 #bold 60%#! 의 확률로 별명을 얻습니다. 자격을 갖춘 대부분의 캐릭터가 별명을 얻습니다."
+ 
+ setting_very_high:0 "매우 높음 (75%)"
+ setting_very_high_desc:0 "캐릭터는 매년 #bold 75%#! 의 확률로 별명을 얻습니다. 자격을 갖춘 거의 모든 캐릭터가 별명을 얻습니다."
+ 
+ setting_maximum:0 "최대 (100%)"
+ setting_maximum_desc:0 "캐릭터는 매년 #bold 100%#! 의 확률로 별명을 얻습니다. 자격을 갖춘 모든 캐릭터가 반드시 별명을 얻습니다."

@@ -24,6 +24,43 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-10-31] - v2.0.0 - Traducción Japonesa y Coreana Completa - 23:00
+
+### Added
+
+- **Traducción completa al japonés**: 2,055 apodos traducidos manualmente con contexto cultural apropiado
+  - Archivo: `localization/japanese/ac_nickname_l_japanese.yml`
+  - Incluye todos los apodos históricos (hist\_), especiales y regulares
+  - Uso correcto de kanji, hiragana y katakana según el contexto
+- **Traducción completa al coreano**: 2,055 apodos traducidos manualmente con contexto cultural apropiado
+  - Archivo: `localization/korean/ac_nickname_l_korean.yml`
+  - Incluye todos los apodos históricos (hist\_), especiales y regulares
+  - Uso correcto de Hangul con terminología apropiada
+- **Archivos UI para japonés**:
+  - `localization/japanese/ac_nickname_game_rules_l_japanese.yml` - Reglas del juego
+  - `localization/japanese/ac_nickname_decisions_l_japanese.yml` - Decisiones de debug
+- **Archivos UI para coreano**:
+  - `localization/korean/ac_nickname_game_rules_l_korean.yml` - Reglas del juego
+  - `localization/korean/ac_nickname_decisions_l_korean.yml` - Decisiones de debug
+
+### Changed
+
+- Actualizada la versión del mod de 1.0.0 a 2.0.0
+- Soporte multiidioma completo: 5 idiomas (inglés, español, chino simplificado, japonés, coreano)
+
+### Technical Notes
+
+- **Método de traducción**: Manual, uno por uno, siguiendo la directiva del usuario
+- **Total de traducciones realizadas**: 6,165 apodos (2,055 × 3 idiomas nuevos: chino, japonés, coreano)
+- **Calidad de traducción**: Traducciones culturalmente apropiadas, no literales
+  - Ejemplo japonés: "Lionheart" → "獅子心王" (rey de corazón de león)
+  - Ejemplo coreano: "Bluetooth" → "청아" (diente azul)
+- **Proceso de trabajo**: Traducción en lotes de ~100 apodos por operación para eficiencia
+- **Verificación**: Todos los archivos verificados con 2,055 apodos exactos mediante PowerShell
+- **Corrección de duplicados**: Eliminados 4 apodos duplicados (bowmaster, bowyer) en ambos idiomas
+
+---
+
 ## [2025-10-25] - Corrección de Traducciones y Limpieza - 18:30
 
 ### Fixed

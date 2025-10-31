@@ -1,0 +1,44 @@
+﻿l_korean:
+ ### 디버그 결정 ###
+ ac_nickname_toggle_debug:0 "별명 디버그 모드 전환"
+ ac_nickname_toggle_debug_desc:0 "별명 디버그 도구를 활성화하거나 비활성화합니다. 테스트용 특수 결정을 표시/숨깁니다."
+ ac_nickname_toggle_debug_tooltip:0 "별명 디버그 모드 전환"
+ ac_nickname_toggle_debug_confirm:0 "디버그 전환"
+ ac_nickname_toggle_debug_effect_tt:0 "디버그 모드가 전환됩니다."
+ 
+ ac_nickname_assign:0 "별명 부여"
+ ac_nickname_assign_desc:0 "캐릭터에게 무작위 별명을 부여합니다. 별명 시스템 테스트용입니다."
+ ac_nickname_assign_tooltip:0 "무작위 별명 부여"
+ ac_nickname_assign_confirm:0 "별명 부여"
+ ac_nickname_assign_effect_tt:0 "무작위 별명을 얻게 됩니다."
+ 
+ ac_nickname_remove:0 "별명 제거"
+ ac_nickname_remove_desc:0 "캐릭터의 현재 별명을 제거합니다. 테스트 목적용입니다."
+ ac_nickname_remove_tooltip:0 "현재 별명 제거"
+ ac_nickname_remove_confirm:0 "별명 제거"
+ ac_nickname_remove_effect_tt:0 "별명이 제거됩니다."
+ 
+ ac_nickname_list:0 "모든 별명 나열"
+ ac_nickname_list_desc:0 "게임 로그에 사용 가능한 모든 별명 목록을 표시합니다. 참조 및 디버그용입니다."
+ ac_nickname_list_tooltip:0 "모든 별명 나열"
+ ac_nickname_list_confirm:0 "목록 표시"
+ ac_nickname_list_effect_tt:0 "모든 별명이 게임 로그에 기록됩니다."
+ 
+ ac_nickname_give_all:0 "모두에게 별명 부여"
+ ac_nickname_give_all_desc:0 "세계의 모든 자격을 갖춘 캐릭터(16세 이상)에게 무작위 별명을 부여합니다. 대규모 테스트용입니다."
+ ac_nickname_give_all_tooltip:0 "모든 자격을 갖춘 캐릭터에게 별명 부여"
+ ac_nickname_give_all_confirm:0 "모두에게 부여!"
+ ac_nickname_give_all_effect_tt:0 "모든 자격을 갖춘 캐릭터가 무작위 별명을 얻습니다."
+ 
+ ac_nickname_clear_all:0 "모든 별명 제거"
+ ac_nickname_clear_all_desc:0 "세계의 모든 캐릭터에게서 별명을 제거합니다. 테스트 재설정용입니다."
+ ac_nickname_clear_all_tooltip:0 "모든 별명 제거"
+ ac_nickname_clear_all_confirm:0 "모두 제거!"
+ ac_nickname_clear_all_effect_tt:0 "모든 별명이 세계의 모든 캐릭터에게서 제거됩니다."
+ 
+ ac_nickname_export_report:0 "별명 보고서 내보내기"
+ ac_nickname_export_report_desc:0 "모든 현재 별명을 포함한 상세 보고서를 게임 로그로 내보냅니다. 분석 및 디버그용입니다."
+ ac_nickname_export_report_tooltip:0 "별명 보고서 내보내기"
+ ac_nickname_export_report_confirm:0 "보고서 내보내기"
+ ac_nickname_export_report_effect_tt:0 "별명 보고서가 게임 로그로 내보내집니다."
+ ac_nickname_export_report_tt:0 "별명 보고서가 다음 위치로 내보내졌습니다:\n#EMP Documents/Paradox Interactive/Crusader Kings III/logs/game.log#!\n\n보고서 포함 내용:\n• 캐릭터 ID\n• 캐릭터 이름\n• 주요 칭호\n• 부여된 별명"

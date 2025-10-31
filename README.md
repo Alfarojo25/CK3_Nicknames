@@ -2,8 +2,8 @@
 
 **An expanded nickname system for Crusader Kings III with 2059+ faith-based and skill-based nicknames**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/Alfarojo25/CK3_Nicknames)
-[![CK3 Version](https://img.shields.io/badge/CK3-1.17.1-blue.svg)](https://store.steampowered.com/app/1158310/Crusader_Kings_III/)
+[![Version](https://img.shields.io/badge/version-2.0.0-orange.svg)](https://github.com/Alfarojo25/CK3_Nicknames)
+[![CK3 Version](https://img.shields.io/badge/CK3-1.18.0.1-blue.svg)](https://store.steampowered.com/app/1158310/Crusader_Kings_III/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 📖 Description
@@ -33,15 +33,15 @@
 - Weight multipliers ensure appropriate distribution
 - Respects character context and history
 
-🌍 **Multi-Language Support** (Planned)
+🌍 **Multi-Language Support**
 
 - English ✅
-- Spanish 🚧
-- French 🚧
-- German 🚧
-- Polish 🚧
-- Japanese 🚧
-- Chinese (Simplified) 🚧
+- Spanish ✅
+- Chinese (Simplified) ✅
+- Japanese ✅ **NEW in v1.18.0.1**
+- Korean ✅ **NEW in v1.18.0.1**
+
+All 2,055 nicknames have been manually translated to ensure cultural appropriateness and contextual accuracy in each language.
 
 ## 📥 Installation
 
@@ -136,28 +136,40 @@ Currently, the mod uses default settings:
 
 ## 📋 Roadmap
 
-### Phase 1: Core System ✅ (Current)
+### Phase 1: Core System ✅ COMPLETE
 
 - [x] Base nickname definitions (2059 nicknames)
 - [x] Scripted triggers (skills, traits, faiths)
 - [x] On-action system (yearly pulse)
 - [x] 36 prototype events with weights
 
-### Phase 2: Full Implementation 🚧
+### Phase 2: Full Implementation ✅ COMPLETE
 
-- [ ] Expand to 100+ events covering all nickname categories
-- [ ] Faith-specific events for all religions
-- [ ] Refined weight balancing
+- [x] Expand to 100+ events covering all nickname categories
+- [x] Faith-specific events for all religions
+- [x] Refined weight balancing
 
-### Phase 3: Localization 📝
+### Phase 3: Localization ✅ COMPLETE
 
-- [ ] Complete translations for 6 languages
-- [ ] Contextual notification events
-- [ ] Cultural flavor text
+- [x] Complete translations for 5 languages (English, Spanish, Chinese, Japanese, Korean)
+- [x] All 2,055 nicknames fully translated
+- [x] UI elements and game rules translated
+- [x] Contextual notification events
+- [x] Cultural flavor text
 
-### Phase 4: Polish & Features 🎨
+### Phase 4: Polish & Features 🚧 IN PROGRESS
 
-- [ ] Game rules (frequency, notifications)
+- [x] Game rules (frequency, notifications)
+- [x] Debug tools (partially implemented)
+- [ ] Compatibility patches
+- [ ] Steam Workshop release
+
+### Phase 5: Future Enhancements 🔮
+
+- [ ] More language support (French, German, Russian)
+- [ ] Additional nickname categories
+- [ ] Dynasty-specific nicknames
+- [ ] Historical character nickname assignments
 - [ ] Debug tools
 - [ ] Compatibility patches
 - [ ] Steam Workshop release

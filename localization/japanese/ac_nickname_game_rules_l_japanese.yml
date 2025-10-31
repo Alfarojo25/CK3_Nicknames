@@ -1,0 +1,30 @@
+﻿l_japanese:
+ ### ゲームルール ###
+ rule_ac_nickname_frequency:0 "あだ名の付与頻度"
+ 
+ setting_very_rare:0 "非常に稀 (5%)"
+ setting_very_rare_desc:0 "キャラクターは年に #bold 5%#! の確率であだ名を受け取ります。あだ名は極めて稀です。"
+ 
+ setting_rare:0 "稀 (10%)"
+ setting_rare_desc:0 "キャラクターは年に #bold 10%#! の確率であだ名を受け取ります。あだ名は稀です。"
+ 
+ setting_medium:0 "中程度 (20%)"
+ setting_medium_desc:0 "キャラクターは年に #bold 20%#! の確率であだ名を受け取ります。#EMP デフォルト設定。#!"
+ 
+ setting_common:0 "一般的 (30%)"
+ setting_common_desc:0 "キャラクターは年に #bold 30%#! の確率であだ名を受け取ります。あだ名はかなり一般的です。"
+ 
+ setting_frequent:0 "頻繁 (40%)"
+ setting_frequent_desc:0 "キャラクターは年に #bold 40%#! の確率であだ名を受け取ります。あだ名は頻繁に現れます。"
+ 
+ setting_very_frequent:0 "非常に頻繁 (50%)"
+ setting_very_frequent_desc:0 "キャラクターは年に #bold 50%#! の確率であだ名を受け取ります。あだ名は非常に頻繁です。"
+ 
+ setting_high:0 "高 (60%)"
+ setting_high_desc:0 "キャラクターは年に #bold 60%#! の確率であだ名を受け取ります。対象となるほとんどのキャラクターがあだ名を得ます。"
+ 
+ setting_very_high:0 "非常に高 (75%)"
+ setting_very_high_desc:0 "キャラクターは年に #bold 75%#! の確率であだ名を受け取ります。対象となるほぼ全てのキャラクターがあだ名を得ます。"
+ 
+ setting_maximum:0 "最大 (100%)"
+ setting_maximum_desc:0 "キャラクターは年に #bold 100%#! の確率であだ名を受け取ります。対象となる全てのキャラクターが必ずあだ名を受け取ります。"

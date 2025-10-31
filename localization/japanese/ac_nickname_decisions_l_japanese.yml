@@ -1,0 +1,44 @@
+﻿l_japanese:
+ ### デバッグ決定 ###
+ ac_nickname_toggle_debug:0 "あだ名デバッグモードの切り替え"
+ ac_nickname_toggle_debug_desc:0 "あだ名のデバッグツールを有効化または無効化します。これによりテスト用の特別な決定が表示/非表示になります。"
+ ac_nickname_toggle_debug_tooltip:0 "あだ名デバッグモードの切り替え"
+ ac_nickname_toggle_debug_confirm:0 "デバッグを切り替え"
+ ac_nickname_toggle_debug_effect_tt:0 "デバッグモードが切り替わります。"
+ 
+ ac_nickname_assign:0 "あだ名を付与"
+ ac_nickname_assign_desc:0 "あなたのキャラクターにランダムなあだ名を付与します。あだ名システムのテスト用です。"
+ ac_nickname_assign_tooltip:0 "ランダムなあだ名を付与"
+ ac_nickname_assign_confirm:0 "あだ名を付与"
+ ac_nickname_assign_effect_tt:0 "ランダムなあだ名を受け取ります。"
+ 
+ ac_nickname_remove:0 "あだ名を削除"
+ ac_nickname_remove_desc:0 "あなたのキャラクターから現在のあだ名を削除します。テスト目的用です。"
+ ac_nickname_remove_tooltip:0 "現在のあだ名を削除"
+ ac_nickname_remove_confirm:0 "あだ名を削除"
+ ac_nickname_remove_effect_tt:0 "あなたのあだ名が削除されます。"
+ 
+ ac_nickname_list:0 "全てのあだ名を一覧表示"
+ ac_nickname_list_desc:0 "ゲームログに利用可能な全てのあだ名のリストを表示します。参照とデバッグ用です。"
+ ac_nickname_list_tooltip:0 "全てのあだ名を一覧表示"
+ ac_nickname_list_confirm:0 "リストを表示"
+ ac_nickname_list_effect_tt:0 "全てのあだ名がゲームログに記録されます。"
+ 
+ ac_nickname_give_all:0 "全員にあだ名を付与"
+ ac_nickname_give_all_desc:0 "世界中の対象となる全てのキャラクター（16歳以上）にランダムなあだ名を付与します。大規模テスト用です。"
+ ac_nickname_give_all_tooltip:0 "対象となる全てのキャラクターにあだ名を付与"
+ ac_nickname_give_all_confirm:0 "全員に付与！"
+ ac_nickname_give_all_effect_tt:0 "対象となる全てのキャラクターがランダムなあだ名を受け取ります。"
+ 
+ ac_nickname_clear_all:0 "全てのあだ名をクリア"
+ ac_nickname_clear_all_desc:0 "世界中の全てのキャラクターからあだ名を削除します。テストのリセット用です。"
+ ac_nickname_clear_all_tooltip:0 "全てのあだ名をクリア"
+ ac_nickname_clear_all_confirm:0 "全てクリア！"
+ ac_nickname_clear_all_effect_tt:0 "全てのあだ名が世界中の全てのキャラクターから削除されます。"
+ 
+ ac_nickname_export_report:0 "あだ名レポートをエクスポート"
+ ac_nickname_export_report_desc:0 "現在の全てのあだ名を含む詳細レポートをゲームログにエクスポートします。分析とデバッグ用です。"
+ ac_nickname_export_report_tooltip:0 "あだ名レポートをエクスポート"
+ ac_nickname_export_report_confirm:0 "レポートをエクスポート"
+ ac_nickname_export_report_effect_tt:0 "あだ名レポートがゲームログにエクスポートされます。"
+ ac_nickname_export_report_tt:0 "あだ名レポートは以下にエクスポートされました：\n#EMP Documents/Paradox Interactive/Crusader Kings III/logs/game.log#!\n\nレポートには以下が含まれます：\n• キャラクターID\n• キャラクター名\n• 主要称号\n• 付与されたあだ名"
