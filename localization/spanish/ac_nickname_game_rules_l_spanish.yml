@@ -3,28 +3,29 @@
  AC_NICKNAME_FREQUENCY:0 "Frecuencia de Asignación de Apodos"
  
  AC_NICKNAME_FREQUENCY_VERY_RARE:0 "Muy Raro (5%)"
- AC_NICKNAME_FREQUENCY_VERY_RARE_TT:0 "Los personajes tienen un #bold 5%#! de probabilidad por año de recibir un apodo. Los apodos son extremadamente raros."
+ AC_NICKNAME_FREQUENCY_VERY_RARE_DESC:0 "Los personajes tienen un #bold 5%#! de probabilidad por año de recibir un apodo. Los apodos son extremadamente raros."
  
  AC_NICKNAME_FREQUENCY_RARE:0 "Raro (10%)"
- AC_NICKNAME_FREQUENCY_RARE_TT:0 "Los personajes tienen un #bold 10%#! de probabilidad por año de recibir un apodo. Los apodos son raros."
+ AC_NICKNAME_FREQUENCY_RARE_DESC:0 "Los personajes tienen un #bold 10%#! de probabilidad por año de recibir un apodo. Los apodos son raros."
  
  AC_NICKNAME_FREQUENCY_MEDIUM:0 "Medio (20%)"
- AC_NICKNAME_FREQUENCY_MEDIUM_TT:0 "Los personajes tienen un #bold 20%#! de probabilidad por año de recibir un apodo. #EMP Configuración predeterminada.#!"
+ AC_NICKNAME_FREQUENCY_MEDIUM_DESC:0 "Los personajes tienen un #bold 20%#! de probabilidad por año de recibir un apodo. #EMP Configuración predeterminada.#!"
  
  AC_NICKNAME_FREQUENCY_COMMON:0 "Común (30%)"
- AC_NICKNAME_FREQUENCY_COMMON_TT:0 "Los personajes tienen un #bold 30%#! de probabilidad por año de recibir un apodo. Los apodos son bastante comunes."
+ AC_NICKNAME_FREQUENCY_COMMON_DESC:0 "Los personajes tienen un #bold 30%#! de probabilidad por año de recibir un apodo. Los apodos son bastante comunes."
  
  AC_NICKNAME_FREQUENCY_FREQUENT:0 "Frecuente (40%)"
- AC_NICKNAME_FREQUENCY_FREQUENT_TT:0 "Los personajes tienen un #bold 40%#! de probabilidad por año de recibir un apodo. Los apodos son frecuentes."
+ AC_NICKNAME_FREQUENCY_FREQUENT_DESC:0 "Los personajes tienen un #bold 40%#! de probabilidad por año de recibir un apodo. Los apodos son frecuentes."
  
  AC_NICKNAME_FREQUENCY_VERY_FREQUENT:0 "Muy Frecuente (50%)"
- AC_NICKNAME_FREQUENCY_VERY_FREQUENT_TT:0 "Los personajes tienen un #bold 50%#! de probabilidad por año de recibir un apodo. Los apodos son muy frecuentes."
+ AC_NICKNAME_FREQUENCY_VERY_FREQUENT_DESC:0 "Los personajes tienen un #bold 50%#! de probabilidad por año de recibir un apodo. Los apodos son muy frecuentes."
  
  AC_NICKNAME_FREQUENCY_HIGH:0 "Alto (60%)"
- AC_NICKNAME_FREQUENCY_HIGH_TT:0 "Los personajes tienen un #bold 60%#! de probabilidad por año de recibir un apodo. La mayoría de los personajes elegibles obtendrán apodos."
+ AC_NICKNAME_FREQUENCY_HIGH_DESC:0 "Los personajes tienen un #bold 60%#! de probabilidad por año de recibir un apodo. La mayoría de los personajes elegibles obtendrán apodos."
  
  AC_NICKNAME_FREQUENCY_VERY_HIGH:0 "Muy Alto (75%)"
- AC_NICKNAME_FREQUENCY_VERY_HIGH_TT:0 "Los personajes tienen un #bold 75%#! de probabilidad por año de recibir un apodo. Casi todos los personajes elegibles obtendrán apodos."
+ AC_NICKNAME_FREQUENCY_VERY_HIGH_DESC:0 "Los personajes tienen un #bold 75%#! de probabilidad por año de recibir un apodo. Casi todos los personajes elegibles obtendrán apodos."
  
  AC_NICKNAME_FREQUENCY_MAXIMUM:0 "Máximo (100%)"
- AC_NICKNAME_FREQUENCY_MAXIMUM_TT:0 "Los personajes tienen un #bold 100%#! de probabilidad por año de recibir un apodo. Todos los personajes elegibles recibirán un apodo garantizado."
+ AC_NICKNAME_FREQUENCY_MAXIMUM_DESC:0 "Los personajes tienen un #bold 100%#! de probabilidad por año de recibir un apodo. Todos los personajes elegibles recibirán un apodo garantizado."
+

@@ -3,28 +3,29 @@
  AC_NICKNAME_FREQUENCY:0 "Nickname Assignment Frequency"
  
  AC_NICKNAME_FREQUENCY_VERY_RARE:0 "Very Rare (5%)"
- AC_NICKNAME_FREQUENCY_VERY_RARE_TT:0 "Characters have a #bold 5%#! chance per year to receive a nickname. Nicknames are extremely rare."
+ AC_NICKNAME_FREQUENCY_VERY_RARE_DESC:0 "Characters have a #bold 5%#! chance per year to receive a nickname. Nicknames are extremely rare."
  
  AC_NICKNAME_FREQUENCY_RARE:0 "Rare (10%)"
- AC_NICKNAME_FREQUENCY_RARE_TT:0 "Characters have a #bold 10%#! chance per year to receive a nickname. Nicknames are rare."
+ AC_NICKNAME_FREQUENCY_RARE_DESC:0 "Characters have a #bold 10%#! chance per year to receive a nickname. Nicknames are rare."
  
  AC_NICKNAME_FREQUENCY_MEDIUM:0 "Medium (20%)"
- AC_NICKNAME_FREQUENCY_MEDIUM_TT:0 "Characters have a #bold 20%#! chance per year to receive a nickname. #EMP Default setting.#!"
+ AC_NICKNAME_FREQUENCY_MEDIUM_DESC:0 "Characters have a #bold 20%#! chance per year to receive a nickname. #EMP Default setting.#!"
  
  AC_NICKNAME_FREQUENCY_COMMON:0 "Common (30%)"
- AC_NICKNAME_FREQUENCY_COMMON_TT:0 "Characters have a #bold 30%#! chance per year to receive a nickname. Nicknames are fairly common."
+ AC_NICKNAME_FREQUENCY_COMMON_DESC:0 "Characters have a #bold 30%#! chance per year to receive a nickname. Nicknames are fairly common."
  
  AC_NICKNAME_FREQUENCY_FREQUENT:0 "Frequent (40%)"
- AC_NICKNAME_FREQUENCY_FREQUENT_TT:0 "Characters have a #bold 40%#! chance per year to receive a nickname. Nicknames are frequent."
+ AC_NICKNAME_FREQUENCY_FREQUENT_DESC:0 "Characters have a #bold 40%#! chance per year to receive a nickname. Nicknames are frequent."
  
  AC_NICKNAME_FREQUENCY_VERY_FREQUENT:0 "Very Frequent (50%)"
- AC_NICKNAME_FREQUENCY_VERY_FREQUENT_TT:0 "Characters have a #bold 50%#! chance per year to receive a nickname. Nicknames are very frequent."
+ AC_NICKNAME_FREQUENCY_VERY_FREQUENT_DESC:0 "Characters have a #bold 50%#! chance per year to receive a nickname. Nicknames are very frequent."
  
  AC_NICKNAME_FREQUENCY_HIGH:0 "High (60%)"
- AC_NICKNAME_FREQUENCY_HIGH_TT:0 "Characters have a #bold 60%#! chance per year to receive a nickname. Most eligible characters will get nicknames."
+ AC_NICKNAME_FREQUENCY_HIGH_DESC:0 "Characters have a #bold 60%#! chance per year to receive a nickname. Most eligible characters will get nicknames."
  
  AC_NICKNAME_FREQUENCY_VERY_HIGH:0 "Very High (75%)"
- AC_NICKNAME_FREQUENCY_VERY_HIGH_TT:0 "Characters have a #bold 75%#! chance per year to receive a nickname. Nearly all eligible characters will get nicknames."
+ AC_NICKNAME_FREQUENCY_VERY_HIGH_DESC:0 "Characters have a #bold 75%#! chance per year to receive a nickname. Nearly all eligible characters will get nicknames."
  
  AC_NICKNAME_FREQUENCY_MAXIMUM:0 "Maximum (100%)"
- AC_NICKNAME_FREQUENCY_MAXIMUM_TT:0 "Characters have a #bold 100%#! chance per year to receive a nickname. All eligible characters are guaranteed to receive a nickname."
+ AC_NICKNAME_FREQUENCY_MAXIMUM_DESC:0 "Characters have a #bold 100%#! chance per year to receive a nickname. All eligible characters are guaranteed to receive a nickname."
+

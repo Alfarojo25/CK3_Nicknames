@@ -4,62 +4,63 @@
 ac_nickname_frequency = {
 	name = "AC_NICKNAME_FREQUENCY"
 	group = "rules_customization"
+	
 	default = {
 		value = medium
-		tooltip = "AC_NICKNAME_FREQUENCY_MEDIUM_TT"
 	}
 
 	option = {
 		name = very_rare
 		text = "AC_NICKNAME_FREQUENCY_VERY_RARE"
-		tooltip = "AC_NICKNAME_FREQUENCY_VERY_RARE_TT"
+		description = "AC_NICKNAME_FREQUENCY_VERY_RARE_DESC"
 	}
 
 	option = {
 		name = rare
 		text = "AC_NICKNAME_FREQUENCY_RARE"
-		tooltip = "AC_NICKNAME_FREQUENCY_RARE_TT"
+		description = "AC_NICKNAME_FREQUENCY_RARE_DESC"
 	}
 
 	option = {
 		name = medium
 		text = "AC_NICKNAME_FREQUENCY_MEDIUM"
-		tooltip = "AC_NICKNAME_FREQUENCY_MEDIUM_TT"
+		description = "AC_NICKNAME_FREQUENCY_MEDIUM_DESC"
 	}
 
 	option = {
 		name = common
 		text = "AC_NICKNAME_FREQUENCY_COMMON"
-		tooltip = "AC_NICKNAME_FREQUENCY_COMMON_TT"
+		description = "AC_NICKNAME_FREQUENCY_COMMON_DESC"
 	}
 
 	option = {
 		name = frequent
 		text = "AC_NICKNAME_FREQUENCY_FREQUENT"
-		tooltip = "AC_NICKNAME_FREQUENCY_FREQUENT_TT"
+		description = "AC_NICKNAME_FREQUENCY_FREQUENT_DESC"
 	}
 
 	option = {
 		name = very_frequent
 		text = "AC_NICKNAME_FREQUENCY_VERY_FREQUENT"
-		tooltip = "AC_NICKNAME_FREQUENCY_VERY_FREQUENT_TT"
+		description = "AC_NICKNAME_FREQUENCY_VERY_FREQUENT_DESC"
 	}
 
 	option = {
 		name = high
 		text = "AC_NICKNAME_FREQUENCY_HIGH"
-		tooltip = "AC_NICKNAME_FREQUENCY_HIGH_TT"
+		description = "AC_NICKNAME_FREQUENCY_HIGH_DESC"
 	}
 
 	option = {
 		name = very_high
 		text = "AC_NICKNAME_FREQUENCY_VERY_HIGH"
-		tooltip = "AC_NICKNAME_FREQUENCY_VERY_HIGH_TT"
+		description = "AC_NICKNAME_FREQUENCY_VERY_HIGH_DESC"
 	}
 
 	option = {
 		name = maximum
 		text = "AC_NICKNAME_FREQUENCY_MAXIMUM"
-		tooltip = "AC_NICKNAME_FREQUENCY_MAXIMUM_TT"
+		description = "AC_NICKNAME_FREQUENCY_MAXIMUM_DESC"
 	}
 }
+

@@ -429,43 +429,108 @@ ac_has_nickname_already_trigger = {
 # Checks if character passes the probability check based on game rule
 ac_nickname_frequency_check_trigger = {
 	trigger_if = {
-		limit = { has_game_rule = ac_nickname_frequency_very_rare }
-		random_percent_chance = { chance = 5 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = very_rare
+			}
+		}
+		random_percent_chance = {
+			chance = 5
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_rare }
-		random_percent_chance = { chance = 10 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = rare
+			}
+		}
+		random_percent_chance = {
+			chance = 10
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_medium }
-		random_percent_chance = { chance = 20 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = medium
+			}
+		}
+		random_percent_chance = {
+			chance = 20
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_common }
-		random_percent_chance = { chance = 30 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = common
+			}
+		}
+		random_percent_chance = {
+			chance = 30
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_frequent }
-		random_percent_chance = { chance = 40 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = frequent
+			}
+		}
+		random_percent_chance = {
+			chance = 40
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_very_frequent }
-		random_percent_chance = { chance = 50 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = very_frequent
+			}
+		}
+		random_percent_chance = {
+			chance = 50
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_high }
-		random_percent_chance = { chance = 60 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = high
+			}
+		}
+		random_percent_chance = {
+			chance = 60
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_very_high }
-		random_percent_chance = { chance = 75 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = very_high
+			}
+		}
+		random_percent_chance = {
+			chance = 75
+		}
 	}
 	trigger_else_if = {
-		limit = { has_game_rule = ac_nickname_frequency_maximum }
-		random_percent_chance = { chance = 100 }
+		limit = {
+			has_game_rule = {
+				name = ac_nickname_frequency
+				value = maximum
+			}
+		}
+		random_percent_chance = {
+			chance = 100
+		}
 	}
 	trigger_else = {
 		# Default fallback (20%)
-		random_percent_chance = { chance = 20 }
+		random_percent_chance = {
+			chance = 20
+		}
 	}
 }
