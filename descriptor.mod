@@ -3,6 +3,6 @@ tags={
 	"Gameplay"
 	"Character Interactions"
 }
-name="Advanced Character Nicknames - Faith Based System"
+name="Advanced Character Nicknames"
 supported_version="1.17.1"
 remote_file_id=""

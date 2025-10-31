@@ -27,19 +27,11 @@ ac_nickname_yearly_check = {
 			is_landed = yes
 			is_councillor = yes
 		}
+		# Must pass the frequency probability check (based on game rule)
+		ac_nickname_frequency_check_trigger = yes
 	}
-	random_on_action = {
-		# Base chance: 20% per year
-		chance_to_happen = 20
-		# No additional modifiers - flat 20% for all eligible characters
-		# If check passes, proceed to master nickname assignment
-		100 = ac_nickname_master_assignment
-	}
-}
-
-# Master assignment: single event that uses dynamic effect system
-ac_nickname_master_assignment = {
-	events = {
-		ac_nickname.1		# Master nickname assignment event
+	effect = {
+		# If all checks pass, proceed to master nickname assignment
+		trigger_event = ac_nickname.1
 	}
 }
