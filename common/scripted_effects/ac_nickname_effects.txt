@@ -29,18 +29,14 @@ ac_assign_dynamic_nickname_effect = {
 			OR = {
 				has_trait = zealous
 				has_trait = pilgrim
-				has_trait = crusader
 				piety >= 1000
 			}
 		}
 		# Determinar fe especifica
 		if = {
 			limit = {
-				OR = {
-					faith = {
-						religion_tag = christianity_religion
-					}
-					has_trait = crusader
+				faith = {
+					religion_tag = christianity_religion
 				}
 			}
 			ac_faith_christianity = yes
@@ -70,10 +66,7 @@ ac_assign_dynamic_nickname_effect = {
 	# ============================================
 	else_if = {
 		limit = {
-			OR = {
-				has_trait = order_member
-				has_trait = knight
-			}
+			has_trait = order_member
 		}
 		ac_knight_types = yes
 	}
@@ -110,27 +103,49 @@ ac_assign_dynamic_nickname_effect = {
 	else = {
 		# Seleccion aleatoria entre los pools genericos
 		random_list = {
-			# Animales (80 apodos totales)
+			# Animales (80 apodos totales) - CON REQUISITOS CULTURALES/ROLES
 			15 = {
 				random_list = {
+					# Wolf: Marshal/Martial focus (3 apodos)
 					3 = {
+						trigger = {
+							ac_wolf_role_trigger = yes
+						}
 						ac_animal_wolf = yes
 					}
+					# Lion: Culturas específicas o martial (24 apodos)
 					12 = {
+						trigger = {
+							ac_lion_culture_trigger = yes
+						}
 						ac_animal_lion = yes
 					}
+					# Bear: Culturas balto/eslavo o Strong (30 apodos)
 					15 = {
+						trigger = {
+							ac_bear_culture_trigger = yes
+						}
 						ac_animal_bear = yes
 					}
+					# Snake: Spymaster/Intrigue focus (22 apodos)
 					11 = {
+						trigger = {
+							ac_snake_role_trigger = yes
+						}
 						ac_animal_snake = yes
 					}
+					# Bird: Sin restricción (16 apodos)
 					16 = {
 						ac_animal_bird = yes
 					}
+					# Dragon: Culturas asiáticas (12 apodos)
 					6 = {
+						trigger = {
+							ac_dragon_culture_trigger = yes
+						}
 						ac_animal_dragon = yes
 					}
+					# Other: Sin restricción (17 apodos)
 					17 = {
 						ac_animal_other = yes
 					}

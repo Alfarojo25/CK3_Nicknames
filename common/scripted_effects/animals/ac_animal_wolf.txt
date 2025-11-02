@@ -1,20 +1,34 @@
 # Advanced Character Nicknames - Animal Wolf
 # Total: 6 apodos (3 M, 3 F, 0 N)
-
+# Requirements: Marshal role OR martial education/focus
 ac_animal_wolf = {
 	if = {
-		limit = { is_female = yes }
+		limit = {
+			is_female = yes
+		}
 		random_list = {
-			1 = { give_nickname = nick_the_white_wolf_f }
-			1 = { give_nickname = nick_hist_the_wolfsbane_f }
-			1 = { give_nickname = nick_hist_the_wolf_f }
+			1 = {
+				give_nickname = nick_the_white_wolf_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wolfsbane_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wolf_f
+			}
 		}
 	}
 	else = {
 		random_list = {
-			1 = { give_nickname = nick_the_white_wolf }
-			1 = { give_nickname = nick_hist_the_wolfsbane }
-			1 = { give_nickname = nick_hist_the_wolf }
+			1 = {
+				give_nickname = nick_the_white_wolf
+			}
+			1 = {
+				give_nickname = nick_hist_the_wolfsbane
+			}
+			1 = {
+				give_nickname = nick_hist_the_wolf
+			}
 		}
 	}
 }

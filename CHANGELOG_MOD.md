@@ -24,6 +24,50 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Balanceo y Requisitos Culturales para Animales - 16:00
+
+### Changed
+
+- **Sistema de apodos de animales completamente rebalanceado:**
+
+  - **Bear (Oso)**: Ahora solo para culturas balto-finlandesas, caucásicas, eslavas orientales/del sur O personajes con trait Strong
+  - **Dragon (Dragón)**: Restringido a culturas japonesas, Tai, tibetanas, chinas y hmongicas (asiáticas)
+  - **Lion (León)**: Culturas iraníes, germánicas occidentales, indo-arias, israelitas, romanas orientales O roles/focus marciales
+  - **Snake (Serpiente)**: Solo para Spymaster O personajes con educación/focus en intriga
+  - **Wolf (Lobo)**: Solo para Marshal O personajes con educación/focus marcial
+  - **Bird (Ave) y Other (Otros)**: Sin restricciones (mantienen acceso universal)
+
+- **Dispatcher principal (ac_nickname_effects.txt)**:
+  - Agregados triggers culturales y de rol a la sección de animales
+  - Mejorada la distribución probabilística con requisitos específicos
+  - Comentarios actualizados documentando los nuevos requisitos
+
+### Added
+
+- **Nuevos triggers en ac_nickname_triggers.txt:**
+  - `ac_bear_culture_trigger`: Verifica culturas balto-finlandesas/eslavas o trait Strong
+  - `ac_dragon_culture_trigger`: Verifica culturas asiáticas (Japonic, Tai, Tibetan, Chinese, Hmongic)
+  - `ac_lion_culture_trigger`: Verifica culturas mediterráneas/germánicas o roles marciales
+  - `ac_snake_role_trigger`: Verifica rol de Spymaster o educación/focus en intriga
+  - `ac_wolf_role_trigger`: Verifica rol de Marshal o educación/focus marcial
+  - `ac_nickname_unique_in_faith_group_trigger`: Sistema de unicidad por grupo religioso (preparado para futuro)
+  - `ac_nickname_unique_in_culture_group_trigger`: Sistema de unicidad por grupo cultural (preparado para futuro)
+
+### Technical Notes
+
+- **Diseño de balance**: Los apodos de animales ahora son más contextuales y realistas
+  - Osos asociados con culturas del norte/este de Europa donde son emblemáticos
+  - Dragones exclusivos de culturas asiáticas donde son icónicos
+  - Leones para culturas mediterráneas/germánicas y guerreros
+  - Serpientes para personajes con roles de espionaje/intrigue
+  - Lobos para líderes militares y guerreros
+- **Impacto en gameplay**: Reduce apodos genéricos, aumenta inmersión cultural
+- **Probabilidad base**: Mantiene 20% anual (valor "medium" por defecto)
+- **Triggers de unicidad**: Implementados pero no activados aún (requieren sistema de variables)
+- **Compatibilidad**: Los cambios son retrocompatibles, no afectan saves existentes
+
+---
+
 ## [2025-11-02] - Verificación de Compatibilidad v1.18.0 - 14:00
 
 ### Changed

@@ -18,7 +18,6 @@ ac_nickname_clear = {
 		piety = 0
 	}
 	ai_check_interval = 0
-	
 	ai_will_do = {
 		base = 0
 	}

@@ -1,36 +1,82 @@
 # Advanced Character Nicknames - Animal Snake
 # Total: 22 apodos (11 M, 11 F, 0 N)
-
+# Requirements: Spymaster role OR intrigue education/focus
 ac_animal_snake = {
 	if = {
-		limit = { is_female = yes }
+		limit = {
+			is_female = yes
+		}
 		random_list = {
-			1 = { give_nickname = nick_the_cordial_snake_f }
-			1 = { give_nickname = nick_the_gilded_snake_f }
-			1 = { give_nickname = nick_the_venom_snake_f }
-			1 = { give_nickname = nick_the_deadly_snake_f }
-			1 = { give_nickname = nick_the_tricky_snake_f }
-			1 = { give_nickname = nick_the_calm_snake_f }
-			1 = { give_nickname = nick_the_serpent_f }
-			1 = { give_nickname = nick_hist_snake_in_the_eye_f }
-			1 = { give_nickname = nick_hist_the_serpent_f }
-			1 = { give_nickname = nick_hist_the_adder_f }
-			1 = { give_nickname = nick_hist_the_asp_f }
+			1 = {
+				give_nickname = nick_the_cordial_snake_f
+			}
+			1 = {
+				give_nickname = nick_the_gilded_snake_f
+			}
+			1 = {
+				give_nickname = nick_the_venom_snake_f
+			}
+			1 = {
+				give_nickname = nick_the_deadly_snake_f
+			}
+			1 = {
+				give_nickname = nick_the_tricky_snake_f
+			}
+			1 = {
+				give_nickname = nick_the_calm_snake_f
+			}
+			1 = {
+				give_nickname = nick_the_serpent_f
+			}
+			1 = {
+				give_nickname = nick_hist_snake_in_the_eye_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_serpent_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_adder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_asp_f
+			}
 		}
 	}
 	else = {
 		random_list = {
-			1 = { give_nickname = nick_the_cordial_snake }
-			1 = { give_nickname = nick_the_gilded_snake }
-			1 = { give_nickname = nick_the_venom_snake }
-			1 = { give_nickname = nick_the_deadly_snake }
-			1 = { give_nickname = nick_the_tricky_snake }
-			1 = { give_nickname = nick_the_calm_snake }
-			1 = { give_nickname = nick_the_serpent }
-			1 = { give_nickname = nick_hist_snake_in_the_eye }
-			1 = { give_nickname = nick_hist_the_serpent }
-			1 = { give_nickname = nick_hist_the_adder }
-			1 = { give_nickname = nick_hist_the_asp }
+			1 = {
+				give_nickname = nick_the_cordial_snake
+			}
+			1 = {
+				give_nickname = nick_the_gilded_snake
+			}
+			1 = {
+				give_nickname = nick_the_venom_snake
+			}
+			1 = {
+				give_nickname = nick_the_deadly_snake
+			}
+			1 = {
+				give_nickname = nick_the_tricky_snake
+			}
+			1 = {
+				give_nickname = nick_the_calm_snake
+			}
+			1 = {
+				give_nickname = nick_the_serpent
+			}
+			1 = {
+				give_nickname = nick_hist_snake_in_the_eye
+			}
+			1 = {
+				give_nickname = nick_hist_the_serpent
+			}
+			1 = {
+				give_nickname = nick_hist_the_adder
+			}
+			1 = {
+				give_nickname = nick_hist_the_asp
+			}
 		}
 	}
 }

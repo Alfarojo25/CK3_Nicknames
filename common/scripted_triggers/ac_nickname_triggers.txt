@@ -534,3 +534,122 @@ ac_nickname_frequency_check_trigger = {
 		}
 	}
 }
+
+### NICKNAME UNIQUENESS CHECKS ###
+# Check if nickname is already used by someone in same religious group
+ac_nickname_unique_in_faith_group_trigger = {
+	save_temporary_scope_as = checking_character
+	NOT = {
+		any_living_character = {
+			NOT = {
+				this = scope:checking_character
+			}
+			has_any_nickname = yes
+			faith = {
+				religion = scope:checking_character.faith.religion
+			}
+			has_variable = ac_current_nickname
+			var:ac_current_nickname = scope:checking_character.var:ac_pending_nickname
+		}
+	}
+}
+
+# Check if nickname is already used by someone in same culture group
+ac_nickname_unique_in_culture_group_trigger = {
+	save_temporary_scope_as = checking_character
+	NOT = {
+		any_living_character = {
+			NOT = {
+				this = scope:checking_character
+			}
+			has_any_nickname = yes
+			culture = {
+				culture_group = scope:checking_character.culture.culture_group
+			}
+			has_variable = ac_current_nickname
+			var:ac_current_nickname = scope:checking_character.var:ac_pending_nickname
+		}
+	}
+}
+
+### CULTURAL REQUIREMENTS FOR ANIMALS ###
+# Bear: Balto-Finnic, Caucasian, East Slavic, South Slavic cultures OR Strong trait
+ac_bear_culture_trigger = {
+	OR = {
+		has_trait = strong
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_balto_finnic
+				has_cultural_pillar = heritage_caucasian
+				has_cultural_pillar = heritage_east_slavic
+				has_cultural_pillar = heritage_south_slavic
+			}
+		}
+	}
+}
+
+# Dragon: Japonic, Tai, Tibetan, Chinese, Hmongic cultures
+ac_dragon_culture_trigger = {
+	culture = {
+		OR = {
+			has_cultural_pillar = heritage_japonic
+			has_cultural_pillar = heritage_tai
+			has_cultural_pillar = heritage_tibetan
+			has_cultural_pillar = heritage_chinese
+			has_cultural_pillar = heritage_hmongic
+		}
+	}
+}
+
+# Lion: Iranian, West Germanic, Indo-Aryan, Israelite, Eastern Roman cultures OR martial role
+ac_lion_culture_trigger = {
+	OR = {
+		# Cultural requirements
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_iranian
+				has_cultural_pillar = heritage_west_germanic
+				has_cultural_pillar = heritage_indo_aryan
+				has_cultural_pillar = heritage_israelite
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		# Or martial role/focus/skill
+		has_council_position = councillor_marshal
+		has_focus = martial_authority_focus
+		has_focus = martial_chivalry_focus
+		has_focus = martial_strategy_focus
+		martial >= 15
+	}
+}
+
+# Snake: Spymaster role OR intrigue education/focus
+ac_snake_role_trigger = {
+	OR = {
+		has_council_position = councillor_spymaster
+		has_focus = intrigue_intimidation_focus
+		has_focus = intrigue_temptation_focus
+		# Intrigue education
+		has_trait = education_intrigue_1
+		has_trait = education_intrigue_2
+		has_trait = education_intrigue_3
+		has_trait = education_intrigue_4
+		intrigue >= 15
+	}
+}
+
+# Wolf: Marshal role OR martial education/focus
+ac_wolf_role_trigger = {
+	OR = {
+		has_council_position = councillor_marshal
+		has_focus = martial_authority_focus
+		has_focus = martial_chivalry_focus
+		has_focus = martial_strategy_focus
+		# Martial education
+		has_trait = education_martial_1
+		has_trait = education_martial_2
+		has_trait = education_martial_3
+		has_trait = education_martial_4
+		martial >= 15
+	}
+}
