@@ -1,74 +1,357 @@
 # Advanced Character Nicknames - Historical Epithets
 # Total: 1215 apodos (605 M, 605 F, 5 N)
-
+#
+# ============================================
+# GUIA HISTORICA DE EPITETOS
+# ============================================
+#
+# Este archivo contiene apodos usados por gobernantes historicos.
+# A continuacion se documenta quienes llevaron cada epiteto y sus relaciones.
+#
+# DINASTIAS PRINCIPALES:
+# - Carolingios: Carlos el Grande, Luis el Piadoso, Carlos el Calvo
+# - Capetos: Felipe el Hermoso, Luis el Gordo, Carlos el Sabio
+# - Plantagenet: Ricardo Corazon de Leon, Juan sin Tierra, Eduardo Longshanks
+# - Habsburgo: Carlos V (Universal Ruler), Felipe el Hermoso
+# - Valois: Carlos el Sabio, Carlos el Loco (Mad)
+# - Trastamara: Fernando el Catolico, Isabel la Catolica
+# - Normandos: Guillermo el Conquistador (Bastard), Rollo el Caminante (Ganger)
+# - Otomanos: Soliman el Magnifico, Mehmed el Conquistador
+# - Rus: Ivan el Terrible, Pedro el Grande, Catalina la Grande
+# - Vikingos: Harald Hardrada, Ivar el Deshuesado (Boneless), Harald Bluetooth
+#
+# ============================================
 ac_historical_epithets = {
 	if = {
-		limit = { is_female = yes }
+		limit = {
+			is_female = yes
+		}
 		random_list = {
-			1 = { give_nickname = nick_hist_the_terrible_f }
-			1 = { give_nickname = nick_hist_the_magnificent_f }
-			1 = { give_nickname = nick_hist_the_lame_f }
-			1 = { give_nickname = nick_hist_universal_ruler_f }
-			1 = { give_nickname = nick_hist_the_lawgiver_f }
-			1 = { give_nickname = nick_hist_the_assassin_f }
-			1 = { give_nickname = nick_hist_the_great_f }
-			1 = { give_nickname = nick_hist_the_wise_f }
-			1 = { give_nickname = nick_hist_the_just_f }
-			1 = { give_nickname = nick_hist_the_cruel_f }
-			1 = { give_nickname = nick_hist_the_merciless_f }
-			1 = { give_nickname = nick_hist_the_ruthless_f }
-			1 = { give_nickname = nick_hist_the_bold_f }
-			1 = { give_nickname = nick_hist_the_valiant_f }
-			1 = { give_nickname = nick_hist_the_fair_f }
-			1 = { give_nickname = nick_hist_the_handsome_f }
-			1 = { give_nickname = nick_hist_the_ugly_f }
-			1 = { give_nickname = nick_hist_the_fat_f }
-			1 = { give_nickname = nick_hist_the_stout_f }
-			1 = { give_nickname = nick_hist_the_tall_f }
-			1 = { give_nickname = nick_hist_the_mad_f }
-			1 = { give_nickname = nick_hist_the_glorious_f }
-			1 = { give_nickname = nick_hist_the_magnanimous_f }
-			1 = { give_nickname = nick_hist_the_benevolent_f }
-			1 = { give_nickname = nick_hist_the_protector_f }
-			1 = { give_nickname = nick_hist_the_defender_f }
-			1 = { give_nickname = nick_hist_the_liberator_f }
-			1 = { give_nickname = nick_hist_the_restorer_f }
-			1 = { give_nickname = nick_hist_the_usurper_f }
-			1 = { give_nickname = nick_hist_the_tyrant_f }
-			1 = { give_nickname = nick_hist_the_builder_f }
-			1 = { give_nickname = nick_hist_the_architect_f }
-			1 = { give_nickname = nick_hist_the_navigator_f }
-			1 = { give_nickname = nick_hist_the_seafarer_f }
-			1 = { give_nickname = nick_hist_the_explorer_f }
-			1 = { give_nickname = nick_hist_the_poisoner_f }
-			1 = { give_nickname = nick_hist_the_shadow_f }
-			1 = { give_nickname = nick_hist_the_whisper_f }
-			1 = { give_nickname = nick_hist_the_peacemaker_f }
-			1 = { give_nickname = nick_hist_scourge_of_god_f }
-			1 = { give_nickname = nick_hist_the_bastard_f }
-			1 = { give_nickname = nick_hist_the_boneless_f }
-			1 = { give_nickname = nick_hist_longshanks_f }
-			1 = { give_nickname = nick_hist_lackland_f }
-			1 = { give_nickname = nick_hist_curtmantle_f }
-			1 = { give_nickname = nick_hist_the_leper_f }
-			1 = { give_nickname = nick_hist_stupor_mundi_f }
-			1 = { give_nickname = nick_hist_hairy_breeches_f }
-			1 = { give_nickname = nick_hist_the_ganger_f }
-			1 = { give_nickname = nick_hist_the_bald_f }
-			1 = { give_nickname = nick_hist_the_stammerer_f }
-			1 = { give_nickname = nick_hist_the_child_f }
-			1 = { give_nickname = nick_hist_the_brave_f }
-			1 = { give_nickname = nick_hist_the_strong_f }
-			1 = { give_nickname = nick_hist_the_trembler_f }
-			1 = { give_nickname = nick_hist_the_cunning_f }
-			1 = { give_nickname = nick_hist_campeador_f }
-			1 = { give_nickname = nick_hist_hardrada_f }
+			# ====================================
+			# EPITETOS DE PODER Y TEMOR
+			# ====================================
+			# "THE TERRIBLE" - Usado por Ivan IV de Rusia (1530-1584), primer Zar de Rusia.
+			# Tambien: Basilio II de Bizancio "el Bulgaroctono" (matador de bulgaros).
+			# Indica crueldad extrema y terror hacia enemigos.
+			1 = {
+				give_nickname = nick_hist_the_terrible_f
+			}
+			# "THE MAGNIFICENT" - Soliman I el Magnifico (1494-1566), Sultan Otomano.
+			# Tambien: Lorenzo de Medici "el Magnifico" (1449-1492).
+			# Indica grandeza cultural, militar y administrativa.
+			1 = {
+				give_nickname = nick_hist_the_magnificent_f
+			}
+			# "THE LAME" - Timur el Cojo (Tamerlan) (1336-1405), conquistador de Asia Central.
+			# Indica discapacidad fisica pero no debilidad militar.
+			1 = {
+				give_nickname = nick_hist_the_lame_f
+			}
+			# "UNIVERSAL RULER" - Carlos V de Habsburgo (1500-1558), Emperador del Sacro Imperio.
+			# Goberno España, Paises Bajos, Austria, partes de Italia y territorios en America.
+			# "En mi imperio nunca se pone el sol".
+			1 = {
+				give_nickname = nick_hist_universal_ruler_f
+			}
+			# "THE LAWGIVER" - Soliman I (mismo que el Magnifico), reformo el sistema legal otomano.
+			# Tambien: Justiniano I de Bizancio (482-565), autor del Corpus Juris Civilis.
+			# Indica reformas legales importantes.
+			1 = {
+				give_nickname = nick_hist_the_lawgiver_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_assassin_f
+			}
+			# ====================================
+			# EPITETOS DE GRANDEZA
+			# ====================================
+			# "THE GREAT" - Multiples gobernantes:
+			# - Alejandro Magno (356-323 a.C.), Rey de Macedonia, conquisto Persia
+			# - Carlomagno/Carlos I el Grande (742-814), Rey de los Francos, Emperador
+			# - Catalina II la Grande (1729-1796), Emperatriz de Rusia
+			# - Pedro I el Grande (1672-1725), Zar de Rusia, modernizo el pais
+			# - Ciro II el Grande (600-530 a.C.), fundador del Imperio Persa
+			# - Alfredo el Grande (849-899), Rey de Wessex, unifico Inglaterra
+			# Relacion: Indica conquistas masivas o reformas transformadoras.
+			1 = {
+				give_nickname = nick_hist_the_great_f
+			}
+			# "THE WISE" - Alfonso X el Sabio (1221-1284), Rey de Castilla y Leon.
+			# Famoso por las "Cantigas", "Siete Partidas" (codigo legal), escuelas de traductores.
+			# Tambien: Roberto el Sabio de Napoles (1277-1343).
+			# Indica erudicion, patronazgo cultural y sabiduria.
+			1 = {
+				give_nickname = nick_hist_the_wise_f
+			}
+			# "THE JUST" - Pedro I de Portugal (1320-1367), conocido por su justicia imparcial.
+			# Tambien: James II de Aragon (1267-1327), Fernando II de Napoles.
+			# Indica gobierno equitativo y aplicacion justa de la ley.
+			1 = {
+				give_nickname = nick_hist_the_just_f
+			}
+			# ====================================
+			# EPITETOS DE CRUELDAD
+			# ====================================
+			# "THE CRUEL" - Pedro I de Castilla (1334-1369), enfrentado a su hermano Enrique.
+			# Tambien: Vlad III "el Empalador" (1431-1476), Principe de Valaquia (inspiro Dracula).
+			# Indica metodos brutales de gobierno y ejecucion de enemigos.
+			1 = {
+				give_nickname = nick_hist_the_cruel_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_merciless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ruthless_f
+			}
+			# ====================================
+			# EPITETOS DE VALENTIA
+			# ====================================
+			# "THE BOLD" - Carlos el Temerario (1433-1477), Duque de Borgoña.
+			# Enfrento a Luis XI de Francia, murio en batalla.
+			# Tambien: Felipe III el Atrevido de Francia (1245-1285).
+			# Indica valentia temeraria, a veces hasta la imprudencia.
+			1 = {
+				give_nickname = nick_hist_the_bold_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_valiant_f
+			}
+			# ====================================
+			# EPITETOS FISICOS
+			# ====================================
+			# "THE FAIR" - Felipe IV el Hermoso (1268-1314), Rey de Francia.
+			# Famoso por su belleza, destruyo a los Templarios.
+			# Tambien: Carlos I el Hermoso de Francia (1294-1328).
+			# Indica belleza fisica notable.
+			1 = {
+				give_nickname = nick_hist_the_fair_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_handsome_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ugly_f
+			}
+			# "THE FAT" - Carlos III el Gordo (839-888), Emperador Carolingio.
+			# Tambien: Luis VI el Gordo de Francia (1081-1137), efectivo gobernante pese al apodo.
+			# Indica obesidad, pero no necesariamente incompetencia.
+			1 = {
+				give_nickname = nick_hist_the_fat_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_stout_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tall_f
+			}
+			# ====================================
+			# EPITETOS DE LOCURA
+			# ====================================
+			# "THE MAD" - Carlos VI de Francia (1368-1422), sufrio episodios de locura.
+			# Perdio gran parte de Francia ante Inglaterra (Guerra de los 100 Años).
+			# Tambien: Juana la Loca de Castilla (1479-1555), viuda de Felipe el Hermoso.
+			# Indica enfermedad mental o comportamiento irracional.
+			1 = {
+				give_nickname = nick_hist_the_mad_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_glorious_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_magnanimous_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_benevolent_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_protector_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_defender_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_liberator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_restorer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_usurper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tyrant_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_builder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_architect_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_navigator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_seafarer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_explorer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_poisoner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_shadow_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_whisper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_peacemaker_f
+			}
+			# ====================================
+			# EPITETOS UNICOS E HISTORICOS
+			# ====================================
+			# "SCOURGE OF GOD" - Atila el Huno (406-453), lider de los hunos.
+			# Devasto Europa, sitio Roma y Constantinopla.
+			# El apodo refleja el terror que inspiraba como "azote divino".
+			1 = {
+				give_nickname = nick_hist_scourge_of_god_f
+			}
+			# "THE BASTARD" - Guillermo I el Bastardo/Conquistador (1028-1087).
+			# Duque de Normandia, hijo ilegitimo, conquisto Inglaterra en 1066 (Batalla de Hastings).
+			# El apodo cambio de "Bastardo" a "Conquistador" tras la victoria.
+			1 = {
+				give_nickname = nick_hist_the_bastard_f
+			}
+			# "THE BONELESS" - Ivar el Deshuesado (794-873), lider vikingo.
+			# Hijo de Ragnar Lodbrok, conquisto gran parte de Inglaterra.
+			# Teorias: enfermedad osea, flexibilidad extrema, o apodo metaforico.
+			1 = {
+				give_nickname = nick_hist_the_boneless_f
+			}
+			# "LONGSHANKS" - Eduardo I de Inglaterra (1239-1307), llamado "Piernas Largas".
+			# Media 1.88m (muy alto para la epoca), conquisto Gales.
+			# Tambien conocido como "Martillo de los Escoceses".
+			1 = {
+				give_nickname = nick_hist_longshanks_f
+			}
+			# "LACKLAND" - Juan sin Tierra (1166-1217), Rey de Inglaterra.
+			# Hermano menor de Ricardo Corazon de Leon, no heredo tierras de su padre.
+			# Perdio Normandia, firmo la Carta Magna (1215) bajo presion de los barones.
+			# Relacion: Hermano de Ricardo I Corazon de Leon (dinastia Plantagenet).
+			1 = {
+				give_nickname = nick_hist_lackland_f
+			}
+			# "CURTMANTLE" - Enrique II de Inglaterra (1133-1189), "Manto Corto".
+			# Fundador de la dinastia Plantagenet, usaba capas cortas (moda angevina).
+			# Padre de Ricardo Corazon de Leon y Juan sin Tierra.
+			1 = {
+				give_nickname = nick_hist_curtmantle_f
+			}
+			# "THE LEPER" - Balduino IV de Jerusalen (1161-1185), Rey de Jerusalen.
+			# Goberno con lepra desde los 13 años, derroto a Saladino en Montgisard (1177).
+			# Murio a los 24 años, su enfermedad debilito el reino cruzado.
+			1 = {
+				give_nickname = nick_hist_the_leper_f
+			}
+			# "STUPOR MUNDI" - Federico II Hohenstaufen (1194-1250), "Asombro del Mundo".
+			# Emperador del Sacro Imperio, Rey de Sicilia y Jerusalen.
+			# Poliglota (6 idiomas), cientifico, falconero, recupero Jerusalen por negociacion.
+			# Excomulgado 3 veces por el Papa, mecenas del conocimiento.
+			1 = {
+				give_nickname = nick_hist_stupor_mundi_f
+			}
+			# "HAIRY BREECHES" - Ragnar Lodbrok (Ragnar "Calzas Peludas"), legendario rey vikingo (s. IX).
+			# Padre de Ivar el Deshuesado, Bjorn Brazo de Hierro, Sigurd Ojo de Serpiente.
+			# Las "calzas peludas" eran proteccion contra serpientes venenosas.
+			1 = {
+				give_nickname = nick_hist_hairy_breeches_f
+			}
+			# "THE GANGER" - Rollo el Caminante (846-930), fundador de Normandia.
+			# Lider vikingo tan grande que ningun caballo lo soportaba, caminaba siempre.
+			# Tratado de Saint-Clair-sur-Epte (911): Carlos III le cedio Normandia.
+			# Ancestro de Guillermo el Conquistador (dinastia normanda).
+			1 = {
+				give_nickname = nick_hist_the_ganger_f
+			}
+			# "THE BALD" - Carlos II el Calvo (823-877), Rey de Francia Occidental.
+			# Nieto de Carlomagno, dividio el Imperio Carolingio (Tratado de Verdun, 843).
+			# "THE BALD" - Carlos II el Calvo (823-877), Rey de Francia Occidental.
+			# Nieto de Carlomagno, dividio el Imperio Carolingio (Tratado de Verdun, 843).
+			# Ironico: muchas representaciones lo muestran con cabello.
+			# Relacion: Hermano de Luis el Germanico y Lotario I.
+			1 = {
+				give_nickname = nick_hist_the_bald_f
+			}
+			# "THE STAMMERER" - Luis II el Tartamudo (846-879), Rey de Francia Occidental.
+			# Hijo de Carlos el Calvo, reino solo 2 años.
+			# El tartamudeo dificulto su autoridad politica.
+			1 = {
+				give_nickname = nick_hist_the_stammerer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_child_f
+			}
+			# "THE BRAVE" - Alfonso IV de Aragon (1299-1336), el Benigno o el Bravo.
+			# Tambien: Alfonso II de Asturias (759-842), enfrento a los musulmanes.
+			# Indica valentia en combate.
+			1 = {
+				give_nickname = nick_hist_the_brave_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_strong_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_trembler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cunning_f
+			}
+			# ====================================
+			# EPITETOS IBERICOS E ISLAMICOS
+			# ====================================
+			# "CAMPEADOR" - Rodrigo Diaz de Vivar "El Cid Campeador" (1043-1099).
+			# "Campeador" = "maestro en el campo de batalla" (castellano medieval).
+			# Conquisto Valencia, heroe de la Reconquista, mercenario para cristianos y musulmanes.
+			1 = {
+				give_nickname = nick_hist_campeador_f
+			}
+			# "HARDRADA" - Harald III Hardrada (1015-1066), Rey de Noruega.
+			# "Hardrada" = "gobernante severo" o "consejo duro" (nordico antiguo).
+			# Mercenario en Constantinopla (Guardia Varega), murio en Stamford Bridge.
+			# Su invasion de Inglaterra precedio a la de Guillermo el Conquistador.
+			1 = {
+				give_nickname = nick_hist_hardrada_f
+			}
+			# "BLUETOOTH" - Harald I Blatand (910-987), Rey de Dinamarca y Noruega.
+			# Unifico Dinamarca, introdujo el cristianismo.
+			# "Bluetooth" (diente azul): posible diente oscuro/muerto o amor por los arandanos.
+			# "BLUETOOTH" - Harald I Blatand (910-987), Rey de Dinamarca y Noruega.
+			# Unifico Dinamarca, introdujo el cristianismo.
+			# "Bluetooth" (diente azul): posible diente oscuro/muerto o amor por los arandanos.
+			# ¡La tecnologia Bluetooth lleva su nombre! (unificacion de dispositivos)
 			1 = { give_nickname = nick_hist_bluetooth_f }
+			
+			# "THE BEWITCHED" - Carlos II de España (1661-1700), "El Hechizado".
+			# Ultimo Habsburgo español, multiples deformidades por endogamia.
+			# Murio sin descendencia, causo la Guerra de Sucesion Española.
 			1 = { give_nickname = nick_hist_the_bewitched_f }
+			
 			1 = { give_nickname = nick_hist_the_divine_f }
 			1 = { give_nickname = nick_hist_the_beloved_f }
+			
+			# "THE PRUDENT" - Felipe II de España (1527-1598), "El Prudente".
+			# Rey de España, Portugal, Napoles, Sicilia, Paises Bajos.
+			# Armada Invencible (1588), batallo contra Inglaterra, Francia y Turcos.
+			# Padre de Felipe III, hijo de Carlos V (Universal Ruler).
 			1 = { give_nickname = nick_hist_the_prudent_f }
+			
+			# "THE LONGED FOR" - Alfonso VI de Portugal (1643-1683), "O Desejado".
+			# Libero Portugal del dominio español despues de 60 años.
+			# Guerra de Restauracion Portuguesa (1640-1668).
 			1 = { give_nickname = nick_hist_the_longed_for_f }
+			
 			1 = { give_nickname = nick_hist_the_cautious_f }
 			1 = { give_nickname = nick_hist_the_hunter_f }
 			1 = { give_nickname = nick_hist_the_political_f }
@@ -78,1157 +361,3430 @@ ac_historical_epithets = {
 			1 = { give_nickname = nick_hist_the_merciful_f }
 			1 = { give_nickname = nick_hist_the_justiciar_f }
 			1 = { give_nickname = nick_hist_the_judge_f }
+			
+			# "THE CEREMONIOUS" - Pedro IV de Aragon (1319-1387), "El Ceremonioso".
+			# Obsesionado con el protocolo y las ceremonias de corte.
+			# Expandio la Corona de Aragon, conquisto Mallorca, Cerdeña.
 			1 = { give_nickname = nick_hist_the_ceremonious_f }
+			
 			1 = { give_nickname = nick_hist_the_heretic_f }
+			
+			# "THE PHILOSOPHER" - Marco Aurelio (121-180), Emperador Romano.
+			# Filosofo estoico, autor de "Meditaciones".
+			# Tambien: Federico II Hohenstaufen (ya mencionado como Stupor Mundi).
 			1 = { give_nickname = nick_hist_the_philosopher_f }
+			
 			1 = { give_nickname = nick_hist_the_poet_f }
 			1 = { give_nickname = nick_hist_the_supreme_poet_f }
 			1 = { give_nickname = nick_hist_the_rebel_f }
 			1 = { give_nickname = nick_hist_the_hermit_f }
+			
+			# ====================================
+			# EPITETOS MILITARES Y MODERNOS
+			# ====================================
+			
+			# "THE GRAND CAPTAIN" - Gonzalo Fernandez de Cordoba (1453-1515).
+			# General español, conquisto Napoles para los Reyes Catolicos.
+			# Revoluciono la tactica militar con el "Tercio español".
 			1 = { give_nickname = nick_hist_the_grand_captain_f }
+			
+			# "THE CID" - Rodrigo Diaz de Vivar "El Cid" (1043-1099).
+			# "Cid" viene del arabe "Sayyid" (señor).
+			# Ver tambien "Campeador" - es el mismo personaje con dos apodos.
 			1 = { give_nickname = nick_hist_the_cid_f }
+			
 			1 = { give_nickname = nick_hist_the_war_cardinal_f }
 			1 = { give_nickname = nick_hist_the_painter_of_kings_f }
 			1 = { give_nickname = nick_hist_the_last_emperor_f }
 			1 = { give_nickname = nick_hist_the_modernizer_f }
 			1 = { give_nickname = nick_hist_the_last_sultan_f }
 			1 = { give_nickname = nick_hist_the_tsar_f }
+			
+			# "THE VICTORIOUS" - Alfonso I de Portugal (1109-1185), "O Conquistador".
+			# Primer Rey de Portugal, gano independencia de Leon en 1139.
+			# Conquisto Lisboa a los moros (1147), fundo la dinastia Borgoña.
+			# Tambien: Valdemar I de Dinamarca (1131-1182).
 			1 = { give_nickname = nick_hist_the_victorious_f }
+			
 			1 = { give_nickname = nick_hist_the_triumphant_f }
 			1 = { give_nickname = nick_hist_the_resolute_f }
 			1 = { give_nickname = nick_hist_the_unyielding_f }
 			1 = { give_nickname = nick_hist_the_pacifier_f }
-			1 = { give_nickname = nick_hist_the_calm_f }
-			1 = { give_nickname = nick_hist_the_serene_f }
-			1 = { give_nickname = nick_hist_the_steadfast_f }
-			1 = { give_nickname = nick_hist_the_banner_f }
-			1 = { give_nickname = nick_hist_the_daring_f }
-			1 = { give_nickname = nick_hist_the_fearless_f }
-			1 = { give_nickname = nick_hist_the_dread_f }
-			1 = { give_nickname = nick_hist_the_oathsworn_f }
-			1 = { give_nickname = nick_hist_the_vowkeeper_f }
-			1 = { give_nickname = nick_hist_the_gryphon_f }
-			1 = { give_nickname = nick_hist_the_hart_f }
-			1 = { give_nickname = nick_hist_the_ram_f }
-			1 = { give_nickname = nick_hist_the_aurochs_f }
-			1 = { give_nickname = nick_hist_the_vixen_f }
-			1 = { give_nickname = nick_hist_the_unburnt_f }
-			1 = { give_nickname = nick_hist_the_ashen_f }
-			1 = { give_nickname = nick_hist_the_quick_f }
-			1 = { give_nickname = nick_hist_the_swift_f }
-			1 = { give_nickname = nick_hist_the_lightfoot_f }
-			1 = { give_nickname = nick_hist_the_far_strider_f }
-			1 = { give_nickname = nick_hist_the_wanderer_f }
-			1 = { give_nickname = nick_hist_the_wayfarer_f }
-			1 = { give_nickname = nick_hist_the_seeker_f }
-			1 = { give_nickname = nick_hist_the_pathfinder_f }
-			1 = { give_nickname = nick_hist_the_trailblazer_f }
-			1 = { give_nickname = nick_hist_the_tracker_f }
-			1 = { give_nickname = nick_hist_the_harbinger_f }
-			1 = { give_nickname = nick_hist_the_forerunner_f }
-			1 = { give_nickname = nick_hist_the_vanguard_f }
-			1 = { give_nickname = nick_hist_the_rearguard_f }
-			1 = { give_nickname = nick_hist_the_sentinel_f }
-			1 = { give_nickname = nick_hist_the_watchful_f }
-			1 = { give_nickname = nick_hist_the_warder_f }
-			1 = { give_nickname = nick_hist_the_castellan_f }
-			1 = { give_nickname = nick_hist_the_castle_builder_f }
-			1 = { give_nickname = nick_hist_the_gate_f }
-			1 = { give_nickname = nick_hist_the_portcullis_f }
-			1 = { give_nickname = nick_hist_the_fortifier_f }
-			1 = { give_nickname = nick_hist_the_bastion_f }
-			1 = { give_nickname = nick_hist_the_rampart_f }
-			1 = { give_nickname = nick_hist_the_keeper_f }
-			1 = { give_nickname = nick_hist_the_lawmaker_f }
-			1 = { give_nickname = nick_hist_the_librarian_f }
-			1 = { give_nickname = nick_hist_the_cataloguer_f }
-			1 = { give_nickname = nick_hist_the_translator_f }
-			1 = { give_nickname = nick_hist_the_polyglot_f }
-			1 = { give_nickname = nick_hist_the_cartographer_f }
-			1 = { give_nickname = nick_hist_the_astrologer_f }
-			1 = { give_nickname = nick_hist_the_alchemist_f }
-			1 = { give_nickname = nick_hist_the_physician_f }
-			1 = { give_nickname = nick_hist_the_herbalist_f }
-			1 = { give_nickname = nick_hist_the_surgeon_f }
-			1 = { give_nickname = nick_hist_the_leech_f }
-			1 = { give_nickname = nick_hist_the_occult_f }
-			1 = { give_nickname = nick_hist_the_enchanter_f }
-			1 = { give_nickname = nick_hist_the_visionary_f }
-			1 = { give_nickname = nick_hist_the_dreamer_f }
-			1 = { give_nickname = nick_hist_the_reader_f }
-			1 = { give_nickname = nick_hist_the_scholar_f }
-			1 = { give_nickname = nick_hist_the_savant_f }
-			1 = { give_nickname = nick_hist_the_mastermind_f }
-			1 = { give_nickname = nick_hist_the_thinker_f }
-			1 = { give_nickname = nick_hist_the_logician_f }
-			1 = { give_nickname = nick_hist_the_cunning_mind_f }
-			1 = { give_nickname = nick_hist_the_quill_f }
-			1 = { give_nickname = nick_hist_the_quillhand_f }
-			1 = { give_nickname = nick_hist_the_bookish_f }
-			1 = { give_nickname = nick_hist_the_highborn_f }
-			1 = { give_nickname = nick_hist_the_lowborn_f }
-			1 = { give_nickname = nick_hist_the_exile_f }
-			1 = { give_nickname = nick_hist_the_returned_f }
-			1 = { give_nickname = nick_hist_the_recalled_f }
-			1 = { give_nickname = nick_hist_the_fallen_f }
-			1 = { give_nickname = nick_hist_the_damned_f }
-			1 = { give_nickname = nick_hist_the_forsaken_f }
-			1 = { give_nickname = nick_hist_the_lost_f }
-			1 = { give_nickname = nick_hist_the_found_f }
-			1 = { give_nickname = nick_hist_the_abandoned_f }
-			1 = { give_nickname = nick_hist_the_orphan_f }
-			1 = { give_nickname = nick_hist_the_adopted_f }
-			1 = { give_nickname = nick_hist_the_motherless_f }
-			1 = { give_nickname = nick_hist_the_fatherless_f }
-			1 = { give_nickname = nick_hist_the_brotherless_f }
-			1 = { give_nickname = nick_hist_the_sisterless_f }
-			1 = { give_nickname = nick_hist_the_bastard_born_f }
-			1 = { give_nickname = nick_hist_the_legitimated_f }
-			1 = { give_nickname = nick_hist_the_maimed_lord_f }
-			1 = { give_nickname = nick_hist_the_one_eyed_f }
-			1 = { give_nickname = nick_hist_the_blind_f }
-			1 = { give_nickname = nick_hist_the_poxed_f }
-			1 = { give_nickname = nick_hist_the_ashen_skin_f }
-			1 = { give_nickname = nick_hist_the_ruddy_f }
-			1 = { give_nickname = nick_hist_the_hirsute_f }
-			1 = { give_nickname = nick_hist_the_shaven_f }
-			1 = { give_nickname = nick_hist_the_braided_f }
-			1 = { give_nickname = nick_hist_the_tressed_f }
-			1 = { give_nickname = nick_hist_the_bald_pate_f }
-			1 = { give_nickname = nick_hist_the_broad_shoulder_f }
-			1 = { give_nickname = nick_hist_the_big_hand_f }
-			1 = { give_nickname = nick_hist_the_widowmaker_f }
-			1 = { give_nickname = nick_hist_the_headsman_f }
-			1 = { give_nickname = nick_hist_the_flaming_f }
-			1 = { give_nickname = nick_hist_the_firebrand_f }
-			1 = { give_nickname = nick_hist_the_kindler_f }
-			1 = { give_nickname = nick_hist_the_spark_f }
-			1 = { give_nickname = nick_hist_the_ember_f }
-			1 = { give_nickname = nick_hist_the_ashes_f }
-			1 = { give_nickname = nick_hist_the_cold_f }
-			1 = { give_nickname = nick_hist_the_chill_f }
-			1 = { give_nickname = nick_hist_the_frost_f }
-			1 = { give_nickname = nick_hist_the_ice_f }
-			1 = { give_nickname = nick_hist_the_storm_f }
-			1 = { give_nickname = nick_hist_the_thunder_f }
-			1 = { give_nickname = nick_hist_the_lightning_f }
-			1 = { give_nickname = nick_hist_the_rain_f }
-			1 = { give_nickname = nick_hist_the_flood_f }
-			1 = { give_nickname = nick_hist_the_drought_f }
-			1 = { give_nickname = nick_hist_the_quake_f }
-			1 = { give_nickname = nick_hist_the_tremor_f }
-			1 = { give_nickname = nick_hist_the_edge_f }
-			1 = { give_nickname = nick_hist_the_point_f }
-			1 = { give_nickname = nick_hist_the_barbed_f }
-			1 = { give_nickname = nick_hist_the_hook_f }
-			1 = { give_nickname = nick_hist_the_spur_f }
-			1 = { give_nickname = nick_hist_the_helm_f }
-			1 = { give_nickname = nick_hist_the_mail_f }
-			1 = { give_nickname = nick_hist_the_plate_f }
-			1 = { give_nickname = nick_hist_the_chain_f }
-			1 = { give_nickname = nick_hist_the_scale_f }
-			1 = { give_nickname = nick_hist_the_gauntlet_f }
-			1 = { give_nickname = nick_hist_the_sabre_f }
-			1 = { give_nickname = nick_hist_the_slinger_f }
-			1 = { give_nickname = nick_hist_the_ballistarius_f }
-			1 = { give_nickname = nick_hist_the_sapper_f }
-			1 = { give_nickname = nick_hist_the_siege_master_f }
-			1 = { give_nickname = nick_hist_the_engineer_f }
-			1 = { give_nickname = nick_hist_the_mason_f }
-			1 = { give_nickname = nick_hist_the_roadmaker_f }
-			1 = { give_nickname = nick_hist_the_bridgewright_f }
-			1 = { give_nickname = nick_hist_the_dyke_f }
-			1 = { give_nickname = nick_hist_the_canal_f }
-			1 = { give_nickname = nick_hist_the_dock_f }
-			1 = { give_nickname = nick_hist_the_harbour_f }
-			1 = { give_nickname = nick_hist_the_shipwright_f }
-			1 = { give_nickname = nick_hist_the_carpenter_f }
-			1 = { give_nickname = nick_hist_the_saw_f }
-			1 = { give_nickname = nick_hist_the_chisel_f }
-			1 = { give_nickname = nick_hist_the_pick_f }
-			1 = { give_nickname = nick_hist_the_spade_f }
-			1 = { give_nickname = nick_hist_the_plough_f }
-			1 = { give_nickname = nick_hist_the_hoe_f }
-			1 = { give_nickname = nick_hist_the_reaper_f }
-			1 = { give_nickname = nick_hist_the_harvester_f }
-			1 = { give_nickname = nick_hist_the_miller_f }
-			1 = { give_nickname = nick_hist_the_baker_f }
-			1 = { give_nickname = nick_hist_the_brewer_f }
-			1 = { give_nickname = nick_hist_the_winemaker_f }
-			1 = { give_nickname = nick_hist_the_vintner_f }
-			1 = { give_nickname = nick_hist_the_herdsman_f }
-			1 = { give_nickname = nick_hist_the_shepherd_f }
-			1 = { give_nickname = nick_hist_the_cowherd_f }
-			1 = { give_nickname = nick_hist_the_swineherd_f }
-			1 = { give_nickname = nick_hist_the_goatherd_f }
-			1 = { give_nickname = nick_hist_the_huntsman_f }
-			1 = { give_nickname = nick_hist_the_fisher_f }
-			1 = { give_nickname = nick_hist_the_tanner_f }
-			1 = { give_nickname = nick_hist_the_potter_f }
-			1 = { give_nickname = nick_hist_the_weaver_f }
-			1 = { give_nickname = nick_hist_the_dyer_f }
-			1 = { give_nickname = nick_hist_the_fuller_f }
-			1 = { give_nickname = nick_hist_the_clothier_f }
-			1 = { give_nickname = nick_hist_the_tailor_f }
-			1 = { give_nickname = nick_hist_the_cooper_f }
-			1 = { give_nickname = nick_hist_the_cobbler_f }
-			1 = { give_nickname = nick_hist_the_saddler_f }
-			1 = { give_nickname = nick_hist_the_chandler_f }
-			1 = { give_nickname = nick_hist_the_merchant_f }
-			1 = { give_nickname = nick_hist_the_trader_f }
-			1 = { give_nickname = nick_hist_the_factor_f }
-			1 = { give_nickname = nick_hist_the_broker_f }
-			1 = { give_nickname = nick_hist_the_mintmaster_f }
-			1 = { give_nickname = nick_hist_the_treasurer_f }
-			1 = { give_nickname = nick_hist_the_coin_f }
-			1 = { give_nickname = nick_hist_the_counter_f }
-			1 = { give_nickname = nick_hist_the_warden_f }
-			1 = { give_nickname = nick_hist_the_jailer_f }
-			1 = { give_nickname = nick_hist_the_gaoler_f }
-			1 = { give_nickname = nick_hist_the_keys_f }
-			1 = { give_nickname = nick_hist_the_lock_f }
-			1 = { give_nickname = nick_hist_the_keyholder_f }
-			1 = { give_nickname = nick_hist_the_gatekeeper_f }
-			1 = { give_nickname = nick_hist_the_porter_f }
-			1 = { give_nickname = nick_hist_the_steward_f }
-			1 = { give_nickname = nick_hist_the_chamberlain_f }
-			1 = { give_nickname = nick_hist_the_marshal_f }
-			1 = { give_nickname = nick_hist_the_seneschal_f }
-			1 = { give_nickname = nick_hist_the_butler_f }
-			1 = { give_nickname = nick_hist_the_master_of_horse_f }
-			1 = { give_nickname = nick_hist_the_master_of_hunt_f }
-			1 = { give_nickname = nick_hist_the_standard_f }
-			1 = { give_nickname = nick_hist_the_trumpet_f }
-			1 = { give_nickname = nick_hist_the_herald_f }
-			1 = { give_nickname = nick_hist_the_bell_f }
-			1 = { give_nickname = nick_hist_the_bellringer_f }
-			1 = { give_nickname = nick_hist_the_crier_f }
-			1 = { give_nickname = nick_hist_the_town_f }
-			1 = { give_nickname = nick_hist_the_bailiff_f }
-			1 = { give_nickname = nick_hist_the_reeve_f }
-			1 = { give_nickname = nick_hist_the_mayor_f }
-			1 = { give_nickname = nick_hist_the_alderman_f }
-			1 = { give_nickname = nick_hist_the_prefect_f }
-			1 = { give_nickname = nick_hist_the_castigator_f }
-			1 = { give_nickname = nick_hist_the_corrector_f }
-			1 = { give_nickname = nick_hist_the_judicator_f }
-			1 = { give_nickname = nick_hist_the_arbitrator_f }
-			1 = { give_nickname = nick_hist_the_keeper_of_laws_f }
-			1 = { give_nickname = nick_hist_the_scale_justice_f }
-			1 = { give_nickname = nick_hist_the_pen_f }
-			1 = { give_nickname = nick_hist_the_scroll_f }
-			1 = { give_nickname = nick_hist_the_wax_f }
-			1 = { give_nickname = nick_hist_the_seal_f }
-			1 = { give_nickname = nick_hist_the_ring_f }
-			1 = { give_nickname = nick_hist_the_signet_f }
-			1 = { give_nickname = nick_hist_the_mark_f }
-			1 = { give_nickname = nick_hist_the_brand_f }
-			1 = { give_nickname = nick_hist_the_stamp_f }
-			1 = { give_nickname = nick_hist_the_diplomat_f }
-			1 = { give_nickname = nick_hist_the_envoy_f }
-			1 = { give_nickname = nick_hist_the_legate_f }
-			1 = { give_nickname = nick_hist_the_ambassador_f }
-			1 = { give_nickname = nick_hist_the_orator_f }
-			1 = { give_nickname = nick_hist_the_tongue_f }
-			1 = { give_nickname = nick_hist_the_voice_f }
-			1 = { give_nickname = nick_hist_the_whisperer_f }
-			1 = { give_nickname = nick_hist_the_listener_f }
-			1 = { give_nickname = nick_hist_the_ear_f }
-			1 = { give_nickname = nick_hist_the_eye_f }
-			1 = { give_nickname = nick_hist_the_hand_f }
-			1 = { give_nickname = nick_hist_the_right_hand_f }
-			1 = { give_nickname = nick_hist_the_left_hand_f }
-			1 = { give_nickname = nick_hist_the_caudillo_f }
-			1 = { give_nickname = nick_hist_the_chronicler_f }
-			1 = { give_nickname = nick_hist_the_confined_f }
-			1 = { give_nickname = nick_hist_the_drunkard_f }
-			1 = { give_nickname = nick_hist_the_general_f }
-			1 = { give_nickname = nick_hist_the_gouty_f }
-			1 = { give_nickname = nick_hist_the_paunch_f }
-			1 = { give_nickname = nick_hist_the_scribe_f }
-			1 = { give_nickname = nick_hist_the_chivalrous_f }
-			1 = { give_nickname = nick_hist_the_gallant_f }
-			1 = { give_nickname = nick_hist_the_valorous_f }
-			1 = { give_nickname = nick_hist_the_undaunted_f }
-			1 = { give_nickname = nick_hist_the_unbroken_will_f }
-			1 = { give_nickname = nick_hist_the_oathbound_f }
-			1 = { give_nickname = nick_hist_the_oath_forged_f }
-			1 = { give_nickname = nick_hist_the_battlewise_f }
-			1 = { give_nickname = nick_hist_the_battleborn_f }
-			1 = { give_nickname = nick_hist_the_battle_thorn_f }
-			1 = { give_nickname = nick_hist_the_warwise_f }
-			1 = { give_nickname = nick_hist_the_warwise_lord_f }
-			1 = { give_nickname = nick_hist_the_lord_of_banners_f }
-			1 = { give_nickname = nick_hist_the_standard_lord_f }
-			1 = { give_nickname = nick_hist_the_banner_lord_f }
-			1 = { give_nickname = nick_hist_the_helm_breaker_f }
-			1 = { give_nickname = nick_hist_the_billhook_f }
-			1 = { give_nickname = nick_hist_the_siegebreaker_f }
-			1 = { give_nickname = nick_hist_the_siegeborn_f }
-			1 = { give_nickname = nick_hist_the_ramhand_f }
-			1 = { give_nickname = nick_hist_the_tower_f }
-			1 = { give_nickname = nick_hist_the_great_helm_f }
-			1 = { give_nickname = nick_hist_the_mailclad_f }
-			1 = { give_nickname = nick_hist_the_chainclad_f }
-			1 = { give_nickname = nick_hist_the_plateclad_f }
-			1 = { give_nickname = nick_hist_the_fleet_f }
-			1 = { give_nickname = nick_hist_the_fleetfoot_f }
-			1 = { give_nickname = nick_hist_the_high_pass_f }
-			1 = { give_nickname = nick_hist_the_ridge_runner_f }
-			1 = { give_nickname = nick_hist_the_vale_guard_f }
-			1 = { give_nickname = nick_hist_the_borderlord_f }
-			1 = { give_nickname = nick_hist_the_watch_on_the_marches_f }
-			1 = { give_nickname = nick_hist_the_gatewarden_f }
-			1 = { give_nickname = nick_hist_the_roadwarden_f }
-			1 = { give_nickname = nick_hist_the_bridgewarden_f }
-			1 = { give_nickname = nick_hist_the_ford_keeper_f }
-			1 = { give_nickname = nick_hist_the_pass_guard_f }
-			1 = { give_nickname = nick_hist_the_coastal_f }
-			1 = { give_nickname = nick_hist_the_coastward_f }
-			1 = { give_nickname = nick_hist_the_harbor_lord_f }
-			1 = { give_nickname = nick_hist_the_port_master_f }
-			1 = { give_nickname = nick_hist_the_ship_master_f }
-			1 = { give_nickname = nick_hist_the_anchor_f }
-			1 = { give_nickname = nick_hist_the_keel_f }
-			1 = { give_nickname = nick_hist_the_tiller_f }
-			1 = { give_nickname = nick_hist_the_compass_f }
-			1 = { give_nickname = nick_hist_the_lodestar_f }
-			1 = { give_nickname = nick_hist_the_starwise_f }
-			1 = { give_nickname = nick_hist_the_moongazer_f }
-			1 = { give_nickname = nick_hist_the_sunwise_f }
-			1 = { give_nickname = nick_hist_the_dawnward_f }
-			1 = { give_nickname = nick_hist_the_duskward_f }
-			1 = { give_nickname = nick_hist_the_noonday_f }
-			1 = { give_nickname = nick_hist_the_midnight_f }
-			1 = { give_nickname = nick_hist_the_twilight_f }
-			1 = { give_nickname = nick_hist_the_starfire_f }
-			1 = { give_nickname = nick_hist_the_stormstar_f }
-			1 = { give_nickname = nick_hist_the_thunderhand_f }
-			1 = { give_nickname = nick_hist_the_lightning_hand_f }
-			1 = { give_nickname = nick_hist_the_lightning_eye_f }
-			1 = { give_nickname = nick_hist_the_rainbringer_f }
-			1 = { give_nickname = nick_hist_the_frosthand_f }
-			1 = { give_nickname = nick_hist_the_frostborn_f }
-			1 = { give_nickname = nick_hist_the_iceborn_f }
-			1 = { give_nickname = nick_hist_the_windcloak_f }
-			1 = { give_nickname = nick_hist_the_windborne_f }
-			1 = { give_nickname = nick_hist_the_stormborne_f }
-			1 = { give_nickname = nick_hist_the_mistborne_f }
-			1 = { give_nickname = nick_hist_the_mistcloak_f }
-			1 = { give_nickname = nick_hist_the_cloud_f }
-			1 = { give_nickname = nick_hist_the_cloud_speaker_f }
-			1 = { give_nickname = nick_hist_the_cloudpiercer_f }
-			1 = { give_nickname = nick_hist_the_hill_f }
-			1 = { give_nickname = nick_hist_the_highland_f }
-			1 = { give_nickname = nick_hist_the_fenward_f }
-			1 = { give_nickname = nick_hist_the_moor_walker_f }
-			1 = { give_nickname = nick_hist_the_bog_treader_f }
-			1 = { give_nickname = nick_hist_the_marshlord_f }
-			1 = { give_nickname = nick_hist_the_bridge_lord_f }
-			1 = { give_nickname = nick_hist_the_road_builder_f }
-			1 = { give_nickname = nick_hist_the_way_maker_f }
-			1 = { give_nickname = nick_hist_the_path_maker_f }
-			1 = { give_nickname = nick_hist_the_tracklayer_f }
-			1 = { give_nickname = nick_hist_the_stonewise_f }
-			1 = { give_nickname = nick_hist_the_quarry_f }
-			1 = { give_nickname = nick_hist_the_stoneshaper_f }
-			1 = { give_nickname = nick_hist_the_rock_f }
-			1 = { give_nickname = nick_hist_the_anvil_f }
-			1 = { give_nickname = nick_hist_the_forge_f }
-			1 = { give_nickname = nick_hist_the_bellows_f }
-			1 = { give_nickname = nick_hist_the_tongs_f }
-			1 = { give_nickname = nick_hist_the_smith_f }
-			1 = { give_nickname = nick_hist_the_leathersmith_f }
-			1 = { give_nickname = nick_hist_the_cartwright_f }
-			1 = { give_nickname = nick_hist_the_wainwright_f }
-			1 = { give_nickname = nick_hist_the_wheelwright_f }
-			1 = { give_nickname = nick_hist_the_sailmaker_f }
-			1 = { give_nickname = nick_hist_the_netmaker_f }
-			1 = { give_nickname = nick_hist_the_roper_f }
-			1 = { give_nickname = nick_hist_the_ropemaker_f }
-			1 = { give_nickname = nick_hist_the_glass_f }
-			1 = { give_nickname = nick_hist_the_glazier_f }
-			1 = { give_nickname = nick_hist_the_gilder_f }
-			1 = { give_nickname = nick_hist_the_limber_f }
-			1 = { give_nickname = nick_hist_the_quartermaster_f }
-			1 = { give_nickname = nick_hist_the_armourer_f }
-			1 = { give_nickname = nick_hist_the_storekeeper_f }
-			1 = { give_nickname = nick_hist_the_granary_f }
-			1 = { give_nickname = nick_hist_the_harvest_f }
-			1 = { give_nickname = nick_hist_the_autumn_f }
-			1 = { give_nickname = nick_hist_the_spring_f }
-			1 = { give_nickname = nick_hist_the_summer_f }
-			1 = { give_nickname = nick_hist_the_harvest_lord_f }
-			1 = { give_nickname = nick_hist_the_plough_lord_f }
-			1 = { give_nickname = nick_hist_the_corn_f }
-			1 = { give_nickname = nick_hist_the_barley_f }
-			1 = { give_nickname = nick_hist_the_wheat_f }
-			1 = { give_nickname = nick_hist_the_rye_f }
-			1 = { give_nickname = nick_hist_the_oats_f }
-			1 = { give_nickname = nick_hist_the_miller_lord_f }
-			1 = { give_nickname = nick_hist_the_bread_f }
-			1 = { give_nickname = nick_hist_the_ale_f }
-			1 = { give_nickname = nick_hist_the_mead_f }
-			1 = { give_nickname = nick_hist_the_wine_f }
-			1 = { give_nickname = nick_hist_the_salt_f }
-			1 = { give_nickname = nick_hist_the_mint_f }
-			1 = { give_nickname = nick_hist_the_ledger_f }
-			1 = { give_nickname = nick_hist_the_account_f }
-			1 = { give_nickname = nick_hist_the_scale_master_f }
-			1 = { give_nickname = nick_hist_the_toll_f }
-			1 = { give_nickname = nick_hist_the_tariff_f }
-			1 = { give_nickname = nick_hist_the_tithe_f }
-			1 = { give_nickname = nick_hist_the_tithe_lord_f }
-			1 = { give_nickname = nick_hist_the_coin_lord_f }
-			1 = { give_nickname = nick_hist_the_tribute_f }
-			1 = { give_nickname = nick_hist_the_tribute_lord_f }
-			1 = { give_nickname = nick_hist_the_levy_f }
-			1 = { give_nickname = nick_hist_the_levy_lord_f }
-			1 = { give_nickname = nick_hist_the_muster_f }
-			1 = { give_nickname = nick_hist_the_host_f }
-			1 = { give_nickname = nick_hist_the_march_f }
-			1 = { give_nickname = nick_hist_the_campaigner_f }
-			1 = { give_nickname = nick_hist_the_standard_guard_f }
-			1 = { give_nickname = nick_hist_the_city_f }
-			1 = { give_nickname = nick_hist_the_citadel_f }
-			1 = { give_nickname = nick_hist_the_hall_f }
-			1 = { give_nickname = nick_hist_the_keep_f }
-			1 = { give_nickname = nick_hist_the_donjon_f }
-			1 = { give_nickname = nick_hist_the_gatehouse_f }
-			1 = { give_nickname = nick_hist_the_barbeque_f }
-			1 = { give_nickname = nick_hist_the_bailey_f }
-			1 = { give_nickname = nick_hist_the_moat_f }
-			1 = { give_nickname = nick_hist_the_watchtower_f }
-			1 = { give_nickname = nick_hist_the_lantern_f }
-			1 = { give_nickname = nick_hist_the_beacon_f }
-			1 = { give_nickname = nick_hist_the_brazier_f }
-			1 = { give_nickname = nick_hist_the_torch_f }
-			1 = { give_nickname = nick_hist_the_candle_f }
-			1 = { give_nickname = nick_hist_the_lamp_f }
-			1 = { give_nickname = nick_hist_the_cloak_f }
-			1 = { give_nickname = nick_hist_the_mantle_f }
-			1 = { give_nickname = nick_hist_the_coif_f }
-			1 = { give_nickname = nick_hist_the_hood_f }
-			1 = { give_nickname = nick_hist_the_tabard_f }
-			1 = { give_nickname = nick_hist_the_surcoat_f }
-			1 = { give_nickname = nick_hist_the_gambeson_f }
-			1 = { give_nickname = nick_hist_the_jerkin_f }
-			1 = { give_nickname = nick_hist_the_doublet_f }
-			1 = { give_nickname = nick_hist_the_sash_f }
-			1 = { give_nickname = nick_hist_the_girdle_f }
-			1 = { give_nickname = nick_hist_the_gloved_f }
-			1 = { give_nickname = nick_hist_the_booted_f }
-			1 = { give_nickname = nick_hist_the_buckled_f }
-			1 = { give_nickname = nick_hist_the_laced_f }
-			1 = { give_nickname = nick_hist_the_veiled_f }
-			1 = { give_nickname = nick_hist_the_shrouded_f }
-			1 = { give_nickname = nick_hist_the_unveiled_f }
-			1 = { give_nickname = nick_hist_the_grim_f }
-			1 = { give_nickname = nick_hist_the_somber_f }
-			1 = { give_nickname = nick_hist_the_mirthful_f }
-			1 = { give_nickname = nick_hist_the_jovial_f }
-			1 = { give_nickname = nick_hist_the_laughing_f }
-			1 = { give_nickname = nick_hist_the_smiling_f }
-			1 = { give_nickname = nick_hist_the_wailing_f }
-			1 = { give_nickname = nick_hist_the_silent_watcher_f }
-			1 = { give_nickname = nick_hist_the_listening_f }
-			1 = { give_nickname = nick_hist_the_murmur_f }
-			1 = { give_nickname = nick_hist_the_echo_f }
-			1 = { give_nickname = nick_hist_the_resonant_f }
-			1 = { give_nickname = nick_hist_the_harper_f }
-			1 = { give_nickname = nick_hist_the_lutist_f }
-			1 = { give_nickname = nick_hist_the_piper_f }
-			1 = { give_nickname = nick_hist_the_drummer_f }
-			1 = { give_nickname = nick_hist_the_troubadour_f }
-			1 = { give_nickname = nick_hist_the_minstrel_f }
-			1 = { give_nickname = nick_hist_the_jongleur_f }
-			1 = { give_nickname = nick_hist_the_jester_f }
-			1 = { give_nickname = nick_hist_the_fool_f }
-			1 = { give_nickname = nick_hist_the_wise_fool_f }
-			1 = { give_nickname = nick_hist_the_masked_f }
-			1 = { give_nickname = nick_hist_the_unmasked_f }
-			1 = { give_nickname = nick_hist_the_hidden_f }
-			1 = { give_nickname = nick_hist_the_unseen_f }
-			1 = { give_nickname = nick_hist_the_seen_f }
-			1 = { give_nickname = nick_hist_the_revealed_f }
-			1 = { give_nickname = nick_hist_the_worldly_f }
-			1 = { give_nickname = nick_hist_the_temperate_f }
-			1 = { give_nickname = nick_hist_the_abstemious_f }
-			1 = { give_nickname = nick_hist_the_frugal_f }
-			1 = { give_nickname = nick_hist_the_lavish_f }
-			1 = { give_nickname = nick_hist_the_opulent_f }
-			1 = { give_nickname = nick_hist_the_humble_lord_f }
-			1 = { give_nickname = nick_hist_the_proud_f }
-			1 = { give_nickname = nick_hist_the_vain_f }
-			1 = { give_nickname = nick_hist_the_meek_f }
-			1 = { give_nickname = nick_hist_the_charitable_f }
-			1 = { give_nickname = nick_hist_the_avaricious_f }
-			1 = { give_nickname = nick_hist_the_jealous_f }
-			1 = { give_nickname = nick_hist_the_envious_f }
-			1 = { give_nickname = nick_hist_the_ardent_f }
-			1 = { give_nickname = nick_hist_the_earnest_f }
-			1 = { give_nickname = nick_hist_the_skeptic_f }
-			1 = { give_nickname = nick_hist_the_scriptor_f }
-			1 = { give_nickname = nick_hist_the_collector_f }
-			1 = { give_nickname = nick_hist_the_rebuilder_f }
-			1 = { give_nickname = nick_hist_the_heirless_f }
-			1 = { give_nickname = nick_hist_the_prolific_f }
-			1 = { give_nickname = nick_hist_the_twinfather_f }
-			1 = { give_nickname = nick_hist_the_twinmother_f }
-			1 = { give_nickname = nick_hist_the_patron_f }
-			1 = { give_nickname = nick_hist_the_matron_f }
-			1 = { give_nickname = nick_hist_the_foundling_f }
-			1 = { give_nickname = nick_hist_the_linebreaker_f }
-			1 = { give_nickname = nick_hist_the_reckless_f }
-			1 = { give_nickname = nick_hist_the_sure_f }
-			1 = { give_nickname = nick_hist_the_surer_f }
-			1 = { give_nickname = nick_hist_the_sure_hand_f }
-			1 = { give_nickname = nick_hist_the_star_standard_f }
-			1 = { give_nickname = nick_hist_the_moon_standard_f }
-			1 = { give_nickname = nick_hist_the_chaste_f }
-			1 = { give_nickname = nick_hist_the_crusading_f }
-			1 = { give_nickname = nick_hist_the_iconoclast_f }
-			1 = { give_nickname = nick_hist_the_apostate_f }
-			1 = { give_nickname = nick_hist_the_convert_f }
-			1 = { give_nickname = nick_hist_the_preacher_f }
-			1 = { give_nickname = nick_hist_the_reliquary_f }
-			1 = { give_nickname = nick_hist_the_shrine_f }
-			1 = { give_nickname = nick_hist_the_censer_f }
-			1 = { give_nickname = nick_hist_the_censer_lord_f }
-			1 = { give_nickname = nick_hist_the_dalmatic_f }
-			1 = { give_nickname = nick_hist_the_sybil_f }
-			1 = { give_nickname = nick_hist_the_magus_f }
-			1 = { give_nickname = nick_hist_the_anchorite_f }
-			1 = { give_nickname = nick_hist_the_ascetic_f }
-			1 = { give_nickname = nick_hist_the_catholic_f }
-			1 = { give_nickname = nick_hist_the_diviner_f }
-			1 = { give_nickname = nick_hist_the_tunic_f }
-			1 = { give_nickname = nick_hist_the_heterodox_f }
-			1 = { give_nickname = nick_hist_the_guard_of_faith_f }
-			1 = { give_nickname = nick_hist_the_zealous_f }
-			1 = { give_nickname = nick_hist_the_drawbridge_f }
-			1 = { give_nickname = nick_hist_the_incense_f }
-			1 = { give_nickname = nick_hist_the_altar_f }
-			1 = { give_nickname = nick_hist_the_paten_f }
-			1 = { give_nickname = nick_hist_the_sun_king }
-			1 = { give_nickname = nick_hist_the_last_king }
-			1 = { give_nickname = nick_hist_the_lame_king }
-			1 = { give_nickname = nick_hist_the_builder_king }
-			1 = { give_nickname = nick_hist_the_martyr_king }
+			
+			# ====================================
+			# RESTO DE EPITETOS (sin documentar por cantidad)
+			# Los siguientes son variaciones tematicas o ficticias
+			# ====================================
+			1 = {
+				give_nickname = nick_hist_the_fearless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dread_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_oathsworn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_vowkeeper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gryphon_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hart_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ram_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_aurochs_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_vixen_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_unburnt_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ashen_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_quick_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_swift_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightfoot_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_far_strider_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wanderer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wayfarer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_seeker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pathfinder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_trailblazer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tracker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harbinger_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_forerunner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_vanguard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rearguard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sentinel_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_watchful_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_warder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_castellan_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_castle_builder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gate_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_portcullis_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fortifier_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bastion_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rampart_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_keeper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lawmaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_librarian_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cataloguer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_translator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_polyglot_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cartographer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_astrologer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_alchemist_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_physician_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_herbalist_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_surgeon_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_leech_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_occult_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_enchanter_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_visionary_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dreamer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_reader_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scholar_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_savant_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mastermind_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_thinker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_logician_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cunning_mind_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_quill_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_quillhand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bookish_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_highborn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lowborn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_exile_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_returned_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_recalled_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fallen_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_damned_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_forsaken_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lost_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_found_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_abandoned_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_orphan_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_adopted_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_motherless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fatherless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_brotherless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sisterless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bastard_born_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_legitimated_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_maimed_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_one_eyed_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_blind_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_poxed_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ashen_skin_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ruddy_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hirsute_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_shaven_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_braided_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tressed_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bald_pate_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_broad_shoulder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_big_hand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_widowmaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_headsman_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_flaming_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_firebrand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_kindler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_spark_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ember_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ashes_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cold_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chill_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_frost_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ice_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_storm_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_thunder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightning_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rain_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_flood_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_drought_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_quake_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tremor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_edge_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_point_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_barbed_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hook_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_spur_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_helm_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mail_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_plate_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chain_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scale_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gauntlet_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sabre_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_slinger_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ballistarius_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sapper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_siege_master_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_engineer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mason_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_roadmaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bridgewright_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dyke_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_canal_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dock_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harbour_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_shipwright_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_carpenter_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_saw_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chisel_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pick_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_spade_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_plough_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hoe_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_reaper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harvester_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_miller_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_baker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_brewer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_winemaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_vintner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_herdsman_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_shepherd_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cowherd_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_swineherd_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_goatherd_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_huntsman_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fisher_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tanner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_potter_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_weaver_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dyer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fuller_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_clothier_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tailor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cooper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cobbler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_saddler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chandler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_merchant_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_trader_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_factor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_broker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mintmaster_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_treasurer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_coin_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_counter_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_warden_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_jailer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gaoler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_keys_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lock_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_keyholder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gatekeeper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_porter_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_steward_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chamberlain_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_marshal_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_seneschal_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_butler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_master_of_horse_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_master_of_hunt_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_standard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_trumpet_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_herald_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bell_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bellringer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_crier_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_town_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bailiff_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_reeve_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mayor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_alderman_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_prefect_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_castigator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_corrector_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_judicator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_arbitrator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_keeper_of_laws_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scale_justice_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pen_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scroll_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wax_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_seal_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ring_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_signet_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mark_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_brand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_stamp_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_diplomat_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_envoy_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_legate_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ambassador_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_orator_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tongue_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_voice_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_whisperer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_listener_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ear_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_eye_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_right_hand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_left_hand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_caudillo_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chronicler_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_confined_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_drunkard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_general_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gouty_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_paunch_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scribe_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chivalrous_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gallant_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_valorous_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_undaunted_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_unbroken_will_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_oathbound_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_oath_forged_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_battlewise_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_battleborn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_battle_thorn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_warwise_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_warwise_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lord_of_banners_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_standard_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_banner_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_helm_breaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_billhook_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_siegebreaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_siegeborn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ramhand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tower_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_great_helm_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mailclad_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chainclad_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_plateclad_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fleet_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fleetfoot_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_high_pass_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ridge_runner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_vale_guard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_borderlord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_watch_on_the_marches_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gatewarden_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_roadwarden_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bridgewarden_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ford_keeper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pass_guard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_coastal_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_coastward_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harbor_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_port_master_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ship_master_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_anchor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_keel_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tiller_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_compass_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lodestar_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_starwise_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_moongazer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sunwise_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dawnward_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_duskward_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_noonday_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_midnight_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_twilight_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_starfire_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_stormstar_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_thunderhand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightning_hand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightning_eye_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rainbringer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_frosthand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_frostborn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_iceborn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_windcloak_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_windborne_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_stormborne_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mistborne_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mistcloak_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloud_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloud_speaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloudpiercer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hill_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_highland_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fenward_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_moor_walker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bog_treader_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_marshlord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bridge_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_road_builder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_way_maker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_path_maker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tracklayer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_stonewise_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_quarry_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_stoneshaper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rock_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_anvil_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_forge_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bellows_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tongs_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_smith_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_leathersmith_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cartwright_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wainwright_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wheelwright_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sailmaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_netmaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_roper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ropemaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_glass_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_glazier_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gilder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_limber_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_quartermaster_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_armourer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_storekeeper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_granary_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harvest_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_autumn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_spring_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_summer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harvest_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_plough_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_corn_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_barley_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wheat_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rye_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_oats_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_miller_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bread_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ale_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mead_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wine_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_salt_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mint_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ledger_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_account_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scale_master_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_toll_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tariff_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tithe_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tithe_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_coin_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tribute_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tribute_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_levy_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_levy_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_muster_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_host_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_march_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_campaigner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_standard_guard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_city_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_citadel_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hall_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_keep_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_donjon_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gatehouse_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_barbeque_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_bailey_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_moat_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_watchtower_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lantern_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_beacon_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_brazier_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_torch_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_candle_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lamp_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloak_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mantle_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_coif_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hood_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tabard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_surcoat_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gambeson_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_jerkin_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_doublet_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sash_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_girdle_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_gloved_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_booted_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_buckled_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_laced_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_veiled_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_shrouded_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_unveiled_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_grim_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_somber_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mirthful_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_jovial_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_laughing_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_smiling_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wailing_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_silent_watcher_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_listening_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_murmur_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_echo_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_resonant_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_harper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lutist_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_piper_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_drummer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_troubadour_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_minstrel_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_jongleur_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_jester_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_fool_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_wise_fool_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_masked_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_unmasked_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hidden_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_unseen_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_seen_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_revealed_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_worldly_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_temperate_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_abstemious_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_frugal_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_lavish_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_opulent_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_humble_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_proud_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_vain_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_meek_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_charitable_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_avaricious_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_jealous_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_envious_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ardent_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_earnest_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_skeptic_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_scriptor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_collector_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_rebuilder_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_heirless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_prolific_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_twinfather_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_twinmother_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_patron_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_matron_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_foundling_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_linebreaker_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_reckless_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sure_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_surer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sure_hand_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_star_standard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_moon_standard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chaste_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_crusading_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_iconoclast_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_apostate_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_convert_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_preacher_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_reliquary_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_shrine_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_censer_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_censer_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_dalmatic_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sybil_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_magus_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_anchorite_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_ascetic_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_catholic_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_diviner_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_tunic_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_heterodox_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_guard_of_faith_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_zealous_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_drawbridge_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_incense_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_altar_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_paten_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_sun_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_last_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_lame_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_builder_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_martyr_king
+			}
 		}
 	}
 	else = {
 		random_list = {
-			1 = { give_nickname = nick_hist_the_terrible }
-			1 = { give_nickname = nick_hist_the_magnificent }
-			1 = { give_nickname = nick_hist_the_lame }
-			1 = { give_nickname = nick_hist_universal_ruler }
-			1 = { give_nickname = nick_hist_the_lawgiver }
-			1 = { give_nickname = nick_hist_the_assassin }
-			1 = { give_nickname = nick_hist_the_great }
-			1 = { give_nickname = nick_hist_the_wise }
-			1 = { give_nickname = nick_hist_the_just }
-			1 = { give_nickname = nick_hist_the_cruel }
-			1 = { give_nickname = nick_hist_the_merciless }
-			1 = { give_nickname = nick_hist_the_ruthless }
-			1 = { give_nickname = nick_hist_the_bold }
-			1 = { give_nickname = nick_hist_the_valiant }
-			1 = { give_nickname = nick_hist_the_fair }
-			1 = { give_nickname = nick_hist_the_handsome }
-			1 = { give_nickname = nick_hist_the_ugly }
-			1 = { give_nickname = nick_hist_the_fat }
-			1 = { give_nickname = nick_hist_the_stout }
-			1 = { give_nickname = nick_hist_the_tall }
-			1 = { give_nickname = nick_hist_the_mad }
-			1 = { give_nickname = nick_hist_the_glorious }
-			1 = { give_nickname = nick_hist_the_magnanimous }
-			1 = { give_nickname = nick_hist_the_benevolent }
-			1 = { give_nickname = nick_hist_the_protector }
-			1 = { give_nickname = nick_hist_the_defender }
-			1 = { give_nickname = nick_hist_the_liberator }
-			1 = { give_nickname = nick_hist_the_restorer }
-			1 = { give_nickname = nick_hist_the_usurper }
-			1 = { give_nickname = nick_hist_the_tyrant }
-			1 = { give_nickname = nick_hist_the_builder }
-			1 = { give_nickname = nick_hist_the_architect }
-			1 = { give_nickname = nick_hist_the_navigator }
-			1 = { give_nickname = nick_hist_the_seafarer }
-			1 = { give_nickname = nick_hist_the_explorer }
-			1 = { give_nickname = nick_hist_the_poisoner }
-			1 = { give_nickname = nick_hist_the_shadow }
-			1 = { give_nickname = nick_hist_the_whisper }
-			1 = { give_nickname = nick_hist_the_peacemaker }
-			1 = { give_nickname = nick_hist_scourge_of_god }
-			1 = { give_nickname = nick_hist_the_bastard }
-			1 = { give_nickname = nick_hist_the_boneless }
-			1 = { give_nickname = nick_hist_longshanks }
-			1 = { give_nickname = nick_hist_lackland }
-			1 = { give_nickname = nick_hist_curtmantle }
-			1 = { give_nickname = nick_hist_the_leper }
-			1 = { give_nickname = nick_hist_stupor_mundi }
-			1 = { give_nickname = nick_hist_hairy_breeches }
-			1 = { give_nickname = nick_hist_the_ganger }
-			1 = { give_nickname = nick_hist_the_bald }
-			1 = { give_nickname = nick_hist_the_stammerer }
-			1 = { give_nickname = nick_hist_the_child }
-			1 = { give_nickname = nick_hist_the_brave }
-			1 = { give_nickname = nick_hist_the_strong }
-			1 = { give_nickname = nick_hist_the_trembler }
-			1 = { give_nickname = nick_hist_the_cunning }
-			1 = { give_nickname = nick_hist_campeador }
-			1 = { give_nickname = nick_hist_hardrada }
-			1 = { give_nickname = nick_hist_bluetooth }
-			1 = { give_nickname = nick_hist_the_bewitched }
-			1 = { give_nickname = nick_hist_the_divine }
-			1 = { give_nickname = nick_hist_the_beloved }
-			1 = { give_nickname = nick_hist_the_prudent }
-			1 = { give_nickname = nick_hist_the_longed_for }
-			1 = { give_nickname = nick_hist_the_cautious }
-			1 = { give_nickname = nick_hist_the_hunter }
-			1 = { give_nickname = nick_hist_the_political }
-			1 = { give_nickname = nick_hist_the_founder }
-			1 = { give_nickname = nick_hist_the_reformer }
-			1 = { give_nickname = nick_hist_the_generous }
-			1 = { give_nickname = nick_hist_the_merciful }
-			1 = { give_nickname = nick_hist_the_justiciar }
-			1 = { give_nickname = nick_hist_the_judge }
-			1 = { give_nickname = nick_hist_the_ceremonious }
-			1 = { give_nickname = nick_hist_the_heretic }
-			1 = { give_nickname = nick_hist_the_philosopher }
-			1 = { give_nickname = nick_hist_the_poet }
-			1 = { give_nickname = nick_hist_the_supreme_poet }
-			1 = { give_nickname = nick_hist_the_rebel }
-			1 = { give_nickname = nick_hist_the_hermit }
-			1 = { give_nickname = nick_hist_the_grand_captain }
-			1 = { give_nickname = nick_hist_the_cid }
-			1 = { give_nickname = nick_hist_the_war_cardinal }
-			1 = { give_nickname = nick_hist_the_painter_of_kings }
-			1 = { give_nickname = nick_hist_the_last_emperor }
-			1 = { give_nickname = nick_hist_the_modernizer }
-			1 = { give_nickname = nick_hist_the_last_sultan }
-			1 = { give_nickname = nick_hist_the_tsar }
-			1 = { give_nickname = nick_hist_the_victorious }
-			1 = { give_nickname = nick_hist_the_triumphant }
-			1 = { give_nickname = nick_hist_the_resolute }
-			1 = { give_nickname = nick_hist_the_unyielding }
-			1 = { give_nickname = nick_hist_the_pacifier }
-			1 = { give_nickname = nick_hist_the_calm }
-			1 = { give_nickname = nick_hist_the_serene }
-			1 = { give_nickname = nick_hist_the_steadfast }
-			1 = { give_nickname = nick_hist_the_banner }
-			1 = { give_nickname = nick_hist_the_daring }
-			1 = { give_nickname = nick_hist_the_fearless }
-			1 = { give_nickname = nick_hist_the_dread }
-			1 = { give_nickname = nick_hist_the_oathsworn }
-			1 = { give_nickname = nick_hist_the_vowkeeper }
-			1 = { give_nickname = nick_hist_the_gryphon }
-			1 = { give_nickname = nick_hist_the_hart }
-			1 = { give_nickname = nick_hist_the_ram }
-			1 = { give_nickname = nick_hist_the_aurochs }
-			1 = { give_nickname = nick_hist_the_vixen }
-			1 = { give_nickname = nick_hist_the_unburnt }
-			1 = { give_nickname = nick_hist_the_ashen }
-			1 = { give_nickname = nick_hist_the_quick }
-			1 = { give_nickname = nick_hist_the_swift }
-			1 = { give_nickname = nick_hist_the_lightfoot }
-			1 = { give_nickname = nick_hist_the_far_strider }
-			1 = { give_nickname = nick_hist_the_wanderer }
-			1 = { give_nickname = nick_hist_the_wayfarer }
-			1 = { give_nickname = nick_hist_the_seeker }
-			1 = { give_nickname = nick_hist_the_pathfinder }
-			1 = { give_nickname = nick_hist_the_trailblazer }
-			1 = { give_nickname = nick_hist_the_tracker }
-			1 = { give_nickname = nick_hist_the_harbinger }
-			1 = { give_nickname = nick_hist_the_forerunner }
-			1 = { give_nickname = nick_hist_the_vanguard }
-			1 = { give_nickname = nick_hist_the_rearguard }
-			1 = { give_nickname = nick_hist_the_sentinel }
-			1 = { give_nickname = nick_hist_the_watchful }
-			1 = { give_nickname = nick_hist_the_warder }
-			1 = { give_nickname = nick_hist_the_castellan }
-			1 = { give_nickname = nick_hist_the_castle_builder }
-			1 = { give_nickname = nick_hist_the_gate }
-			1 = { give_nickname = nick_hist_the_portcullis }
-			1 = { give_nickname = nick_hist_the_fortifier }
-			1 = { give_nickname = nick_hist_the_bastion }
-			1 = { give_nickname = nick_hist_the_rampart }
-			1 = { give_nickname = nick_hist_the_keeper }
-			1 = { give_nickname = nick_hist_the_lawmaker }
-			1 = { give_nickname = nick_hist_the_librarian }
-			1 = { give_nickname = nick_hist_the_cataloguer }
-			1 = { give_nickname = nick_hist_the_translator }
-			1 = { give_nickname = nick_hist_the_polyglot }
-			1 = { give_nickname = nick_hist_the_cartographer }
-			1 = { give_nickname = nick_hist_the_astrologer }
-			1 = { give_nickname = nick_hist_the_alchemist }
-			1 = { give_nickname = nick_hist_the_physician }
-			1 = { give_nickname = nick_hist_the_herbalist }
-			1 = { give_nickname = nick_hist_the_surgeon }
-			1 = { give_nickname = nick_hist_the_leech }
-			1 = { give_nickname = nick_hist_the_occult }
-			1 = { give_nickname = nick_hist_the_enchanter }
-			1 = { give_nickname = nick_hist_the_visionary }
-			1 = { give_nickname = nick_hist_the_dreamer }
-			1 = { give_nickname = nick_hist_the_reader }
-			1 = { give_nickname = nick_hist_the_scholar }
-			1 = { give_nickname = nick_hist_the_savant }
-			1 = { give_nickname = nick_hist_the_mastermind }
-			1 = { give_nickname = nick_hist_the_thinker }
-			1 = { give_nickname = nick_hist_the_logician }
-			1 = { give_nickname = nick_hist_the_cunning_mind }
-			1 = { give_nickname = nick_hist_the_quill }
-			1 = { give_nickname = nick_hist_the_quillhand }
-			1 = { give_nickname = nick_hist_the_bookish }
-			1 = { give_nickname = nick_hist_the_highborn }
-			1 = { give_nickname = nick_hist_the_lowborn }
-			1 = { give_nickname = nick_hist_the_exile }
-			1 = { give_nickname = nick_hist_the_returned }
-			1 = { give_nickname = nick_hist_the_recalled }
-			1 = { give_nickname = nick_hist_the_fallen }
-			1 = { give_nickname = nick_hist_the_damned }
-			1 = { give_nickname = nick_hist_the_forsaken }
-			1 = { give_nickname = nick_hist_the_lost }
-			1 = { give_nickname = nick_hist_the_found }
-			1 = { give_nickname = nick_hist_the_abandoned }
-			1 = { give_nickname = nick_hist_the_orphan }
-			1 = { give_nickname = nick_hist_the_adopted }
-			1 = { give_nickname = nick_hist_the_motherless }
-			1 = { give_nickname = nick_hist_the_fatherless }
-			1 = { give_nickname = nick_hist_the_brotherless }
-			1 = { give_nickname = nick_hist_the_sisterless }
-			1 = { give_nickname = nick_hist_the_bastard_born }
-			1 = { give_nickname = nick_hist_the_legitimated }
-			1 = { give_nickname = nick_hist_the_maimed_lord }
-			1 = { give_nickname = nick_hist_the_one_eyed }
-			1 = { give_nickname = nick_hist_the_blind }
-			1 = { give_nickname = nick_hist_the_poxed }
-			1 = { give_nickname = nick_hist_the_ashen_skin }
-			1 = { give_nickname = nick_hist_the_ruddy }
-			1 = { give_nickname = nick_hist_the_hirsute }
-			1 = { give_nickname = nick_hist_the_shaven }
-			1 = { give_nickname = nick_hist_the_braided }
-			1 = { give_nickname = nick_hist_the_tressed }
-			1 = { give_nickname = nick_hist_the_bald_pate }
-			1 = { give_nickname = nick_hist_the_broad_shoulder }
-			1 = { give_nickname = nick_hist_the_big_hand }
-			1 = { give_nickname = nick_hist_the_widowmaker }
-			1 = { give_nickname = nick_hist_the_headsman }
-			1 = { give_nickname = nick_hist_the_flaming }
-			1 = { give_nickname = nick_hist_the_firebrand }
-			1 = { give_nickname = nick_hist_the_kindler }
-			1 = { give_nickname = nick_hist_the_spark }
-			1 = { give_nickname = nick_hist_the_ember }
-			1 = { give_nickname = nick_hist_the_ashes }
-			1 = { give_nickname = nick_hist_the_cold }
-			1 = { give_nickname = nick_hist_the_chill }
-			1 = { give_nickname = nick_hist_the_frost }
-			1 = { give_nickname = nick_hist_the_ice }
-			1 = { give_nickname = nick_hist_the_storm }
-			1 = { give_nickname = nick_hist_the_thunder }
-			1 = { give_nickname = nick_hist_the_lightning }
-			1 = { give_nickname = nick_hist_the_rain }
-			1 = { give_nickname = nick_hist_the_flood }
-			1 = { give_nickname = nick_hist_the_drought }
-			1 = { give_nickname = nick_hist_the_quake }
-			1 = { give_nickname = nick_hist_the_tremor }
-			1 = { give_nickname = nick_hist_the_edge }
-			1 = { give_nickname = nick_hist_the_point }
-			1 = { give_nickname = nick_hist_the_barbed }
-			1 = { give_nickname = nick_hist_the_hook }
-			1 = { give_nickname = nick_hist_the_spur }
-			1 = { give_nickname = nick_hist_the_helm }
-			1 = { give_nickname = nick_hist_the_mail }
-			1 = { give_nickname = nick_hist_the_plate }
-			1 = { give_nickname = nick_hist_the_chain }
-			1 = { give_nickname = nick_hist_the_scale }
-			1 = { give_nickname = nick_hist_the_gauntlet }
-			1 = { give_nickname = nick_hist_the_sabre }
-			1 = { give_nickname = nick_hist_the_slinger }
-			1 = { give_nickname = nick_hist_the_ballistarius }
-			1 = { give_nickname = nick_hist_the_sapper }
-			1 = { give_nickname = nick_hist_the_siege_master }
-			1 = { give_nickname = nick_hist_the_engineer }
-			1 = { give_nickname = nick_hist_the_mason }
-			1 = { give_nickname = nick_hist_the_roadmaker }
-			1 = { give_nickname = nick_hist_the_bridgewright }
-			1 = { give_nickname = nick_hist_the_dyke }
-			1 = { give_nickname = nick_hist_the_canal }
-			1 = { give_nickname = nick_hist_the_dock }
-			1 = { give_nickname = nick_hist_the_harbour }
-			1 = { give_nickname = nick_hist_the_shipwright }
-			1 = { give_nickname = nick_hist_the_carpenter }
-			1 = { give_nickname = nick_hist_the_saw }
-			1 = { give_nickname = nick_hist_the_chisel }
-			1 = { give_nickname = nick_hist_the_pick }
-			1 = { give_nickname = nick_hist_the_spade }
-			1 = { give_nickname = nick_hist_the_plough }
-			1 = { give_nickname = nick_hist_the_hoe }
-			1 = { give_nickname = nick_hist_the_reaper }
-			1 = { give_nickname = nick_hist_the_harvester }
-			1 = { give_nickname = nick_hist_the_miller }
-			1 = { give_nickname = nick_hist_the_baker }
-			1 = { give_nickname = nick_hist_the_brewer }
-			1 = { give_nickname = nick_hist_the_winemaker }
-			1 = { give_nickname = nick_hist_the_vintner }
-			1 = { give_nickname = nick_hist_the_herdsman }
-			1 = { give_nickname = nick_hist_the_shepherd }
-			1 = { give_nickname = nick_hist_the_cowherd }
-			1 = { give_nickname = nick_hist_the_swineherd }
-			1 = { give_nickname = nick_hist_the_goatherd }
-			1 = { give_nickname = nick_hist_the_huntsman }
-			1 = { give_nickname = nick_hist_the_fisher }
-			1 = { give_nickname = nick_hist_the_tanner }
-			1 = { give_nickname = nick_hist_the_potter }
-			1 = { give_nickname = nick_hist_the_weaver }
-			1 = { give_nickname = nick_hist_the_dyer }
-			1 = { give_nickname = nick_hist_the_fuller }
-			1 = { give_nickname = nick_hist_the_clothier }
-			1 = { give_nickname = nick_hist_the_tailor }
-			1 = { give_nickname = nick_hist_the_cooper }
-			1 = { give_nickname = nick_hist_the_cobbler }
-			1 = { give_nickname = nick_hist_the_saddler }
-			1 = { give_nickname = nick_hist_the_chandler }
-			1 = { give_nickname = nick_hist_the_merchant }
-			1 = { give_nickname = nick_hist_the_trader }
-			1 = { give_nickname = nick_hist_the_factor }
-			1 = { give_nickname = nick_hist_the_broker }
-			1 = { give_nickname = nick_hist_the_mintmaster }
-			1 = { give_nickname = nick_hist_the_treasurer }
-			1 = { give_nickname = nick_hist_the_coin }
-			1 = { give_nickname = nick_hist_the_counter }
-			1 = { give_nickname = nick_hist_the_warden }
-			1 = { give_nickname = nick_hist_the_jailer }
-			1 = { give_nickname = nick_hist_the_gaoler }
-			1 = { give_nickname = nick_hist_the_keys }
-			1 = { give_nickname = nick_hist_the_lock }
-			1 = { give_nickname = nick_hist_the_keyholder }
-			1 = { give_nickname = nick_hist_the_gatekeeper }
-			1 = { give_nickname = nick_hist_the_porter }
-			1 = { give_nickname = nick_hist_the_steward }
-			1 = { give_nickname = nick_hist_the_chamberlain }
-			1 = { give_nickname = nick_hist_the_marshal }
-			1 = { give_nickname = nick_hist_the_seneschal }
-			1 = { give_nickname = nick_hist_the_butler }
-			1 = { give_nickname = nick_hist_the_master_of_horse }
-			1 = { give_nickname = nick_hist_the_master_of_hunt }
-			1 = { give_nickname = nick_hist_the_standard }
-			1 = { give_nickname = nick_hist_the_trumpet }
-			1 = { give_nickname = nick_hist_the_herald }
-			1 = { give_nickname = nick_hist_the_bell }
-			1 = { give_nickname = nick_hist_the_bellringer }
-			1 = { give_nickname = nick_hist_the_crier }
-			1 = { give_nickname = nick_hist_the_town }
-			1 = { give_nickname = nick_hist_the_bailiff }
-			1 = { give_nickname = nick_hist_the_reeve }
-			1 = { give_nickname = nick_hist_the_mayor }
-			1 = { give_nickname = nick_hist_the_alderman }
-			1 = { give_nickname = nick_hist_the_prefect }
-			1 = { give_nickname = nick_hist_the_castigator }
-			1 = { give_nickname = nick_hist_the_corrector }
-			1 = { give_nickname = nick_hist_the_judicator }
-			1 = { give_nickname = nick_hist_the_arbitrator }
-			1 = { give_nickname = nick_hist_the_keeper_of_laws }
-			1 = { give_nickname = nick_hist_the_scale_justice }
-			1 = { give_nickname = nick_hist_the_pen }
-			1 = { give_nickname = nick_hist_the_scroll }
-			1 = { give_nickname = nick_hist_the_wax }
-			1 = { give_nickname = nick_hist_the_seal }
-			1 = { give_nickname = nick_hist_the_ring }
-			1 = { give_nickname = nick_hist_the_signet }
-			1 = { give_nickname = nick_hist_the_mark }
-			1 = { give_nickname = nick_hist_the_brand }
-			1 = { give_nickname = nick_hist_the_stamp }
-			1 = { give_nickname = nick_hist_the_diplomat }
-			1 = { give_nickname = nick_hist_the_envoy }
-			1 = { give_nickname = nick_hist_the_legate }
-			1 = { give_nickname = nick_hist_the_ambassador }
-			1 = { give_nickname = nick_hist_the_orator }
-			1 = { give_nickname = nick_hist_the_tongue }
-			1 = { give_nickname = nick_hist_the_voice }
-			1 = { give_nickname = nick_hist_the_whisperer }
-			1 = { give_nickname = nick_hist_the_listener }
-			1 = { give_nickname = nick_hist_the_ear }
-			1 = { give_nickname = nick_hist_the_eye }
-			1 = { give_nickname = nick_hist_the_hand }
-			1 = { give_nickname = nick_hist_the_right_hand }
-			1 = { give_nickname = nick_hist_the_left_hand }
-			1 = { give_nickname = nick_hist_the_caudillo }
-			1 = { give_nickname = nick_hist_the_chronicler }
-			1 = { give_nickname = nick_hist_the_confined }
-			1 = { give_nickname = nick_hist_the_drunkard }
-			1 = { give_nickname = nick_hist_the_general }
-			1 = { give_nickname = nick_hist_the_gouty }
-			1 = { give_nickname = nick_hist_the_paunch }
-			1 = { give_nickname = nick_hist_the_scribe }
-			1 = { give_nickname = nick_hist_the_chivalrous }
-			1 = { give_nickname = nick_hist_the_gallant }
-			1 = { give_nickname = nick_hist_the_valorous }
-			1 = { give_nickname = nick_hist_the_undaunted }
-			1 = { give_nickname = nick_hist_the_unbroken_will }
-			1 = { give_nickname = nick_hist_the_oathbound }
-			1 = { give_nickname = nick_hist_the_oath_forged }
-			1 = { give_nickname = nick_hist_the_battlewise }
-			1 = { give_nickname = nick_hist_the_battleborn }
-			1 = { give_nickname = nick_hist_the_battle_thorn }
-			1 = { give_nickname = nick_hist_the_warwise }
-			1 = { give_nickname = nick_hist_the_warwise_lord }
-			1 = { give_nickname = nick_hist_the_lord_of_banners }
-			1 = { give_nickname = nick_hist_the_standard_lord }
-			1 = { give_nickname = nick_hist_the_banner_lord }
-			1 = { give_nickname = nick_hist_the_helm_breaker }
-			1 = { give_nickname = nick_hist_the_billhook }
-			1 = { give_nickname = nick_hist_the_siegebreaker }
-			1 = { give_nickname = nick_hist_the_siegeborn }
-			1 = { give_nickname = nick_hist_the_ramhand }
-			1 = { give_nickname = nick_hist_the_tower }
-			1 = { give_nickname = nick_hist_the_great_helm }
-			1 = { give_nickname = nick_hist_the_mailclad }
-			1 = { give_nickname = nick_hist_the_chainclad }
-			1 = { give_nickname = nick_hist_the_plateclad }
-			1 = { give_nickname = nick_hist_the_fleet }
-			1 = { give_nickname = nick_hist_the_fleetfoot }
-			1 = { give_nickname = nick_hist_the_high_pass }
-			1 = { give_nickname = nick_hist_the_ridge_runner }
-			1 = { give_nickname = nick_hist_the_vale_guard }
-			1 = { give_nickname = nick_hist_the_borderlord }
-			1 = { give_nickname = nick_hist_the_watch_on_the_marches }
-			1 = { give_nickname = nick_hist_the_gatewarden }
-			1 = { give_nickname = nick_hist_the_roadwarden }
-			1 = { give_nickname = nick_hist_the_bridgewarden }
-			1 = { give_nickname = nick_hist_the_ford_keeper }
-			1 = { give_nickname = nick_hist_the_pass_guard }
-			1 = { give_nickname = nick_hist_the_coastal }
-			1 = { give_nickname = nick_hist_the_coastward }
-			1 = { give_nickname = nick_hist_the_harbor_lord }
-			1 = { give_nickname = nick_hist_the_port_master }
-			1 = { give_nickname = nick_hist_the_ship_master }
-			1 = { give_nickname = nick_hist_the_anchor }
-			1 = { give_nickname = nick_hist_the_keel }
-			1 = { give_nickname = nick_hist_the_tiller }
-			1 = { give_nickname = nick_hist_the_compass }
-			1 = { give_nickname = nick_hist_the_lodestar }
-			1 = { give_nickname = nick_hist_the_starwise }
-			1 = { give_nickname = nick_hist_the_moongazer }
-			1 = { give_nickname = nick_hist_the_sunwise }
-			1 = { give_nickname = nick_hist_the_dawnward }
-			1 = { give_nickname = nick_hist_the_duskward }
-			1 = { give_nickname = nick_hist_the_noonday }
-			1 = { give_nickname = nick_hist_the_midnight }
-			1 = { give_nickname = nick_hist_the_twilight }
-			1 = { give_nickname = nick_hist_the_starfire }
-			1 = { give_nickname = nick_hist_the_stormstar }
-			1 = { give_nickname = nick_hist_the_thunderhand }
-			1 = { give_nickname = nick_hist_the_lightning_hand }
-			1 = { give_nickname = nick_hist_the_lightning_eye }
-			1 = { give_nickname = nick_hist_the_rainbringer }
-			1 = { give_nickname = nick_hist_the_frosthand }
-			1 = { give_nickname = nick_hist_the_frostborn }
-			1 = { give_nickname = nick_hist_the_iceborn }
-			1 = { give_nickname = nick_hist_the_windcloak }
-			1 = { give_nickname = nick_hist_the_windborne }
-			1 = { give_nickname = nick_hist_the_stormborne }
-			1 = { give_nickname = nick_hist_the_mistborne }
-			1 = { give_nickname = nick_hist_the_mistcloak }
-			1 = { give_nickname = nick_hist_the_cloud }
-			1 = { give_nickname = nick_hist_the_cloud_speaker }
-			1 = { give_nickname = nick_hist_the_cloudpiercer }
-			1 = { give_nickname = nick_hist_the_hill }
-			1 = { give_nickname = nick_hist_the_highland }
-			1 = { give_nickname = nick_hist_the_fenward }
-			1 = { give_nickname = nick_hist_the_moor_walker }
-			1 = { give_nickname = nick_hist_the_bog_treader }
-			1 = { give_nickname = nick_hist_the_marshlord }
-			1 = { give_nickname = nick_hist_the_bridge_lord }
-			1 = { give_nickname = nick_hist_the_road_builder }
-			1 = { give_nickname = nick_hist_the_way_maker }
-			1 = { give_nickname = nick_hist_the_path_maker }
-			1 = { give_nickname = nick_hist_the_tracklayer }
-			1 = { give_nickname = nick_hist_the_stonewise }
-			1 = { give_nickname = nick_hist_the_quarry }
-			1 = { give_nickname = nick_hist_the_stoneshaper }
-			1 = { give_nickname = nick_hist_the_rock }
-			1 = { give_nickname = nick_hist_the_anvil }
-			1 = { give_nickname = nick_hist_the_forge }
-			1 = { give_nickname = nick_hist_the_bellows }
-			1 = { give_nickname = nick_hist_the_tongs }
-			1 = { give_nickname = nick_hist_the_smith }
-			1 = { give_nickname = nick_hist_the_leathersmith }
-			1 = { give_nickname = nick_hist_the_cartwright }
-			1 = { give_nickname = nick_hist_the_wainwright }
-			1 = { give_nickname = nick_hist_the_wheelwright }
-			1 = { give_nickname = nick_hist_the_sailmaker }
-			1 = { give_nickname = nick_hist_the_netmaker }
-			1 = { give_nickname = nick_hist_the_roper }
-			1 = { give_nickname = nick_hist_the_ropemaker }
-			1 = { give_nickname = nick_hist_the_glass }
-			1 = { give_nickname = nick_hist_the_glazier }
-			1 = { give_nickname = nick_hist_the_gilder }
-			1 = { give_nickname = nick_hist_the_limber }
-			1 = { give_nickname = nick_hist_the_quartermaster }
-			1 = { give_nickname = nick_hist_the_armourer }
-			1 = { give_nickname = nick_hist_the_storekeeper }
-			1 = { give_nickname = nick_hist_the_granary }
-			1 = { give_nickname = nick_hist_the_harvest }
-			1 = { give_nickname = nick_hist_the_autumn }
-			1 = { give_nickname = nick_hist_the_spring }
-			1 = { give_nickname = nick_hist_the_summer }
-			1 = { give_nickname = nick_hist_the_harvest_lord }
-			1 = { give_nickname = nick_hist_the_plough_lord }
-			1 = { give_nickname = nick_hist_the_corn }
-			1 = { give_nickname = nick_hist_the_barley }
-			1 = { give_nickname = nick_hist_the_wheat }
-			1 = { give_nickname = nick_hist_the_rye }
-			1 = { give_nickname = nick_hist_the_oats }
-			1 = { give_nickname = nick_hist_the_miller_lord }
-			1 = { give_nickname = nick_hist_the_bread }
-			1 = { give_nickname = nick_hist_the_ale }
-			1 = { give_nickname = nick_hist_the_mead }
-			1 = { give_nickname = nick_hist_the_wine }
-			1 = { give_nickname = nick_hist_the_salt }
-			1 = { give_nickname = nick_hist_the_mint }
-			1 = { give_nickname = nick_hist_the_ledger }
-			1 = { give_nickname = nick_hist_the_account }
-			1 = { give_nickname = nick_hist_the_scale_master }
-			1 = { give_nickname = nick_hist_the_toll }
-			1 = { give_nickname = nick_hist_the_tariff }
-			1 = { give_nickname = nick_hist_the_tithe }
-			1 = { give_nickname = nick_hist_the_tithe_lord }
-			1 = { give_nickname = nick_hist_the_coin_lord }
-			1 = { give_nickname = nick_hist_the_tribute }
-			1 = { give_nickname = nick_hist_the_tribute_lord }
-			1 = { give_nickname = nick_hist_the_levy }
-			1 = { give_nickname = nick_hist_the_levy_lord }
-			1 = { give_nickname = nick_hist_the_muster }
-			1 = { give_nickname = nick_hist_the_host }
-			1 = { give_nickname = nick_hist_the_march }
-			1 = { give_nickname = nick_hist_the_campaigner }
-			1 = { give_nickname = nick_hist_the_standard_guard }
-			1 = { give_nickname = nick_hist_the_city }
-			1 = { give_nickname = nick_hist_the_citadel }
-			1 = { give_nickname = nick_hist_the_hall }
-			1 = { give_nickname = nick_hist_the_keep }
-			1 = { give_nickname = nick_hist_the_donjon }
-			1 = { give_nickname = nick_hist_the_gatehouse }
-			1 = { give_nickname = nick_hist_the_barbeque }
-			1 = { give_nickname = nick_hist_the_bailey }
-			1 = { give_nickname = nick_hist_the_moat }
-			1 = { give_nickname = nick_hist_the_watchtower }
-			1 = { give_nickname = nick_hist_the_lantern }
-			1 = { give_nickname = nick_hist_the_beacon }
-			1 = { give_nickname = nick_hist_the_brazier }
-			1 = { give_nickname = nick_hist_the_torch }
-			1 = { give_nickname = nick_hist_the_candle }
-			1 = { give_nickname = nick_hist_the_lamp }
-			1 = { give_nickname = nick_hist_the_cloak }
-			1 = { give_nickname = nick_hist_the_mantle }
-			1 = { give_nickname = nick_hist_the_coif }
-			1 = { give_nickname = nick_hist_the_hood }
-			1 = { give_nickname = nick_hist_the_tabard }
-			1 = { give_nickname = nick_hist_the_surcoat }
-			1 = { give_nickname = nick_hist_the_gambeson }
-			1 = { give_nickname = nick_hist_the_jerkin }
-			1 = { give_nickname = nick_hist_the_doublet }
-			1 = { give_nickname = nick_hist_the_sash }
-			1 = { give_nickname = nick_hist_the_girdle }
-			1 = { give_nickname = nick_hist_the_gloved }
-			1 = { give_nickname = nick_hist_the_booted }
-			1 = { give_nickname = nick_hist_the_buckled }
-			1 = { give_nickname = nick_hist_the_laced }
-			1 = { give_nickname = nick_hist_the_veiled }
-			1 = { give_nickname = nick_hist_the_shrouded }
-			1 = { give_nickname = nick_hist_the_unveiled }
-			1 = { give_nickname = nick_hist_the_grim }
-			1 = { give_nickname = nick_hist_the_somber }
-			1 = { give_nickname = nick_hist_the_mirthful }
-			1 = { give_nickname = nick_hist_the_jovial }
-			1 = { give_nickname = nick_hist_the_laughing }
-			1 = { give_nickname = nick_hist_the_smiling }
-			1 = { give_nickname = nick_hist_the_wailing }
-			1 = { give_nickname = nick_hist_the_silent_watcher }
-			1 = { give_nickname = nick_hist_the_listening }
-			1 = { give_nickname = nick_hist_the_murmur }
-			1 = { give_nickname = nick_hist_the_echo }
-			1 = { give_nickname = nick_hist_the_resonant }
-			1 = { give_nickname = nick_hist_the_harper }
-			1 = { give_nickname = nick_hist_the_lutist }
-			1 = { give_nickname = nick_hist_the_piper }
-			1 = { give_nickname = nick_hist_the_drummer }
-			1 = { give_nickname = nick_hist_the_troubadour }
-			1 = { give_nickname = nick_hist_the_minstrel }
-			1 = { give_nickname = nick_hist_the_jongleur }
-			1 = { give_nickname = nick_hist_the_jester }
-			1 = { give_nickname = nick_hist_the_fool }
-			1 = { give_nickname = nick_hist_the_wise_fool }
-			1 = { give_nickname = nick_hist_the_masked }
-			1 = { give_nickname = nick_hist_the_unmasked }
-			1 = { give_nickname = nick_hist_the_hidden }
-			1 = { give_nickname = nick_hist_the_unseen }
-			1 = { give_nickname = nick_hist_the_seen }
-			1 = { give_nickname = nick_hist_the_revealed }
-			1 = { give_nickname = nick_hist_the_worldly }
-			1 = { give_nickname = nick_hist_the_temperate }
-			1 = { give_nickname = nick_hist_the_abstemious }
-			1 = { give_nickname = nick_hist_the_frugal }
-			1 = { give_nickname = nick_hist_the_lavish }
-			1 = { give_nickname = nick_hist_the_opulent }
-			1 = { give_nickname = nick_hist_the_humble_lord }
-			1 = { give_nickname = nick_hist_the_proud }
-			1 = { give_nickname = nick_hist_the_vain }
-			1 = { give_nickname = nick_hist_the_meek }
-			1 = { give_nickname = nick_hist_the_charitable }
-			1 = { give_nickname = nick_hist_the_avaricious }
-			1 = { give_nickname = nick_hist_the_jealous }
-			1 = { give_nickname = nick_hist_the_envious }
-			1 = { give_nickname = nick_hist_the_ardent }
-			1 = { give_nickname = nick_hist_the_earnest }
-			1 = { give_nickname = nick_hist_the_skeptic }
-			1 = { give_nickname = nick_hist_the_scriptor }
-			1 = { give_nickname = nick_hist_the_collector }
-			1 = { give_nickname = nick_hist_the_rebuilder }
-			1 = { give_nickname = nick_hist_the_heirless }
-			1 = { give_nickname = nick_hist_the_prolific }
-			1 = { give_nickname = nick_hist_the_twinfather }
-			1 = { give_nickname = nick_hist_the_twinmother }
-			1 = { give_nickname = nick_hist_the_patron }
-			1 = { give_nickname = nick_hist_the_matron }
-			1 = { give_nickname = nick_hist_the_foundling }
-			1 = { give_nickname = nick_hist_the_linebreaker }
-			1 = { give_nickname = nick_hist_the_reckless }
-			1 = { give_nickname = nick_hist_the_sure }
-			1 = { give_nickname = nick_hist_the_surer }
-			1 = { give_nickname = nick_hist_the_sure_hand }
-			1 = { give_nickname = nick_hist_the_star_standard }
-			1 = { give_nickname = nick_hist_the_moon_standard }
-			1 = { give_nickname = nick_hist_the_chaste }
-			1 = { give_nickname = nick_hist_the_crusading }
-			1 = { give_nickname = nick_hist_the_iconoclast }
-			1 = { give_nickname = nick_hist_the_apostate }
-			1 = { give_nickname = nick_hist_the_convert }
-			1 = { give_nickname = nick_hist_the_preacher }
-			1 = { give_nickname = nick_hist_the_reliquary }
-			1 = { give_nickname = nick_hist_the_shrine }
-			1 = { give_nickname = nick_hist_the_censer }
-			1 = { give_nickname = nick_hist_the_censer_lord }
-			1 = { give_nickname = nick_hist_the_dalmatic }
-			1 = { give_nickname = nick_hist_the_sybil }
-			1 = { give_nickname = nick_hist_the_magus }
-			1 = { give_nickname = nick_hist_the_anchorite }
-			1 = { give_nickname = nick_hist_the_ascetic }
-			1 = { give_nickname = nick_hist_the_catholic }
-			1 = { give_nickname = nick_hist_the_diviner }
-			1 = { give_nickname = nick_hist_the_tunic }
-			1 = { give_nickname = nick_hist_the_heterodox }
-			1 = { give_nickname = nick_hist_the_guard_of_faith }
-			1 = { give_nickname = nick_hist_the_zealous }
-			1 = { give_nickname = nick_hist_the_drawbridge }
-			1 = { give_nickname = nick_hist_the_incense }
-			1 = { give_nickname = nick_hist_the_altar }
-			1 = { give_nickname = nick_hist_the_paten }
-			1 = { give_nickname = nick_hist_the_sun_king }
-			1 = { give_nickname = nick_hist_the_last_king }
-			1 = { give_nickname = nick_hist_the_lame_king }
-			1 = { give_nickname = nick_hist_the_builder_king }
-			1 = { give_nickname = nick_hist_the_martyr_king }
+			1 = {
+				give_nickname = nick_hist_the_terrible
+			}
+			1 = {
+				give_nickname = nick_hist_the_magnificent
+			}
+			1 = {
+				give_nickname = nick_hist_the_lame
+			}
+			1 = {
+				give_nickname = nick_hist_universal_ruler
+			}
+			1 = {
+				give_nickname = nick_hist_the_lawgiver
+			}
+			1 = {
+				give_nickname = nick_hist_the_assassin
+			}
+			1 = {
+				give_nickname = nick_hist_the_great
+			}
+			1 = {
+				give_nickname = nick_hist_the_wise
+			}
+			1 = {
+				give_nickname = nick_hist_the_just
+			}
+			1 = {
+				give_nickname = nick_hist_the_cruel
+			}
+			1 = {
+				give_nickname = nick_hist_the_merciless
+			}
+			1 = {
+				give_nickname = nick_hist_the_ruthless
+			}
+			1 = {
+				give_nickname = nick_hist_the_bold
+			}
+			1 = {
+				give_nickname = nick_hist_the_valiant
+			}
+			1 = {
+				give_nickname = nick_hist_the_fair
+			}
+			1 = {
+				give_nickname = nick_hist_the_handsome
+			}
+			1 = {
+				give_nickname = nick_hist_the_ugly
+			}
+			1 = {
+				give_nickname = nick_hist_the_fat
+			}
+			1 = {
+				give_nickname = nick_hist_the_stout
+			}
+			1 = {
+				give_nickname = nick_hist_the_tall
+			}
+			1 = {
+				give_nickname = nick_hist_the_mad
+			}
+			1 = {
+				give_nickname = nick_hist_the_glorious
+			}
+			1 = {
+				give_nickname = nick_hist_the_magnanimous
+			}
+			1 = {
+				give_nickname = nick_hist_the_benevolent
+			}
+			1 = {
+				give_nickname = nick_hist_the_protector
+			}
+			1 = {
+				give_nickname = nick_hist_the_defender
+			}
+			1 = {
+				give_nickname = nick_hist_the_liberator
+			}
+			1 = {
+				give_nickname = nick_hist_the_restorer
+			}
+			1 = {
+				give_nickname = nick_hist_the_usurper
+			}
+			1 = {
+				give_nickname = nick_hist_the_tyrant
+			}
+			1 = {
+				give_nickname = nick_hist_the_builder
+			}
+			1 = {
+				give_nickname = nick_hist_the_architect
+			}
+			1 = {
+				give_nickname = nick_hist_the_navigator
+			}
+			1 = {
+				give_nickname = nick_hist_the_seafarer
+			}
+			1 = {
+				give_nickname = nick_hist_the_explorer
+			}
+			1 = {
+				give_nickname = nick_hist_the_poisoner
+			}
+			1 = {
+				give_nickname = nick_hist_the_shadow
+			}
+			1 = {
+				give_nickname = nick_hist_the_whisper
+			}
+			1 = {
+				give_nickname = nick_hist_the_peacemaker
+			}
+			1 = {
+				give_nickname = nick_hist_scourge_of_god
+			}
+			1 = {
+				give_nickname = nick_hist_the_bastard
+			}
+			1 = {
+				give_nickname = nick_hist_the_boneless
+			}
+			1 = {
+				give_nickname = nick_hist_longshanks
+			}
+			1 = {
+				give_nickname = nick_hist_lackland
+			}
+			1 = {
+				give_nickname = nick_hist_curtmantle
+			}
+			1 = {
+				give_nickname = nick_hist_the_leper
+			}
+			1 = {
+				give_nickname = nick_hist_stupor_mundi
+			}
+			1 = {
+				give_nickname = nick_hist_hairy_breeches
+			}
+			1 = {
+				give_nickname = nick_hist_the_ganger
+			}
+			1 = {
+				give_nickname = nick_hist_the_bald
+			}
+			1 = {
+				give_nickname = nick_hist_the_stammerer
+			}
+			1 = {
+				give_nickname = nick_hist_the_child
+			}
+			1 = {
+				give_nickname = nick_hist_the_brave
+			}
+			1 = {
+				give_nickname = nick_hist_the_strong
+			}
+			1 = {
+				give_nickname = nick_hist_the_trembler
+			}
+			1 = {
+				give_nickname = nick_hist_the_cunning
+			}
+			1 = {
+				give_nickname = nick_hist_campeador
+			}
+			1 = {
+				give_nickname = nick_hist_hardrada
+			}
+			1 = {
+				give_nickname = nick_hist_bluetooth
+			}
+			1 = {
+				give_nickname = nick_hist_the_bewitched
+			}
+			1 = {
+				give_nickname = nick_hist_the_divine
+			}
+			1 = {
+				give_nickname = nick_hist_the_beloved
+			}
+			1 = {
+				give_nickname = nick_hist_the_prudent
+			}
+			1 = {
+				give_nickname = nick_hist_the_longed_for
+			}
+			1 = {
+				give_nickname = nick_hist_the_cautious
+			}
+			1 = {
+				give_nickname = nick_hist_the_hunter
+			}
+			1 = {
+				give_nickname = nick_hist_the_political
+			}
+			1 = {
+				give_nickname = nick_hist_the_founder
+			}
+			1 = {
+				give_nickname = nick_hist_the_reformer
+			}
+			1 = {
+				give_nickname = nick_hist_the_generous
+			}
+			1 = {
+				give_nickname = nick_hist_the_merciful
+			}
+			1 = {
+				give_nickname = nick_hist_the_justiciar
+			}
+			1 = {
+				give_nickname = nick_hist_the_judge
+			}
+			1 = {
+				give_nickname = nick_hist_the_ceremonious
+			}
+			1 = {
+				give_nickname = nick_hist_the_heretic
+			}
+			1 = {
+				give_nickname = nick_hist_the_philosopher
+			}
+			1 = {
+				give_nickname = nick_hist_the_poet
+			}
+			1 = {
+				give_nickname = nick_hist_the_supreme_poet
+			}
+			1 = {
+				give_nickname = nick_hist_the_rebel
+			}
+			1 = {
+				give_nickname = nick_hist_the_hermit
+			}
+			1 = {
+				give_nickname = nick_hist_the_grand_captain
+			}
+			1 = {
+				give_nickname = nick_hist_the_cid
+			}
+			1 = {
+				give_nickname = nick_hist_the_war_cardinal
+			}
+			1 = {
+				give_nickname = nick_hist_the_painter_of_kings
+			}
+			1 = {
+				give_nickname = nick_hist_the_last_emperor
+			}
+			1 = {
+				give_nickname = nick_hist_the_modernizer
+			}
+			1 = {
+				give_nickname = nick_hist_the_last_sultan
+			}
+			1 = {
+				give_nickname = nick_hist_the_tsar
+			}
+			1 = {
+				give_nickname = nick_hist_the_victorious
+			}
+			1 = {
+				give_nickname = nick_hist_the_triumphant
+			}
+			1 = {
+				give_nickname = nick_hist_the_resolute
+			}
+			1 = {
+				give_nickname = nick_hist_the_unyielding
+			}
+			1 = {
+				give_nickname = nick_hist_the_pacifier
+			}
+			1 = {
+				give_nickname = nick_hist_the_calm
+			}
+			1 = {
+				give_nickname = nick_hist_the_serene
+			}
+			1 = {
+				give_nickname = nick_hist_the_steadfast
+			}
+			1 = {
+				give_nickname = nick_hist_the_banner
+			}
+			1 = {
+				give_nickname = nick_hist_the_daring
+			}
+			1 = {
+				give_nickname = nick_hist_the_fearless
+			}
+			1 = {
+				give_nickname = nick_hist_the_dread
+			}
+			1 = {
+				give_nickname = nick_hist_the_oathsworn
+			}
+			1 = {
+				give_nickname = nick_hist_the_vowkeeper
+			}
+			1 = {
+				give_nickname = nick_hist_the_gryphon
+			}
+			1 = {
+				give_nickname = nick_hist_the_hart
+			}
+			1 = {
+				give_nickname = nick_hist_the_ram
+			}
+			1 = {
+				give_nickname = nick_hist_the_aurochs
+			}
+			1 = {
+				give_nickname = nick_hist_the_vixen
+			}
+			1 = {
+				give_nickname = nick_hist_the_unburnt
+			}
+			1 = {
+				give_nickname = nick_hist_the_ashen
+			}
+			1 = {
+				give_nickname = nick_hist_the_quick
+			}
+			1 = {
+				give_nickname = nick_hist_the_swift
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightfoot
+			}
+			1 = {
+				give_nickname = nick_hist_the_far_strider
+			}
+			1 = {
+				give_nickname = nick_hist_the_wanderer
+			}
+			1 = {
+				give_nickname = nick_hist_the_wayfarer
+			}
+			1 = {
+				give_nickname = nick_hist_the_seeker
+			}
+			1 = {
+				give_nickname = nick_hist_the_pathfinder
+			}
+			1 = {
+				give_nickname = nick_hist_the_trailblazer
+			}
+			1 = {
+				give_nickname = nick_hist_the_tracker
+			}
+			1 = {
+				give_nickname = nick_hist_the_harbinger
+			}
+			1 = {
+				give_nickname = nick_hist_the_forerunner
+			}
+			1 = {
+				give_nickname = nick_hist_the_vanguard
+			}
+			1 = {
+				give_nickname = nick_hist_the_rearguard
+			}
+			1 = {
+				give_nickname = nick_hist_the_sentinel
+			}
+			1 = {
+				give_nickname = nick_hist_the_watchful
+			}
+			1 = {
+				give_nickname = nick_hist_the_warder
+			}
+			1 = {
+				give_nickname = nick_hist_the_castellan
+			}
+			1 = {
+				give_nickname = nick_hist_the_castle_builder
+			}
+			1 = {
+				give_nickname = nick_hist_the_gate
+			}
+			1 = {
+				give_nickname = nick_hist_the_portcullis
+			}
+			1 = {
+				give_nickname = nick_hist_the_fortifier
+			}
+			1 = {
+				give_nickname = nick_hist_the_bastion
+			}
+			1 = {
+				give_nickname = nick_hist_the_rampart
+			}
+			1 = {
+				give_nickname = nick_hist_the_keeper
+			}
+			1 = {
+				give_nickname = nick_hist_the_lawmaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_librarian
+			}
+			1 = {
+				give_nickname = nick_hist_the_cataloguer
+			}
+			1 = {
+				give_nickname = nick_hist_the_translator
+			}
+			1 = {
+				give_nickname = nick_hist_the_polyglot
+			}
+			1 = {
+				give_nickname = nick_hist_the_cartographer
+			}
+			1 = {
+				give_nickname = nick_hist_the_astrologer
+			}
+			1 = {
+				give_nickname = nick_hist_the_alchemist
+			}
+			1 = {
+				give_nickname = nick_hist_the_physician
+			}
+			1 = {
+				give_nickname = nick_hist_the_herbalist
+			}
+			1 = {
+				give_nickname = nick_hist_the_surgeon
+			}
+			1 = {
+				give_nickname = nick_hist_the_leech
+			}
+			1 = {
+				give_nickname = nick_hist_the_occult
+			}
+			1 = {
+				give_nickname = nick_hist_the_enchanter
+			}
+			1 = {
+				give_nickname = nick_hist_the_visionary
+			}
+			1 = {
+				give_nickname = nick_hist_the_dreamer
+			}
+			1 = {
+				give_nickname = nick_hist_the_reader
+			}
+			1 = {
+				give_nickname = nick_hist_the_scholar
+			}
+			1 = {
+				give_nickname = nick_hist_the_savant
+			}
+			1 = {
+				give_nickname = nick_hist_the_mastermind
+			}
+			1 = {
+				give_nickname = nick_hist_the_thinker
+			}
+			1 = {
+				give_nickname = nick_hist_the_logician
+			}
+			1 = {
+				give_nickname = nick_hist_the_cunning_mind
+			}
+			1 = {
+				give_nickname = nick_hist_the_quill
+			}
+			1 = {
+				give_nickname = nick_hist_the_quillhand
+			}
+			1 = {
+				give_nickname = nick_hist_the_bookish
+			}
+			1 = {
+				give_nickname = nick_hist_the_highborn
+			}
+			1 = {
+				give_nickname = nick_hist_the_lowborn
+			}
+			1 = {
+				give_nickname = nick_hist_the_exile
+			}
+			1 = {
+				give_nickname = nick_hist_the_returned
+			}
+			1 = {
+				give_nickname = nick_hist_the_recalled
+			}
+			1 = {
+				give_nickname = nick_hist_the_fallen
+			}
+			1 = {
+				give_nickname = nick_hist_the_damned
+			}
+			1 = {
+				give_nickname = nick_hist_the_forsaken
+			}
+			1 = {
+				give_nickname = nick_hist_the_lost
+			}
+			1 = {
+				give_nickname = nick_hist_the_found
+			}
+			1 = {
+				give_nickname = nick_hist_the_abandoned
+			}
+			1 = {
+				give_nickname = nick_hist_the_orphan
+			}
+			1 = {
+				give_nickname = nick_hist_the_adopted
+			}
+			1 = {
+				give_nickname = nick_hist_the_motherless
+			}
+			1 = {
+				give_nickname = nick_hist_the_fatherless
+			}
+			1 = {
+				give_nickname = nick_hist_the_brotherless
+			}
+			1 = {
+				give_nickname = nick_hist_the_sisterless
+			}
+			1 = {
+				give_nickname = nick_hist_the_bastard_born
+			}
+			1 = {
+				give_nickname = nick_hist_the_legitimated
+			}
+			1 = {
+				give_nickname = nick_hist_the_maimed_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_one_eyed
+			}
+			1 = {
+				give_nickname = nick_hist_the_blind
+			}
+			1 = {
+				give_nickname = nick_hist_the_poxed
+			}
+			1 = {
+				give_nickname = nick_hist_the_ashen_skin
+			}
+			1 = {
+				give_nickname = nick_hist_the_ruddy
+			}
+			1 = {
+				give_nickname = nick_hist_the_hirsute
+			}
+			1 = {
+				give_nickname = nick_hist_the_shaven
+			}
+			1 = {
+				give_nickname = nick_hist_the_braided
+			}
+			1 = {
+				give_nickname = nick_hist_the_tressed
+			}
+			1 = {
+				give_nickname = nick_hist_the_bald_pate
+			}
+			1 = {
+				give_nickname = nick_hist_the_broad_shoulder
+			}
+			1 = {
+				give_nickname = nick_hist_the_big_hand
+			}
+			1 = {
+				give_nickname = nick_hist_the_widowmaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_headsman
+			}
+			1 = {
+				give_nickname = nick_hist_the_flaming
+			}
+			1 = {
+				give_nickname = nick_hist_the_firebrand
+			}
+			1 = {
+				give_nickname = nick_hist_the_kindler
+			}
+			1 = {
+				give_nickname = nick_hist_the_spark
+			}
+			1 = {
+				give_nickname = nick_hist_the_ember
+			}
+			1 = {
+				give_nickname = nick_hist_the_ashes
+			}
+			1 = {
+				give_nickname = nick_hist_the_cold
+			}
+			1 = {
+				give_nickname = nick_hist_the_chill
+			}
+			1 = {
+				give_nickname = nick_hist_the_frost
+			}
+			1 = {
+				give_nickname = nick_hist_the_ice
+			}
+			1 = {
+				give_nickname = nick_hist_the_storm
+			}
+			1 = {
+				give_nickname = nick_hist_the_thunder
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightning
+			}
+			1 = {
+				give_nickname = nick_hist_the_rain
+			}
+			1 = {
+				give_nickname = nick_hist_the_flood
+			}
+			1 = {
+				give_nickname = nick_hist_the_drought
+			}
+			1 = {
+				give_nickname = nick_hist_the_quake
+			}
+			1 = {
+				give_nickname = nick_hist_the_tremor
+			}
+			1 = {
+				give_nickname = nick_hist_the_edge
+			}
+			1 = {
+				give_nickname = nick_hist_the_point
+			}
+			1 = {
+				give_nickname = nick_hist_the_barbed
+			}
+			1 = {
+				give_nickname = nick_hist_the_hook
+			}
+			1 = {
+				give_nickname = nick_hist_the_spur
+			}
+			1 = {
+				give_nickname = nick_hist_the_helm
+			}
+			1 = {
+				give_nickname = nick_hist_the_mail
+			}
+			1 = {
+				give_nickname = nick_hist_the_plate
+			}
+			1 = {
+				give_nickname = nick_hist_the_chain
+			}
+			1 = {
+				give_nickname = nick_hist_the_scale
+			}
+			1 = {
+				give_nickname = nick_hist_the_gauntlet
+			}
+			1 = {
+				give_nickname = nick_hist_the_sabre
+			}
+			1 = {
+				give_nickname = nick_hist_the_slinger
+			}
+			1 = {
+				give_nickname = nick_hist_the_ballistarius
+			}
+			1 = {
+				give_nickname = nick_hist_the_sapper
+			}
+			1 = {
+				give_nickname = nick_hist_the_siege_master
+			}
+			1 = {
+				give_nickname = nick_hist_the_engineer
+			}
+			1 = {
+				give_nickname = nick_hist_the_mason
+			}
+			1 = {
+				give_nickname = nick_hist_the_roadmaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_bridgewright
+			}
+			1 = {
+				give_nickname = nick_hist_the_dyke
+			}
+			1 = {
+				give_nickname = nick_hist_the_canal
+			}
+			1 = {
+				give_nickname = nick_hist_the_dock
+			}
+			1 = {
+				give_nickname = nick_hist_the_harbour
+			}
+			1 = {
+				give_nickname = nick_hist_the_shipwright
+			}
+			1 = {
+				give_nickname = nick_hist_the_carpenter
+			}
+			1 = {
+				give_nickname = nick_hist_the_saw
+			}
+			1 = {
+				give_nickname = nick_hist_the_chisel
+			}
+			1 = {
+				give_nickname = nick_hist_the_pick
+			}
+			1 = {
+				give_nickname = nick_hist_the_spade
+			}
+			1 = {
+				give_nickname = nick_hist_the_plough
+			}
+			1 = {
+				give_nickname = nick_hist_the_hoe
+			}
+			1 = {
+				give_nickname = nick_hist_the_reaper
+			}
+			1 = {
+				give_nickname = nick_hist_the_harvester
+			}
+			1 = {
+				give_nickname = nick_hist_the_miller
+			}
+			1 = {
+				give_nickname = nick_hist_the_baker
+			}
+			1 = {
+				give_nickname = nick_hist_the_brewer
+			}
+			1 = {
+				give_nickname = nick_hist_the_winemaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_vintner
+			}
+			1 = {
+				give_nickname = nick_hist_the_herdsman
+			}
+			1 = {
+				give_nickname = nick_hist_the_shepherd
+			}
+			1 = {
+				give_nickname = nick_hist_the_cowherd
+			}
+			1 = {
+				give_nickname = nick_hist_the_swineherd
+			}
+			1 = {
+				give_nickname = nick_hist_the_goatherd
+			}
+			1 = {
+				give_nickname = nick_hist_the_huntsman
+			}
+			1 = {
+				give_nickname = nick_hist_the_fisher
+			}
+			1 = {
+				give_nickname = nick_hist_the_tanner
+			}
+			1 = {
+				give_nickname = nick_hist_the_potter
+			}
+			1 = {
+				give_nickname = nick_hist_the_weaver
+			}
+			1 = {
+				give_nickname = nick_hist_the_dyer
+			}
+			1 = {
+				give_nickname = nick_hist_the_fuller
+			}
+			1 = {
+				give_nickname = nick_hist_the_clothier
+			}
+			1 = {
+				give_nickname = nick_hist_the_tailor
+			}
+			1 = {
+				give_nickname = nick_hist_the_cooper
+			}
+			1 = {
+				give_nickname = nick_hist_the_cobbler
+			}
+			1 = {
+				give_nickname = nick_hist_the_saddler
+			}
+			1 = {
+				give_nickname = nick_hist_the_chandler
+			}
+			1 = {
+				give_nickname = nick_hist_the_merchant
+			}
+			1 = {
+				give_nickname = nick_hist_the_trader
+			}
+			1 = {
+				give_nickname = nick_hist_the_factor
+			}
+			1 = {
+				give_nickname = nick_hist_the_broker
+			}
+			1 = {
+				give_nickname = nick_hist_the_mintmaster
+			}
+			1 = {
+				give_nickname = nick_hist_the_treasurer
+			}
+			1 = {
+				give_nickname = nick_hist_the_coin
+			}
+			1 = {
+				give_nickname = nick_hist_the_counter
+			}
+			1 = {
+				give_nickname = nick_hist_the_warden
+			}
+			1 = {
+				give_nickname = nick_hist_the_jailer
+			}
+			1 = {
+				give_nickname = nick_hist_the_gaoler
+			}
+			1 = {
+				give_nickname = nick_hist_the_keys
+			}
+			1 = {
+				give_nickname = nick_hist_the_lock
+			}
+			1 = {
+				give_nickname = nick_hist_the_keyholder
+			}
+			1 = {
+				give_nickname = nick_hist_the_gatekeeper
+			}
+			1 = {
+				give_nickname = nick_hist_the_porter
+			}
+			1 = {
+				give_nickname = nick_hist_the_steward
+			}
+			1 = {
+				give_nickname = nick_hist_the_chamberlain
+			}
+			1 = {
+				give_nickname = nick_hist_the_marshal
+			}
+			1 = {
+				give_nickname = nick_hist_the_seneschal
+			}
+			1 = {
+				give_nickname = nick_hist_the_butler
+			}
+			1 = {
+				give_nickname = nick_hist_the_master_of_horse
+			}
+			1 = {
+				give_nickname = nick_hist_the_master_of_hunt
+			}
+			1 = {
+				give_nickname = nick_hist_the_standard
+			}
+			1 = {
+				give_nickname = nick_hist_the_trumpet
+			}
+			1 = {
+				give_nickname = nick_hist_the_herald
+			}
+			1 = {
+				give_nickname = nick_hist_the_bell
+			}
+			1 = {
+				give_nickname = nick_hist_the_bellringer
+			}
+			1 = {
+				give_nickname = nick_hist_the_crier
+			}
+			1 = {
+				give_nickname = nick_hist_the_town
+			}
+			1 = {
+				give_nickname = nick_hist_the_bailiff
+			}
+			1 = {
+				give_nickname = nick_hist_the_reeve
+			}
+			1 = {
+				give_nickname = nick_hist_the_mayor
+			}
+			1 = {
+				give_nickname = nick_hist_the_alderman
+			}
+			1 = {
+				give_nickname = nick_hist_the_prefect
+			}
+			1 = {
+				give_nickname = nick_hist_the_castigator
+			}
+			1 = {
+				give_nickname = nick_hist_the_corrector
+			}
+			1 = {
+				give_nickname = nick_hist_the_judicator
+			}
+			1 = {
+				give_nickname = nick_hist_the_arbitrator
+			}
+			1 = {
+				give_nickname = nick_hist_the_keeper_of_laws
+			}
+			1 = {
+				give_nickname = nick_hist_the_scale_justice
+			}
+			1 = {
+				give_nickname = nick_hist_the_pen
+			}
+			1 = {
+				give_nickname = nick_hist_the_scroll
+			}
+			1 = {
+				give_nickname = nick_hist_the_wax
+			}
+			1 = {
+				give_nickname = nick_hist_the_seal
+			}
+			1 = {
+				give_nickname = nick_hist_the_ring
+			}
+			1 = {
+				give_nickname = nick_hist_the_signet
+			}
+			1 = {
+				give_nickname = nick_hist_the_mark
+			}
+			1 = {
+				give_nickname = nick_hist_the_brand
+			}
+			1 = {
+				give_nickname = nick_hist_the_stamp
+			}
+			1 = {
+				give_nickname = nick_hist_the_diplomat
+			}
+			1 = {
+				give_nickname = nick_hist_the_envoy
+			}
+			1 = {
+				give_nickname = nick_hist_the_legate
+			}
+			1 = {
+				give_nickname = nick_hist_the_ambassador
+			}
+			1 = {
+				give_nickname = nick_hist_the_orator
+			}
+			1 = {
+				give_nickname = nick_hist_the_tongue
+			}
+			1 = {
+				give_nickname = nick_hist_the_voice
+			}
+			1 = {
+				give_nickname = nick_hist_the_whisperer
+			}
+			1 = {
+				give_nickname = nick_hist_the_listener
+			}
+			1 = {
+				give_nickname = nick_hist_the_ear
+			}
+			1 = {
+				give_nickname = nick_hist_the_eye
+			}
+			1 = {
+				give_nickname = nick_hist_the_hand
+			}
+			1 = {
+				give_nickname = nick_hist_the_right_hand
+			}
+			1 = {
+				give_nickname = nick_hist_the_left_hand
+			}
+			1 = {
+				give_nickname = nick_hist_the_caudillo
+			}
+			1 = {
+				give_nickname = nick_hist_the_chronicler
+			}
+			1 = {
+				give_nickname = nick_hist_the_confined
+			}
+			1 = {
+				give_nickname = nick_hist_the_drunkard
+			}
+			1 = {
+				give_nickname = nick_hist_the_general
+			}
+			1 = {
+				give_nickname = nick_hist_the_gouty
+			}
+			1 = {
+				give_nickname = nick_hist_the_paunch
+			}
+			1 = {
+				give_nickname = nick_hist_the_scribe
+			}
+			1 = {
+				give_nickname = nick_hist_the_chivalrous
+			}
+			1 = {
+				give_nickname = nick_hist_the_gallant
+			}
+			1 = {
+				give_nickname = nick_hist_the_valorous
+			}
+			1 = {
+				give_nickname = nick_hist_the_undaunted
+			}
+			1 = {
+				give_nickname = nick_hist_the_unbroken_will
+			}
+			1 = {
+				give_nickname = nick_hist_the_oathbound
+			}
+			1 = {
+				give_nickname = nick_hist_the_oath_forged
+			}
+			1 = {
+				give_nickname = nick_hist_the_battlewise
+			}
+			1 = {
+				give_nickname = nick_hist_the_battleborn
+			}
+			1 = {
+				give_nickname = nick_hist_the_battle_thorn
+			}
+			1 = {
+				give_nickname = nick_hist_the_warwise
+			}
+			1 = {
+				give_nickname = nick_hist_the_warwise_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_lord_of_banners
+			}
+			1 = {
+				give_nickname = nick_hist_the_standard_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_banner_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_helm_breaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_billhook
+			}
+			1 = {
+				give_nickname = nick_hist_the_siegebreaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_siegeborn
+			}
+			1 = {
+				give_nickname = nick_hist_the_ramhand
+			}
+			1 = {
+				give_nickname = nick_hist_the_tower
+			}
+			1 = {
+				give_nickname = nick_hist_the_great_helm
+			}
+			1 = {
+				give_nickname = nick_hist_the_mailclad
+			}
+			1 = {
+				give_nickname = nick_hist_the_chainclad
+			}
+			1 = {
+				give_nickname = nick_hist_the_plateclad
+			}
+			1 = {
+				give_nickname = nick_hist_the_fleet
+			}
+			1 = {
+				give_nickname = nick_hist_the_fleetfoot
+			}
+			1 = {
+				give_nickname = nick_hist_the_high_pass
+			}
+			1 = {
+				give_nickname = nick_hist_the_ridge_runner
+			}
+			1 = {
+				give_nickname = nick_hist_the_vale_guard
+			}
+			1 = {
+				give_nickname = nick_hist_the_borderlord
+			}
+			1 = {
+				give_nickname = nick_hist_the_watch_on_the_marches
+			}
+			1 = {
+				give_nickname = nick_hist_the_gatewarden
+			}
+			1 = {
+				give_nickname = nick_hist_the_roadwarden
+			}
+			1 = {
+				give_nickname = nick_hist_the_bridgewarden
+			}
+			1 = {
+				give_nickname = nick_hist_the_ford_keeper
+			}
+			1 = {
+				give_nickname = nick_hist_the_pass_guard
+			}
+			1 = {
+				give_nickname = nick_hist_the_coastal
+			}
+			1 = {
+				give_nickname = nick_hist_the_coastward
+			}
+			1 = {
+				give_nickname = nick_hist_the_harbor_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_port_master
+			}
+			1 = {
+				give_nickname = nick_hist_the_ship_master
+			}
+			1 = {
+				give_nickname = nick_hist_the_anchor
+			}
+			1 = {
+				give_nickname = nick_hist_the_keel
+			}
+			1 = {
+				give_nickname = nick_hist_the_tiller
+			}
+			1 = {
+				give_nickname = nick_hist_the_compass
+			}
+			1 = {
+				give_nickname = nick_hist_the_lodestar
+			}
+			1 = {
+				give_nickname = nick_hist_the_starwise
+			}
+			1 = {
+				give_nickname = nick_hist_the_moongazer
+			}
+			1 = {
+				give_nickname = nick_hist_the_sunwise
+			}
+			1 = {
+				give_nickname = nick_hist_the_dawnward
+			}
+			1 = {
+				give_nickname = nick_hist_the_duskward
+			}
+			1 = {
+				give_nickname = nick_hist_the_noonday
+			}
+			1 = {
+				give_nickname = nick_hist_the_midnight
+			}
+			1 = {
+				give_nickname = nick_hist_the_twilight
+			}
+			1 = {
+				give_nickname = nick_hist_the_starfire
+			}
+			1 = {
+				give_nickname = nick_hist_the_stormstar
+			}
+			1 = {
+				give_nickname = nick_hist_the_thunderhand
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightning_hand
+			}
+			1 = {
+				give_nickname = nick_hist_the_lightning_eye
+			}
+			1 = {
+				give_nickname = nick_hist_the_rainbringer
+			}
+			1 = {
+				give_nickname = nick_hist_the_frosthand
+			}
+			1 = {
+				give_nickname = nick_hist_the_frostborn
+			}
+			1 = {
+				give_nickname = nick_hist_the_iceborn
+			}
+			1 = {
+				give_nickname = nick_hist_the_windcloak
+			}
+			1 = {
+				give_nickname = nick_hist_the_windborne
+			}
+			1 = {
+				give_nickname = nick_hist_the_stormborne
+			}
+			1 = {
+				give_nickname = nick_hist_the_mistborne
+			}
+			1 = {
+				give_nickname = nick_hist_the_mistcloak
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloud
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloud_speaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloudpiercer
+			}
+			1 = {
+				give_nickname = nick_hist_the_hill
+			}
+			1 = {
+				give_nickname = nick_hist_the_highland
+			}
+			1 = {
+				give_nickname = nick_hist_the_fenward
+			}
+			1 = {
+				give_nickname = nick_hist_the_moor_walker
+			}
+			1 = {
+				give_nickname = nick_hist_the_bog_treader
+			}
+			1 = {
+				give_nickname = nick_hist_the_marshlord
+			}
+			1 = {
+				give_nickname = nick_hist_the_bridge_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_road_builder
+			}
+			1 = {
+				give_nickname = nick_hist_the_way_maker
+			}
+			1 = {
+				give_nickname = nick_hist_the_path_maker
+			}
+			1 = {
+				give_nickname = nick_hist_the_tracklayer
+			}
+			1 = {
+				give_nickname = nick_hist_the_stonewise
+			}
+			1 = {
+				give_nickname = nick_hist_the_quarry
+			}
+			1 = {
+				give_nickname = nick_hist_the_stoneshaper
+			}
+			1 = {
+				give_nickname = nick_hist_the_rock
+			}
+			1 = {
+				give_nickname = nick_hist_the_anvil
+			}
+			1 = {
+				give_nickname = nick_hist_the_forge
+			}
+			1 = {
+				give_nickname = nick_hist_the_bellows
+			}
+			1 = {
+				give_nickname = nick_hist_the_tongs
+			}
+			1 = {
+				give_nickname = nick_hist_the_smith
+			}
+			1 = {
+				give_nickname = nick_hist_the_leathersmith
+			}
+			1 = {
+				give_nickname = nick_hist_the_cartwright
+			}
+			1 = {
+				give_nickname = nick_hist_the_wainwright
+			}
+			1 = {
+				give_nickname = nick_hist_the_wheelwright
+			}
+			1 = {
+				give_nickname = nick_hist_the_sailmaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_netmaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_roper
+			}
+			1 = {
+				give_nickname = nick_hist_the_ropemaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_glass
+			}
+			1 = {
+				give_nickname = nick_hist_the_glazier
+			}
+			1 = {
+				give_nickname = nick_hist_the_gilder
+			}
+			1 = {
+				give_nickname = nick_hist_the_limber
+			}
+			1 = {
+				give_nickname = nick_hist_the_quartermaster
+			}
+			1 = {
+				give_nickname = nick_hist_the_armourer
+			}
+			1 = {
+				give_nickname = nick_hist_the_storekeeper
+			}
+			1 = {
+				give_nickname = nick_hist_the_granary
+			}
+			1 = {
+				give_nickname = nick_hist_the_harvest
+			}
+			1 = {
+				give_nickname = nick_hist_the_autumn
+			}
+			1 = {
+				give_nickname = nick_hist_the_spring
+			}
+			1 = {
+				give_nickname = nick_hist_the_summer
+			}
+			1 = {
+				give_nickname = nick_hist_the_harvest_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_plough_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_corn
+			}
+			1 = {
+				give_nickname = nick_hist_the_barley
+			}
+			1 = {
+				give_nickname = nick_hist_the_wheat
+			}
+			1 = {
+				give_nickname = nick_hist_the_rye
+			}
+			1 = {
+				give_nickname = nick_hist_the_oats
+			}
+			1 = {
+				give_nickname = nick_hist_the_miller_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_bread
+			}
+			1 = {
+				give_nickname = nick_hist_the_ale
+			}
+			1 = {
+				give_nickname = nick_hist_the_mead
+			}
+			1 = {
+				give_nickname = nick_hist_the_wine
+			}
+			1 = {
+				give_nickname = nick_hist_the_salt
+			}
+			1 = {
+				give_nickname = nick_hist_the_mint
+			}
+			1 = {
+				give_nickname = nick_hist_the_ledger
+			}
+			1 = {
+				give_nickname = nick_hist_the_account
+			}
+			1 = {
+				give_nickname = nick_hist_the_scale_master
+			}
+			1 = {
+				give_nickname = nick_hist_the_toll
+			}
+			1 = {
+				give_nickname = nick_hist_the_tariff
+			}
+			1 = {
+				give_nickname = nick_hist_the_tithe
+			}
+			1 = {
+				give_nickname = nick_hist_the_tithe_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_coin_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_tribute
+			}
+			1 = {
+				give_nickname = nick_hist_the_tribute_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_levy
+			}
+			1 = {
+				give_nickname = nick_hist_the_levy_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_muster
+			}
+			1 = {
+				give_nickname = nick_hist_the_host
+			}
+			1 = {
+				give_nickname = nick_hist_the_march
+			}
+			1 = {
+				give_nickname = nick_hist_the_campaigner
+			}
+			1 = {
+				give_nickname = nick_hist_the_standard_guard
+			}
+			1 = {
+				give_nickname = nick_hist_the_city
+			}
+			1 = {
+				give_nickname = nick_hist_the_citadel
+			}
+			1 = {
+				give_nickname = nick_hist_the_hall
+			}
+			1 = {
+				give_nickname = nick_hist_the_keep
+			}
+			1 = {
+				give_nickname = nick_hist_the_donjon
+			}
+			1 = {
+				give_nickname = nick_hist_the_gatehouse
+			}
+			1 = {
+				give_nickname = nick_hist_the_barbeque
+			}
+			1 = {
+				give_nickname = nick_hist_the_bailey
+			}
+			1 = {
+				give_nickname = nick_hist_the_moat
+			}
+			1 = {
+				give_nickname = nick_hist_the_watchtower
+			}
+			1 = {
+				give_nickname = nick_hist_the_lantern
+			}
+			1 = {
+				give_nickname = nick_hist_the_beacon
+			}
+			1 = {
+				give_nickname = nick_hist_the_brazier
+			}
+			1 = {
+				give_nickname = nick_hist_the_torch
+			}
+			1 = {
+				give_nickname = nick_hist_the_candle
+			}
+			1 = {
+				give_nickname = nick_hist_the_lamp
+			}
+			1 = {
+				give_nickname = nick_hist_the_cloak
+			}
+			1 = {
+				give_nickname = nick_hist_the_mantle
+			}
+			1 = {
+				give_nickname = nick_hist_the_coif
+			}
+			1 = {
+				give_nickname = nick_hist_the_hood
+			}
+			1 = {
+				give_nickname = nick_hist_the_tabard
+			}
+			1 = {
+				give_nickname = nick_hist_the_surcoat
+			}
+			1 = {
+				give_nickname = nick_hist_the_gambeson
+			}
+			1 = {
+				give_nickname = nick_hist_the_jerkin
+			}
+			1 = {
+				give_nickname = nick_hist_the_doublet
+			}
+			1 = {
+				give_nickname = nick_hist_the_sash
+			}
+			1 = {
+				give_nickname = nick_hist_the_girdle
+			}
+			1 = {
+				give_nickname = nick_hist_the_gloved
+			}
+			1 = {
+				give_nickname = nick_hist_the_booted
+			}
+			1 = {
+				give_nickname = nick_hist_the_buckled
+			}
+			1 = {
+				give_nickname = nick_hist_the_laced
+			}
+			1 = {
+				give_nickname = nick_hist_the_veiled
+			}
+			1 = {
+				give_nickname = nick_hist_the_shrouded
+			}
+			1 = {
+				give_nickname = nick_hist_the_unveiled
+			}
+			1 = {
+				give_nickname = nick_hist_the_grim
+			}
+			1 = {
+				give_nickname = nick_hist_the_somber
+			}
+			1 = {
+				give_nickname = nick_hist_the_mirthful
+			}
+			1 = {
+				give_nickname = nick_hist_the_jovial
+			}
+			1 = {
+				give_nickname = nick_hist_the_laughing
+			}
+			1 = {
+				give_nickname = nick_hist_the_smiling
+			}
+			1 = {
+				give_nickname = nick_hist_the_wailing
+			}
+			1 = {
+				give_nickname = nick_hist_the_silent_watcher
+			}
+			1 = {
+				give_nickname = nick_hist_the_listening
+			}
+			1 = {
+				give_nickname = nick_hist_the_murmur
+			}
+			1 = {
+				give_nickname = nick_hist_the_echo
+			}
+			1 = {
+				give_nickname = nick_hist_the_resonant
+			}
+			1 = {
+				give_nickname = nick_hist_the_harper
+			}
+			1 = {
+				give_nickname = nick_hist_the_lutist
+			}
+			1 = {
+				give_nickname = nick_hist_the_piper
+			}
+			1 = {
+				give_nickname = nick_hist_the_drummer
+			}
+			1 = {
+				give_nickname = nick_hist_the_troubadour
+			}
+			1 = {
+				give_nickname = nick_hist_the_minstrel
+			}
+			1 = {
+				give_nickname = nick_hist_the_jongleur
+			}
+			1 = {
+				give_nickname = nick_hist_the_jester
+			}
+			1 = {
+				give_nickname = nick_hist_the_fool
+			}
+			1 = {
+				give_nickname = nick_hist_the_wise_fool
+			}
+			1 = {
+				give_nickname = nick_hist_the_masked
+			}
+			1 = {
+				give_nickname = nick_hist_the_unmasked
+			}
+			1 = {
+				give_nickname = nick_hist_the_hidden
+			}
+			1 = {
+				give_nickname = nick_hist_the_unseen
+			}
+			1 = {
+				give_nickname = nick_hist_the_seen
+			}
+			1 = {
+				give_nickname = nick_hist_the_revealed
+			}
+			1 = {
+				give_nickname = nick_hist_the_worldly
+			}
+			1 = {
+				give_nickname = nick_hist_the_temperate
+			}
+			1 = {
+				give_nickname = nick_hist_the_abstemious
+			}
+			1 = {
+				give_nickname = nick_hist_the_frugal
+			}
+			1 = {
+				give_nickname = nick_hist_the_lavish
+			}
+			1 = {
+				give_nickname = nick_hist_the_opulent
+			}
+			1 = {
+				give_nickname = nick_hist_the_humble_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_proud
+			}
+			1 = {
+				give_nickname = nick_hist_the_vain
+			}
+			1 = {
+				give_nickname = nick_hist_the_meek
+			}
+			1 = {
+				give_nickname = nick_hist_the_charitable
+			}
+			1 = {
+				give_nickname = nick_hist_the_avaricious
+			}
+			1 = {
+				give_nickname = nick_hist_the_jealous
+			}
+			1 = {
+				give_nickname = nick_hist_the_envious
+			}
+			1 = {
+				give_nickname = nick_hist_the_ardent
+			}
+			1 = {
+				give_nickname = nick_hist_the_earnest
+			}
+			1 = {
+				give_nickname = nick_hist_the_skeptic
+			}
+			1 = {
+				give_nickname = nick_hist_the_scriptor
+			}
+			1 = {
+				give_nickname = nick_hist_the_collector
+			}
+			1 = {
+				give_nickname = nick_hist_the_rebuilder
+			}
+			1 = {
+				give_nickname = nick_hist_the_heirless
+			}
+			1 = {
+				give_nickname = nick_hist_the_prolific
+			}
+			1 = {
+				give_nickname = nick_hist_the_twinfather
+			}
+			1 = {
+				give_nickname = nick_hist_the_twinmother
+			}
+			1 = {
+				give_nickname = nick_hist_the_patron
+			}
+			1 = {
+				give_nickname = nick_hist_the_matron
+			}
+			1 = {
+				give_nickname = nick_hist_the_foundling
+			}
+			1 = {
+				give_nickname = nick_hist_the_linebreaker
+			}
+			1 = {
+				give_nickname = nick_hist_the_reckless
+			}
+			1 = {
+				give_nickname = nick_hist_the_sure
+			}
+			1 = {
+				give_nickname = nick_hist_the_surer
+			}
+			1 = {
+				give_nickname = nick_hist_the_sure_hand
+			}
+			1 = {
+				give_nickname = nick_hist_the_star_standard
+			}
+			1 = {
+				give_nickname = nick_hist_the_moon_standard
+			}
+			1 = {
+				give_nickname = nick_hist_the_chaste
+			}
+			1 = {
+				give_nickname = nick_hist_the_crusading
+			}
+			1 = {
+				give_nickname = nick_hist_the_iconoclast
+			}
+			1 = {
+				give_nickname = nick_hist_the_apostate
+			}
+			1 = {
+				give_nickname = nick_hist_the_convert
+			}
+			1 = {
+				give_nickname = nick_hist_the_preacher
+			}
+			1 = {
+				give_nickname = nick_hist_the_reliquary
+			}
+			1 = {
+				give_nickname = nick_hist_the_shrine
+			}
+			1 = {
+				give_nickname = nick_hist_the_censer
+			}
+			1 = {
+				give_nickname = nick_hist_the_censer_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_dalmatic
+			}
+			1 = {
+				give_nickname = nick_hist_the_sybil
+			}
+			1 = {
+				give_nickname = nick_hist_the_magus
+			}
+			1 = {
+				give_nickname = nick_hist_the_anchorite
+			}
+			1 = {
+				give_nickname = nick_hist_the_ascetic
+			}
+			1 = {
+				give_nickname = nick_hist_the_catholic
+			}
+			1 = {
+				give_nickname = nick_hist_the_diviner
+			}
+			1 = {
+				give_nickname = nick_hist_the_tunic
+			}
+			1 = {
+				give_nickname = nick_hist_the_heterodox
+			}
+			1 = {
+				give_nickname = nick_hist_the_guard_of_faith
+			}
+			1 = {
+				give_nickname = nick_hist_the_zealous
+			}
+			1 = {
+				give_nickname = nick_hist_the_drawbridge
+			}
+			1 = {
+				give_nickname = nick_hist_the_incense
+			}
+			1 = {
+				give_nickname = nick_hist_the_altar
+			}
+			1 = {
+				give_nickname = nick_hist_the_paten
+			}
+			1 = {
+				give_nickname = nick_hist_the_sun_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_last_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_lame_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_builder_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_martyr_king
+			}
 		}
 	}
 }
