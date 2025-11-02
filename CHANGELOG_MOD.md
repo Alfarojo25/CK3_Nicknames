@@ -24,6 +24,65 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Sistema de Triggers para Epitetos Historicos - 22:00
+
+### Added
+
+- **25 triggers historicos basados en estadisticas y caracteristicas:**
+  - `ac_hist_the_terrible_trigger`: Tirania 50+, Dread 80+, traits sadicos
+  - `ac_hist_the_magnificent_trigger`: Prestigio 4+, arquitecto/scholar/diplomacia
+  - `ac_hist_the_great_trigger`: Prestigio 5+, Martial 16+, diplomacia/stewardship alto
+  - `ac_hist_the_wise_trigger`: Learning 14+, scholar/theologian/intellect_good_3
+  - `ac_hist_the_just_trigger`: Diplomacia 14+, just/temperate/calm, tirania baja
+  - `ac_hist_the_cruel_trigger`: Tirania 75+, sadico+torturador o Dread 90+
+  - `ac_hist_the_bold_trigger`: Martial 12+, brave/reckless/prowess
+  - `ac_hist_the_brave_trigger`: Prowess 14+, brave/gallant/martial
+  - `ac_hist_the_fair_trigger`: Diplomacia 14+, beauty traits
+  - `ac_hist_the_fat_trigger`: Gloton + physique_bad_3/giant
+  - `ac_hist_longshanks_trigger`: Gigante + martial/prowess
+  - `ac_hist_the_mad_trigger`: Lunatico/poseido/paranoid+stress
+  - `ac_hist_scourge_of_god_trigger`: Dread 85+, Martial 16+, Tirania 40+
+  - `ac_hist_the_bastard_trigger`: Bastardo o legitimizado
+  - `ac_hist_the_boneless_trigger`: Physique_bad_3 o health bajo + prowess
+  - `ac_hist_lackland_trigger`: Domain_size <=3, prestige_level <=1
+  - `ac_hist_the_leper_trigger`: Lepra o great_pox
+  - `ac_hist_stupor_mundi_trigger`: Scholar + learning 14+ + multiples skills
+  - `ac_hist_hardrada_trigger`: Prowess 14+, Dread 60+, Viking
+  - `ac_hist_bluetooth_trigger`: Piety 4+, Diplomacia 14+, Theologian
+  - `ac_hist_campeador_trigger`: Prowess 16+, Martial 14+, Cristiano
+  - `ac_hist_the_prudent_trigger`: Temperate/calm/patient + stewardship/diplomacia
+  - `ac_hist_the_victorious_trigger`: Martial 16+, Prestigio 4+, prowess/dread
+  - `ac_hist_the_builder_trigger`: Arquitecto + stewardship 12+
+  - `ac_hist_the_liberator_trigger`: Peasant_leader + is_ruler
+
+### Changed
+
+- **Aplicados triggers a 40+ apodos historicos (versiones M/F):**
+  - THE TERRIBLE, THE MAGNIFICENT, THE GREAT, THE WISE, THE JUST
+  - THE CRUEL, THE BOLD, THE BRAVE, THE FAIR, THE FAT
+  - THE MAD, SCOURGE OF GOD, THE BASTARD, THE BONELESS, LONGSHANKS
+  - LACKLAND, THE LEPER, STUPOR MUNDI, HARDRADA, BLUETOOTH
+  - CAMPEADOR, THE PRUDENT, THE VICTORIOUS, THE BUILDER, THE LIBERATOR
+- Archivo modificado: `common/scripted_effects/historical/ac_historical_epithets.txt`
+- Triggers creados en: `common/scripted_triggers/ac_nickname_triggers.txt`
+
+### Technical Notes
+
+- Sistema simplificado usando solo sintaxis validada de CK3
+- Evitados scopes invalidos: num_of_war_wins, num_of_titles, custom flags
+- Usados solo traits confirmados del juego vanilla
+- Criterios basados en: prestige_level, tyranny, dread, martial/diplomacy/etc stats
+- Sistema de tiers, domain_size, capital development_level
+- Los triggers permiten que los apodos se asignen de forma mas historicamente precisa
+- Personajes con caracteristicas similares a gobernantes historicos recibiran sus epitetos
+
+### Commits
+
+- `2e1bde4`: feat: Agregar triggers para epitetos historicos basados en estadisticas
+- `675d71a`: feat: Aplicar triggers a epitetos historicos (M/F)
+
+---
+
 ## [2025-11-02] - Sistema Completo de Triggers Basados en Skills - 20:30
 
 ### Added
