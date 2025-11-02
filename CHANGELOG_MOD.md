@@ -24,6 +24,37 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Implementación de Nicknames Islámicos Separados - 19:00
+
+### Added
+
+- **Nuevo archivo de nicknames islámicos (ac_faith_islam.txt)**:
+  - 20 apodos únicos para personajes musulmanes
+  - Organizado en 4 categorías de skills:
+    - **MARTIAL** (5): Sayf al-Din, Sayf al-Dawla, Asad al-Din, Sayf al-Islam, Husam al-Dawla
+    - **LEARNING** (5): Nur al-Din, Nizam al-Mulk, Shams al-Din, Majd al-Din, Alam al-Din
+    - **DIPLOMACY** (5): Salah al-Din, Jalal al-Din, Baha al-Din, Rashid al-Din, Fakhr al-Din
+    - **INTRIGUE** (5): Ghiyath al-Din, Muzaffar al-Din, Ikhtiyar al-Din, Qutb al-Din, Muizz al-Dawla
+  - Todos son nicknames vanilla del DLC EP3 (07_ep3_nicknames.txt)
+  - Marciales requieren `ac_faith_islam_martial_trigger` (hajjaj, faith_warrior, o devoted + prowess 12+)
+
+### Changed
+
+- **Dispatcher actualizado (ac_nickname_effects.txt)**:
+  - Agregado bloque `islam_religion` en Priority 2 (Faith Nicknames)
+  - Ahora llama a `ac_faith_islam` para personajes musulmanes
+  - **Islam ya no comparte nicknames cristianos**
+
+### Technical Notes
+
+- **Decisión de diseño**: Musulmanes necesitaban nicknames culturalmente apropiados
+- Todos los nicknames son títulos honoríficos árabes históricos (al-Din = "de la Fe", al-Dawla = "del Estado")
+- Basados 100% en contenido vanilla del juego (no custom nicknames)
+- Formato "is_prefix = yes" preservado del vanilla
+- Separación garantiza autenticidad cultural y histórica
+
+---
+
 ## [2025-11-02] - Requisitos Marciales para Nicknames Religiosos - 18:00
 
 ### Added

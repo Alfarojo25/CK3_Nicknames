@@ -678,20 +678,19 @@ ac_knight_color_trigger = {
 }
 
 ### MARTIAL RELIGIOUS NICKNAMES - FAITH SPECIFIC ###
-# Christianity (Catholic): Holy warriors and crusaders
+# Christianity: Holy warriors and crusaders
 ac_faith_christianity_martial_trigger = {
-	# Must be Christian faith
+	# Must be Christian
 	faith = {
 		religion_tag = christianity_religion
 	}
 	# And have martial prowess/traits
 	OR = {
-		has_trait = crusader_king
-		has_trait = order_member
-		has_trait = holy_warrior
-		has_trait = faith_warrior
+		has_trait = holy_warrior		# Faithful Blade
+		has_trait = crusader_king		# Holy Monarch
+		has_trait = order_member		# Crusader/Order Member
 		AND = {
-			has_trait = devoted
+			has_trait = devoted			# Faithful Blade
 			prowess >= 12
 		}
 	}
@@ -707,7 +706,7 @@ ac_faith_germanic_martial_trigger = {
 	OR = {
 		has_trait = berserker
 		AND = {
-			has_trait = devoted
+			has_trait = devoted			# Faithful Blade
 			prowess >= 12
 		}
 	}
@@ -722,9 +721,8 @@ ac_faith_islam_martial_trigger = {
 	# And be hajji or devoted warrior
 	OR = {
 		has_trait = hajjaj
-		has_trait = faith_warrior
 		AND = {
-			has_trait = devoted
+			has_trait = devoted			# Faithful Blade
 			prowess >= 12
 		}
 	}
@@ -734,10 +732,9 @@ ac_faith_islam_martial_trigger = {
 ac_faith_generic_martial_trigger = {
 	# For other faiths
 	OR = {
-		has_trait = faith_warrior
-		has_trait = holy_warrior
+		has_trait = faith_warrior		# Warrior of the Faith
 		AND = {
-			has_trait = devoted
+			has_trait = devoted			# Faithful Blade
 			prowess >= 12
 		}
 	}

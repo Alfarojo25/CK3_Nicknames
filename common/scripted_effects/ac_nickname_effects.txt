@@ -44,6 +44,14 @@ ac_assign_dynamic_nickname_effect = {
 		else_if = {
 			limit = {
 				faith = {
+					religion_tag = islam_religion
+				}
+			}
+			ac_faith_islam = yes
+		}
+		else_if = {
+			limit = {
+				faith = {
 					religion_tag = buddhism_religion
 				}
 			}

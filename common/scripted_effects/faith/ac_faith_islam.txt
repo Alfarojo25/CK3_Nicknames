@@ -1,0 +1,194 @@
+﻿# Advanced Character Nicknames - Faith Islam
+# Total: 40 apodos (20 M, 20 F, 0 N) - Nicknames árabes/islámicos del juego vanilla
+# Organizados por skill principal:
+# - MARTIAL: Sayf al-Din (Espada de la Fe), Sayf al-Dawla (Espada del Estado), Asad al-Din (León de la Fe), Sayf al-Islam
+# - LEARNING: Nur al-Din (Luz de la Fe), Nizam al-Mulk (Orden del Reino), Shams al-Din (Sol de la Fe), Majd al-Din
+# - DIPLOMACY: Salah al-Din (Rectitud de la Fe), Jalal al-Din (Gloria de la Fe), Baha al-Din (Esplendor de la Fe)
+# - INTRIGUE: Ghiyath al-Din (Auxilio de la Fe), Muzaffar al-Din (Victorioso de la Fe), Ikhtiyar al-Din
+ac_faith_islam = {
+	if = {
+		limit = {
+			is_female = yes
+		}
+		random_list = {
+			# ============================================
+			# MARTIAL (5 apodos) - Requiere trigger marcial islámico
+			# ============================================
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_sayf_al_din
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_sayf_al_dawla
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_asad_al_din
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_sayf_al_islam
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_husam_al_dawla
+			}
+			# ============================================
+			# LEARNING (5 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_nur_al_din
+			}
+			1 = {
+				give_nickname = nick_nizam_al_mulk
+			}
+			1 = {
+				give_nickname = nick_shams_al_din
+			}
+			1 = {
+				give_nickname = nick_majd_al_din
+			}
+			1 = {
+				give_nickname = nick_alam_al_din
+			}
+			# ============================================
+			# DIPLOMACY (5 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_salah_al_din
+			}
+			1 = {
+				give_nickname = nick_jalal_al_din
+			}
+			1 = {
+				give_nickname = nick_baha_al_din
+			}
+			1 = {
+				give_nickname = nick_rashid_al_din
+			}
+			1 = {
+				give_nickname = nick_fakhr_al_din
+			}
+			# ============================================
+			# INTRIGUE (5 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_ghiyath_al_din
+			}
+			1 = {
+				give_nickname = nick_muzaffar_al_din
+			}
+			1 = {
+				give_nickname = nick_ikhtiyar_al_din
+			}
+			1 = {
+				give_nickname = nick_qutb_al_din
+			}
+			1 = {
+				give_nickname = nick_muizz_al_dawla
+			}
+		}
+	}
+	else = {
+		random_list = {
+			# ============================================
+			# MARTIAL (5 apodos) - Requiere trigger marcial islámico
+			# ============================================
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_sayf_al_din
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_sayf_al_dawla
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_asad_al_din
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_sayf_al_islam
+			}
+			1 = {
+				trigger = {
+					ac_faith_islam_martial_trigger = yes
+				}
+				give_nickname = nick_husam_al_dawla
+			}
+			# ============================================
+			# LEARNING (5 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_nur_al_din
+			}
+			1 = {
+				give_nickname = nick_nizam_al_mulk
+			}
+			1 = {
+				give_nickname = nick_shams_al_din
+			}
+			1 = {
+				give_nickname = nick_majd_al_din
+			}
+			1 = {
+				give_nickname = nick_alam_al_din
+			}
+			# ============================================
+			# DIPLOMACY (5 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_salah_al_din
+			}
+			1 = {
+				give_nickname = nick_jalal_al_din
+			}
+			1 = {
+				give_nickname = nick_baha_al_din
+			}
+			1 = {
+				give_nickname = nick_rashid_al_din
+			}
+			1 = {
+				give_nickname = nick_fakhr_al_din
+			}
+			# ============================================
+			# INTRIGUE (5 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_ghiyath_al_din
+			}
+			1 = {
+				give_nickname = nick_muzaffar_al_din
+			}
+			1 = {
+				give_nickname = nick_ikhtiyar_al_din
+			}
+			1 = {
+				give_nickname = nick_qutb_al_din
+			}
+			1 = {
+				give_nickname = nick_muizz_al_dawla
+			}
+		}
+	}
+}
