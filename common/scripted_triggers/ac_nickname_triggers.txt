@@ -739,3 +739,208 @@ ac_faith_generic_martial_trigger = {
 		}
 	}
 }
+
+# ============================================
+# DIPLOMACY TRIGGERS - Por Fe
+# ============================================
+# Christianity: Diplomats and holy monarchs
+ac_faith_christianity_diplomacy_trigger = {
+	faith = {
+		religion_tag = christianity_religion
+	}
+	diplomacy >= 12
+	OR = {
+		has_trait = diplomat
+		has_trait = savior
+		has_trait = crusader_king		# Holy Monarch
+	}
+}
+
+# Germanic/Norse: Diplomats and holy monarchs
+ac_faith_germanic_diplomacy_trigger = {
+	faith = {
+		religion_tag = germanic_religion
+	}
+	diplomacy >= 12
+	OR = {
+		has_trait = diplomat
+		has_trait = savior
+		has_trait = crusader_king		# Holy Monarch
+	}
+}
+
+# Islam: Diplomats, sayyids and holy monarchs
+ac_faith_islam_diplomacy_trigger = {
+	faith = {
+		religion_tag = islam_religion
+	}
+	diplomacy >= 12
+	OR = {
+		has_trait = diplomat
+		has_trait = sayyid
+		has_trait = savior
+		has_trait = crusader_king		# Holy Monarch
+	}
+}
+
+# Generic: Diplomats and holy monarchs
+ac_faith_generic_diplomacy_trigger = {
+	diplomacy >= 12
+	OR = {
+		has_trait = diplomat
+		has_trait = savior
+		has_trait = crusader_king		# Holy Monarch
+	}
+}
+
+# ============================================
+# INTRIGUE TRIGGERS - Por Fe
+# ============================================
+# Christianity: Crusaders, schemers and torturers
+ac_faith_christianity_intrigue_trigger = {
+	faith = {
+		religion_tag = christianity_religion
+	}
+	intrigue >= 12
+	OR = {
+		has_trait = order_member		# Crusader
+		has_trait = crusader_king		# Holy Monarch
+		has_trait = schemer
+		has_trait = torturer
+		has_trait = heresiarch
+	}
+}
+
+# Germanic/Norse: Berserkers, schemers and torturers
+ac_faith_germanic_intrigue_trigger = {
+	faith = {
+		religion_tag = germanic_religion
+	}
+	intrigue >= 12
+	OR = {
+		has_trait = crusader_king		# Holy Monarch
+		has_trait = berserker
+		has_trait = schemer
+		has_trait = torturer
+		has_trait = heresiarch
+	}
+}
+
+# Islam: Mujahids, schemers and torturers
+ac_faith_islam_intrigue_trigger = {
+	faith = {
+		religion_tag = islam_religion
+	}
+	intrigue >= 12
+	OR = {
+		has_trait = crusader_king		# Holy Monarch
+		has_trait = faith_warrior		# Warrior of the Faith (equivalente a Mujahid)
+		has_trait = schemer
+		has_trait = torturer
+		has_trait = heresiarch
+	}
+}
+
+# Generic: Warriors of faith, schemers and torturers
+ac_faith_generic_intrigue_trigger = {
+	intrigue >= 12
+	OR = {
+		has_trait = crusader_king		# Holy Monarch
+		has_trait = faith_warrior		# Warrior of the Faith
+		has_trait = schemer
+		has_trait = torturer
+		has_trait = heresiarch
+	}
+}
+
+# ============================================
+# LEARNING TRIGGERS - Por Fe
+# ============================================
+# Christianity: Scholars, theologians, or martial/diplomacy qualified
+ac_faith_christianity_learning_trigger = {
+	faith = {
+		religion_tag = christianity_religion
+	}
+	learning >= 10
+	OR = {
+		# Learning specialists
+		AND = {
+			learning >= 12
+			OR = {
+				has_trait = devoted
+				has_trait = theologian
+				has_trait = scholar
+			}
+		}
+		# Or qualified for martial
+		ac_faith_christianity_martial_trigger = yes
+		# Or qualified for diplomacy
+		ac_faith_christianity_diplomacy_trigger = yes
+	}
+}
+
+# Germanic/Norse: Scholars, theologians, or martial/diplomacy qualified
+ac_faith_germanic_learning_trigger = {
+	faith = {
+		religion_tag = germanic_religion
+	}
+	learning >= 10
+	OR = {
+		# Learning specialists
+		AND = {
+			learning >= 12
+			OR = {
+				has_trait = devoted
+				has_trait = theologian
+				has_trait = scholar
+			}
+		}
+		# Or qualified for martial
+		ac_faith_germanic_martial_trigger = yes
+		# Or qualified for diplomacy
+		ac_faith_germanic_diplomacy_trigger = yes
+	}
+}
+
+# Islam: Scholars, theologians, or martial/diplomacy qualified
+ac_faith_islam_learning_trigger = {
+	faith = {
+		religion_tag = islam_religion
+	}
+	learning >= 10
+	OR = {
+		# Learning specialists
+		AND = {
+			learning >= 12
+			OR = {
+				has_trait = devoted
+				has_trait = theologian
+				has_trait = scholar
+			}
+		}
+		# Or qualified for martial
+		ac_faith_islam_martial_trigger = yes
+		# Or qualified for diplomacy
+		ac_faith_islam_diplomacy_trigger = yes
+	}
+}
+
+# Generic: Scholars, theologians, or martial/diplomacy qualified
+ac_faith_generic_learning_trigger = {
+	learning >= 10
+	OR = {
+		# Learning specialists
+		AND = {
+			learning >= 12
+			OR = {
+				has_trait = devoted
+				has_trait = theologian
+				has_trait = scholar
+			}
+		}
+		# Or qualified for martial
+		ac_faith_generic_martial_trigger = yes
+		# Or qualified for diplomacy
+		ac_faith_generic_diplomacy_trigger = yes
+	}
+}

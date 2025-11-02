@@ -48,54 +48,99 @@ ac_faith_islam = {
 			# LEARNING (5 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_nur_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_nizam_al_mulk
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_shams_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_majd_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_alam_al_din
 			}
 			# ============================================
 			# DIPLOMACY (5 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_salah_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_jalal_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_baha_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_rashid_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_fakhr_al_din
 			}
 			# ============================================
 			# INTRIGUE (5 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_ghiyath_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_muzaffar_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_ikhtiyar_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_qutb_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_muizz_al_dawla
 			}
 		}
@@ -139,54 +184,99 @@ ac_faith_islam = {
 			# LEARNING (5 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_nur_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_nizam_al_mulk
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_shams_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_majd_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_learning_trigger = yes
+				}
 				give_nickname = nick_alam_al_din
 			}
 			# ============================================
 			# DIPLOMACY (5 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_salah_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_jalal_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_baha_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_rashid_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_diplomacy_trigger = yes
+				}
 				give_nickname = nick_fakhr_al_din
 			}
 			# ============================================
 			# INTRIGUE (5 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_ghiyath_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_muzaffar_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_ikhtiyar_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_qutb_al_din
 			}
 			1 = {
+				trigger = {
+					ac_faith_islam_intrigue_trigger = yes
+				}
 				give_nickname = nick_muizz_al_dawla
 			}
 		}

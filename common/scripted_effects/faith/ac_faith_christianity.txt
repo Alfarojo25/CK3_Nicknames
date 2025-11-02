@@ -60,60 +60,111 @@ ac_faith_christianity = {
 			# LEARNING (8 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_saint_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_blessed_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_confessor_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_apostle_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_evangelist_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_missionary_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_mitre_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_crosier_f
 			}
 			# ============================================
 			# DIPLOMACY (6 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_staff_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_lord_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_king
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_cross_standard_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_chalice_f
 			}
 			# ============================================
 			# INTRIGUE (3 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_penitent_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_monk_king
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_nun_queen
 			}
 		}
@@ -169,60 +220,111 @@ ac_faith_christianity = {
 			# LEARNING (8 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_saint
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_blessed
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_confessor
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_apostle
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_evangelist
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_missionary
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_mitre
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_crosier
 			}
 			# ============================================
 			# DIPLOMACY (6 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_staff
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_lord
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pilgrim_king
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_cross_standard
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_chalice
 			}
 			# ============================================
 			# INTRIGUE (3 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_penitent
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_monk_king
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_nun_queen
 			}
 		}
