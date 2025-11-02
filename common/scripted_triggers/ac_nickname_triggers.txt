@@ -937,10 +937,271 @@ ac_faith_generic_learning_trigger = {
 				has_trait = theologian
 				has_trait = scholar
 			}
-		}
-		# Or qualified for martial
-		ac_faith_generic_martial_trigger = yes
-		# Or qualified for diplomacy
-		ac_faith_generic_diplomacy_trigger = yes
 	}
+	# Or qualified for martial
+	ac_faith_generic_martial_trigger = yes
+	# Or qualified for diplomacy
+	ac_faith_generic_diplomacy_trigger = yes
+}
+}
+
+####################################################
+## HISTORICAL EPITHETS TRIGGERS                   ##
+####################################################
+
+# THE TERRIBLE - High tyranny, dread, and cruelty
+# Historical: Ivan IV (1530-1584), Basilio II
+ac_hist_the_terrible_trigger = {
+	tyranny >= 50
+	dread >= 80
+	OR = {
+		has_trait = sadistic
+		has_trait = torturer
+		has_trait = wrathful
+	}
+}
+
+# THE MAGNIFICENT - Prestige and grandeur
+# Historical: Soliman I (1494-1566), Lorenzo de Medici
+ac_hist_the_magnificent_trigger = {
+	prestige_level >= 4
+	OR = {
+		has_trait = architect
+		has_trait = scholar
+		diplomacy >= 14
+	}
+}
+
+# THE GREAT - High prestige and martial prowess
+# Historical: Alejandro, Carlomagno, Catalina II, Pedro I, Ciro II, Alfredo
+ac_hist_the_great_trigger = {
+	prestige_level >= 5
+	martial >= 16
+	OR = {
+		diplomacy >= 14
+		stewardship >= 14
+	}
+}
+
+# THE WISE - High learning
+# Historical: Alfonso X el Sabio (1221-1284)
+ac_hist_the_wise_trigger = {
+	learning >= 14
+	OR = {
+		has_trait = scholar
+		has_trait = theologian
+		has_trait = intellect_good_3
+	}
+}
+
+# THE JUST - High diplomacy and low tyranny
+# Historical: Balduino I de Jerusalen (1100-1118), Pedro I de Aragon (1068-1104)
+ac_hist_the_just_trigger = {
+	diplomacy >= 14
+	OR = {
+		has_trait = just
+		has_trait = temperate
+		has_trait = calm
+	}
+	tyranny <= 10
+}
+
+# THE CRUEL - Extreme tyranny and sadism
+# Historical: Pedro I de Castilla (1334-1369), Vlad III Draculea (1428-1477)
+ac_hist_the_cruel_trigger = {
+	tyranny >= 75
+	OR = {
+		AND = {
+			has_trait = sadistic
+			has_trait = torturer
+		}
+		dread >= 90
+	}
+}
+
+# THE BOLD - Bravery and martial skill
+# Historical: Carlos el Temerario (1433-1477), Felipe III de Borgona (1245-1361)
+ac_hist_the_bold_trigger = {
+	martial >= 12
+	OR = {
+		has_trait = brave
+		has_trait = reckless
+		prowess >= 14
+	}
+}
+
+# THE BRAVE - Prowess and courage
+# Historical: Alfonso IV de Leon (1288-1350), Vlad IV Calugarul (1425-1495)
+ac_hist_the_brave_trigger = {
+	prowess >= 14
+	OR = {
+		has_trait = brave
+		has_trait = gallant
+		martial >= 12
+	}
+}
+
+# THE FAIR - Beauty and diplomacy
+# Historical: Carlos IV de Francia (898-929), Felipe IV de Francia (1268-1314)
+ac_hist_the_fair_trigger = {
+	diplomacy >= 14
+	OR = {
+		has_trait = beauty_good_1
+		has_trait = beauty_good_2
+		has_trait = beauty_good_3
+	}
+}
+
+# THE FAT - Gluttony and poor physique
+# Historical: Carlos III el Gordo (839-888), Luis VI de Francia (1081-1137)
+ac_hist_the_fat_trigger = {
+	has_trait = gluttonous
+	OR = {
+		has_trait = physique_bad_3
+		has_trait = giant
+	}
+}
+
+# LONGSHANKS - Tall stature and military prowess
+# Historical: Eduardo I de Inglaterra (1239-1307)
+ac_hist_longshanks_trigger = {
+	has_trait = giant
+	OR = {
+		martial >= 14
+		prowess >= 12
+	}
+}
+
+# THE MAD - Madness and instability
+# Historical: Carlos VI de Francia (1368-1422), Juana la Loca (1479-1555)
+ac_hist_the_mad_trigger = {
+	OR = {
+		has_trait = lunatic
+		has_trait = possessed
+		AND = {
+			has_trait = paranoid
+			stress >= 75
+		}
+	}
+}
+
+# SCOURGE OF GOD - Terror and conquest
+# Historical: Atila el Huno (406-453)
+ac_hist_scourge_of_god_trigger = {
+	dread >= 85
+	martial >= 16
+	tyranny >= 40
+}
+
+# THE BASTARD - Illegitimate birth
+# Historical: Guillermo I de Inglaterra (1028-1087)
+ac_hist_the_bastard_trigger = {
+	OR = {
+		has_trait = bastard
+		has_trait = legitimized_bastard
+	}
+}
+
+# THE BONELESS - Physical disability
+# Historical: Ivar el Deshuesado (794-873)
+ac_hist_the_boneless_trigger = {
+	OR = {
+		has_trait = physique_bad_3
+		health <= 2
+	}
+	prowess >= 10
+}
+
+# LACKLAND - Few holdings
+# Historical: Juan sin Tierra (1166-1217)
+ac_hist_lackland_trigger = {
+	domain_size <= 3
+	prestige_level <= 1
+}
+
+# THE LEPER - Leprosy or disease
+# Historical: Balduino IV de Jerusalen (1161-1185)
+ac_hist_the_leper_trigger = {
+	OR = {
+		has_trait = leper
+		has_trait = great_pox
+	}
+}
+
+# STUPOR MUNDI - Multiple high skills
+# Historical: Federico II Hohenstaufen (1194-1250)
+ac_hist_stupor_mundi_trigger = {
+	has_trait = scholar
+	learning >= 14
+	OR = {
+		AND = {
+			martial >= 12
+			diplomacy >= 12
+		}
+		AND = {
+			has_trait = theologian
+			has_trait = architect
+		}
+	}
+}
+
+# HARDRADA - Norse ruthless warrior
+# Historical: Harald III de Noruega (1015-1066)
+ac_hist_hardrada_trigger = {
+	prowess >= 14
+	dread >= 60
+	has_trait = viking
+}
+
+# BLUETOOTH - Norse diplomat and converter
+# Historical: Harald I de Dinamarca (910-987)
+ac_hist_bluetooth_trigger = {
+	piety_level >= 4
+	diplomacy >= 14
+	has_trait = theologian
+}
+
+# CAMPEADOR / THE CID - Iberian Christian warrior
+# Historical: Rodrigo Diaz de Vivar (1043-1099)
+ac_hist_campeador_trigger = {
+	prowess >= 16
+	martial >= 14
+	faith = { religion_tag = christianity_religion }
+}
+
+# THE PRUDENT - Wisdom and caution
+# Historical: Felipe II de España (1527-1598), Carlos V de Francia (1338-1380)
+ac_hist_the_prudent_trigger = {
+	OR = {
+		has_trait = temperate
+		has_trait = calm
+		has_trait = patient
+	}
+	stewardship >= 12
+	diplomacy >= 12
+}
+
+# THE VICTORIOUS - Military prestige
+# Historical: Eric IX de Suecia (1120-1160), Pedro I de Portugal (1320-1367)
+ac_hist_the_victorious_trigger = {
+	martial >= 16
+	prestige_level >= 4
+	OR = {
+		prowess >= 14
+		dread >= 50
+	}
+}
+
+# THE BUILDER - Architecture
+# Historical: Enrique I de Castilla (1204-1217), Jaime I de Aragon (1208-1276)
+ac_hist_the_builder_trigger = {
+	has_trait = architect
+	stewardship >= 12
+}
+
+# THE LIBERATOR - Independence leader
+# Historical: Used for independence leaders
+ac_hist_the_liberator_trigger = {
+	has_trait = peasant_leader
+	is_ruler = yes
 }
