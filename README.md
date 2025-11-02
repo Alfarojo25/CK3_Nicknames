@@ -122,10 +122,25 @@ _Coming soon_
 
 ## ⚙️ Compatibility
 
-- **CK3 Version**: 1.17.1+
-- **Compatible with**: Most mods
-- **Incompatible with**: Other nickname overhaul mods
+- **CK3 Version**: 1.18.0+ (Fully compatible with latest version)
+- **DLC Compatibility**:
+  - ✅ Compatible with ALL DLCs (Roads to Power, Royal Court, All Under Heaven, etc.)
+  - ✅ Works with new v1.18.0 features (Diarchies, Confederations, House Aspirations)
+  - ✅ No DLC required - works with base game
+- **Mod Compatibility**:
+  - ✅ Compatible with most mods (100% additive, no vanilla overwrites)
+  - ❌ Incompatible with other nickname overhaul mods
 - **Achievement Compatible**: ❌ (modifies game files)
+
+### Version 1.18.0 Features Support
+
+This mod is fully compatible with CK3 v1.18.0 and its new features:
+
+- **Diarchies**: Apodos work normally for both rulers and diarchs
+- **Confederations**: Characters in confederations can receive nicknames
+- **House Aspirations**: Nickname system respects house goals and traits
+- **Great Projects**: No conflicts with monument construction
+- **Landless Adventurers**: Adventurers can earn nicknames based on their deeds
 
 ## 🛠️ Configuration
 

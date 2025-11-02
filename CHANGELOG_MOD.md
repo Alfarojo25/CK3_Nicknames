@@ -24,6 +24,33 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Verificación de Compatibilidad v1.18.0 - 14:00
+
+### Changed
+
+- **README.md**: Actualizada sección de compatibilidad para documentar soporte completo de v1.18.0
+  - Agregada información sobre compatibilidad con nuevas features (Diarchies, Confederations, House Aspirations, Great Projects, Landless Adventurers)
+  - Documentada compatibilidad con todos los DLCs (Roads to Power, Royal Court, All Under Heaven, etc.)
+  - Aclarado que el mod es 100% aditivo y no requiere DLCs
+
+### Verified
+
+- **Compatibilidad v1.18.0**: Verificado que el mod es totalmente compatible con CK3 v1.18.0.1
+  - ✅ No hay conflictos con nuevas features de v1.18.0
+  - ✅ Sistema de apodos funciona correctamente con diarchs, confederaciones y aventureros
+  - ✅ No interfiere con House Aspirations o Great Projects
+  - ✅ Scripted triggers y effects son compatibles con nuevos scopes de v1.18.0
+
+### Technical Notes
+
+- **Análisis de compatibilidad**: El mod usa únicamente sistemas estándar de CK3 (traits, skills, faith, on_actions)
+- **Diseño aditivo**: Al ser 100% aditivo (no sobreescribe vanilla), es compatible con cualquier DLC o versión del juego
+- **Versión actual**: v2.0.0 - Soporta CK3 1.18.0.1
+- **Estado**: ✅ Listo para publicación en Steam Workshop
+- **Próximos pasos**: Subir a Steam Workshop con toda la documentación actualizada
+
+---
+
 ## [2025-10-31] - v2.0.0 - Traducción Japonesa y Coreana Completa - 23:00
 
 ### Added
