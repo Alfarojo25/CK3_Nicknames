@@ -1,26 +1,87 @@
 # Advanced Character Nicknames - Faith Germanic
 # Total: 6 apodos (0 M, 0 F, 6 N)
-
+# Organizados por skill principal:
+# - MARTIAL: Son of Thor
+# - LEARNING: Son of Balder, Daughter of Frigg
+# - DIPLOMACY: Daughter of Freya
+# - INTRIGUE: Son of Loki
+# - STEWARDSHIP: Son of Odin (líder/estratega)
 ac_faith_germanic = {
 	if = {
-		limit = { is_female = yes }
+		limit = {
+			is_female = yes
+		}
 		random_list = {
-			1 = { give_nickname = nick_son_of_thor }
-			1 = { give_nickname = nick_son_of_odin }
-			1 = { give_nickname = nick_son_of_balder }
-			1 = { give_nickname = nick_son_of_loki }
-			1 = { give_nickname = nick_daughter_freya }
-			1 = { give_nickname = nick_daughter_frigg }
+			# ============================================
+			# MARTIAL (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_thor
+			}
+			# ============================================
+			# LEARNING (2 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_balder
+			}
+			1 = {
+				give_nickname = nick_daughter_frigg
+			}
+			# ============================================
+			# DIPLOMACY (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_daughter_freya
+			}
+			# ============================================
+			# INTRIGUE (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_loki
+			}
+			# ============================================
+			# STEWARDSHIP (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_odin
+			}
 		}
 	}
 	else = {
 		random_list = {
-			1 = { give_nickname = nick_son_of_thor }
-			1 = { give_nickname = nick_son_of_odin }
-			1 = { give_nickname = nick_son_of_balder }
-			1 = { give_nickname = nick_son_of_loki }
-			1 = { give_nickname = nick_daughter_freya }
-			1 = { give_nickname = nick_daughter_frigg }
+			# ============================================
+			# MARTIAL (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_thor
+			}
+			# ============================================
+			# LEARNING (2 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_balder
+			}
+			1 = {
+				give_nickname = nick_daughter_frigg
+			}
+			# ============================================
+			# DIPLOMACY (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_daughter_freya
+			}
+			# ============================================
+			# INTRIGUE (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_loki
+			}
+			# ============================================
+			# STEWARDSHIP (1 apodo)
+			# ============================================
+			1 = {
+				give_nickname = nick_son_of_odin
+			}
 		}
 	}
 }

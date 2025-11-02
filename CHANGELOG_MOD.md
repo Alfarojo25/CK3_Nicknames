@@ -24,6 +24,68 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Reorganización de Nicknames de Fe por Skills - 17:30
+
+### Changed
+
+- **Reorganización completa de archivos de fe por categorías de skills:**
+
+  - **Christianity (45 apodos)**: Reorganizados en 4 categorías
+
+    - MARTIAL (7): Crusader, Templar, Hospitaller, Santiago, Holy Knight, Crossbow
+    - LEARNING (8): Saint, Blessed, Confessor, Apostle, Evangelist, Missionary, Mitre, Crosier
+    - DIPLOMACY (6): Pilgrim, Pilgrim Lord, Pilgrim Staff, Cross Standard, Chalice
+    - INTRIGUE (3): Penitent, Monk King, Nun Queen
+
+  - **Generic (25 apodos)**: Reorganizados en 4 categorías
+
+    - MARTIAL (6): Holy/Heathen Sword/Axe/Shield
+    - LEARNING (4): Prophet, Oracle, Seer, Prophetess
+    - DIPLOMACY (2): Pious, Orthodox
+    - INTRIGUE (1): Zealot
+
+  - **Germanic (6 apodos)**: Reorganizados en 5 categorías
+
+    - MARTIAL (1): Son of Thor
+    - LEARNING (2): Son of Balder, Daughter of Frigg
+    - DIPLOMACY (1): Daughter of Freya
+    - INTRIGUE (1): Son of Loki
+    - STEWARDSHIP (1): Son of Odin
+
+  - **Buddhism (2 apodos)**: Simplificado (solo LEARNING: The Brazen)
+
+### Technical Notes
+
+- **Preparación para triggers por skill:** Esta reorganización facilita la aplicación de triggers basados en skills
+- Cada categoría está claramente comentada con el número de apodos
+- Buddhism cambió de `random_list` a asignación directa (solo tiene 1 nickname)
+- Los comentarios documentan la temática de cada nickname para futuras expansiones
+
+---
+
+## [2025-11-02] - Requisitos Marciales para Knights y Colors - 17:00
+
+### Changed
+
+- **Sistema de apodos de Knights y Colors rebalanceado:**
+  - **Knights (Caballeros)**: Ahora requiere order_member Y cumplir requisitos marciales
+  - **Colors (Colores)**: Ahora requiere cumplir requisitos marciales (antes sin restricción)
+  - Requisitos marciales: order_member, Marshal, martial focus/education, martial >= 15, o prowess >= 14
+
+### Added
+
+- **Nuevo trigger en ac_nickname_triggers.txt:**
+  - `ac_knight_color_trigger`: Valida habilidades marciales (order_member, Marshal, martial focus/education, martial 15+, prowess 14+)
+
+### Technical Notes
+
+- **Decisión de diseño:** Knights y Colors comparten el mismo trigger porque ambos son apodos militares
+- Los apodos de colores tienen temática militar (White Conqueror, Red Slayer, etc.)
+- Los apodos de knights son exclusivos para miembros de órdenes militares con habilidades marciales
+- Esto balancea el juego al hacer estos apodos más exclusivos y temáticos
+
+---
+
 ## [2025-11-02] - Preparación para Sistema de Unicidad - 16:30
 
 ### Added

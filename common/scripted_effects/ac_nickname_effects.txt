@@ -62,11 +62,12 @@ ac_assign_dynamic_nickname_effect = {
 		}
 	}
 	# ============================================
-	# PRIORIDAD 3: CABALLEROS
+	# PRIORIDAD 3: CABALLEROS (con requisitos marciales)
 	# ============================================
 	else_if = {
 		limit = {
 			has_trait = order_member
+			ac_knight_color_trigger = yes
 		}
 		ac_knight_types = yes
 	}
@@ -151,8 +152,11 @@ ac_assign_dynamic_nickname_effect = {
 					}
 				}
 			}
-			# Colores (91 apodos totales)
+			# Colores (91 apodos totales) - CON REQUISITOS MARCIALES
 			15 = {
+				trigger = {
+					ac_knight_color_trigger = yes
+				}
 				random_list = {
 					15 = {
 						ac_color_white = yes

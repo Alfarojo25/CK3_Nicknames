@@ -1,62 +1,188 @@
 # Advanced Character Nicknames - Faith Christianity
 # Total: 45 apodos (21 M, 21 F, 3 N)
-
+# Organizados por skill principal:
+# - MARTIAL: Crusader, Templar, Hospitaller, Santiago, Holy Knight, Crossbow/Crossbowman
+# - LEARNING: Saint, Blessed, Confessor, Apostle, Evangelist, Missionary, Mitre, Crosier
+# - DIPLOMACY: Pilgrim, Pilgrim Lord, Pilgrim Staff, Pilgrim King, Cross Standard, Chalice
+# - INTRIGUE: Penitent, Monk King, Nun Queen
 ac_faith_christianity = {
 	if = {
-		limit = { is_female = yes }
+		limit = {
+			is_female = yes
+		}
 		random_list = {
-			1 = { give_nickname = nick_hist_the_crossbow_f }
-			1 = { give_nickname = nick_hist_the_crossbowman_f }
-			1 = { give_nickname = nick_the_holy_knight_f }
-			1 = { give_nickname = nick_hist_the_saint_f }
-			1 = { give_nickname = nick_hist_the_blessed_f }
-			1 = { give_nickname = nick_hist_the_confessor_f }
-			1 = { give_nickname = nick_hist_the_crusader_f }
-			1 = { give_nickname = nick_hist_the_templar_f }
-			1 = { give_nickname = nick_hist_the_hospitaller_f }
-			1 = { give_nickname = nick_hist_the_santiago_f }
-			1 = { give_nickname = nick_hist_the_apostle_f }
-			1 = { give_nickname = nick_hist_the_penitent_f }
-			1 = { give_nickname = nick_hist_the_pilgrim_f }
-			1 = { give_nickname = nick_hist_the_evangelist_f }
-			1 = { give_nickname = nick_hist_the_missionary_f }
-			1 = { give_nickname = nick_hist_the_mitre_f }
-			1 = { give_nickname = nick_hist_the_crosier_f }
-			1 = { give_nickname = nick_hist_the_pilgrim_staff_f }
-			1 = { give_nickname = nick_hist_the_pilgrim_lord_f }
-			1 = { give_nickname = nick_hist_the_cross_standard_f }
-			1 = { give_nickname = nick_hist_the_chalice_f }
-			1 = { give_nickname = nick_hist_the_monk_king }
-			1 = { give_nickname = nick_hist_the_nun_queen }
-			1 = { give_nickname = nick_hist_the_pilgrim_king }
+			# ============================================
+			# MARTIAL (7 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_crusader_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_templar_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_hospitaller_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_santiago_f
+			}
+			1 = {
+				give_nickname = nick_the_holy_knight_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_crossbow_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_crossbowman_f
+			}
+			# ============================================
+			# LEARNING (8 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_saint_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_blessed_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_confessor_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_apostle_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_evangelist_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_missionary_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_mitre_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_crosier_f
+			}
+			# ============================================
+			# DIPLOMACY (6 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_staff_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_lord_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_cross_standard_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_chalice_f
+			}
+			# ============================================
+			# INTRIGUE (3 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_penitent_f
+			}
+			1 = {
+				give_nickname = nick_hist_the_monk_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_nun_queen
+			}
 		}
 	}
 	else = {
 		random_list = {
-			1 = { give_nickname = nick_hist_the_crossbow }
-			1 = { give_nickname = nick_hist_the_crossbowman }
-			1 = { give_nickname = nick_the_holy_knight }
-			1 = { give_nickname = nick_hist_the_saint }
-			1 = { give_nickname = nick_hist_the_blessed }
-			1 = { give_nickname = nick_hist_the_confessor }
-			1 = { give_nickname = nick_hist_the_crusader }
-			1 = { give_nickname = nick_hist_the_templar }
-			1 = { give_nickname = nick_hist_the_hospitaller }
-			1 = { give_nickname = nick_hist_the_santiago }
-			1 = { give_nickname = nick_hist_the_apostle }
-			1 = { give_nickname = nick_hist_the_penitent }
-			1 = { give_nickname = nick_hist_the_pilgrim }
-			1 = { give_nickname = nick_hist_the_evangelist }
-			1 = { give_nickname = nick_hist_the_missionary }
-			1 = { give_nickname = nick_hist_the_mitre }
-			1 = { give_nickname = nick_hist_the_crosier }
-			1 = { give_nickname = nick_hist_the_pilgrim_staff }
-			1 = { give_nickname = nick_hist_the_pilgrim_lord }
-			1 = { give_nickname = nick_hist_the_cross_standard }
-			1 = { give_nickname = nick_hist_the_chalice }
-			1 = { give_nickname = nick_hist_the_monk_king }
-			1 = { give_nickname = nick_hist_the_nun_queen }
-			1 = { give_nickname = nick_hist_the_pilgrim_king }
+			# ============================================
+			# MARTIAL (7 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_crusader
+			}
+			1 = {
+				give_nickname = nick_hist_the_templar
+			}
+			1 = {
+				give_nickname = nick_hist_the_hospitaller
+			}
+			1 = {
+				give_nickname = nick_hist_the_santiago
+			}
+			1 = {
+				give_nickname = nick_the_holy_knight
+			}
+			1 = {
+				give_nickname = nick_hist_the_crossbow
+			}
+			1 = {
+				give_nickname = nick_hist_the_crossbowman
+			}
+			# ============================================
+			# LEARNING (8 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_saint
+			}
+			1 = {
+				give_nickname = nick_hist_the_blessed
+			}
+			1 = {
+				give_nickname = nick_hist_the_confessor
+			}
+			1 = {
+				give_nickname = nick_hist_the_apostle
+			}
+			1 = {
+				give_nickname = nick_hist_the_evangelist
+			}
+			1 = {
+				give_nickname = nick_hist_the_missionary
+			}
+			1 = {
+				give_nickname = nick_hist_the_mitre
+			}
+			1 = {
+				give_nickname = nick_hist_the_crosier
+			}
+			# ============================================
+			# DIPLOMACY (6 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_pilgrim
+			}
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_staff
+			}
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_lord
+			}
+			1 = {
+				give_nickname = nick_hist_the_pilgrim_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_cross_standard
+			}
+			1 = {
+				give_nickname = nick_hist_the_chalice
+			}
+			# ============================================
+			# INTRIGUE (3 apodos)
+			# ============================================
+			1 = {
+				give_nickname = nick_hist_the_penitent
+			}
+			1 = {
+				give_nickname = nick_hist_the_monk_king
+			}
+			1 = {
+				give_nickname = nick_hist_the_nun_queen
+			}
 		}
 	}
 }

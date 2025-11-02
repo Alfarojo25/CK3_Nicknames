@@ -653,3 +653,26 @@ ac_wolf_role_trigger = {
 		martial >= 15
 	}
 }
+
+# Knight and Color nicknames: Order member OR Marshal role OR high martial/prowess
+ac_knight_color_trigger = {
+	OR = {
+		# Member of a holy order
+		has_trait = order_member
+		# Or Marshal role
+		has_council_position = councillor_marshal
+		# Or martial focus
+		has_focus = martial_authority_focus
+		has_focus = martial_chivalry_focus
+		has_focus = martial_strategy_focus
+		# Or martial education
+		has_trait = education_martial_1
+		has_trait = education_martial_2
+		has_trait = education_martial_3
+		has_trait = education_martial_4
+		# Or high martial skill (15+)
+		martial >= 15
+		# Or high prowess (good fighter, 14+)
+		prowess >= 14
+	}
+}
