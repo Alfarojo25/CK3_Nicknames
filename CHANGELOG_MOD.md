@@ -24,6 +24,29 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Preparación para Sistema de Unicidad - 16:30
+
+### Added
+
+- **Triggers de unicidad preparados (ac_nickname_triggers.txt)**:
+  - `ac_nickname_unique_in_faith_group_trigger`: Valida que no exista el nickname en el grupo religioso
+  - `ac_nickname_unique_in_culture_group_trigger`: Valida que no exista el nickname en el grupo cultural
+
+### Technical Notes
+
+- **Sistema de unicidad pendiente para v2.1.0:**
+  - Los triggers están creados y funcionan correctamente
+  - La implementación completa requiere modificar TODOS los effects de asignación de nickname (29 categorías, 1,036+ archivos)
+  - Cada effect necesitaría:
+    1. Guardar el nickname en una variable temporal ANTES de asignarlo
+    2. Validar contra faith_group y culture_group
+    3. Solo aplicar si pasa validación
+  - **Decisión de diseño:** Posponer implementación completa para mantener estabilidad del mod
+  - Los triggers quedan preparados para integración futura
+  - **Alternativa actual:** El sistema funciona sin validación de unicidad (permite duplicados)
+
+---
+
 ## [2025-11-02] - Balanceo y Requisitos Culturales para Animales - 16:00
 
 ### Changed
