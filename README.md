@@ -3,7 +3,7 @@
 **An expanded nickname system for Crusader Kings III with 2059+ faith-based and skill-based nicknames**
 
 [![Version](https://img.shields.io/badge/version-2.0.0-orange.svg)](https://github.com/Alfarojo25/CK3_Nicknames)
-[![CK3 Version](https://img.shields.io/badge/CK3-1.18.0.1-blue.svg)](https://store.steampowered.com/app/1158310/Crusader_Kings_III/)
+[![CK3 Version](https://img.shields.io/badge/CK3-1.18.*-blue.svg)](https://store.steampowered.com/app/1158310/Crusader_Kings_III/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 📖 Description

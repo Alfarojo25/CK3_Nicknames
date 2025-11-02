@@ -4,5 +4,5 @@ tags={
 	"Character Interactions"
 }
 name="Advanced Character Nicknames"
-supported_version="1.18.0.1"
+supported_version="1.18.*"
 remote_file_id=""

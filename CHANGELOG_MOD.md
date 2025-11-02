@@ -28,10 +28,13 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ### Changed
 
-- **README.md**: Actualizada sección de compatibilidad para documentar soporte completo de v1.18.0
+- **descriptor.mod**: Actualizado `supported_version` de "1.18.0.1" a "1.18.\*" para soportar todos los parches de v1.18
+- **README.md**:
+  - Actualizada sección de compatibilidad para documentar soporte completo de v1.18.\*
   - Agregada información sobre compatibilidad con nuevas features (Diarchies, Confederations, House Aspirations, Great Projects, Landless Adventurers)
   - Documentada compatibilidad con todos los DLCs (Roads to Power, Royal Court, All Under Heaven, etc.)
   - Aclarado que el mod es 100% aditivo y no requiere DLCs
+  - Actualizado badge de versión a 1.18.\*
 
 ### Verified
 
