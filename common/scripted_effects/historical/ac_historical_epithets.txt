@@ -51,18 +51,27 @@ ac_historical_epithets = {
 			# "THE LAME" - Timur el Cojo (Tamerlan) (1336-1405), conquistador de Asia Central.
 			# Indica discapacidad fisica pero no debilidad militar.
 			1 = {
+				trigger = {
+					ac_hist_the_lame_trigger = yes
+				}
 				give_nickname = nick_hist_the_lame_f
 			}
 			# "UNIVERSAL RULER" - Carlos V de Habsburgo (1500-1558), Emperador del Sacro Imperio.
 			# Goberno España, Paises Bajos, Austria, partes de Italia y territorios en America.
 			# "En mi imperio nunca se pone el sol".
 			1 = {
+				trigger = {
+					ac_hist_universal_ruler_trigger = yes
+				}
 				give_nickname = nick_hist_universal_ruler_f
 			}
 			# "THE LAWGIVER" - Soliman I (mismo que el Magnifico), reformo el sistema legal otomano.
 			# Tambien: Justiniano I de Bizancio (482-565), autor del Corpus Juris Civilis.
 			# Indica reformas legales importantes.
 			1 = {
+				trigger = {
+					ac_hist_the_lawgiver_trigger = yes
+				}
 				give_nickname = nick_hist_the_lawgiver_f
 			}
 			1 = {
@@ -186,6 +195,9 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_mad_f
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_glorious_trigger = yes
+				}
 				give_nickname = nick_hist_the_glorious_f
 			}
 			1 = {
@@ -252,28 +264,36 @@ ac_historical_epithets = {
 			# Devasto Europa, sitio Roma y Constantinopla.
 			# El apodo refleja el terror que inspiraba como "azote divino".
 			1 = {
-				trigger = { ac_hist_scourge_of_god_trigger = yes }
+				trigger = {
+					ac_hist_scourge_of_god_trigger = yes
+				}
 				give_nickname = nick_hist_scourge_of_god_f
 			}
 			# "THE BASTARD" - Guillermo I el Bastardo/Conquistador (1028-1087).
 			# Duque de Normandia, hijo ilegitimo, conquisto Inglaterra en 1066 (Batalla de Hastings).
 			# El apodo cambio de "Bastardo" a "Conquistador" tras la victoria.
 			1 = {
-				trigger = { ac_hist_the_bastard_trigger = yes }
+				trigger = {
+					ac_hist_the_bastard_trigger = yes
+				}
 				give_nickname = nick_hist_the_bastard_f
 			}
 			# "THE BONELESS" - Ivar el Deshuesado (794-873), lider vikingo.
 			# Hijo de Ragnar Lodbrok, conquisto gran parte de Inglaterra.
 			# Teorias: enfermedad osea, flexibilidad extrema, o apodo metaforico.
 			1 = {
-				trigger = { ac_hist_the_boneless_trigger = yes }
+				trigger = {
+					ac_hist_the_boneless_trigger = yes
+				}
 				give_nickname = nick_hist_the_boneless_f
 			}
 			# "LONGSHANKS" - Eduardo I de Inglaterra (1239-1307), llamado "Piernas Largas".
 			# Media 1.88m (muy alto para la epoca), conquisto Gales.
 			# Tambien conocido como "Martillo de los Escoceses".
 			1 = {
-				trigger = { ac_hist_longshanks_trigger = yes }
+				trigger = {
+					ac_hist_longshanks_trigger = yes
+				}
 				give_nickname = nick_hist_longshanks_f
 			}
 			# "LACKLAND" - Juan sin Tierra (1166-1217), Rey de Inglaterra.
@@ -281,7 +301,9 @@ ac_historical_epithets = {
 			# Perdio Normandia, firmo la Carta Magna (1215) bajo presion de los barones.
 			# Relacion: Hermano de Ricardo I Corazon de Leon (dinastia Plantagenet).
 			1 = {
-				trigger = { ac_hist_lackland_trigger = yes }
+				trigger = {
+					ac_hist_lackland_trigger = yes
+				}
 				give_nickname = nick_hist_lackland_f
 			}
 			# "CURTMANTLE" - Enrique II de Inglaterra (1133-1189), "Manto Corto".
@@ -294,7 +316,9 @@ ac_historical_epithets = {
 			# Goberno con lepra desde los 13 años, derroto a Saladino en Montgisard (1177).
 			# Murio a los 24 años, su enfermedad debilito el reino cruzado.
 			1 = {
-				trigger = { ac_hist_the_leper_trigger = yes }
+				trigger = {
+					ac_hist_the_leper_trigger = yes
+				}
 				give_nickname = nick_hist_the_leper_f
 			}
 			# "STUPOR MUNDI" - Federico II Hohenstaufen (1194-1250), "Asombro del Mundo".
@@ -302,7 +326,9 @@ ac_historical_epithets = {
 			# Poliglota (6 idiomas), cientifico, falconero, recupero Jerusalen por negociacion.
 			# Excomulgado 3 veces por el Papa, mecenas del conocimiento.
 			1 = {
-				trigger = { ac_hist_stupor_mundi_trigger = yes }
+				trigger = {
+					ac_hist_stupor_mundi_trigger = yes
+				}
 				give_nickname = nick_hist_stupor_mundi_f
 			}
 			# "HAIRY BREECHES" - Ragnar Lodbrok (Ragnar "Calzas Peludas"), legendario rey vikingo (s. IX).
@@ -340,10 +366,15 @@ ac_historical_epithets = {
 			# Tambien: Alfonso II de Asturias (759-842), enfrento a los musulmanes.
 			# Indica valentia en combate.
 			1 = {
-				trigger = { ac_hist_the_brave_trigger = yes }
+				trigger = {
+					ac_hist_the_brave_trigger = yes
+				}
 				give_nickname = nick_hist_the_brave_f
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_strong_trigger = yes
+				}
 				give_nickname = nick_hist_the_strong_f
 			}
 			1 = {
@@ -359,7 +390,9 @@ ac_historical_epithets = {
 			# "Campeador" = "maestro en el campo de batalla" (castellano medieval).
 			# Conquisto Valencia, heroe de la Reconquista, mercenario para cristianos y musulmanes.
 			1 = {
-				trigger = { ac_hist_campeador_trigger = yes }
+				trigger = {
+					ac_hist_campeador_trigger = yes
+				}
 				give_nickname = nick_hist_campeador_f
 			}
 			# "HARDRADA" - Harald III Hardrada (1015-1066), Rey de Noruega.
@@ -367,7 +400,9 @@ ac_historical_epithets = {
 			# Mercenario en Constantinopla (Guardia Varega), murio en Stamford Bridge.
 			# Su invasion de Inglaterra precedio a la de Guillermo el Conquistador.
 			1 = {
-				trigger = { ac_hist_hardrada_trigger = yes }
+				trigger = {
+					ac_hist_hardrada_trigger = yes
+				}
 				give_nickname = nick_hist_hardrada_f
 			}
 			# "BLUETOOTH" - Harald I Blatand (910-987), Rey de Dinamarca y Noruega.
@@ -378,13 +413,18 @@ ac_historical_epithets = {
 			# "Bluetooth" (diente azul): posible diente oscuro/muerto o amor por los arandanos.
 			# ¡La tecnologia Bluetooth lleva su nombre! (unificacion de dispositivos)
 			1 = {
-				trigger = { ac_hist_bluetooth_trigger = yes }
+				trigger = {
+					ac_hist_bluetooth_trigger = yes
+				}
 				give_nickname = nick_hist_bluetooth_f
 			}
 			# "THE BEWITCHED" - Carlos II de España (1661-1700), "El Hechizado".
 			# Ultimo Habsburgo español, multiples deformidades por endogamia.
 			# Murio sin descendencia, causo la Guerra de Sucesion Española.
 			1 = {
+				trigger = {
+					ac_hist_the_bewitched_trigger = yes
+				}
 				give_nickname = nick_hist_the_bewitched_f
 			}
 			1 = {
@@ -398,7 +438,9 @@ ac_historical_epithets = {
 			# Armada Invencible (1588), batallo contra Inglaterra, Francia y Turcos.
 			# Padre de Felipe III, hijo de Carlos V (Universal Ruler).
 			1 = {
-				trigger = { ac_hist_the_prudent_trigger = yes }
+				trigger = {
+					ac_hist_the_prudent_trigger = yes
+				}
 				give_nickname = nick_hist_the_prudent_f
 			}
 			# "THE LONGED FOR" - Alfonso VI de Portugal (1643-1683), "O Desejado".
@@ -499,7 +541,9 @@ ac_historical_epithets = {
 			# Conquisto Lisboa a los moros (1147), fundo la dinastia Borgoña.
 			# Tambien: Valdemar I de Dinamarca (1131-1182).
 			1 = {
-				trigger = { ac_hist_the_victorious_trigger = yes }
+				trigger = {
+					ac_hist_the_victorious_trigger = yes
+				}
 				give_nickname = nick_hist_the_victorious_f
 			}
 			1 = {
@@ -2059,39 +2103,60 @@ ac_historical_epithets = {
 	else = {
 		random_list = {
 			1 = {
-				trigger = { ac_hist_the_terrible_trigger = yes }
+				trigger = {
+					ac_hist_the_terrible_trigger = yes
+				}
 				give_nickname = nick_hist_the_terrible
 			}
 			1 = {
-				trigger = { ac_hist_the_magnificent_trigger = yes }
+				trigger = {
+					ac_hist_the_magnificent_trigger = yes
+				}
 				give_nickname = nick_hist_the_magnificent
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_lame_trigger = yes
+				}
 				give_nickname = nick_hist_the_lame
 			}
 			1 = {
+				trigger = {
+					ac_hist_universal_ruler_trigger = yes
+				}
 				give_nickname = nick_hist_universal_ruler
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_lawgiver_trigger = yes
+				}
 				give_nickname = nick_hist_the_lawgiver
 			}
 			1 = {
 				give_nickname = nick_hist_the_assassin
 			}
 			1 = {
-				trigger = { ac_hist_the_great_trigger = yes }
+				trigger = {
+					ac_hist_the_great_trigger = yes
+				}
 				give_nickname = nick_hist_the_great
 			}
 			1 = {
-				trigger = { ac_hist_the_wise_trigger = yes }
+				trigger = {
+					ac_hist_the_wise_trigger = yes
+				}
 				give_nickname = nick_hist_the_wise
 			}
 			1 = {
-				trigger = { ac_hist_the_just_trigger = yes }
+				trigger = {
+					ac_hist_the_just_trigger = yes
+				}
 				give_nickname = nick_hist_the_just
 			}
 			1 = {
-				trigger = { ac_hist_the_cruel_trigger = yes }
+				trigger = {
+					ac_hist_the_cruel_trigger = yes
+				}
 				give_nickname = nick_hist_the_cruel
 			}
 			1 = {
@@ -2101,14 +2166,18 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_ruthless
 			}
 			1 = {
-				trigger = { ac_hist_the_bold_trigger = yes }
+				trigger = {
+					ac_hist_the_bold_trigger = yes
+				}
 				give_nickname = nick_hist_the_bold
 			}
 			1 = {
 				give_nickname = nick_hist_the_valiant
 			}
 			1 = {
-				trigger = { ac_hist_the_fair_trigger = yes }
+				trigger = {
+					ac_hist_the_fair_trigger = yes
+				}
 				give_nickname = nick_hist_the_fair
 			}
 			1 = {
@@ -2118,7 +2187,9 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_ugly
 			}
 			1 = {
-				trigger = { ac_hist_the_fat_trigger = yes }
+				trigger = {
+					ac_hist_the_fat_trigger = yes
+				}
 				give_nickname = nick_hist_the_fat
 			}
 			1 = {
@@ -2128,10 +2199,15 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_tall
 			}
 			1 = {
-				trigger = { ac_hist_the_mad_trigger = yes }
+				trigger = {
+					ac_hist_the_mad_trigger = yes
+				}
 				give_nickname = nick_hist_the_mad
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_glorious_trigger = yes
+				}
 				give_nickname = nick_hist_the_glorious
 			}
 			1 = {
@@ -2147,7 +2223,9 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_defender
 			}
 			1 = {
-				trigger = { ac_hist_the_liberator_trigger = yes }
+				trigger = {
+					ac_hist_the_liberator_trigger = yes
+				}
 				give_nickname = nick_hist_the_liberator
 			}
 			1 = {
@@ -2160,7 +2238,9 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_tyrant
 			}
 			1 = {
-				trigger = { ac_hist_the_builder_trigger = yes }
+				trigger = {
+					ac_hist_the_builder_trigger = yes
+				}
 				give_nickname = nick_hist_the_builder
 			}
 			1 = {
@@ -2188,34 +2268,48 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_peacemaker
 			}
 			1 = {
-				trigger = { ac_hist_scourge_of_god_trigger = yes }
+				trigger = {
+					ac_hist_scourge_of_god_trigger = yes
+				}
 				give_nickname = nick_hist_scourge_of_god
 			}
 			1 = {
-				trigger = { ac_hist_the_bastard_trigger = yes }
+				trigger = {
+					ac_hist_the_bastard_trigger = yes
+				}
 				give_nickname = nick_hist_the_bastard
 			}
 			1 = {
-				trigger = { ac_hist_the_boneless_trigger = yes }
+				trigger = {
+					ac_hist_the_boneless_trigger = yes
+				}
 				give_nickname = nick_hist_the_boneless
 			}
 			1 = {
-				trigger = { ac_hist_longshanks_trigger = yes }
+				trigger = {
+					ac_hist_longshanks_trigger = yes
+				}
 				give_nickname = nick_hist_longshanks
 			}
 			1 = {
-				trigger = { ac_hist_lackland_trigger = yes }
+				trigger = {
+					ac_hist_lackland_trigger = yes
+				}
 				give_nickname = nick_hist_lackland
 			}
 			1 = {
 				give_nickname = nick_hist_curtmantle
 			}
 			1 = {
-				trigger = { ac_hist_the_leper_trigger = yes }
+				trigger = {
+					ac_hist_the_leper_trigger = yes
+				}
 				give_nickname = nick_hist_the_leper
 			}
 			1 = {
-				trigger = { ac_hist_stupor_mundi_trigger = yes }
+				trigger = {
+					ac_hist_stupor_mundi_trigger = yes
+				}
 				give_nickname = nick_hist_stupor_mundi
 			}
 			1 = {
@@ -2234,10 +2328,15 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_child
 			}
 			1 = {
-				trigger = { ac_hist_the_brave_trigger = yes }
+				trigger = {
+					ac_hist_the_brave_trigger = yes
+				}
 				give_nickname = nick_hist_the_brave
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_strong_trigger = yes
+				}
 				give_nickname = nick_hist_the_strong
 			}
 			1 = {
@@ -2247,18 +2346,27 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_cunning
 			}
 			1 = {
-				trigger = { ac_hist_campeador_trigger = yes }
+				trigger = {
+					ac_hist_campeador_trigger = yes
+				}
 				give_nickname = nick_hist_campeador
 			}
 			1 = {
-				trigger = { ac_hist_hardrada_trigger = yes }
+				trigger = {
+					ac_hist_hardrada_trigger = yes
+				}
 				give_nickname = nick_hist_hardrada
 			}
 			1 = {
-				trigger = { ac_hist_bluetooth_trigger = yes }
+				trigger = {
+					ac_hist_bluetooth_trigger = yes
+				}
 				give_nickname = nick_hist_bluetooth
 			}
 			1 = {
+				trigger = {
+					ac_hist_the_bewitched_trigger = yes
+				}
 				give_nickname = nick_hist_the_bewitched
 			}
 			1 = {
@@ -2268,7 +2376,9 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_beloved
 			}
 			1 = {
-				trigger = { ac_hist_the_prudent_trigger = yes }
+				trigger = {
+					ac_hist_the_prudent_trigger = yes
+				}
 				give_nickname = nick_hist_the_prudent
 			}
 			1 = {
@@ -2347,7 +2457,9 @@ ac_historical_epithets = {
 				give_nickname = nick_hist_the_tsar
 			}
 			1 = {
-				trigger = { ac_hist_the_victorious_trigger = yes }
+				trigger = {
+					ac_hist_the_victorious_trigger = yes
+				}
 				give_nickname = nick_hist_the_victorious
 			}
 			1 = {

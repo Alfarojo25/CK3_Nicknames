@@ -937,18 +937,17 @@ ac_faith_generic_learning_trigger = {
 				has_trait = theologian
 				has_trait = scholar
 			}
+		}
+		# Or qualified for martial
+		ac_faith_generic_martial_trigger = yes
+		# Or qualified for diplomacy
+		ac_faith_generic_diplomacy_trigger = yes
 	}
-	# Or qualified for martial
-	ac_faith_generic_martial_trigger = yes
-	# Or qualified for diplomacy
-	ac_faith_generic_diplomacy_trigger = yes
-}
 }
 
 ####################################################
 ## HISTORICAL EPITHETS TRIGGERS                   ##
 ####################################################
-
 # THE TERRIBLE - High tyranny, dread, and cruelty
 # Historical: Ivan IV (1530-1584), Basilio II
 ac_hist_the_terrible_trigger = {
@@ -1166,7 +1165,9 @@ ac_hist_bluetooth_trigger = {
 ac_hist_campeador_trigger = {
 	prowess >= 16
 	martial >= 14
-	faith = { religion_tag = christianity_religion }
+	faith = {
+		religion_tag = christianity_religion
+	}
 }
 
 # THE PRUDENT - Wisdom and caution
@@ -1204,4 +1205,106 @@ ac_hist_the_builder_trigger = {
 ac_hist_the_liberator_trigger = {
 	has_trait = peasant_leader
 	is_ruler = yes
+}
+
+# THE LAME - Physical disability but strong will
+# Historical: Timur the Lame (Tamerlane)
+ac_hist_the_lame_trigger = {
+	OR = {
+		has_trait = physique_bad_1
+		has_trait = physique_bad_2
+		has_trait = physique_bad_3
+	}
+	OR = {
+		martial >= 12
+		prestige_level >= 3
+	}
+}
+
+# UNIVERSAL RULER - Vast empire, multiple realms
+# Historical: Charles V of Habsburg
+ac_hist_universal_ruler_trigger = {
+	highest_held_title_tier = tier_empire
+	prestige_level >= 5
+	domain_size >= 5
+}
+
+# THE LAWGIVER - Legal reforms, high learning/stewardship
+# Historical: Justinian I, Suleiman I
+ac_hist_the_lawgiver_trigger = {
+	OR = {
+		learning >= 14
+		stewardship >= 14
+	}
+	OR = {
+		has_trait = just
+		has_trait = administrator
+	}
+	prestige_level >= 3
+}
+
+# THE CONQUEROR - Major conquests
+# Historical: William the Conqueror, Mehmed the Conqueror
+ac_hist_the_conqueror_trigger = {
+	martial >= 14
+	prestige_level >= 4
+	OR = {
+		prowess >= 12
+		dread >= 50
+	}
+}
+
+# THE STRONG - Physical prowess
+# Historical: Multiple rulers with physical strength
+ac_hist_the_strong_trigger = {
+	prowess >= 16
+	OR = {
+		has_trait = physique_good_1
+		has_trait = physique_good_2
+		has_trait = physique_good_3
+	}
+}
+
+# THE PIOUS - High piety and religious devotion
+# Historical: Louis the Pious
+ac_hist_the_pious_trigger = {
+	piety_level >= 5
+	OR = {
+		has_trait = theologian
+		has_trait = zealous
+	}
+}
+
+# THE GLORIOUS - High prestige and achievements
+# Historical: Multiple rulers with great fame
+ac_hist_the_glorious_trigger = {
+	prestige_level >= 5
+	OR = {
+		martial >= 14
+		diplomacy >= 14
+	}
+}
+
+# THE BEWITCHED - Inbred or cursed
+# Historical: Charles II of Spain (severe inbreeding)
+ac_hist_the_bewitched_trigger = {
+	OR = {
+		has_trait = inbred
+		has_trait = possessed
+		AND = {
+			has_trait = lunatic
+			health <= 2
+		}
+	}
+}
+
+# THE FORTUNATE - Lucky and successful
+# Historical: Manuel I of Portugal "O Venturoso"
+ac_hist_the_fortunate_trigger = {
+	prestige_level >= 4
+	gold >= 500
+	OR = {
+		has_trait = humble
+		has_trait = gregarious
+	}
 }
