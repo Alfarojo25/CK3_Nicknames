@@ -12,27 +12,48 @@ ac_faith_christianity = {
 		}
 		random_list = {
 			# ============================================
-			# MARTIAL (7 apodos)
+			# MARTIAL (7 apodos) - Requiere trigger marcial cristiano
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_crusader_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_templar_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_hospitaller_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_santiago_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_knight_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_crossbow_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_crossbowman_f
 			}
 			# ============================================
@@ -100,27 +121,48 @@ ac_faith_christianity = {
 	else = {
 		random_list = {
 			# ============================================
-			# MARTIAL (7 apodos)
+			# MARTIAL (7 apodos) - Requiere trigger marcial cristiano
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_crusader
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_templar
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_hospitaller
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_santiago
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_knight
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_crossbow
 			}
 			1 = {
+				trigger = {
+					ac_faith_christianity_martial_trigger = yes
+				}
 				give_nickname = nick_hist_the_crossbowman
 			}
 			# ============================================

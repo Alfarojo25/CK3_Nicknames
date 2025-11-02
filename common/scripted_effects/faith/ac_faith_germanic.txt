@@ -13,9 +13,12 @@ ac_faith_germanic = {
 		}
 		random_list = {
 			# ============================================
-			# MARTIAL (1 apodo)
+			# MARTIAL (1 apodo) - Requiere trigger marcial germánico
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_martial_trigger = yes
+				}
 				give_nickname = nick_son_of_thor
 			}
 			# ============================================
@@ -50,9 +53,12 @@ ac_faith_germanic = {
 	else = {
 		random_list = {
 			# ============================================
-			# MARTIAL (1 apodo)
+			# MARTIAL (1 apodo) - Requiere trigger marcial germánico
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_martial_trigger = yes
+				}
 				give_nickname = nick_son_of_thor
 			}
 			# ============================================

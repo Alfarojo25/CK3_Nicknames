@@ -12,24 +12,42 @@ ac_faith_generic = {
 		}
 		random_list = {
 			# ============================================
-			# MARTIAL (6 apodos)
+			# MARTIAL (6 apodos) - Requiere trigger marcial genérico
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_sword_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_axe_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_shield_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_heathen_sword_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_heathen_axe_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_heathen_shield_f
 			}
 			# ============================================
@@ -67,24 +85,42 @@ ac_faith_generic = {
 	else = {
 		random_list = {
 			# ============================================
-			# MARTIAL (6 apodos)
+			# MARTIAL (6 apodos) - Requiere trigger marcial genérico
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_sword
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_axe
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_holy_shield
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_heathen_sword
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_heathen_axe
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_martial_trigger = yes
+				}
 				give_nickname = nick_the_heathen_shield
 			}
 			# ============================================

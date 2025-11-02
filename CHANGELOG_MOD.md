@@ -24,6 +24,35 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Requisitos Marciales para Nicknames Religiosos - 18:00
+
+### Added
+
+- **Nuevos triggers para nicknames marciales religiosos (ac_nickname_triggers.txt)**:
+  - `ac_faith_christianity_martial_trigger`: Para cristianos (crusader_king, order_member, holy_warrior, faith_warrior, o devoted + prowess 12+)
+  - `ac_faith_germanic_martial_trigger`: Para germánicos/nórdicos (berserker o devoted + prowess 12+)
+  - `ac_faith_islam_martial_trigger`: Para musulmanes (hajjaj, faith_warrior, o devoted + prowess 12+)
+  - `ac_faith_generic_martial_trigger`: Para otras fes (faith_warrior, holy_warrior, o devoted + prowess 12+)
+
+### Changed
+
+- **Nicknames marciales de fe ahora requieren traits específicos:**
+  - **Christianity (7 marciales)**: Crusader, Templar, Hospitaller, Santiago, Holy Knight, Crossbow - requieren trigger
+  - **Generic (6 marciales)**: Holy/Heathen Sword/Axe/Shield - requieren trigger
+  - **Germanic (1 marcial)**: Son of Thor - requiere trigger
+  - **Islam**: Preparado para futura implementación con trigger específico
+
+### Technical Notes
+
+- **Decisión de diseño**: Los nicknames marciales religiosos ahora son más exclusivos y temáticos
+- Cada fe tiene sus propios requisitos basados en su cultura/religión
+- Christianity tiene más opciones (crusader_king, holy orders, etc.)
+- Germanic requiere berserker o ser devoto con alto prowess
+- Islam usa hajjaj (peregrino a La Meca) como marcador principal
+- Los triggers son modulares y fáciles de expandir para más religiones
+
+---
+
 ## [2025-11-02] - Reorganización de Nicknames de Fe por Skills - 17:30
 
 ### Changed
