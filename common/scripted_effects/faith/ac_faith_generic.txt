@@ -54,30 +54,51 @@ ac_faith_generic = {
 			# LEARNING (4 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_prophet_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_oracle_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_seer_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_prophetess
 			}
 			# ============================================
 			# DIPLOMACY (2 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pious_f
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_orthodox_f
 			}
 			# ============================================
 			# INTRIGUE (1 apodo)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_zealot_f
 			}
 		}
@@ -127,30 +148,51 @@ ac_faith_generic = {
 			# LEARNING (4 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_prophet
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_oracle
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_seer
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_learning_trigger = yes
+				}
 				give_nickname = nick_hist_the_prophetess
 			}
 			# ============================================
 			# DIPLOMACY (2 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_pious
 			}
 			1 = {
+				trigger = {
+					ac_faith_generic_diplomacy_trigger = yes
+				}
 				give_nickname = nick_hist_the_orthodox
 			}
 			# ============================================
 			# INTRIGUE (1 apodo)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_generic_intrigue_trigger = yes
+				}
 				give_nickname = nick_hist_the_zealot
 			}
 		}

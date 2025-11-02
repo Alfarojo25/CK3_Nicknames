@@ -25,21 +25,33 @@ ac_faith_germanic = {
 			# LEARNING (2 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_learning_trigger = yes
+				}
 				give_nickname = nick_son_of_balder
 			}
 			1 = {
+				trigger = {
+					ac_faith_germanic_learning_trigger = yes
+				}
 				give_nickname = nick_daughter_frigg
 			}
 			# ============================================
 			# DIPLOMACY (1 apodo)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_diplomacy_trigger = yes
+				}
 				give_nickname = nick_daughter_freya
 			}
 			# ============================================
 			# INTRIGUE (1 apodo)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_intrigue_trigger = yes
+				}
 				give_nickname = nick_son_of_loki
 			}
 			# ============================================
@@ -65,21 +77,33 @@ ac_faith_germanic = {
 			# LEARNING (2 apodos)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_learning_trigger = yes
+				}
 				give_nickname = nick_son_of_balder
 			}
 			1 = {
+				trigger = {
+					ac_faith_germanic_learning_trigger = yes
+				}
 				give_nickname = nick_daughter_frigg
 			}
 			# ============================================
 			# DIPLOMACY (1 apodo)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_diplomacy_trigger = yes
+				}
 				give_nickname = nick_daughter_freya
 			}
 			# ============================================
 			# INTRIGUE (1 apodo)
 			# ============================================
 			1 = {
+				trigger = {
+					ac_faith_germanic_intrigue_trigger = yes
+				}
 				give_nickname = nick_son_of_loki
 			}
 			# ============================================

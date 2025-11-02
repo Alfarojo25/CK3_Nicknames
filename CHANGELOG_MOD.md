@@ -24,6 +24,65 @@ Este archivo documenta TODOS los cambios realizados al mod durante el desarrollo
 
 ---
 
+## [2025-11-02] - Sistema Completo de Triggers Basados en Skills - 20:30
+
+### Added
+
+- **12 nuevos triggers en ac_nickname_triggers.txt**:
+  - **DIPLOMACY (4 triggers)**: Requieren diplomacy >= 12 + traits relevantes
+    - `ac_faith_christianity_diplomacy_trigger`: diplomat/savior/crusader_king
+    - `ac_faith_germanic_diplomacy_trigger`: diplomat/savior/crusader_king
+    - `ac_faith_islam_diplomacy_trigger`: diplomat/sayyid/savior/crusader_king
+    - `ac_faith_generic_diplomacy_trigger`: diplomat/savior/crusader_king
+  - **INTRIGUE (4 triggers)**: Requieren intrigue >= 12 + traits relevantes
+    - `ac_faith_christianity_intrigue_trigger`: order_member/crusader_king/schemer/torturer/heresiarch
+    - `ac_faith_germanic_intrigue_trigger`: crusader_king/berserker/schemer/torturer/heresiarch
+    - `ac_faith_islam_intrigue_trigger`: crusader_king/faith_warrior/schemer/torturer/heresiarch
+    - `ac_faith_generic_intrigue_trigger`: crusader_king/faith_warrior/schemer/torturer/heresiarch
+  - **LEARNING (4 triggers)**: Requieren learning >= 10 mínimo, con paths alternativos
+    - Todas las fes: learning >= 12 + devoted/theologian/scholar OR qualify para martial OR qualify para diplomacy
+    - Garantiza que characters muy dedicados religiosamente pero especializados en combat/diplomacy puedan obtener nicknames de learning
+
+### Changed
+
+- **Actualizado ac_faith_christianity.txt (45 apodos)**:
+
+  - LEARNING (8): Faithful, Meek, Devout, Devoted, Dogmatic, Saint, Orthodox, Pious
+  - DIPLOMACY (6): Holy Monarch, Blessed, Savior, Confessor, Peacemaker, Mediator
+  - INTRIGUE (3): Inquisitor, Zealot, Heretic
+  - **Todos** ahora requieren stats >= 12 y traits apropiados (excepto learning que acepta >= 10)
+
+- **Actualizado ac_faith_islam.txt (20 apodos)**:
+
+  - LEARNING (5): Nur al-Din, Nizam al-Mulk, Shams al-Din, Majd al-Din, Alam al-Din
+  - DIPLOMACY (5): Salah al-Din, Jalal al-Din, Baha al-Din, Rashid al-Din, Fakhr al-Din
+  - INTRIGUE (5): Ghiyath al-Din, Muzaffar al-Din, Ikhtiyar al-Din, Qutb al-Din, Muizz al-Dawla
+  - **Todos** ahora tienen requisitos de stats + traits
+
+- **Actualizado ac_faith_germanic.txt (6 apodos)**:
+
+  - LEARNING (2): Runescriber, Völva
+  - DIPLOMACY (1): Father Yule
+  - INTRIGUE (1): Völsi
+  - **Todos** actualizados con triggers apropiados
+
+- **Actualizado ac_faith_generic.txt (25 apodos)**:
+  - Female section: LEARNING (4) + DIPLOMACY (2) + INTRIGUE (1)
+  - Male section: LEARNING (4) + DIPLOMACY (2) + INTRIGUE (1)
+  - **100% completo** - todos los apodos genéricos ahora tienen requirements
+
+### Technical Notes
+
+- **Balanceo de gameplay**: Sistema de 3 tiers para learning
+  - Tier 1 (learning >= 12 + specialist traits): Path directo para scholars/theologians
+  - Tier 2 (qualify martial/diplomacy): Permite holy warriors y diplomats devotos
+  - Tier 3 (learning >= 10 minimum): Garantiza baseline para todos los paths
+- **Total de triggers**: 16 (4 MARTIAL + 4 DIPLOMACY + 4 INTRIGUE + 4 LEARNING)
+- **Total de apodos afectados**: 96 nicknames religiosos ahora requieren stats apropiados
+- **Design philosophy**: Los nicknames religiosos ahora reflejan verdadera especialización del personaje, no solo su fe
+
+---
+
 ## [2025-11-02] - Implementación de Nicknames Islámicos Separados - 19:00
 
 ### Added
